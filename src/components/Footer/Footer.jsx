@@ -1,10 +1,10 @@
 import React from 'react'
-import "./HomePageFooter.scss";
+import "./Footer.scss";
 import { FaCcVisa, FaCcMastercard, FaCcPaypal, FaCcAmazonPay, FaThumbsUp, FaTruckMoving } from "react-icons/fa";
 import { RiExchangeDollarFill } from "react-icons/ri";
 import { BiSupport } from "react-icons/bi";
 
-function HomePageFooter() {
+function Footer() {
     return (
         <footer className="footer-container">
             <div className="footer-main">
@@ -70,4 +70,4 @@ function HomePageFooter() {
     )
 }
 
-export default HomePageFooter
+export default Footer;

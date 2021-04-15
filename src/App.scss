@@ -1,5 +1,14 @@
-*{
-  margin:0;
+// @import url(../src/utility/color/colors.scss);
+* {
+  margin: 0;
+  box-sizing: border-box;
   padding: 0;
+}
+:root {
+  --textColor: rgba(59, 29, 83, 0.96);
+}
+
+.text-color {
+  color: var(--textColor);
 }
 // $PrimaryColor:#3B1D53;

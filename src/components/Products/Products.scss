@@ -1,0 +1,14 @@
+.product__container {
+  padding: 2rem 3rem;
+  display: flex;
+}
+.filter__container {
+  flex-basis: 15%;
+  min-height: 500px;
+}
+.cards__container {
+  flex-basis: 85%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px 7px;
+}
