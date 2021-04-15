@@ -1,7 +1,12 @@
-import './App.scss';
+import "./App.scss";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import HomePage from './components/HomePage/HomePage';
 import * as ROUTES from "./constants/Routes";
+import HomePage from "./components/HomePage/HomePage";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+import Products from "./components/Products/Products";
+import ProductDetails from "./components/ProductDetails/ProductDetails";
+import Checkout from "./components/Checkout/Checkout";
 
 function App() {
   return (
@@ -9,13 +14,23 @@ function App() {
       <div className="App">
         <Switch>
           <Route path={ROUTES.CHECKOUT}>
-            <h1>checkout page</h1>
+            <Checkout />
           </Route>
           <Route path={ROUTES.LOGIN}>
             <h1>Login page</h1>
           </Route>
+          <Route path={`${ROUTES.PRODUCTS}/:category`}>
+            <Header />
+            <Products />
+            <Footer />
+          </Route>
+          <Route path={`${ROUTES.PRODUCT__DETAILS}/:id`}>
+            <ProductDetails />
+          </Route>
           <Route exact path={ROUTES.HOME}>
+            <Header />
             <HomePage />
+            <Footer />
           </Route>
         </Switch>
       </div>
