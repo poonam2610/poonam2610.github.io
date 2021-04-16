@@ -1,0 +1,33 @@
+.slider {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 110px 0px 110px;
+}
+
+.image {
+  width: 90%;
+  height: 400px;
+  border-radius: 10px;
+  margin: 0px 50px 0px 50px;
+}
+
+.right-arrow {
+
+  font-size: 100px;
+  color: #696969;
+  cursor: pointer;
+  user-select: none;
+  font-weight: bold;
+}
+
+.left-arrow {
+
+  font-size: 100px;
+  color:#696969;
+  cursor: pointer;
+  user-select: none;
+  font-weight: bold;
+}
+

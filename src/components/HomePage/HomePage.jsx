@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import Carousel from "../../helper-components/Carousel/Carousel"
 import CategoriesCard from '../../helper-components/categories-card/CategoriesCard';
 import * as ROUTES from "../../constants/Routes";
 import "./HomePage.scss"
@@ -7,7 +8,9 @@ import "./HomePage.scss"
 function HomePage() {
   return (
     <div className="content__container">
-      <div className="carousel__container">caraousel comes here</div>
+      <div className="carousel__container">
+        <Carousel/>
+      </div>
       <div className="mostInDemand__container">
         <h2 className="text-color inDemand__text">Most In Demands</h2>
         <div className="card__container">
