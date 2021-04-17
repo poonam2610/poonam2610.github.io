@@ -1,0 +1,23 @@
+.plus , .minus{
+  background-color: #fff;
+  border: 1px solid #bfc0c6;
+  border-radius: 40px;
+  padding: 0;
+  min-width: 40px;
+  min-height: 40px;
+  text-align: center;
+  cursor: pointer;
+  color: #282c3f;
+  margin: 5px;
+  &:hover{
+    border-color:#c91a1a; 
+    color:#c91a1a;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+.counter{
+  margin: 0 1rem;
+}
