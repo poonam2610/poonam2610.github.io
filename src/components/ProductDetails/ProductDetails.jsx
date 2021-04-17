@@ -44,7 +44,7 @@ function ProductDetails() {
             <option value="5">5</option>
           </select>
         </form> */}
-        <Quantity/>
+        <Quantity />
         <AddToBagButton />
       </div>
     </div>

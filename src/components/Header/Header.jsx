@@ -8,9 +8,12 @@ import Hamberger from '../../helper-components/Hamberger/Hamberger';
 import { Link } from 'react-router-dom';
 import * as ROUTES from "../../constants/Routes";
 import { useStateValue } from '../../context-management/StateProvider';
+import Modal from '../Modal/Modal';
+
 
 function Header() {
     const [isHambergerOpen, setIsHambergerOpen] = useState(false);
+    const [isLoginClicked , setIsLoginClicked] = useState(false);
     const [{ basket }] = useStateValue();
     const handleHamberger = () => {
         setIsHambergerOpen(true)
@@ -33,7 +36,9 @@ function Header() {
             <div className="header-icons">
                 <div className="login">
                     <BsPersonFill className="person" />
-                    <div className="login__text">Login\SignUp</div>
+                
+                  <div className="login__text" onClick={()=> setIsLoginClicked(true)}>Login\SignUp</div>
+              
                 </div>
                 <Link className="link__style" to={ROUTES.CHECKOUT}>
                     <div className="basket">
@@ -42,6 +47,7 @@ function Header() {
                     </div>
                 </Link>
             </div>
+            {isLoginClicked && <Modal setIsLoginClicked={setIsLoginClicked}/>}
 
         </div>
     )

@@ -7,6 +7,7 @@ import Footer from "./components/Footer/Footer";
 import Products from "./components/Products/Products";
 import ProductDetails from "./components/ProductDetails/ProductDetails";
 import Checkout from "./components/Checkout/Checkout";
+import Modal from "./components/Modal/Modal"
 
 function App() {
   return (
@@ -19,7 +20,8 @@ function App() {
             <Footer />
           </Route>
           <Route path={ROUTES.LOGIN}>
-            <h1>Login page</h1>
+
+            <Modal/>
           </Route>
           <Route path={`${ROUTES.PRODUCTS}/:category`}>
             <Header />
