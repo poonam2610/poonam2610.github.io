@@ -7,8 +7,9 @@
   padding: 5px;
 }
 .header-hamburger {
-  margin-top: 4px;
+  margin-top: 10px;
   cursor: pointer;
+  margin-left: 11px;
 }
 .search__bar {
   position: absolute;
@@ -64,7 +65,7 @@
       .single__digit__cart__number {
         position: absolute;
         font-weight: 600;
-        top: -4px;
+        top: -2px;
         left: 4px;
         color: white;
       }
@@ -80,8 +81,6 @@
       top: -5px;
       .double__digit__cart__number {
         position: absolute;
-        top: -2px;
-        left: 2px;
         color: white;
         font-weight: 600;
       }
