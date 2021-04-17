@@ -15,7 +15,9 @@ function App() {
       <div className="App">
         <Switch>
           <Route path={ROUTES.CHECKOUT}>
+            <Header />
             <Checkout />
+            <Footer />
           </Route>
           <Route path={ROUTES.LOGIN}>
 
