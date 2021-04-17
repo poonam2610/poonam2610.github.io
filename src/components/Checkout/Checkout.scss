@@ -1,0 +1,37 @@
+.checkout {
+  display: flex;
+  margin: 21px;
+}
+.checkout__left {
+  display: flex;
+  flex-basis: 70%;
+  flex-direction: column;
+}
+.checkout__right{
+    width: 100%;
+    flex-basis: 23%;
+    border: 1px solid;
+    height: 11rem;
+    display: flex;
+    padding: 21px;
+    flex-direction: column;
+    margin-left: 4%;
+    .subtotal{
+        font-size: 19px;
+    }
+    .subtotal__text{
+        margin-top: 8px;
+        font-size: 16px;
+    }
+    .checkout__button{
+        text-align: center;
+        margin-top: 3rem;
+        background: #ffa41c;
+        /* position: absolute; */
+        outline: none;
+        padding: 5px;
+        font-size: 14px;
+        cursor: pointer;
+        border: 1px solid #6b4916;
+    }
+}
