@@ -1,11 +1,14 @@
-import React, { useCallback, useState } from "react";
+import React, { useContext, useState } from "react";
 import "./Modal.scss";
 import { FaFacebookF } from "react-icons/fa";
+import firebase from "firebase";
 import { FcGoogle } from "react-icons/fc";
 import { useHistory } from "react-router-dom";
-import { auth, facebookAuthProvider, googleAuthProvider, firebase } from "../../firebase-config/firebase";
+// import { auth, facebookAuthProvider, googleAuthProvider, firebase } from "../../firebase-config/firebase";
+import FirebaseContext from "../../firebase-config/context";
 
 export default function Modal({ type, setIsModalOpen }) {
+  const firebaseContext = useContext(FirebaseContext);
   const [phoneNumber, setPhoneNumber] = useState("+91");
 
   let history = useHistory();
@@ -19,34 +22,37 @@ export default function Modal({ type, setIsModalOpen }) {
   };
 
   const loginWithFacebook = () => {
-    auth.signInWithPopup(facebookAuthProvider).then(result => {
-      console.log("facebook data", result);
+   firebaseContext.doFacebookSignIn()
+   .then(result => {
       setIsModalOpen(false)
     }).catch((error) => {
       console.warn("Error in login", error);
     })
   };
 
-  const loginWithGoogle = useCallback(async e => {
-    try {
-      await auth.signInWithPopup(googleAuthProvider);
-      setIsModalOpen(false);
-    } catch (error) {
-      console.warn("Error in Login");
-    }
-  }, [setIsModalOpen]);
+  const loginWithGoogle = () => {
+    firebaseContext
+      .doGoogleSignIn()
+      .then(authUser => {
+        setIsModalOpen(false)
+      }).catch(err => {
+        console.log(err);
+      })
+  }
 
   const loginWithPhone = () => {
     const recaptcha = new firebase.auth.RecaptchaVerifier("recaptch-container");
-    auth.signInWithPhoneNumber("+918906838026", recaptcha).then((e) => {
-      const code = prompt("enter Otp", "");
-      e.confirm(code).then((result) => {
-        console.log({ result })
-        setIsModalOpen(false);
-      }).catch((error) => {
-        console.log(error)
+    firebaseContext
+      .doPhoneSignIn(phoneNumber, recaptcha)
+      .then(e => {
+        const code = prompt("enter Otp");
+        e.confirm(code).then(result => {
+          setIsModalOpen(false)
+        }).catch(err => {
+          console.log(err)
+        });
+      }).catch(err => {
       })
-    })
   }
 
   return (

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import "./Header.scss";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaShoppingBag } from "react-icons/fa";
@@ -9,14 +9,15 @@ import { Link } from 'react-router-dom';
 import * as ROUTES from "../../constants/Routes";
 import { useStateValue } from '../../context-management/StateProvider';
 import Modal from '../Modal/Modal';
-import { auth } from '../../firebase-config/firebase';
 import { ACTIONS } from '../../context-management/constants';
+import FirebaseContext from '../../firebase-config/context';
 
 
 function Header() {
     const [isHambergerOpen, setIsHambergerOpen] = useState(false);
     const [isLoginClicked, setIsLoginClicked] = useState(false);
     const [{ basket, user }, dispatch] = useStateValue();
+    const firebase = useContext(FirebaseContext);
     const handleHamberger = () => {
         setIsHambergerOpen(true)
     }
@@ -26,7 +27,8 @@ function Header() {
         } else {
             // auth.signOut().then(() => { }).catch(err => console.warn("Error during logout"));
             alert("Sure Want to Log Out ? ");
-            auth.signOut();
+            firebase.auth.signOut();
+            // auth.signOut();
             dispatch({
                 type: ACTIONS.SET_USER,
                 user: null,
