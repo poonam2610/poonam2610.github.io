@@ -7,7 +7,7 @@ import MustHaveSection from './MustHaveSection'
 
 function HomePage() {
   return (
-    <div className="content__container content">
+    <div className="content__container">
       <div className="carousel__container">
         <Carousel />
       </div>
