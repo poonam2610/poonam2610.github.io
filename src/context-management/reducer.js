@@ -8,6 +8,17 @@ export const initialState = {
 const reducer = (state, action) => {
   switch (action.type) {
     case ACTIONS.ADD_TO_BASKET:
+      const addIndex = state?.basket?.findIndex(
+        (basketItems) => basketItems.id === action.item.id
+      );
+      let addNewBasket = [...state.basket];
+      if (addIndex >= 0) {
+        addNewBasket.splice(addIndex, 0, action.item);
+        return {
+          ...state,
+          basket: addNewBasket,
+        };
+      }
       return {
         ...state,
         basket: [...state.basket, action.item],
