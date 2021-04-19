@@ -1,4 +1,5 @@
 import "./App.scss";
+import React, { useContext, useEffect } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import * as ROUTES from "./constants/Routes";
 import HomePage from "./components/HomePage/HomePage";
@@ -7,24 +8,50 @@ import Footer from "./components/Footer/Footer";
 import Products from "./components/Products/Products";
 import ProductDetails from "./components/ProductDetails/ProductDetails";
 import Checkout from "./components/Checkout/Checkout";
+import PrivateRoute from "./utility/PrivateRoute";
+import { useStateValue } from "./context-management/StateProvider";
+import { ACTIONS } from "./context-management/constants";
+import FirebaseContext from "./firebase-config/context";
 
 function App() {
+  const firebase = useContext(FirebaseContext);
+  const dispatch = useStateValue()[1];
+  useEffect(() => {
+    firebase.auth.onAuthStateChanged((authUser) => {
+      if (authUser) {
+        dispatch({
+          type: ACTIONS.SET_USER,
+          user: authUser,
+        });
+      } else {
+        dispatch({
+          type: ACTIONS.SET_USER,
+          user: null,
+        });
+      }
+    });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   return (
-    <BrowserRouter>
-      <div className="App">
+    <div className="App">
+      <BrowserRouter>
         <Switch>
-          <Route path={ROUTES.CHECKOUT}>
+          <PrivateRoute path={ROUTES.CHECKOUT}>
+            <Header />
             <Checkout />
-          </Route>
+            <Footer />
+          </PrivateRoute>
           <Route path={ROUTES.LOGIN}>
-            <h1>Login page</h1>
+            hi this is login page
+            {/*  <Modal /> */}
           </Route>
-          <Route path={`${ROUTES.PRODUCTS}/:category`}>
+          <Route exact path={`${ROUTES.CATEGORY}/:category`}>
             <Header />
             <Products />
             <Footer />
           </Route>
-          <Route path={`${ROUTES.PRODUCT__DETAILS}/:id`}>
+          <Route exact path={`${ROUTES.CATEGORY}/:category/:id`}>
             <ProductDetails />
           </Route>
           <Route exact path={ROUTES.HOME}>
@@ -33,8 +60,8 @@ function App() {
             <Footer />
           </Route>
         </Switch>
-      </div>
-    </BrowserRouter>
+      </BrowserRouter>
+    </div>
   );
 }
 

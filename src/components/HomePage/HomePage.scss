@@ -5,7 +5,7 @@
 .carousel__container {
   margin: 2rem auto 5rem;
 }
-.inDemand__text{
+.inDemand__text {
   font-size: 25px;
   font-weight: 800;
   margin: 13px;
@@ -25,7 +25,8 @@
     .cards {
       height: 100%;
       margin: 10px;
-      border-radius: 2rem;
+      border-bottom-right-radius: 3rem;
+      border-top-right-radius: 3rem;
       background-color: rgba(56, 19, 84, 0.2);
       overflow: hidden;
       cursor: pointer;
@@ -37,7 +38,7 @@
     display: flex;
     justify-content: space-between;
     .cards {
-      height:  98%;
+      height: 98%;
       width: 100%;
       margin: 10px;
       background-color: rgba(56, 19, 84, 0.2);
@@ -47,5 +48,3 @@
     }
   }
 }
-
-

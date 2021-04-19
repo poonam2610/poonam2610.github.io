@@ -1,5 +1,5 @@
 .product__card {
-  width: 21%;
+  width: 17%;
   margin: 12px;
   padding: 20px;
   border-radius: 5px;
@@ -9,9 +9,10 @@
   flex-direction: column;
 
   .product__cover {
-    width: 100%;
+    min-height: 130px;
+    max-height: 130px;
     border-radius: 2px;
-    flex-basis: 60%;
+    padding: 1px;
   }
   .product__title {
     font-size: 16px;
@@ -32,11 +33,8 @@
     transform: scale(1.05);
   }
 }
-.star__icon {
-  size: 25px;
-  background-color: white;
-}
-.link__style{
+
+.link__style {
   text-decoration: none;
   color: black;
   display: flex;
@@ -44,7 +42,7 @@
   height: 100%;
   cursor: default;
 }
-.add__to__cart{
+.add__to__cart {
   width: 100%;
   flex-basis: 6%;
   background-color: #ffd91d;
