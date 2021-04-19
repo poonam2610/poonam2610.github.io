@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import "./Header.scss";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaShoppingBag } from "react-icons/fa";
@@ -9,14 +9,31 @@ import { Link } from 'react-router-dom';
 import * as ROUTES from "../../constants/Routes";
 import { useStateValue } from '../../context-management/StateProvider';
 import Modal from '../Modal/Modal';
+import { ACTIONS } from '../../context-management/constants';
+import FirebaseContext from '../../firebase-config/context';
 
 
 function Header() {
     const [isHamburgerOpen, setIsHamburgerOpen] = useState(false);
-    const [isLoginClicked , setIsLoginClicked] = useState(false);
-    const [{ basket }] = useStateValue();
+    const [isLoginClicked, setIsLoginClicked] = useState(false);
+    const [{ basket, user }, dispatch] = useStateValue();
+    const firebase = useContext(FirebaseContext);
     const handleHamburger = () => {
         setIsHamburgerOpen(true)
+    }
+    const handleLogin = () => {
+        if (!user) {
+            setIsLoginClicked(true);
+        } else {
+            // auth.signOut().then(() => { }).catch(err => console.warn("Error during logout"));
+            alert("Sure Want to Log Out ? ");
+            firebase.auth.signOut();
+            // auth.signOut();
+            dispatch({
+                type: ACTIONS.SET_USER,
+                user: null,
+            });
+        }
     }
     // const cartItems = 50;
     return (
@@ -24,7 +41,7 @@ function Header() {
             <div className="header-hamburger" >
                 <GiHamburgerMenu className="hamburger-icon" onClick={handleHamburger} />
             </div>
-            {isHamburgerOpen && <Hamburger setIsHambergerOpen={setIsHamburgerOpen} />}
+            {isHamburgerOpen && <Hamburger setIsHamburgerOpen={setIsHamburgerOpen} />}
             <div className="search__bar">
                 <SearchBar />
             </div>
@@ -35,11 +52,11 @@ function Header() {
                 </div>
             </Link>
             <div className="header-icons">
-                <div className="login">
+                <div className="login" onClick={() => handleLogin()}>
                     <BsPersonFill className="person" />
-                
-                  <div className="login__text" onClick={()=> setIsLoginClicked(true)}>Login\SignUp</div>
-              
+
+                    <div className="login__text">{user ? "SignOut" : "SignIn/SignUp"}</div>
+
                 </div>
                 <Link className="link__style" to={ROUTES.CHECKOUT}>
                     <div className="basket">
@@ -48,7 +65,7 @@ function Header() {
                     </div>
                 </Link>
             </div>
-            {isLoginClicked && <Modal setIsLoginClicked={setIsLoginClicked}/>}
+            {isLoginClicked && <Modal type="login" setIsModalOpen={setIsLoginClicked} />}
 
         </div>
     )

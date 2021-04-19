@@ -8,7 +8,6 @@ function Products() {
   const { category } = useParams();
   const [filteredData, setFilteredData] = useState([]);
 
-  // console.log({ category });
   useEffect(() => {
     const newData = data.default.filter((value) =>
       value.category.includes(category)

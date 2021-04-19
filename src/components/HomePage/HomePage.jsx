@@ -9,18 +9,17 @@ function HomePage() {
   return (
     <div className="content__container content">
       <div className="carousel__container">
-        <Carousel/>
+        <Carousel />
       </div>
       <div>
-      <Categories/>
+        <Categories />
       </div>
       <div>
-        <MustHaveSection/>
+        <MustHaveSection />
       </div>
       <div>
-        <PromisePage/>
+        <PromisePage />
       </div>
-  
     </div>
   )
 }

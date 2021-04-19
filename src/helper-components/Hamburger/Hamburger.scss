@@ -1,4 +1,4 @@
-.hamberger__container {
+.hamburger__container {
   position: fixed;
   width: 21%;
   background-image: linear-gradient(#46265f,#46275feb ,#664283ed);
@@ -16,7 +16,7 @@
   left: 3%;
   cursor: pointer;
 }
-.hamberger__items {
+.hamburger__items {
     display: flex;
     flex-direction: column;
     top: 8rem;
@@ -30,7 +30,7 @@
       cursor: pointer;
   }
 }
-.hamberger__link{
+.hamburger__link{
   color: white;
   text-decoration: none;
 }

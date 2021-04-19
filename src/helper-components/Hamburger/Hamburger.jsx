@@ -4,24 +4,24 @@ import { FaRegWindowClose } from "react-icons/fa"
 import { Link } from 'react-router-dom';
 import * as ROUTES from "../../constants/Routes";
 
-function Hamberger({ setIsHambergerOpen }) {
+function Hamburger({ setIsHamburgerOpen }) {
   const handleClick = () => {
-    setIsHambergerOpen(false);
+    setIsHamburgerOpen(false);
   }
   return (
-    <div className="hamberger__container">
+    <div className="hamburger__container">
       <FaRegWindowClose className="close__icon" onClick={handleClick} />
-      <div className="hamberger__items">
-        <Link className="hamberger__link" to={`${ROUTES.PRODUCTS}/electronics`}>
+      <div className="hamburger__items">
+        <Link className="hamburger__link" to={`${ROUTES.CATEGORY}/electronics`}>
           <div onClick={handleClick}>Electronics</div>
         </Link>
-        <Link className="hamberger__link" to={`${ROUTES.PRODUCTS}/men`}>
+        <Link className="hamburger__link" to={`${ROUTES.CATEGORY}/men`}>
           <div onClick={handleClick}>Men's Clothing</div>
         </Link>
-        <Link className="hamberger__link" to={`${ROUTES.PRODUCTS}/lady`}>
+        <Link className="hamburger__link" to={`${ROUTES.CATEGORY}/lady`}>
           <div onClick={handleClick}>Women's Clothing</div>
         </Link>
-        <Link className="hamberger__link" to={`${ROUTES.PRODUCTS}/kid`}>
+        <Link className="hamburger__link" to={`${ROUTES.CATEGORY}/kid`}>
           <div onClick={handleClick}>Kid's Clothing</div>
         </Link>
       </div>
@@ -29,4 +29,4 @@ function Hamberger({ setIsHambergerOpen }) {
   )
 }
 
-export default Hamberger
+export default Hamburger
