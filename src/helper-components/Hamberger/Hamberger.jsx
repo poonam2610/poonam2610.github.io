@@ -12,16 +12,16 @@ function Hamberger({ setIsHambergerOpen }) {
     <div className="hamberger__container">
       <FaRegWindowClose className="close__icon" onClick={handleClick} />
       <div className="hamberger__items">
-        <Link className="hamberger__link" to={`${ROUTES.PRODUCTS}/electronics`}>
+        <Link className="hamberger__link" to={`${ROUTES.CATEGORY}/electronics`}>
           <div onClick={handleClick}>Electronics</div>
         </Link>
-        <Link className="hamberger__link" to={`${ROUTES.PRODUCTS}/men`}>
+        <Link className="hamberger__link" to={`${ROUTES.CATEGORY}/men`}>
           <div onClick={handleClick}>Men's Clothing</div>
         </Link>
-        <Link className="hamberger__link" to={`${ROUTES.PRODUCTS}/lady`}>
+        <Link className="hamberger__link" to={`${ROUTES.CATEGORY}/lady`}>
           <div onClick={handleClick}>Women's Clothing</div>
         </Link>
-        <Link className="hamberger__link" to={`${ROUTES.PRODUCTS}/kid`}>
+        <Link className="hamberger__link" to={`${ROUTES.CATEGORY}/kid`}>
           <div onClick={handleClick}>Kid's Clothing</div>
         </Link>
       </div>

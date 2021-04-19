@@ -46,12 +46,12 @@ function App() {
             hi this is login page
             {/*  <Modal /> */}
           </Route>
-          <Route path={`${ROUTES.PRODUCTS}/:category`}>
+          <Route exact path={`${ROUTES.CATEGORY}/:category`}>
             <Header />
             <Products />
             <Footer />
           </Route>
-          <Route path={`${ROUTES.PRODUCT__DETAILS}/:id`}>
+          <Route exact path={`${ROUTES.CATEGORY}/:category/:id`}>
             <ProductDetails />
           </Route>
           <Route exact path={ROUTES.HOME}>
