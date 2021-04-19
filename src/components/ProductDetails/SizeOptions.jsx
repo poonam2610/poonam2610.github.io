@@ -10,8 +10,8 @@ export default function SizeOptions() {
   ));
 
   return (
-    <div>
-      <h5>SELECT SIZE</h5>
+    <div className="sizeOptions-container">
+      <h5>SELECT SIZE :</h5>
       {sizeOptions}
     </div>
   );

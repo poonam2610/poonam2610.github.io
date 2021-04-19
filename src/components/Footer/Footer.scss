@@ -1,5 +1,5 @@
 .footer-container {
-  background-color: black;
+  background-color: #474554;
   width: 100%;
   color: white;
   display: flex;
@@ -7,7 +7,7 @@
 }
 h2 {
   font-size: 20px;
-  font-weight: 800;
+  font-weight: 500;
   margin-top: 15px;
   margin-bottom: 15px;
   opacity: 0.9;
@@ -26,23 +26,21 @@ h2 {
     width: 33%;
     padding: 0px 15px;
   }
-  .our-promise {
-    width: 33%;
-    padding: 0px 15px;
-  }
+
 }
 p {
   opacity: 0.7;
   font-size: 13px;
   margin-bottom: 8px;
   span {
-    font-weight: 700;
+    font-weight: 500;
   }
 }
 .card-heading {
   margin-bottom: 1px;
 }
 .cards-image {
+  margin-top: 1rem;
   font-size: 22px;
   opacity: 80%;
   width: 34%;
@@ -54,27 +52,4 @@ p {
   padding: 0px 9px;
   //   line-height: 1.3rem;
 }
-.promise-cards-container {
-  display: flex;
-  justify-content: space-between;
-  .promise-card {
-    width: 20%;
-    height: 6rem;
-    border: 1px solid rgba(255, 255, 255, 0.7);
-    border-radius: 43px;
-    position: relative;
-    .card-icons {
-      position: absolute;
-      top: 22%;
-      left: 34%;
-      font-size: 25px;
-      opacity: 0.8;
-    }
-    .card-text {
-      font-size: 8px;
-      position: relative;
-      top: 57%;
-      text-align: center;
-    }
-  }
-}
+

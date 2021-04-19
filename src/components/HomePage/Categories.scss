@@ -1,0 +1,51 @@
+.categories__container {
+  background-color: #f8eae1;
+  padding-top: 2rem;
+}
+.categories__text {
+  font-size: 40px;
+  font-weight: 400;
+  margin: 13px;
+  opacity: 0.9;
+  padding-left: 5rem;
+  // font-family: 'Elsie Swash Caps', cursive;
+  letter-spacing: 1px;
+}
+.card__container {
+  display: flex;
+  height: 35rem;
+  justify-content: space-evenly;
+  .left__container {
+    width: 100%;
+    padding: 2rem 0 3rem 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .cards {
+      height: 100%;
+      margin: 10px;
+      border-top-right-radius: 25px;
+      border-bottom-right-radius: 25px;
+      overflow: hidden;
+      cursor: pointer;
+    }
+    #kids {
+      margin-bottom: 0;
+    }
+  }
+  .right__container {
+    width: 100%;
+    padding: 2rem 5rem 3rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    .cards {
+      height: 98%;
+      width: 100%;
+      margin: 10px;
+      border-bottom-left-radius: 25px;
+      border-bottom-right-radius: 25px;
+      overflow: hidden;
+      cursor: pointer;
+    }
+  }
+}

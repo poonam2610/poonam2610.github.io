@@ -2,14 +2,14 @@ import React from "react";
 import "./AddToBagButton.scss";
 import { FaShoppingBag } from "react-icons/fa";
 
-export default function AddToBagButton() {
+export default function AddToBagButton({handleClick}) {
   return (
-    <div>
-      <button className="outer-button">
+    <div >
+      <button className="outer-button" onClick={()=>{handleClick()}} >
         Add to bag
-        <button className="icon">
+        <div className="icon-container">
           <FaShoppingBag />
-        </button>
+        </div>
       </button>
     </div>
   );

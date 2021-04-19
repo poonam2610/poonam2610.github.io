@@ -12,6 +12,7 @@ import PrivateRoute from "./utility/PrivateRoute";
 import { useStateValue } from "./context-management/StateProvider";
 import { ACTIONS } from "./context-management/constants";
 import FirebaseContext from "./firebase-config/context";
+import Modal from "./components/Modal/Modal";
 
 function App() {
   const firebase = useContext(FirebaseContext);
@@ -43,8 +44,7 @@ function App() {
             <Footer />
           </PrivateRoute>
           <Route path={ROUTES.LOGIN}>
-            hi this is login page
-            {/*  <Modal /> */}
+            <Modal />
           </Route>
           <Route exact path={`${ROUTES.CATEGORY}/:category`}>
             <Header />
@@ -52,7 +52,9 @@ function App() {
             <Footer />
           </Route>
           <Route exact path={`${ROUTES.CATEGORY}/:category/:id`}>
+            <Header/>
             <ProductDetails />
+            <Footer/>
           </Route>
           <Route exact path={ROUTES.HOME}>
             <Header />

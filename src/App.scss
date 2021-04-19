@@ -12,3 +12,12 @@
   color: var(--textColor);
 }
 // $PrimaryColor:#3B1D53;
+body{
+  font-family: "Montserrat", sans-serif;
+}
+
+.content {
+  -webkit-filter: blur(0);
+  filter: blur(0);
+opacity: 1;
+}

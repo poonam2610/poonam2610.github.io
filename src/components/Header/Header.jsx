@@ -4,7 +4,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { FaShoppingBag } from "react-icons/fa";
 import { BsPersonFill } from "react-icons/bs";
 import SearchBar from '../../helper-components/SearchBar/SearchBar';
-import Hamberger from '../../helper-components/Hamberger/Hamberger';
+import Hamburger from '../../helper-components/Hamburger/Hamburger';
 import { Link } from 'react-router-dom';
 import * as ROUTES from "../../constants/Routes";
 import { useStateValue } from '../../context-management/StateProvider';
@@ -14,12 +14,12 @@ import FirebaseContext from '../../firebase-config/context';
 
 
 function Header() {
-    const [isHambergerOpen, setIsHambergerOpen] = useState(false);
+    const [isHamburgerOpen, setIsHamburgerOpen] = useState(false);
     const [isLoginClicked, setIsLoginClicked] = useState(false);
     const [{ basket, user }, dispatch] = useStateValue();
     const firebase = useContext(FirebaseContext);
-    const handleHamberger = () => {
-        setIsHambergerOpen(true)
+    const handleHamburger = () => {
+        setIsHamburgerOpen(true)
     }
     const handleLogin = () => {
         if (!user) {
@@ -37,17 +37,18 @@ function Header() {
     }
     // const cartItems = 50;
     return (
-        <div className="header">
+        <div className="header content">
             <div className="header-hamburger" >
-                <GiHamburgerMenu className="hamburger-icon" onClick={handleHamberger} />
+                <GiHamburgerMenu className="hamburger-icon" onClick={handleHamburger} />
             </div>
-            {isHambergerOpen && <Hamberger setIsHambergerOpen={setIsHambergerOpen} />}
+            {isHamburgerOpen && <Hamburger setIsHamburgerOpen={setIsHamburgerOpen} />}
             <div className="search__bar">
                 <SearchBar />
             </div>
             <Link to={ROUTES.HOME}>
                 <div className="header-heading">
-                    WARD<span style={{ color: "yellow" }}>ROBE</span>
+                    w<span style={{ color: "#af332b" }}>A</span>rdrobe
+                
                 </div>
             </Link>
             <div className="header-icons">
