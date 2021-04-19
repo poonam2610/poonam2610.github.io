@@ -4,15 +4,16 @@ import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import { StateProvider } from "./context-management/StateProvider";
 import reducer, { initialState } from "./context-management/reducer";
-import { BrowserRouter } from "react-router-dom";
 import App from "./App";
+import FirebaseContext from "./firebase-config/context";
+import Firebase from "./firebase-config/firebase";
 
 ReactDOM.render(
   <React.StrictMode>
     <StateProvider reducer={reducer} initialState={initialState}>
-      <BrowserRouter>
+      <FirebaseContext.Provider value={new Firebase()}>
         <App />
-      </BrowserRouter>
+      </FirebaseContext.Provider>
     </StateProvider>
   </React.StrictMode>,
   document.getElementById("root")
