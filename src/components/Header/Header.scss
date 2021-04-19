@@ -1,10 +1,9 @@
 @import "../../utility/color/colors.scss";
 
 .header {
-  height: 5em;
-  background-image: linear-gradient(to right, $PrimaryColor, #6b4689);
+  // background-image: linear-gradient(to right, $PrimaryColor, #6b4689);
   display: flex;
-  padding: 5px;
+  padding: 3rem;
 }
 .header-hamburger {
   margin-top: 10px;
@@ -17,28 +16,36 @@
   left: 31%;
   width: 36%;
   height: 3rem;
+  display: none;
 }
 .hamburger-icon {
   color: white;
   font-size: 43px;
 }
 .header-heading {
-  font-size: 30px;
-  color: white;
+  font-size: 40px;
+  color: black;
   position: absolute;
   left: 42%;
   cursor: pointer;
+  // font-family: 'Allerta Stencil', sans-serif;
+  // font-family: 'Poiret One', cursive;
+  // font-family: 'Snowburst One', cursive;
+  // font-family: 'Lexend Giga', sans-serif;
+  // font-family: 'Zilla Slab Highlight', cursive;
+  font-family: 'Original Surfer', cursive;
+  letter-spacing: 0.1px;
 }
 .header-icons {
   position: absolute;
   right: 4rem;
   top: 18px;
-  color: white;
+  color: black;
   display: flex;
   .login {
     display: flex;
     align-items: center;
-    font-weight: 600;
+    font-weight: 500;
     cursor: pointer;
     margin-right: 10px;
     .person {
@@ -51,7 +58,7 @@
     .cart {
       margin-left: 15px;
       font-size: 26px;
-      color: white;
+      color: black;
     }
     .single__digit__cart__notification {
       background: red;
@@ -64,10 +71,10 @@
       top: -5px;
       .single__digit__cart__number {
         position: absolute;
-        font-weight: 600;
+        font-weight: 500;
         top: -2px;
         left: 4px;
-        color: white;
+        color: black;
       }
     }
     .double__digit__cart__notification {
@@ -81,15 +88,15 @@
       top: -5px;
       .double__digit__cart__number {
         position: absolute;
-        color: white;
-        font-weight: 600;
+        color: black;
+        font-weight: 500;
       }
     }
   }
 }
 .link__style {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 .login__text{
   color: black;

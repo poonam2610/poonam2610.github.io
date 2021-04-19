@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Hamberger.scss";
+import "./Hamburger.scss";
 import { FaRegWindowClose } from "react-icons/fa"
 import { Link } from 'react-router-dom';
 import * as ROUTES from "../../constants/Routes";

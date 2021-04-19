@@ -1,6 +1,19 @@
+.quantity-container{
+  display: flex;
+  align-items: center;
+  margin: 10px auto;
+  h5{
+    font-size: 15px;
+    margin-right: 10px;
+  }
+}
+
 .plus , .minus{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   background-color: #fff;
-  border: 1px solid #bfc0c6;
+  border: 2px solid #bfc0c6;
   border-radius: 40px;
   padding: 0;
   min-width: 40px;
@@ -19,5 +32,9 @@
 }
 
 .counter{
-  margin: 0 1rem;
+  font-size: 15px;
+  font-weight: 400;
+  width: 2.5rem;
+  display: inline-block;
+ text-align: center;
 }

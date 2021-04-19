@@ -1,51 +1,9 @@
 .content__container {
-  padding: 4rem 5rem;
+  padding: 4rem auto;
 }
 
 .carousel__container {
   margin: 2rem auto 5rem;
-}
-.inDemand__text{
-  font-size: 25px;
-  font-weight: 800;
-  margin: 13px;
-  opacity: 0.9;
-}
-.card__container {
-  display: flex;
-  height: 30rem;
-  // justify-content: space-evenly;
-  .left__container {
-    width: 100%;
-    padding: 2rem;
-    padding-right: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    .cards {
-      height: 100%;
-      margin: 10px;
-      border-radius: 2rem;
-      background-color: rgba(56, 19, 84, 0.2);
-      overflow: hidden;
-      cursor: pointer;
-    }
-  }
-  .right__container {
-    width: 100%;
-    padding: 2rem;
-    display: flex;
-    justify-content: space-between;
-    .cards {
-      height:  98%;
-      width: 100%;
-      margin: 10px;
-      background-color: rgba(56, 19, 84, 0.2);
-      border-radius: 2rem;
-      overflow: hidden;
-      cursor: pointer;
-    }
-  }
 }
 
 

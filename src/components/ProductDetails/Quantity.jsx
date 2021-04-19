@@ -5,8 +5,8 @@ import "./Quantity.scss";
 export default function Quantity(props) {
   const [count, setCount] = useState(1);
   return (
-    <div>
-      <h5>SELECT QUANTITY</h5>
+    <div className="quantity-container">
+      <h5>SELECT QUANTITY :</h5>
       <div className={`quantityButton-container ${props.className? props.className : ""}`}>
         <button className="plus" onClick={() => setCount(count + 1)}>
           <FaPlus />

@@ -1,20 +1,29 @@
+.sizeOptions-container{
+  display: flex;
+  align-items: center;
+  
+  margin: 10px auto;
+}
+
 h5{
   font-weight: 500;
-  margin-bottom: 10px;
+  margin-right: 10px;
+  font-size: 15px;
 }
 .dot{
-    background-color: #fff;
-    border: 1px solid #bfc0c6;
+  font-size: 15px;
+    background-color: gray;
+    border: none;
     border-radius: 40px;
     padding: 0;
     min-width: 40px;
     height: 40px;
     text-align: center;
     cursor: pointer;
-    color: #282c3f;
+    color: white;
     margin: 5px;
     &:hover{
-      border-color:#c91a1a; 
-      color:#c91a1a;
+      background-color:#c91a1a; 
+    
     }
 }
