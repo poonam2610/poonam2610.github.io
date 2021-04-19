@@ -9,11 +9,12 @@ import StarRating from '../Star-rating/StarRating';
 function ProductsCard({ value }) {
     const { id, image, title, price } = value;
     const rating = 3;
-    const dispatch = useStateValue()[1];
+    const [{user},dispatch] = useStateValue();
 
 
     const handleClick = () => {
         // console.log(bucket);
+        if(user)
         dispatch({
             type: ACTIONS.ADD_TO_BASKET,
             item: {

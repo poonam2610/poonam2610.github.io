@@ -9,14 +9,29 @@ import { Link } from 'react-router-dom';
 import * as ROUTES from "../../constants/Routes";
 import { useStateValue } from '../../context-management/StateProvider';
 import Modal from '../Modal/Modal';
+import { auth } from '../../firebase-config/firebase';
+import { ACTIONS } from '../../context-management/constants';
 
 
 function Header() {
     const [isHambergerOpen, setIsHambergerOpen] = useState(false);
-    const [isLoginClicked , setIsLoginClicked] = useState(false);
-    const [{ basket }] = useStateValue();
+    const [isLoginClicked, setIsLoginClicked] = useState(false);
+    const [{ basket, user }, dispatch] = useStateValue();
     const handleHamberger = () => {
         setIsHambergerOpen(true)
+    }
+    const handleLogin = () => {
+        if (!user) {
+            setIsLoginClicked(true);
+        } else {
+            // auth.signOut().then(() => { }).catch(err => console.warn("Error during logout"));
+            alert("Sure Want to Log Out ? ");
+            auth.signOut();
+            dispatch({
+                type: ACTIONS.SET_USER,
+                user: null,
+            });
+        }
     }
     // const cartItems = 50;
     return (
@@ -34,11 +49,11 @@ function Header() {
                 </div>
             </Link>
             <div className="header-icons">
-                <div className="login">
+                <div className="login" onClick={() => handleLogin()}>
                     <BsPersonFill className="person" />
-                
-                  <div className="login__text" onClick={()=> setIsLoginClicked(true)}>Login\SignUp</div>
-              
+
+                    <div className="login__text">{user ? "SignOut" : "SignIn/SignUp"}</div>
+
                 </div>
                 <Link className="link__style" to={ROUTES.CHECKOUT}>
                     <div className="basket">
@@ -47,7 +62,7 @@ function Header() {
                     </div>
                 </Link>
             </div>
-            {isLoginClicked && <Modal setIsLoginClicked={setIsLoginClicked}/>}
+            {isLoginClicked && <Modal type="login" setIsModalOpen={setIsLoginClicked} />}
 
         </div>
     )

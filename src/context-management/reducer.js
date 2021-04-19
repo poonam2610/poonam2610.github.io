@@ -2,6 +2,7 @@ import { ACTIONS } from "./constants";
 
 export const initialState = {
   basket: [],
+  user: null,
 };
 
 const reducer = (state, action) => {
@@ -23,6 +24,12 @@ const reducer = (state, action) => {
         console.warn("can't remove product");
       }
       return { ...state, basket: newBasket };
+
+    case ACTIONS.SET_USER:
+      return {
+        ...state,
+        user: action.user,
+      };
 
     default:
       return state;
