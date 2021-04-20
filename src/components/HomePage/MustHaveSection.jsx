@@ -10,7 +10,6 @@ export default function MustHaveSection(){
       <h1>Must Haves</h1>
       <div className = "mustHaveCards-container">
         {dataForCards.map((item, index)=>{
-          console.log("Lets see if VAlue is object", item)
           return <MustHaveCard key = {index} value ={item}/>
         })}
       </div>

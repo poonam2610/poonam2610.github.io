@@ -1,5 +1,5 @@
 import "./App.scss";
-import React, { useContext, useEffect } from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import * as ROUTES from "./constants/Routes";
 import HomePage from "./components/HomePage/HomePage";
@@ -11,15 +11,15 @@ import Checkout from "./components/Checkout/Checkout";
 import PrivateRoute from "./utility/PrivateRoute";
 import { useStateValue } from "./context-management/StateProvider";
 import { ACTIONS } from "./context-management/constants";
-import FirebaseContext from "./firebase-config/context";
 import Modal from "./components/Modal/Modal";
+import { auth, db } from "./firebase-config/firebase";
 
 function App() {
-  const firebase = useContext(FirebaseContext);
-  const dispatch = useStateValue()[1];
+  const [{ basket, user }, dispatch] = useStateValue();
+
   useEffect(() => {
-    firebase.auth.onAuthStateChanged((authUser) => {
-      if (authUser) {
+    auth.onAuthStateChanged((authUser) => {
+      if (!!authUser) {
         dispatch({
           type: ACTIONS.SET_USER,
           user: authUser,
@@ -29,10 +29,44 @@ function App() {
           type: ACTIONS.SET_USER,
           user: null,
         });
+        dispatch({
+          type: ACTIONS.CLEAR_BASKET,
+        });
       }
     });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  useEffect(() => {
+    if (!!user && !!basket) {
+      db.collection("user")
+        .doc(user.uid)
+        .get()
+        .then((value) => {
+          const data = value.data()?.basket || [];
+          // console.log(data);
+          data.forEach((item) => {
+            dispatch({
+              type: ACTIONS.ADD_TO_BASKET,
+              item: item,
+            });
+          });
+        })
+        .catch();
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [user]);
+
+  useEffect(() => {
+    if (!!user) {
+      if (basket?.length > 0) {
+        console.log(basket);
+        db.collection("user").doc(user?.uid).set({
+          basket: basket,
+        });
+      }
+    }
+  }, [basket, user]);
 
   return (
     <div className="App">
@@ -52,9 +86,9 @@ function App() {
             <Footer />
           </Route>
           <Route exact path={`${ROUTES.CATEGORY}/:category/:id`}>
-            <Header/>
+            <Header />
             <ProductDetails />
-            <Footer/>
+            <Footer />
           </Route>
           <Route exact path={ROUTES.HOME}>
             <Header />
