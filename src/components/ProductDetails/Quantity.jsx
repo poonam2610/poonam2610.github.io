@@ -1,20 +1,19 @@
-import React, { useState } from "react";
+import React from "react";
 import { FaPlus, FaMinus } from "react-icons/fa";
 import "./Quantity.scss";
 
-export default function Quantity() {
-  const [count, setCount] = useState(1);
+export default function Quantity({ itemQuantity, setItemQuantity }) {
   return (
     <div className="quantity-container">
       <h5>SELECT QUANTITY :</h5>
       <div className='quantityButton-container'>
-        <button className="plus" onClick={() => setCount(count + 1)}>
+        <button className="plus" id="plus" onClick={() => { setItemQuantity(itemQuantity + 1) }}>
           <FaPlus />
         </button>
-        <span className="counter">{count}</span>
-        <button
+        <span className="counter">{itemQuantity}</span>
+        <button id="minus"
           className="minus"
-          onClick={() => (count === 0 ? setCount(0) : setCount(count - 1))}
+          onClick={() => { (itemQuantity === 1 ? setItemQuantity(1) : setItemQuantity(itemQuantity - 1)) }}
         >
           <FaMinus />
         </button>

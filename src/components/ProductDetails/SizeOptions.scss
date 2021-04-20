@@ -1,29 +1,46 @@
-.sizeOptions-container{
+.sizeOptions-container {
   display: flex;
   align-items: center;
-  
+
   margin: 10px auto;
 }
 
-h5{
+h5 {
   font-weight: 500;
   margin-right: 10px;
   font-size: 15px;
 }
-.dot{
+.dot {
   font-size: 15px;
-    background-color: gray;
-    border: none;
-    border-radius: 40px;
-    padding: 0;
-    min-width: 40px;
-    height: 40px;
-    text-align: center;
-    cursor: pointer;
-    color: white;
-    margin: 5px;
-    &:hover{
-      background-color:#c91a1a; 
-    
-    }
+  background-color: gray;
+  border: none;
+  border-radius: 40px;
+  padding: 0;
+  min-width: 40px;
+  height: 40px;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+  margin: 5px;  
+  outline: none;
+  &:hover {
+    background-color: #c91a1a;
+  }
 }
+.hidden {
+  font-size: 15px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 40px;
+  padding: 0;
+  min-width: 40px;
+  height: 40px;
+  text-align: center;
+  color: black;
+  margin: 5px;
+  outline: none;
+}
+.selected{
+  background-color: #c91a1a;
+}
+
