@@ -21,6 +21,9 @@
   &:hover{
     color:#c91a1a ;
     border-color: #c91a1a;
+    .icon-container{
+      background-color:#c91a1a; 
+    }
   }
 
 }
@@ -34,7 +37,5 @@
   border-radius: 50%;
   background-color: gray;
   color: white;
-  &:hover{
-    background-color:#c91a1a; 
-  }
+
 }

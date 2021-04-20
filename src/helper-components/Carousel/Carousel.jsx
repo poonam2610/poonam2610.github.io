@@ -3,9 +3,8 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import "./Carousel.scss";
 
 
-const arr = [0, 1, 2];
 
-export default function Carousel({ numOfSlides = 3 }) {
+export default function Carousel({numOfSlides = 2}) {
   const [current, setCurrent] = useState(0);
   const length = numOfSlides;
 
@@ -20,24 +19,10 @@ export default function Carousel({ numOfSlides = 3 }) {
   return (
     <div className="slider">
       <FaChevronLeft className="left-arrow" onClick={prevSlide}/>
-     
-      {arr.map((num, index) => {
-        return (
-          <div
-           
-            key={index}
-          >
-            {index === current && (
-              <img
-                src={`/bg${num}.jpg`}
-                alt=""
-                className="image"
-                width="50%"
-              />
-            )}
-          </div>
-        );
-      })}
+     <div className="carouselImage-container">
+       <img src={`/bg-hp${current}.png`} alt=""/>
+     </div>
+
       <FaChevronRight className="right-arrow" onClick={nextSlide} />
     </div>
   );

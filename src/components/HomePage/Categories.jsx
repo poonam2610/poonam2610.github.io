@@ -18,7 +18,7 @@ export default function Categories(){
             </div>
             <div className="cards" id="kids">
               <Link to={`${ROUTES.CATEGORY}/kids`}>
-                <CategoriesCard image="/kids-category.jpg" title="Kid's Clothing" />
+                <CategoriesCard image="/kids-section.png" title="Kid's Clothing" />
               </Link>
             </div>
           </div>
