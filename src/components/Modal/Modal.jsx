@@ -1,14 +1,11 @@
-import React, { useContext, useState } from "react";
+import React, { useState } from "react";
 import "./Modal.scss";
 import { FaFacebookF, FaTimes } from "react-icons/fa";
-import firebase from "firebase";
 import { FcGoogle } from "react-icons/fc";
 import { useHistory } from "react-router-dom";
-// import { auth, facebookAuthProvider, googleAuthProvider, firebase } from "../../firebase-config/firebase";
-import FirebaseContext from "../../firebase-config/context";
+import { auth, facebookAuthProvider, googleAuthProvider, firebase } from "../../firebase-config/firebase";
 
 export default function Modal({ type, setIsModalOpen }) {
-  const firebaseContext = useContext(FirebaseContext);
   const [phoneNumber, setPhoneNumber] = useState("+91");
 
   let history = useHistory();
@@ -22,21 +19,20 @@ export default function Modal({ type, setIsModalOpen }) {
   };
 
   const loginWithFacebook = () => {
-    firebaseContext
-      .doFacebookSignIn()
-      .then((result) => {
-        setIsModalOpen(false);
-      })
-      .catch((error) => {
+    auth.signInWithPopup(facebookAuthProvider)
+      .then(result => {
+        setIsModalOpen(false)
+      }).catch((error) => {
         console.warn("Error in login", error);
-      });
+      })
   };
 
   const loginWithGoogle = () => {
-    firebaseContext
-      .doGoogleSignIn()
-      .then((authUser) => {
-        setIsModalOpen(false);
+    auth.signInWithPopup(googleAuthProvider)
+      .then(authUser => {
+        setIsModalOpen(false)
+      }).catch(err => {
+        console.log(err);
       })
       .catch((err) => {
         console.log(err);
@@ -45,9 +41,8 @@ export default function Modal({ type, setIsModalOpen }) {
 
   const loginWithPhone = () => {
     const recaptcha = new firebase.auth.RecaptchaVerifier("recaptch-container");
-    firebaseContext
-      .doPhoneSignIn(phoneNumber, recaptcha)
-      .then((e) => {
+    auth.signInWithPhoneNumber(phoneNumber, recaptcha)
+      .then(e => {
         const code = prompt("enter Otp");
         e.confirm(code)
           .then((result) => {
@@ -57,14 +52,14 @@ export default function Modal({ type, setIsModalOpen }) {
             console.log(err);
           });
       })
-      .catch((err) => {});
+      .catch((err) => { });
   };
 
   return (
     <div className="modal-container">
       <div className="modal">
         <button className="close" onClick={handleCloseModal}>
-          <FaTimes/>
+          <FaTimes />
         </button>
         <div className="sign-up">
           <h3>Sign up to continue shopping !!</h3>
@@ -87,11 +82,10 @@ export default function Modal({ type, setIsModalOpen }) {
             type="text"
             value={phoneNumber}
             placeholder="PHONE NUMBER"
-            onChange={(e) => setPhoneNumber(e.target.value)}
-            
-          />
+            onChange={(e) => setPhoneNumber(e.target.value)} />
+
           <button className="sign-up-button" id="phone-button" onClick={loginWithPhone}>
-          <h5>Sign up with phone</h5></button>
+            <h5>Sign up with phone</h5></button>
 
           <div id="recaptch-container"></div>
 

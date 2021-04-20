@@ -11,7 +11,7 @@ export default function Categories(){
         <h2 className="categories__text">Categories</h2>
         <div className="card__container">
           <div className="left__container">
-            <div className="cards" id="electronics">
+            <div className="cards" id="accessories">
               <Link to={`${ROUTES.CATEGORY}/accessories`}>
                 <CategoriesCard image="/Accessories-category.jpg" title="Accessories" />
               </Link>

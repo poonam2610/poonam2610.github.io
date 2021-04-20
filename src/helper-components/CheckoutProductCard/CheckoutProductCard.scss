@@ -14,6 +14,7 @@
   padding: 5px;
   max-width: 185px;
   width: 300px;
+  cursor: pointer;
   .product__image {
     width: 100%;
     height: 100%;
@@ -25,9 +26,8 @@
   flex-direction: column;
   .product__title {
     font-weight: 700;
-    /* margin-bottom: 2px; */
+    cursor: pointer;
     line-height: 31px;
-    /* justify-content: space-between; */
     font-size: 17px;
   }
   .product__description {
@@ -41,11 +41,11 @@
       padding: 4px;
       outline: none;
     }
-    .increase__quantity{
+    .increase__quantity {
       width: 20px;
       margin-right: 4px;
     }
-    .decrease__quantity{
+    .decrease__quantity {
       width: 19px;
       margin-left: 4px;
     }

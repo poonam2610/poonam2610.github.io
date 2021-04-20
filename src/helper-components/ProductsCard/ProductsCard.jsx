@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./ProductsCard.scss";
 import { useStateValue } from "../../context-management/StateProvider";
 import * as ROUTES from "../../constants/Routes";
@@ -6,15 +6,16 @@ import { Link } from "react-router-dom";
 import { ACTIONS } from "../../context-management/constants";
 import StarRating from "../Star-rating/StarRating";
 import AddToBagButton from "../../components/ProductDetails/AddToBagButton";
+import Modal from "../../components/Modal/Modal";
 
 function ProductsCard({ value }) {
-  const { id, image, title, price, category } = value;
-  const rating = 3;
+  const { id, image, title, price, category, rating } = value;
+  const [isLoginClicked, setIsLoginClicked] = useState(false);
   const [{ user }, dispatch] = useStateValue();
 
 
   const handleClick = () => {
-    if (user)
+    if (!!user) {
       dispatch({
         type: ACTIONS.ADD_TO_BASKET,
         item: {
@@ -22,12 +23,17 @@ function ProductsCard({ value }) {
           image: image,
           title: title,
           price: price,
-          rating: rating
+          rating: rating,
+          size: "M",
+          category: category
         }
       });
-    alert("Successfully added to basket");
+      alert("Successfully added to basket");
+    } else {
+      setIsLoginClicked(true)
+    }
   }
-  return (
+  return (<>
     <div className="product__card">
       <Link className="link__style" to={`${ROUTES.CATEGORY}/${category}/${id}`}>
         <img className="product__cover" src={image} alt={title} />
@@ -37,6 +43,8 @@ function ProductsCard({ value }) {
       </Link>
       <AddToBagButton handleClick={handleClick} />
     </div >
+    {isLoginClicked && <Modal setIsModalOpen={setIsLoginClicked} />}
+  </>
   )
 }
 

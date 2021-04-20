@@ -9,7 +9,7 @@ const reducer = (state, action) => {
   switch (action.type) {
     case ACTIONS.ADD_TO_BASKET:
       const addIndex = state?.basket?.findIndex(
-        (basketItems) => basketItems.id === action.item.id
+        (basketItems) => basketItems.id === action.item?.id
       );
       let addNewBasket = [...state.basket];
       if (addIndex >= 0) {
@@ -40,6 +40,12 @@ const reducer = (state, action) => {
       return {
         ...state,
         user: action.user,
+      };
+
+    case ACTIONS.CLEAR_BASKET:
+      return {
+        ...state,
+        basket: [],
       };
 
     default:
