@@ -9,9 +9,8 @@ import AddToBagButton from "../../components/ProductDetails/AddToBagButton";
 import Modal from "../../components/Modal/Modal";
 
 function ProductsCard({ value }) {
-  const { id, image, title, price, category } = value;
+  const { id, image, title, price, category, rating } = value;
   const [isLoginClicked, setIsLoginClicked] = useState(false);
-  const rating = 3;
   const [{ user }, dispatch] = useStateValue();
 
 
@@ -25,8 +24,8 @@ function ProductsCard({ value }) {
           title: title,
           price: price,
           rating: rating,
-          size:"M",
-          category:category
+          size: "M",
+          category: category
         }
       });
       alert("Successfully added to basket");

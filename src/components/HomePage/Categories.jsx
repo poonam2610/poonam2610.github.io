@@ -11,14 +11,14 @@ export default function Categories(){
         <h2 className="categories__text">Categories</h2>
         <div className="card__container">
           <div className="left__container">
-            <div className="cards" id="jewelery">
-              <Link to={`${ROUTES.CATEGORY}/jewelery`}>
-                <CategoriesCard image="/Accessories-category.jpg" title="Jewelery" />
+            <div className="cards" id="accessories">
+              <Link to={`${ROUTES.CATEGORY}/accessories`}>
+                <CategoriesCard image="/Accessories-category.jpg" title="Accessories" />
               </Link>
             </div>
             <div className="cards" id="kids">
               <Link to={`${ROUTES.CATEGORY}/kids`}>
-                <CategoriesCard image="/kids-category.jpg" title="Kid's Clothing" />
+                <CategoriesCard image="/kids-section.png" title="Kid's Clothing" />
               </Link>
             </div>
           </div>

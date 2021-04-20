@@ -33,7 +33,7 @@ function ProductDetails() {
 
   const handleClick = () => {
     if (!!user) {
-      if (product.category === "jewelery") {
+      if (product.category === "accessories") {
         setErrorMessage("");
         for (let i = 0; i < itemQuantity; i++) {
           dispatch({
@@ -43,7 +43,7 @@ function ProductDetails() {
               image: product.image,
               title: product.title,
               price: product.price,
-              // rating: product.rating,
+              rating: product.rating,
               category: product.category,
             },
           });
@@ -60,7 +60,7 @@ function ProductDetails() {
               image: product.image,
               title: product.title,
               price: product.price,
-              // rating: product.rating,
+              rating: product.rating,
               category: product.category,
               size: size
             },
@@ -90,10 +90,10 @@ function ProductDetails() {
           <p className="price">{`Rs ${product.price}`}</p>
         </div>
         <div className="productDetails-rating-container">
-          <StarRating rating={4} />
+          <StarRating rating={product.rating} />
         </div>
 
-        {product.category !== "jewelery" && <SizeOptions sizes={product?.availableSize} setSize={setSize} />}
+        {product.category !== "accessories" && <SizeOptions sizes={product?.availableSize} setSize={setSize} />}
         <Quantity itemQuantity={itemQuantity} setItemQuantity={setItemQuantity} />
         <div id="addItemToBag">
           <AddToBagButton handleClick={handleClick} />
