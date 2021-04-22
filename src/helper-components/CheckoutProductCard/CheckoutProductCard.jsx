@@ -5,30 +5,67 @@ import StarRating from '../Star-rating/StarRating';
 import * as ROUTES from "../../constants/Routes";
 import "./CheckoutProductCard.scss";
 import { useHistory } from 'react-router-dom';
+import { db } from '../../firebase-config/firebase';
 
 function CheckoutProductCard({ value }) {
-    const dispatch = useStateValue()[1];
+    const [{ basket, user }, dispatch] = useStateValue();
     const history = useHistory();
-    console.log("value checkout", value)
     const { id, image, title, description, rating, price, quantity, size, category } = value;
-    const handleIncreaseQuantity = () => {
-        dispatch({
-            type: ACTIONS.ADD_TO_BASKET,
-            item: {
-                id: id,
-                image: image,
-                title: title,
-                price: price,
-                rating: rating,
-                size: size
-            }
+
+    const clearFirebaseBasket = () => {
+        db.collection("user").doc(user?.uid).set({
+            basket: [],
         });
     }
+
+    const handleIncreaseQuantity = () => {
+        if (category === "accessories") {
+            dispatch({
+                type: ACTIONS.ADD_TO_BASKET,
+                item: {
+                    id: id,
+                    image: image,
+                    title: title,
+                    price: price,
+                    rating: rating,
+                    category: category,
+                    size: "M"
+                }
+            });
+        } else {
+            dispatch({
+                type: ACTIONS.ADD_TO_BASKET,
+                item: {
+                    id: id,
+                    image: image,
+                    title: title,
+                    price: price,
+                    rating: rating,
+                    category: category,
+                    size: size
+                }
+            });
+        }
+    }
     const handleDecreaseQuantity = () => {
-        dispatch({
-            type: ACTIONS.REMOVE_FROM_BASKET,
-            id: id
-        });
+        if (basket.length === 1) {
+            dispatch({
+                type: ACTIONS.REMOVE_FROM_BASKET,
+                item: {
+                    id: id,
+                    size: size
+                }
+            });
+            clearFirebaseBasket();
+        } else {
+            dispatch({
+                type: ACTIONS.REMOVE_FROM_BASKET,
+                item: {
+                    id: id,
+                    size: size
+                }
+            });
+        }
     }
 
     return (
@@ -40,11 +77,11 @@ function CheckoutProductCard({ value }) {
                 <div className="product__title" onClick={() => history.push(`${ROUTES.CATEGORY}/${category}/${id}`)}>{title}</div>
                 <div className="product__description">{description}</div>
                 <div className="product__rating"><StarRating rating={rating} /></div>
-                <div className="product__rating">size: {size}</div>
+                {category !== "accessories" && <div className="product__rating">size: {size}</div>}
                 <div className="product__quantity">
-                    <button className="increase__quantity" onClick={handleIncreaseQuantity}>+</button>
-                    <span className="product__quantity">{quantity}</span>
                     <button className="decrease__quantity" onClick={handleDecreaseQuantity}>-</button>
+                    <span className="product__quantity">{quantity}</span>
+                    <button className="increase__quantity" onClick={handleIncreaseQuantity}>+</button>
                 </div>
                 <div className="product__price">Rs {price}</div>
             </div>

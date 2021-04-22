@@ -1,3 +1,4 @@
+
 import { ACTIONS } from "./constants";
 
 export const initialState = {
@@ -9,7 +10,9 @@ const reducer = (state, action) => {
   switch (action.type) {
     case ACTIONS.ADD_TO_BASKET:
       const addIndex = state?.basket?.findIndex(
-        (basketItems) => basketItems.id === action.item?.id
+        (basketItems) =>
+          basketItems.id === action.item?.id &&
+          basketItems.size === action.item?.size
       );
       let addNewBasket = [...state.basket];
       if (addIndex >= 0) {
@@ -26,7 +29,9 @@ const reducer = (state, action) => {
 
     case ACTIONS.REMOVE_FROM_BASKET:
       const index = state.basket.findIndex(
-        (basketItems) => basketItems.id === action.id
+        (basketItems) =>
+          basketItems.item?.id === action.id &&
+          basketItems.size === action.item?.size
       );
       let newBasket = [...state.basket];
       if (index >= 0) {
@@ -52,5 +57,10 @@ const reducer = (state, action) => {
       return state;
   }
 };
+
+
+export const totalPrice = (basket) => {
+  return Math.round(basket?.reduce((amount, item) => item.price + amount, 0) * Math.pow(10, 2)) / Math.pow(10, 2);
+}
 
 export default reducer;

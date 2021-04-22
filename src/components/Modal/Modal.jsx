@@ -32,11 +32,8 @@ export default function Modal({ type, setIsModalOpen }) {
       .then(authUser => {
         setIsModalOpen(false)
       }).catch(err => {
-        console.log(err);
+        console.log(err.message);
       })
-      .catch((err) => {
-        console.log(err);
-      });
   };
 
   const loginWithPhone = () => {
@@ -49,7 +46,7 @@ export default function Modal({ type, setIsModalOpen }) {
             setIsModalOpen(false);
           })
           .catch((err) => {
-            console.log(err);
+            console.log(err.message);
           });
       })
       .catch((err) => { });
