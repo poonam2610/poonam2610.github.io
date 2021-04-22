@@ -41,9 +41,9 @@
   }
 }
 .sign-up-button{
-  width: 80%;
+  width: 74%;
   display: inline-flex;
- align-items: center;
+  align-items: center;
   padding: 10px 20px ;
   border-radius: 5px;
   border: none;
@@ -63,7 +63,7 @@
   }
 }
 input{
-  width: 80%;
+  width: 74%;
   padding: 10px 20px ;
   border-radius: 5px;
   border: 1px solid black;
@@ -95,4 +95,12 @@ input{
  &:focus{
    outline: none;
  }
+}
+
+#recaptcha-container{
+  width: 74%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.5rem;
 }

@@ -1,10 +1,15 @@
-import React from 'react';
-import { ACTIONS } from '../../context-management/constants';
-import { totalPrice } from '../../context-management/reducer';
-import { useStateValue } from '../../context-management/StateProvider';
-import { db } from '../../firebase-config/firebase';
-import CheckoutProductCard from '../../helper-components/CheckoutProductCard/CheckoutProductCard';
+
+
+import React from "react";
+import { ACTIONS } from "../../context-management/constants";
+import { useStateValue } from "../../context-management/StateProvider";
+import { db } from "../../firebase-config/firebase";
+import CheckoutProductCard from "../../helper-components/CheckoutProductCard/CheckoutProductCard";
+import AddToBagButton from "../ProductDetails/AddToBagButton";
+// import AddToBagButton from "../ProductDetails/AddToBagButton";
 import "./Checkout.scss";
+
+
 function Checkout() {
     const [{ basket, user }, dispatch] = useStateValue();
     const newBasket = [];
@@ -27,32 +32,75 @@ function Checkout() {
         }
     }
 
-    const handleProceedToPay=()=>{
+    const handleProceedToPay = () => {
         console.log("proceed to pay clicked")
     }
 
+    const totalPrice = (basket) => {
+        return (
+            Math.round(
+                basket?.reduce((amount, item) => item.price + amount, 0) *
+                Math.pow(10, 2)
+            ) / Math.pow(10, 2)
+        );
+    };
 
     return (
         <div className="checkout">
             <div className="checkout__left">
-                <div className="checkout__header">
-                    <h2 className="heading">Your Items in cart</h2>
-                    <button className="checkout__clear" onClick={clearFirebaseBasket}>clear all-cart Items</button>
+                <div className="heading__left">
+                    <h2 className="heading">Your items in bag</h2>
+                    <button className="emptybag__button" onClick={clearFirebaseBasket}>EMPTY BAG</button>
                 </div>
                 <hr />
                 {newBasket.map((value, i) => {
-                    return <CheckoutProductCard key={i} value={value} />
+                    return <CheckoutProductCard key={i} value={value} ordered={false} />;
                 })}
             </div>
             <div className="checkout__right">
+                <h2>Price Details ({basket.length} items)</h2>
+                <hr />
                 <div className="subtotal">
-                    <span className="subtotal__heading">Subtotal({basket.length} items): <strong>Rs {totalPrice(basket)}</strong></span>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Total MRP: </td>
+                                <td>
+                                    Rs. {totalPrice(basket)}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Convenience Fee</td>
+                                <td>Rs. {((totalPrice(basket) * 10) / 100).toFixed(2)}</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <hr />
+                                </td>
+                                <td>
+                                    <hr />
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>Total Amount</td>
+                                <td><strong>Rs. {(totalPrice(basket) + ((totalPrice(basket) * 10) / 100)).toFixed(2)}</strong></td>
+                            </tr>
+                        </tfoot>
+
+                    </table>
+                    <div className="order__button">
+                        {basket.length > 0 && <AddToBagButton content="PLACE ORDER TO BUY" handleClick={handleProceedToPay} />}
+                    </div>
                 </div>
-                <div className="subtotal__text">This items Contains Gift</div>
-                < button className={`checkout__button ${basket?.length < 1 ? "disable" : ""}`} disabled={basket.length < 1} onClick={handleProceedToPay}>Proceed to Buy</button>
+
             </div>
-        </div >
-    )
+        </div>
+    );
+
+
+
 }
 
-export default Checkout
+export default Checkout;

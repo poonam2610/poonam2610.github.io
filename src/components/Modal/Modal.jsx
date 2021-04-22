@@ -3,28 +3,39 @@ import "./Modal.scss";
 import { FaFacebookF, FaTimes } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import { useHistory } from "react-router-dom";
-import { auth, facebookAuthProvider, googleAuthProvider, firebase } from "../../firebase-config/firebase";
+import {
+  auth,
+  facebookAuthProvider,
+  googleAuthProvider,
+  firebase,
+} from "../../firebase-config/firebase";
+import { useStateValue } from "../../context-management/StateProvider";
+import { ACTIONS } from "../../context-management/constants";
 
 export default function Modal({ type, setIsModalOpen }) {
   const [phoneNumber, setPhoneNumber] = useState("+91");
-
+  const dispatch = useStateValue()[1];
   let history = useHistory();
 
   const handleCloseModal = () => {
     if (type === "private") {
       history.goBack();
-      setIsModalOpen(false);
     }
+    dispatch({
+      type: ACTIONS.CHANGE_MODAL_STATE,
+    });
     setIsModalOpen(false);
   };
 
   const loginWithFacebook = () => {
-    auth.signInWithPopup(facebookAuthProvider)
-      .then(result => {
-        setIsModalOpen(false)
-      }).catch((error) => {
-        console.warn("Error in login", error);
+    auth
+      .signInWithPopup(facebookAuthProvider)
+      .then((result) => {
+        setIsModalOpen(false);
       })
+      .catch((error) => {
+        console.warn("Error in login", error);
+      });
   };
 
   const loginWithGoogle = () => {
@@ -37,23 +48,29 @@ export default function Modal({ type, setIsModalOpen }) {
   };
 
   const loginWithPhone = () => {
-    const recaptcha = new firebase.auth.RecaptchaVerifier("recaptch-container");
-    auth.signInWithPhoneNumber(phoneNumber, recaptcha)
-      .then(e => {
+    const recaptcha = new firebase.auth.RecaptchaVerifier(
+      "recaptcha-container"
+    );
+    auth
+      .signInWithPhoneNumber(phoneNumber, recaptcha)
+      .then((e) => {
         const code = prompt("enter Otp");
         e.confirm(code)
           .then((result) => {
             setIsModalOpen(false);
+            dispatch({
+              type: ACTIONS.CHANGE_MODAL_STATE,
+            });
           })
           .catch((err) => {
             console.log(err.message);
           });
       })
-      .catch((err) => { });
+      .catch((err) => {});
   };
 
   return (
-    <div className="modal-container">
+    <div className="modal-container noblur">
       <div className="modal">
         <button className="close" onClick={handleCloseModal}>
           <FaTimes />
@@ -79,13 +96,17 @@ export default function Modal({ type, setIsModalOpen }) {
             type="text"
             value={phoneNumber}
             placeholder="PHONE NUMBER"
-            onChange={(e) => setPhoneNumber(e.target.value)} />
+            onChange={(e) => setPhoneNumber(e.target.value)}
+          />
 
-          <button className="sign-up-button" id="phone-button" onClick={loginWithPhone}>
-            <h5>Sign up with phone</h5></button>
-
-          <div id="recaptch-container"></div>
-
+          <button
+            className="sign-up-button"
+            id="phone-button"
+            onClick={loginWithPhone}
+          >
+            <h5>Sign up with phone</h5>
+          </button>
+          <div id="recaptcha-container"></div>
         </div>
       </div>
     </div>

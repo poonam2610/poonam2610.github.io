@@ -1,6 +1,6 @@
 .checkout {
   display: flex;
-  margin: 21px;
+  padding: 3rem;
 }
 .checkout__left {
   display: flex;
@@ -10,14 +10,21 @@
 .checkout__right {
   width: 100%;
   flex-basis: 23%;
-  border: 1px solid;
-  height: 11rem;
   display: flex;
-  padding: 21px;
   flex-direction: column;
   margin-left: 4%;
   .subtotal {
-    font-size: 19px;
+    font-size: 16px;
+    margin-top: 1rem;
+    padding: 10px;
+    background-color: #f8eae1;
+    border-radius: 5px;
+    table {
+      width: 100%;
+    }
+    td {
+      padding: 10px 0;
+    }
   }
   .subtotal__text {
     margin-top: 8px;
@@ -38,13 +45,27 @@
 .disable {
   cursor: not-allowed !important;
 }
-.checkout__header{
+.checkout__header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.checkout__clear{
+.checkout__clear {
   height: fit-content;
   width: fit-content;
   padding: 4px;
+}
+.heading__left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.emptybag__button {
+  padding: 10px;
+  font-family: "Montserrat";
+  font-size: 16px;
+  background-color: #f0ebe5;
+  border: none;
+  border-radius: 10px;
+  outline: none;
 }
