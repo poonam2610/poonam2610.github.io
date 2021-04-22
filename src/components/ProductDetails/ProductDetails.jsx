@@ -4,7 +4,7 @@ import * as data from "../../data/data.json";
 import { useParams } from "react-router";
 import SizeOptions from "./SizeOptions";
 import AddToBagButton from "./AddToBagButton";
-import Quantity from "./Quantity"
+import Quantity from "./Quantity";
 import { useStateValue } from "../../context-management/StateProvider";
 import { ACTIONS } from "../../context-management/constants";
 import StarRating from "../../helper-components/Star-rating/StarRating";
@@ -17,10 +17,12 @@ function ProductDetails() {
   const { id } = useParams();
   const [isLoginClicked, setIsLoginClicked] = useState(false);
   const [itemQuantity, setItemQuantity] = useState(1);
-  const [{ user }, dispatch] = useStateValue();
-
+  const [{ user}, dispatch] = useStateValue();
+  
   useEffect(() => {
-    const filteredProduct = data.default.filter((value) => value.id === parseInt(id));
+    const filteredProduct = data.default.filter(
+      (value) => value.id === parseInt(id)
+    );
     const prod = Object.assign({}, filteredProduct[0]);
     setProduct(prod);
   }, [id]);
@@ -29,7 +31,7 @@ function ProductDetails() {
     if (size) {
       setErrorMessage("");
     }
-  }, [size])
+  }, [size]);
 
   const handleClick = () => {
     if (!!user) {
@@ -62,20 +64,19 @@ function ProductDetails() {
               price: product.price,
               rating: product.rating,
               category: product.category,
-              size: size
+              size: size,
             },
           });
         }
         alert("Successfully added to basket");
       }
-
-
     } else {
       setIsLoginClicked(true);
     }
   };
 
   return (
+    <>
     <div className="productDisplayContainer">
       <div className="productImage">
         <img src={product.image} alt="shirt-img" />
@@ -84,7 +85,8 @@ function ProductDetails() {
         <div>
           <h3>{product.title}</h3>
           <p>
-            Description lorem ipsum is good when you dont know what to write and fill the area with some text.
+            Description lorem ipsum is good when you dont know what to write and
+            fill the area with some text.
           </p>
           <hr />
           <p className="price">{`Rs ${product.price}`}</p>
@@ -93,15 +95,23 @@ function ProductDetails() {
           <StarRating rating={product.rating} />
         </div>
 
-        {product.category !== "accessories" && <SizeOptions sizes={product?.availableSize} setSize={setSize} />}
-        <Quantity itemQuantity={itemQuantity} setItemQuantity={setItemQuantity} />
+        {product.category !== "accessories" && (
+          <SizeOptions sizes={product?.availableSize} setSize={setSize} />
+        )}
+        <Quantity
+          itemQuantity={itemQuantity}
+          setItemQuantity={setItemQuantity}
+        />
         <div id="addItemToBag">
-          <AddToBagButton handleClick={handleClick} />
+          <AddToBagButton content ="ADD TO BAG" handleClick={handleClick}  />
         </div>
         {!!errorMessage && <div className="error__message">{errorMessage}</div>}
       </div>
-      {isLoginClicked && <Modal type="productDetails" setIsModalOpen={setIsLoginClicked} />}
     </div>
+      {isLoginClicked && (
+        <Modal type="productDetails" setIsModalOpen={setIsLoginClicked} />
+      )}
+    </>
   );
 }
 

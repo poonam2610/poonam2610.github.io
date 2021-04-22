@@ -20,7 +20,7 @@ export default function Carousel({numOfSlides = 2}) {
     <div className="slider">
       <FaChevronLeft className="left-arrow" onClick={prevSlide}/>
      <div className="carouselImage-container">
-       <img src={`/bg-hp${current}.png`} alt=""/>
+       <img src={`/bg-hp${current}.png`} className="image" alt=""/>
      </div>
 
       <FaChevronRight className="right-arrow" onClick={nextSlide} />

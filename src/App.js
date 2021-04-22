@@ -15,7 +15,7 @@ import Modal from "./components/Modal/Modal";
 import { auth, db } from "./firebase-config/firebase";
 
 function App() {
-  const [{ basket, user }, dispatch] = useStateValue();
+  const [{ basket, user, isModalOpen}, dispatch] = useStateValue();
 
   useEffect(() => {
     auth.onAuthStateChanged((authUser) => {
@@ -34,7 +34,8 @@ function App() {
         });
       }
     });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+  
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
@@ -60,7 +61,6 @@ function App() {
   useEffect(() => {
     if (!!user) {
       if (basket?.length > 0) {
-        console.log(basket);
         db.collection("user").doc(user?.uid).set({
           basket: basket,
         });
@@ -69,7 +69,7 @@ function App() {
   }, [basket, user]);
 
   return (
-    <div className="App">
+    <div className= {`App ${isModalOpen ? "blurred": "" }`}>
       <BrowserRouter>
         <Switch>
           <PrivateRoute path={ROUTES.CHECKOUT}>

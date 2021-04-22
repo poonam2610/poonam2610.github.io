@@ -3,6 +3,7 @@ import { ACTIONS } from "./constants";
 export const initialState = {
   basket: [],
   user: null,
+  isModalOpen: false,
 };
 
 const reducer = (state, action) => {
@@ -48,6 +49,12 @@ const reducer = (state, action) => {
         basket: [],
       };
 
+    case ACTIONS.CHANGE_MODAL_STATE:
+      return {
+        ...state,
+        isModalOpen: !state.isModalOpen,
+      };
+// 
     default:
       return state;
   }

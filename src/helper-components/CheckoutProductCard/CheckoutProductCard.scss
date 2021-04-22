@@ -2,15 +2,14 @@
   display: flex;
   margin: 10px;
   padding: 10px;
-  border: 1px solid;
-  /* height: min-content; */
-  /* min-height: 200px; */
-  max-height: 200px;
-  position: relative;
+  max-height: 250px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
+  background-color: white;
 }
 .product__image__container {
   min-width: 185px;
-  border: 1px solid;
   padding: 5px;
   max-width: 185px;
   width: 300px;
@@ -18,39 +17,84 @@
   .product__image {
     width: 100%;
     height: 100%;
+    // border-top-right-radius: 40px;
+    // border-bottom-right-radius: 40px;
   }
 }
 .product__details__container {
   padding-left: 15px;
   display: flex;
   flex-direction: column;
+  flex-basis:65%;
   .product__title {
-    font-weight: 700;
-    cursor: pointer;
-    line-height: 31px;
-    font-size: 17px;
+    h4{
+      font-weight: 500;
+      cursor: pointer;
+      line-height: 31px;
+      font-size: 17px;
+    }
   }
   .product__description {
     font-size: 14px;
     /* line-height: 16px; */
     margin-bottom: 11px;
   }
+
+  .product__size{
+    margin: 5px 0;
+    h4{
+      font-weight: 400;
+      font-size: 16px;
+    }
+  }
   .product__quantity {
     margin-top: 11px;
     .select__quantity {
-      padding: 4px;
-      outline: none;
+      font-size: 15px;
+      font-weight: 400;
+      width: 2.5rem;
+      display: inline-block;
+     text-align: center;
+     margin-bottom: 20px;
     }
-    .increase__quantity {
-      width: 20px;
-      margin-right: 4px;
+    .increase__quantity, .decrease__quantity {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #fff;
+      border: 2px solid #bfc0c6;
+      border-radius: 40px;
+      padding: 0;
+      min-width: 30px;
+      min-height: 30px;
+      text-align: center;
+      cursor: pointer;
+      color: #282c3f;
+      margin: 5px;
+      &:hover{
+        border-color:#c91a1a; 
+        color:#c91a1a;
+      }
+      &:focus {
+        outline: none;
+      }
     }
-    .decrease__quantity {
-      width: 19px;
-      margin-left: 4px;
-    }
+
   }
-  .product__price {
-    margin-top: 15px;
+
+}
+.product__price {
+  h4{
+
+    font-weight: 500;
+    line-height: 31px;
+    font-size: 17px;
   }
+}
+.remove__or__return{
+  margin-top: 10px;
+  padding: 10px;
+  width: max-content;
+  background-color: rgb(255, 228, 233);
+  border-radius: 10px;
 }
