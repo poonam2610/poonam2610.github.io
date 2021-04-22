@@ -45,6 +45,7 @@ function ProductDetails() {
               price: product.price,
               rating: product.rating,
               category: product.category,
+              size: "M"
             },
           });
         }

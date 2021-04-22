@@ -37,17 +37,26 @@
   }
   .product__quantity {
     margin-top: 11px;
+    margin-left: 6px;
     .select__quantity {
       padding: 4px;
       outline: none;
     }
     .increase__quantity {
-      width: 20px;
-      margin-right: 4px;
+      width: 22px;
+      height: 22px;
+      margin-left: 4px;
+      border: 1px solid black;
+      border-radius: 1rem;
+      outline: none;
     }
     .decrease__quantity {
-      width: 19px;
-      margin-left: 4px;
+      width: 22px;
+      height: 22px;
+      margin-left: -4px;
+      border: 1px solid black;
+      border-radius: 1rem;
+      outline: none;
     }
   }
   .product__price {

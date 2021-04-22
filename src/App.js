@@ -40,11 +40,10 @@ function App() {
   useEffect(() => {
     if (!!user && !!basket) {
       db.collection("user")
-        .doc(user.uid)
+        .doc(user?.uid)
         .get()
         .then((value) => {
           const data = value.data()?.basket || [];
-          // console.log(data);
           data.forEach((item) => {
             dispatch({
               type: ACTIONS.ADD_TO_BASKET,
@@ -60,7 +59,6 @@ function App() {
   useEffect(() => {
     if (!!user) {
       if (basket?.length > 0) {
-        console.log(basket);
         db.collection("user").doc(user?.uid).set({
           basket: basket,
         });
