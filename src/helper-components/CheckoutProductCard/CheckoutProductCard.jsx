@@ -4,45 +4,73 @@ import { useStateValue } from "../../context-management/StateProvider";
 import StarRating from "../Star-rating/StarRating";
 import * as ROUTES from "../../constants/Routes";
 import "./CheckoutProductCard.scss";
-import { useHistory } from "react-router-dom";
-import { FaPlus, FaMinus } from "react-icons/fa";
+import { useHistory } from 'react-router-dom';
+import { db } from '../../firebase-config/firebase';
+import { FaMinus, FaPlus } from "react-icons/fa";
 
 function CheckoutProductCard({ value, ordered }) {
-  const dispatch = useStateValue()[1];
+  const [{ basket, user }, dispatch] = useStateValue();
   const history = useHistory();
-  console.log("value checkout", value);
-  const {
-    id,
-    image,
-    title,
-    description,
-    rating,
-    price,
-    quantity,
-    size,
-    category,
-  } = value;
+  const { id, image, title, description, rating, price, quantity, size, category } = value;
+
+  const clearFirebaseBasket = () => {
+    db.collection("user").doc(user?.uid).set({
+      basket: [],
+    });
+  }
+
   const handleIncreaseQuantity = () => {
-    dispatch({
-      type: ACTIONS.ADD_TO_BASKET,
-      item: {
-        id: id,
-        image: image,
-        title: title,
-        price: price,
-        rating: rating,
-        size: size,
-      },
-    });
-  };
+    if (category === "accessories") {
+      dispatch({
+        type: ACTIONS.ADD_TO_BASKET,
+        item: {
+          id: id,
+          image: image,
+          title: title,
+          price: price,
+          rating: rating,
+          category: category,
+          size: "M"
+        }
+      });
+    } else {
+      dispatch({
+        type: ACTIONS.ADD_TO_BASKET,
+        item: {
+          id: id,
+          image: image,
+          title: title,
+          price: price,
+          rating: rating,
+          category: category,
+          size: size
+        }
+      });
+    }
+  }
   const handleDecreaseQuantity = () => {
-    dispatch({
-      type: ACTIONS.REMOVE_FROM_BASKET,
-      id: id,
-    });
-  };
+    if (basket.length === 1) {
+      dispatch({
+        type: ACTIONS.REMOVE_FROM_BASKET,
+        item: {
+          id: id,
+          size: size
+        }
+      });
+      clearFirebaseBasket();
+    } else {
+      dispatch({
+        type: ACTIONS.REMOVE_FROM_BASKET,
+        item: {
+          id: id,
+          size: size
+        }
+      });
+    }
+  }
 
   return (
+
     <div className="basket__card">
       <div
         className="product__image__container"
@@ -65,8 +93,8 @@ function CheckoutProductCard({ value, ordered }) {
           <h4>Size: {size}</h4>
         </div>
         <div className="product__quantity">
-          Quantity: 
-          { !ordered && <button
+          Quantity:
+          {!ordered && <button
             className="decrease__quantity "
             onClick={handleDecreaseQuantity}
           >
@@ -74,7 +102,7 @@ function CheckoutProductCard({ value, ordered }) {
             <FaMinus />{" "}
           </button>}
           <span className="select__quantity">{quantity}</span>
-         { !ordered && <button
+          {!ordered && <button
             className="increase__quantity "
             onClick={handleIncreaseQuantity}
           >

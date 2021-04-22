@@ -39,17 +39,12 @@ export default function Modal({ type, setIsModalOpen }) {
   };
 
   const loginWithGoogle = () => {
-    auth
-      .signInWithPopup(googleAuthProvider)
-      .then((authUser) => {
-        setIsModalOpen(false);
+    auth.signInWithPopup(googleAuthProvider)
+      .then(authUser => {
+        setIsModalOpen(false)
+      }).catch(err => {
+        console.log(err.message);
       })
-      .catch((err) => {
-        console.log(err);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
   };
 
   const loginWithPhone = () => {
@@ -68,7 +63,7 @@ export default function Modal({ type, setIsModalOpen }) {
             });
           })
           .catch((err) => {
-            console.log(err);
+            console.log(err.message);
           });
       })
       .catch((err) => {});
