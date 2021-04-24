@@ -1,0 +1,29 @@
+.address__main__container {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 17rem;
+}
+.address__container {
+  display: flex;
+  flex-direction: column;
+  .address__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .address__title {
+    }
+    .add__new__address__button {
+    }
+  }
+  .default__address__container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.payment__container {
+}
+
+.address__card {
+  padding: 2rem;
+  border: 1px solid;
+}

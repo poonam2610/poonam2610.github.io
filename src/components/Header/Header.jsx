@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Header.scss";
-import { FaBars , FaShoppingBag } from "react-icons/fa";
+import { FaBars, FaShoppingBag } from "react-icons/fa";
 import { BsPersonFill } from "react-icons/bs";
 import Hamburger from "../../helper-components/Hamburger/Hamburger";
 import { Link } from "react-router-dom";
@@ -14,7 +14,7 @@ import SearchBar from "../../helper-components/SearchBar/SearchBar";
 function Header() {
   const [isHamburgerOpen, setIsHamburgerOpen] = useState(false);
   const [isLoginClicked, setIsLoginClicked] = useState(false);
-  const [{ basket, user}, dispatch] = useStateValue();
+  const [{ basket, user }, dispatch] = useStateValue();
 
   const handleHamburger = () => {
     setIsHamburgerOpen(true);
@@ -22,9 +22,9 @@ function Header() {
 
   const handleLogin = () => {
     if (!user) {
-      dispatch({
-        type: ACTIONS.CHANGE_MODAL_STATE,
-      });
+      // dispatch({
+      //   type: ACTIONS.CHANGE_MODAL_STATE,
+      // });
       setIsLoginClicked(true);
     } else {
       alert("Sure Want to Log Out ? ");
@@ -36,7 +36,7 @@ function Header() {
     }
   };
   return (
-    <div className = "header">
+    <div className="header">
       <div className="Logo-part">
         <div className="header-hamburger">
           <FaBars className="hamburger-icon" onClick={handleHamburger} />
@@ -49,8 +49,8 @@ function Header() {
             w<span style={{ color: "#af332b" }}>A</span>rdrobe
           </div>
         </Link>
-        </div>
-        <div className="icons-and-modal">
+      </div>
+      <div className="icons-and-modal">
         <div className="header-icons">
           <div className="header__searchBar">
             <SearchBar />
@@ -89,7 +89,7 @@ function Header() {
           </Link>
         </div>
         {isLoginClicked && (
-          <Modal type="login" setIsModalOpen={setIsLoginClicked} />
+          <Modal setIsModalOpen={setIsLoginClicked}  />
 
         )}
       </div>

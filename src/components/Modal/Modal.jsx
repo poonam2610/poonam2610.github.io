@@ -9,21 +9,20 @@ import {
   googleAuthProvider,
   firebase,
 } from "../../firebase-config/firebase";
-import { useStateValue } from "../../context-management/StateProvider";
-import { ACTIONS } from "../../context-management/constants";
 
 export default function Modal({ type, setIsModalOpen }) {
   const [phoneNumber, setPhoneNumber] = useState("+91");
-  const dispatch = useStateValue()[1];
-  let history = useHistory();
+  const history = useHistory();
+
 
   const handleCloseModal = () => {
     if (type === "private") {
-      history.goBack();
+      history.push("/");
+      // history.goBack();
     }
-    dispatch({
-      type: ACTIONS.CHANGE_MODAL_STATE,
-    });
+    // dispatch({
+    //   type: ACTIONS.CHANGE_MODAL_STATE,
+    // });
     setIsModalOpen(false);
   };
 
@@ -31,6 +30,9 @@ export default function Modal({ type, setIsModalOpen }) {
     auth
       .signInWithPopup(facebookAuthProvider)
       .then((result) => {
+        // dispatch({
+        //   type: ACTIONS.CHANGE_MODAL_STATE,
+        // });
         setIsModalOpen(false);
       })
       .catch((error) => {
@@ -41,6 +43,9 @@ export default function Modal({ type, setIsModalOpen }) {
   const loginWithGoogle = () => {
     auth.signInWithPopup(googleAuthProvider)
       .then(authUser => {
+        // dispatch({
+        //   type: ACTIONS.CHANGE_MODAL_STATE,
+        // });
         setIsModalOpen(false)
       }).catch(err => {
         console.log(err.message);
@@ -57,16 +62,16 @@ export default function Modal({ type, setIsModalOpen }) {
         const code = prompt("enter Otp");
         e.confirm(code)
           .then((result) => {
+            // dispatch({
+            //   type: ACTIONS.CHANGE_MODAL_STATE,
+            // });
             setIsModalOpen(false);
-            dispatch({
-              type: ACTIONS.CHANGE_MODAL_STATE,
-            });
           })
           .catch((err) => {
             console.log(err.message);
           });
       })
-      .catch((err) => {});
+      .catch((err) => { });
   };
 
   return (
@@ -100,6 +105,7 @@ export default function Modal({ type, setIsModalOpen }) {
             onChange={(e) => setPhoneNumber(e.target.value)}
           />
 
+          <div id="recaptcha-container"></div>
           <button
             className="sign-up-button"
             id="phone-button"
@@ -107,7 +113,6 @@ export default function Modal({ type, setIsModalOpen }) {
           >
             <h5>Sign up with phone</h5>
           </button>
-          <div id="recaptcha-container"></div>
         </div>
       </div>
     </div>

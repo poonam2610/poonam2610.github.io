@@ -80,12 +80,15 @@ function ProductDetails() {
 
       }
     } else {
+      // dispatch({
+      //   type: ACTIONS.CHANGE_MODAL_STATE
+      // })
       setIsLoginClicked(true);
     }
   };
   return (
     <>
-      <div className="alertbox" style ={isProductAdded? {transform : "translateY(30vh)",transition: "all 0.7s ease"}: {transform : "translateY(-1000px)"}}>
+      <div className="alertbox" style ={isProductAdded? {transform : "translateY(50vh)",transition: "all 0.7s ease"}: {transform : "translateY(-1000px)"}}>
         <AlertBox product = {product} message = {"Added to bag!"}/>
       </div>
       <div className="productDisplayContainer">
@@ -123,7 +126,7 @@ function ProductDetails() {
         </div>
       </div>
       {isLoginClicked && (
-        <Modal type="productDetails" setIsModalOpen={setIsLoginClicked} />
+        <Modal setIsModalOpen={setIsLoginClicked} />
       )}
       <SimilarProducts category = {product.category} id = {product.id}></SimilarProducts>
     </>
