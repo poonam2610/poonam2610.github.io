@@ -12,18 +12,21 @@ import {
 import { useStateValue } from "../../context-management/StateProvider";
 import { ACTIONS } from "../../context-management/constants";
 
-export default function Modal({ type, setIsModalOpen }) {
+export default function Modal({ type,setIsModalOpen }) {
   const [phoneNumber, setPhoneNumber] = useState("+91");
   const dispatch = useStateValue()[1];
-  let history = useHistory();
+  const history = useHistory();
+  // const param = useParams();
+
 
   const handleCloseModal = () => {
     if (type === "private") {
-      history.goBack();
+      history.push("/");
+      // history.goBack();
     }
-    dispatch({
-      type: ACTIONS.CHANGE_MODAL_STATE,
-    });
+    // dispatch({
+    //   type: ACTIONS.CHANGE_MODAL_STATE,
+    // });
     setIsModalOpen(false);
   };
 
@@ -31,6 +34,9 @@ export default function Modal({ type, setIsModalOpen }) {
     auth
       .signInWithPopup(facebookAuthProvider)
       .then((result) => {
+        // dispatch({
+        //   type: ACTIONS.CHANGE_MODAL_STATE,
+        // });
         setIsModalOpen(false);
       })
       .catch((error) => {
@@ -41,6 +47,9 @@ export default function Modal({ type, setIsModalOpen }) {
   const loginWithGoogle = () => {
     auth.signInWithPopup(googleAuthProvider)
       .then(authUser => {
+        // dispatch({
+        //   type: ACTIONS.CHANGE_MODAL_STATE,
+        // });
         setIsModalOpen(false)
       }).catch(err => {
         console.log(err.message);
@@ -57,16 +66,16 @@ export default function Modal({ type, setIsModalOpen }) {
         const code = prompt("enter Otp");
         e.confirm(code)
           .then((result) => {
-            setIsModalOpen(false);
-            dispatch({
-              type: ACTIONS.CHANGE_MODAL_STATE,
-            });
+            // dispatch({
+            //   type: ACTIONS.CHANGE_MODAL_STATE,
+            // });
+            setIsModalOpen(false);           
           })
           .catch((err) => {
             console.log(err.message);
           });
       })
-      .catch((err) => {});
+      .catch((err) => { });
   };
 
   return (

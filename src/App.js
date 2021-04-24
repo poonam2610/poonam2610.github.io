@@ -11,12 +11,15 @@ import Checkout from "./components/Checkout/Checkout";
 import PrivateRoute from "./utility/PrivateRoute";
 import { useStateValue } from "./context-management/StateProvider";
 import { ACTIONS } from "./context-management/constants";
-import Modal from "./components/Modal/Modal";
 import { auth, db } from "./firebase-config/firebase";
+import Payment from "./components/Payment/Payment";
+import ScrollToTop from "./utility/ScrollToTop";
 
 function App() {
-  const [{ basket, user, isModalOpen}, dispatch] = useStateValue();
+  const [{ basket, user }, dispatch] = useStateValue();
+  // const [isOpenModal, setIsOpenModal] = useState(false);
 
+  //executes when user changes
   useEffect(() => {
     auth.onAuthStateChanged((authUser) => {
       if (!!authUser) {
@@ -34,10 +37,11 @@ function App() {
         });
       }
     });
-  
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  // fetch bag items for particular user if available
   useEffect(() => {
     if (!!user && !!basket) {
       db.collection("user")
@@ -57,6 +61,7 @@ function App() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [user]);
 
+  // push to firebase database when ever basket items changes
   useEffect(() => {
     if (!!user) {
       if (basket?.length > 0) {
@@ -67,18 +72,34 @@ function App() {
     }
   }, [basket, user]);
 
+  //if user comes first time
+  useEffect(() => {
+    const firstTimeUser = localStorage.getItem("firstTimeUser");
+    // console.log({notFirstTimeUser})
+    if (!user && !firstTimeUser) {
+      dispatch({
+        type: ACTIONS.CHANGE_MODAL_STATE,
+      });
+      localStorage.setItem("firstTimeUser", true);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   return (
-    <div className= {`App ${isModalOpen ? "blurred": "" }`}>
+    <div className="App">
       <BrowserRouter>
+        <ScrollToTop />
         <Switch>
-          <PrivateRoute path={ROUTES.CHECKOUT}>
+          <PrivateRoute exact path={ROUTES.CHECKOUT}>
             <Header />
             <Checkout />
             <Footer />
           </PrivateRoute>
-          <Route path={ROUTES.LOGIN}>
-            <Modal />
-          </Route>
+          <PrivateRoute exact path={`${ROUTES.CHECKOUT}${ROUTES.PAYMENT}`}>
+            <Header />
+            <Payment />
+            <Footer />
+          </PrivateRoute>
           <Route exact path={`${ROUTES.CATEGORY}/:category`}>
             <Header />
             <Products />
@@ -93,6 +114,7 @@ function App() {
             <Header />
             <HomePage />
             <Footer />
+            {/* {isModalOpen && <Modal />} */}
           </Route>
         </Switch>
       </BrowserRouter>

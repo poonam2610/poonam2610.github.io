@@ -17,8 +17,8 @@ function ProductDetails() {
   const { id } = useParams();
   const [isLoginClicked, setIsLoginClicked] = useState(false);
   const [itemQuantity, setItemQuantity] = useState(1);
-  const [{ user}, dispatch] = useStateValue();
-  
+  const [{ user }, dispatch] = useStateValue();
+
   useEffect(() => {
     const filteredProduct = data.default.filter(
       (value) => value.id === parseInt(id)
@@ -72,45 +72,48 @@ function ProductDetails() {
         alert("Successfully added to basket");
       }
     } else {
+      // dispatch({
+      //   type: ACTIONS.CHANGE_MODAL_STATE
+      // })
       setIsLoginClicked(true);
     }
   };
 
   return (
     <>
-    <div className="productDisplayContainer">
-      <div className="productImage">
-        <img src={product.image} alt="shirt-img" />
-      </div>
-      <div className="productDetail">
-        <div>
-          <h3>{product.title}</h3>
-          <p>
-            Description lorem ipsum is good when you dont know what to write and
-            fill the area with some text.
+      <div className="productDisplayContainer">
+        <div className="productImage">
+          <img src={product.image} alt="shirt-img" />
+        </div>
+        <div className="productDetail">
+          <div>
+            <h3>{product.title}</h3>
+            <p>
+              Description lorem ipsum is good when you dont know what to write and
+              fill the area with some text.
           </p>
-          <hr />
-          <p className="price">{`Rs ${product.price}`}</p>
-        </div>
-        <div className="productDetails-rating-container">
-          <StarRating rating={product.rating} />
-        </div>
+            <hr />
+            <p className="price">{`Rs ${product.price}`}</p>
+          </div>
+          <div className="productDetails-rating-container">
+            <StarRating rating={product.rating} />
+          </div>
 
-        {product.category !== "accessories" && (
-          <SizeOptions sizes={product?.availableSize} setSize={setSize} />
-        )}
-        <Quantity
-          itemQuantity={itemQuantity}
-          setItemQuantity={setItemQuantity}
-        />
-        <div id="addItemToBag">
-          <AddToBagButton content ="ADD TO BAG" handleClick={handleClick}  />
+          {product.category !== "accessories" && (
+            <SizeOptions sizes={product?.availableSize} setSize={setSize} />
+          )}
+          <Quantity
+            itemQuantity={itemQuantity}
+            setItemQuantity={setItemQuantity}
+          />
+          <div id="addItemToBag">
+            <AddToBagButton content="ADD TO BAG" handleClick={handleClick} />
+          </div>
+          {!!errorMessage && <div className="error__message">{errorMessage}</div>}
         </div>
-        {!!errorMessage && <div className="error__message">{errorMessage}</div>}
       </div>
-    </div>
       {isLoginClicked && (
-        <Modal type="productDetails" setIsModalOpen={setIsLoginClicked} />
+        <Modal setIsModalOpen={setIsLoginClicked} />
       )}
     </>
   );

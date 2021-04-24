@@ -1,18 +1,18 @@
-
-
 import React from "react";
+import { useHistory } from "react-router";
+import * as ROUTES from "../../constants/Routes";
 import { ACTIONS } from "../../context-management/constants";
 import { useStateValue } from "../../context-management/StateProvider";
 import { db } from "../../firebase-config/firebase";
 import CheckoutProductCard from "../../helper-components/CheckoutProductCard/CheckoutProductCard";
 import AddToBagButton from "../ProductDetails/AddToBagButton";
-// import AddToBagButton from "../ProductDetails/AddToBagButton";
 import "./Checkout.scss";
 
 
 function Checkout() {
     const [{ basket, user }, dispatch] = useStateValue();
     const newBasket = [];
+    const history = useHistory();
 
     const removeDuplicate = (id, size) => {
         const index = newBasket.findIndex(obj => obj.id === id && obj.size === size);
@@ -33,7 +33,8 @@ function Checkout() {
     }
 
     const handleProceedToPay = () => {
-        console.log("proceed to pay clicked")
+        console.log("navigate to payment page")
+        history.push(`${ROUTES.CHECKOUT}${ROUTES.PAYMENT}`)
     }
 
     const totalPrice = (basket) => {
