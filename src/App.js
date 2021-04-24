@@ -1,5 +1,5 @@
 import "./App.scss";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import * as ROUTES from "./constants/Routes";
 import HomePage from "./components/HomePage/HomePage";
@@ -15,10 +15,11 @@ import { auth, db } from "./firebase-config/firebase";
 import Payment from "./components/Payment/Payment";
 import ScrollToTop from "./utility/ScrollToTop";
 import YourOrders from "./components/YourOrders/YourOrders";
+import Modal from "./components/Modal/Modal";
 
 function App() {
   const [{ basket, user }, dispatch] = useStateValue();
-  // const [isOpenModal, setIsOpenModal] = useState(false);
+  const [isOpenModal, setIsOpenModal] = useState(false);
 
   //executes when user changes
   useEffect(() => {
@@ -78,16 +79,17 @@ function App() {
     const firstTimeUser = localStorage.getItem("firstTimeUser");
     // console.log({notFirstTimeUser})
     if (!user && !firstTimeUser) {
-      dispatch({
-        type: ACTIONS.CHANGE_MODAL_STATE,
-      });
+      // dispatch({
+      //   type: ACTIONS.CHANGE_MODAL_STATE,
+      // });
+      setIsOpenModal(true);
       localStorage.setItem("firstTimeUser", true);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
-    <div className ="App">
+    <div className="App">
       <BrowserRouter>
         <ScrollToTop />
         <Switch>
@@ -115,7 +117,7 @@ function App() {
             <Header />
             <HomePage />
             <Footer />
-            {/* {isModalOpen && <Modal />} */}
+            {isOpenModal && <Modal setIsModalOpen={setIsOpenModal} />}
           </Route>
           <PrivateRoute exact path={ROUTES.YOUR_ORDERS}>
             <Header />
