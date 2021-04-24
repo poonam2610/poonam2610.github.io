@@ -26,35 +26,8 @@
       padding: 10px 0;
     }
   }
-  .subtotal__text {
-    margin-top: 8px;
-    font-size: 16px;
-  }
-  .checkout__button {
-    text-align: center;
-    margin-top: 3rem;
-    background: #ffa41c;
-    /* position: absolute; */
-    outline: none;
-    padding: 5px;
-    font-size: 14px;
-    cursor: pointer;
-    border: 1px solid #6b4916;
-  }
 }
-.disable {
-  cursor: not-allowed !important;
-}
-.checkout__header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.checkout__clear {
-  height: fit-content;
-  width: fit-content;
-  padding: 4px;
-}
+
 .heading__left {
   display: flex;
   justify-content: space-between;

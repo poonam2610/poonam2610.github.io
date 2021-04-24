@@ -76,7 +76,7 @@ function CheckoutProductCard({ value, ordered }) {
         className="product__image__container"
         onClick={() => history.push(`${ROUTES.CATEGORY}/${category}/${id}`)}
       >
-        <img className="product__image" src={image} alt="productImage" />
+        <img className="product__image" src={image[0]} alt="productImage" />
       </div>
       <div className="product__details__container">
         <div
@@ -93,7 +93,7 @@ function CheckoutProductCard({ value, ordered }) {
           <h4>Size: {size}</h4>
         </div>
         <div className="product__quantity">
-          Quantity:
+        Quantity:
           {!ordered && <button
             className="decrease__quantity "
             onClick={handleDecreaseQuantity}
