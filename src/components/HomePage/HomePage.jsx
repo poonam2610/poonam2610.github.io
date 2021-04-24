@@ -9,16 +9,18 @@ import { useStateValue } from '../../context-management/StateProvider'
 
 function HomePage() {
   const {isModalOpen} = useStateValue()[0];
+  const arrayOfImagesUrl = ["/bg-hp0.png", "/bg-hp1.png", "/bg-hp2.png"]
+
   return (
     <div className={`content__container ${isModalOpen ? "blurred": ""}`}>
       <div className="carousel__container">
-        <Carousel />
+        <Carousel arrayOfImagesUrl={arrayOfImagesUrl}/>
       </div>
       <div>
         <Categories />
       </div>
       <div>
-        <MustHaveSection />
+        <MustHaveSection/>
       </div>
       <div>
         <PromisePage />

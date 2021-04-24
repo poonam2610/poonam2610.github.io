@@ -16,10 +16,10 @@ body{
   font-family: "Montserrat", sans-serif;
 }
 
-// .blurred{
-//   filter: blur(5px);
-// }
+.blurred{
+  filter: blur(5px);
+}
 
-// .noblur{
-//   filter:blur(0)
-// }
+.noblur{
+  filter:blur(0) !important;
+}

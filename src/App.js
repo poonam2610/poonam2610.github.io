@@ -14,6 +14,7 @@ import { ACTIONS } from "./context-management/constants";
 import { auth, db } from "./firebase-config/firebase";
 import Payment from "./components/Payment/Payment";
 import ScrollToTop from "./utility/ScrollToTop";
+import YourOrders from "./components/YourOrders/YourOrders";
 
 function App() {
   const [{ basket, user }, dispatch] = useStateValue();
@@ -86,7 +87,7 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <div className ="App">
       <BrowserRouter>
         <ScrollToTop />
         <Switch>
@@ -116,6 +117,11 @@ function App() {
             <Footer />
             {/* {isModalOpen && <Modal />} */}
           </Route>
+          <PrivateRoute exact path={ROUTES.YOUR_ORDERS}>
+            <Header />
+            <YourOrders />
+            <Footer />
+          </PrivateRoute>
         </Switch>
       </BrowserRouter>
     </div>

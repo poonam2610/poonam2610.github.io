@@ -9,14 +9,10 @@ import {
   googleAuthProvider,
   firebase,
 } from "../../firebase-config/firebase";
-import { useStateValue } from "../../context-management/StateProvider";
-import { ACTIONS } from "../../context-management/constants";
 
-export default function Modal({ type,setIsModalOpen }) {
+export default function Modal({ type, setIsModalOpen }) {
   const [phoneNumber, setPhoneNumber] = useState("+91");
-  const dispatch = useStateValue()[1];
   const history = useHistory();
-  // const param = useParams();
 
 
   const handleCloseModal = () => {
@@ -69,7 +65,7 @@ export default function Modal({ type,setIsModalOpen }) {
             // dispatch({
             //   type: ACTIONS.CHANGE_MODAL_STATE,
             // });
-            setIsModalOpen(false);           
+            setIsModalOpen(false);
           })
           .catch((err) => {
             console.log(err.message);
@@ -79,7 +75,8 @@ export default function Modal({ type,setIsModalOpen }) {
   };
 
   return (
-    <div className="modal-container noblur">
+    // <div className = "modal-container" style = {{filter: "blur(0)"}}>
+    <div className="modal-container blur">
       <div className="modal">
         <button className="close" onClick={handleCloseModal}>
           <FaTimes />
@@ -108,6 +105,7 @@ export default function Modal({ type,setIsModalOpen }) {
             onChange={(e) => setPhoneNumber(e.target.value)}
           />
 
+          <div id="recaptcha-container"></div>
           <button
             className="sign-up-button"
             id="phone-button"
@@ -115,7 +113,6 @@ export default function Modal({ type,setIsModalOpen }) {
           >
             <h5>Sign up with phone</h5>
           </button>
-          <div id="recaptcha-container"></div>
         </div>
       </div>
     </div>

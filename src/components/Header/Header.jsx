@@ -14,7 +14,7 @@ import SearchBar from "../../helper-components/SearchBar/SearchBar";
 function Header() {
   const [isHamburgerOpen, setIsHamburgerOpen] = useState(false);
   const [isLoginClicked, setIsLoginClicked] = useState(false);
-  const [{ basket, user, isModalOpen }, dispatch] = useStateValue();
+  const [{ basket, user }, dispatch] = useStateValue();
 
   const handleHamburger = () => {
     setIsHamburgerOpen(true);

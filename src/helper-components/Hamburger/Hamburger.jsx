@@ -27,6 +27,10 @@ function Hamburger({ setIsHamburgerOpen }) {
         <Link className="hamburger__link" to={`${ROUTES.CATEGORY}/accessories`}>
           <div onClick={handleClick}>Accessories</div>
         </Link>
+        <hr/>
+        <Link className="hamburger__link" to={ROUTES.YOUR_ORDERS}>
+          <div onClick={handleClick}>Your Orders</div>
+        </Link>
       </div>
       
     </div>
