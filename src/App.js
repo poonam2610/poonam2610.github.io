@@ -13,9 +13,10 @@ import { useStateValue } from "./context-management/StateProvider";
 import { ACTIONS } from "./context-management/constants";
 import Modal from "./components/Modal/Modal";
 import { auth, db } from "./firebase-config/firebase";
+import YourOrders from "./components/YourOrders/YourOrders";
 
 function App() {
-  const [{ basket, user, isModalOpen}, dispatch] = useStateValue();
+  const [{ basket, user}, dispatch] = useStateValue();
 
   useEffect(() => {
     auth.onAuthStateChanged((authUser) => {
@@ -68,7 +69,7 @@ function App() {
   }, [basket, user]);
 
   return (
-    <div className= {`App ${isModalOpen ? "blurred": "" }`}>
+    <div className ="App">
       <BrowserRouter>
         <Switch>
           <PrivateRoute path={ROUTES.CHECKOUT}>
@@ -94,6 +95,11 @@ function App() {
             <HomePage />
             <Footer />
           </Route>
+          <PrivateRoute exact path={ROUTES.YOUR_ORDERS}>
+            <Header />
+            <YourOrders/>
+            <Footer />
+          </PrivateRoute>
         </Switch>
       </BrowserRouter>
     </div>

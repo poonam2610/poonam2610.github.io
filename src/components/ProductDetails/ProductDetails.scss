@@ -2,6 +2,16 @@
   box-sizing: border-box;
 }
 
+.alertbox{
+  width: 10%;
+  height: 60px;
+  max-height: 60px;
+  position: absolute;
+  right: 40px;
+  top: 0;
+  z-index: 5;
+}
+
 .productDisplayContainer {
   display: flex;
   height: 500px;
@@ -29,6 +39,12 @@
   text-align: left;
   background-color: #fff;
   padding: 0px 2rem;
+ .product__description{
+  margin-bottom: 75px;
+ }
+ .rating__container{
+   margin-top: 10px;
+ }
   h3 {
     font-size: 1.5rem;
     margin-top: 2.5rem;
@@ -36,14 +52,9 @@
   }
   p {
     margin: 1rem auto;
-    font-weight: 300;
+    font-weight: 400;
+    font-size: 16px;
   }
-  .price {
-    font-weight: 500;
-  }
-}
-.productDetails-rating-container {
-  margin-bottom: 75px;
 }
 
 #addItemToBag {

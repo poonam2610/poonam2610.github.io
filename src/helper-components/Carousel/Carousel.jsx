@@ -4,9 +4,9 @@ import "./Carousel.scss";
 
 
 
-export default function Carousel({numOfSlides = 2}) {
+export default function Carousel({arrayOfImagesUrl}) {
   const [current, setCurrent] = useState(0);
-  const length = numOfSlides;
+  const length = arrayOfImagesUrl.length;
 
   const nextSlide = () => {
     setCurrent(current === length - 1 ? 0 : current + 1);
@@ -20,7 +20,7 @@ export default function Carousel({numOfSlides = 2}) {
     <div className="slider">
       <FaChevronLeft className="left-arrow" onClick={prevSlide}/>
      <div className="carouselImage-container">
-       <img src={`/bg-hp${current}.png`} className="image" alt=""/>
+       <img src={arrayOfImagesUrl[current]} className="image" alt=""/>
      </div>
 
       <FaChevronRight className="right-arrow" onClick={nextSlide} />

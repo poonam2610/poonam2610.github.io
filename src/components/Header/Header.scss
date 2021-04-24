@@ -4,14 +4,15 @@
 display: flex;
 justify-content: space-around;
 align-items: center;
-padding: 2rem 3rem;
+padding: 2rem;
 box-shadow: 0 11px 20px -6px rgb(255, 252 ,251);
+color: black;
 }
 .Logo-part {
   display: flex;
   flex-grow: 1;
   align-items: center;
-  color: #474554;
+  // color: #474554;
 }
 .header-hamburger {
   cursor: pointer;
@@ -25,7 +26,7 @@ box-shadow: 0 11px 20px -6px rgb(255, 252 ,251);
   flex-grow: 2;
 }
 .header-icons {
-  color: #474554;
+//  color: #474554;
   
   display: flex;
   align-items: center;
@@ -51,7 +52,7 @@ box-shadow: 0 11px 20px -6px rgb(255, 252 ,251);
     .cart {
       margin-left: 15px;
       font-size: 26px;
-      color: #474554;
+      // color: #474554;
     }
     .single__digit__cart__notification {
       background: #c91a1a;

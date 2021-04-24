@@ -70,7 +70,8 @@ export default function Modal({ type, setIsModalOpen }) {
   };
 
   return (
-    <div className="modal-container noblur">
+    // <div className = "modal-container" style = {{filter: "blur(0)"}}>
+    <div className="modal-container blur">
       <div className="modal">
         <button className="close" onClick={handleCloseModal}>
           <FaTimes />
