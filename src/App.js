@@ -82,7 +82,10 @@ function App() {
       // dispatch({
       //   type: ACTIONS.CHANGE_MODAL_STATE,
       // });
-      setIsOpenModal(true);
+      setTimeout(()=>{
+        setIsOpenModal(true);
+      }, 2000)
+    
       localStorage.setItem("firstTimeUser", true);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps

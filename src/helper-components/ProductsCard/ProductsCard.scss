@@ -52,3 +52,16 @@
   cursor: default;
 }
 
+@media screen and (max-width:720px) {
+  .product__card{
+    width: 45%;
+    margin: 2.5%;
+  }
+}
+
+@media screen and (max-width:1064px) and (min-width: 721px) {
+  .product__card{
+    width: 29%;
+    margin: 2%;
+  }
+}

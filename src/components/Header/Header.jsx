@@ -37,21 +37,21 @@ function Header() {
   };
   return (
     <div className="header">
-      <div className="Logo-part">
-        <div className="header-hamburger">
-          <FaBars className="hamburger-icon" onClick={handleHamburger} />
+      <div className="logo__part">
+        <div className="header__hamburger">
+          <FaBars className="hamburger__icon" onClick={handleHamburger} />
         </div>
         {isHamburgerOpen && (
           <Hamburger setIsHamburgerOpen={setIsHamburgerOpen} />
         )}
         <Link to={ROUTES.HOME} className="link__style">
-          <div className="header-heading">
+          <div className="header__heading">
             w<span style={{ color: "#af332b" }}>A</span>rdrobe
           </div>
         </Link>
       </div>
-      <div className="icons-and-modal">
-        <div className="header-icons">
+      <div className="icons__and__modal">
+        <div className="header__icons">
           <div className="header__searchBar">
             <SearchBar />
           </div>
@@ -59,7 +59,7 @@ function Header() {
             <BsPersonFill className="person" />
 
             <div className="login__text">
-              {user ? "SignOut" : "Sign-in"}
+              {user ? "SignOut" : "SignIn"}
             </div>
           </div>
 
@@ -67,20 +67,8 @@ function Header() {
             <div className="basket">
               <FaShoppingBag className="cart" />
               {basket?.length > 0 && (
-                <div
-                  className={
-                    basket?.length < 10
-                      ? "single__digit__cart__notification"
-                      : "double__digit__cart__notification"
-                  }
-                >
-                  <span
-                    className={
-                      basket?.length < 10
-                        ? "single__digit__cart__number"
-                        : "double__digit__cart__number"
-                    }
-                  >
+                <div className="cart__notification">
+                  <span className="cart__number">
                     {basket.length}
                   </span>
                 </div>

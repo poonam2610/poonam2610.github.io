@@ -14,7 +14,7 @@
   max-width: 185px;
   width: 300px;
   cursor: pointer;
-  .product__image {
+  .checkout__product__image {
     width: 100%;
     height: 100%;
     // border-top-right-radius: 40px;
@@ -30,7 +30,6 @@
     h4 {
       font-weight: 500;
       cursor: pointer;
-      line-height: 31px;
       font-size: 17px;
     }
   }
@@ -85,7 +84,6 @@
 .product__price {
   h4 {
     font-weight: 500;
-    line-height: 31px;
     font-size: 17px;
   }
 }
@@ -95,4 +93,25 @@
   width: max-content;
   background-color: #f8eae1;
   border-radius: 10px;
+}
+
+@media screen and (max-width: 720px) {
+
+.product__details__container{
+    flex-basis: 60%;
+    padding-left: 5px;
+    .product__title{
+      h4{
+        font-size: 16px;
+      }
+    }
+    .product__size{
+    margin: 0;
+  }
+}
+.product__price {
+  h4 {
+    font-size: 16px;
+  }
+}
 }
