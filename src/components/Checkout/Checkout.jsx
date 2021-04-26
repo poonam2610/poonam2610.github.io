@@ -92,7 +92,7 @@ function Checkout() {
 
                     </table>
                     <div className="order__button">
-                        {basket.length > 0 && <AddToBagButton content="PLACE ORDER TO BUY" handleClick={handleProceedToPay} />}
+                        {basket.length > 0 && <AddToBagButton content="PLACE ORDER" handleClick={handleProceedToPay} />}
                     </div>
                 </div>
 

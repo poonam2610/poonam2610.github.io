@@ -1,4 +1,4 @@
-.singleCard-container {
+.singleCard__container {
   width: 23%;
   padding: 1rem 2rem;
   position: relative;
@@ -6,7 +6,7 @@
 }
 
 
-.image-container {
+.image__container {
   width: 100%;
   min-height: 280px;
   max-height: 280px;
@@ -18,7 +18,7 @@
   }
 }
 
-.buyNowButton-container{
+.buyNowButton__container{
   position: absolute;
   top: 230px;
   right: 11px;
@@ -46,12 +46,12 @@
   }
 }
 
-.mustBuy-title{
+.mustBuy__title{
   text-align: center;
   margin-top: 2rem;
   flex-basis: 20%;
 }
-.mustBuy-price{
+.mustBuy__price{
   text-align: center;
   margin-top: 0.5rem;
 }
@@ -63,4 +63,82 @@
   flex-direction: column;
   height: 100%;
 
+}
+
+@media screen and (max-width: 720px){
+  .singleCard__container {
+    width: 25%;
+    padding: 0.5rem 1rem;
+  }
+  .image__container{
+    min-height: 200px;
+    max-height: 200px;
+  }
+
+  .mustBuy__title{
+    margin-top: 2rem;
+    flex-basis: 25%;
+  }
+  .buyNowButton__container{
+    top: 150px;
+    right: 1px;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    .buyNowButton{
+      font-size: 11px;
+      border-radius: 50px;
+      min-width: 50px;
+      height: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) and (min-width: 721px){
+  .singleCard__container {
+    width: 24%;
+    padding: 0.5rem 1rem;
+  }
+
+  .image__container{
+    min-height: 240px;
+    max-height: 240px;
+  }
+  .mustBuy__title{
+    margin-top: 2rem;
+    flex-basis: 25%;
+  }
+  .buyNowButton__container{
+    top: 180px;
+    right: -5px;
+    width: 70px;
+    height: 70px;
+    border-radius: 70px;
+    .buyNowButton{
+      font-size: 12px;
+      border-radius: 60px;
+      min-width: 60px;
+      height: 60px;
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) and (min-width: 900px){
+  .singleCard__container {
+    padding: 0.5rem 1rem;
+  }
+
+  .buyNowButton__container{
+    top: 200px;
+    right: -5px;
+    width: 70px;
+    height: 70px;
+    border-radius: 70px;
+    .buyNowButton{
+      font-size: 12px;
+      border-radius: 60px;
+      min-width: 60px;
+      height: 60px;
+    }
+  }
 }

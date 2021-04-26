@@ -13,7 +13,6 @@ import Carousel from "../../helper-components/Carousel/Carousel";
 import SimilarProducts from "../SimilarProducts/SimilarProducts";
 import AlertBox from "../../helper-components/AlertBox/AlertBox";
 
-
 function ProductDetails() {
   const [product, setProduct] = useState({ image: ["", ""] });
   const [size, setSize] = useState("");
@@ -22,7 +21,7 @@ function ProductDetails() {
   const [isLoginClicked, setIsLoginClicked] = useState(false);
   const [itemQuantity, setItemQuantity] = useState(1);
   const [{ user }, dispatch] = useStateValue();
-  const [isProductAdded , setIsProductAdded] = useState(false)
+  const [isProductAdded, setIsProductAdded] = useState(false);
 
   useEffect(() => {
     const filteredProduct = data.default.filter(
@@ -42,8 +41,10 @@ function ProductDetails() {
     if (!!user) {
       if (product.category === "accessories") {
         setErrorMessage("");
-        setIsProductAdded(true)
-        setTimeout(()=>{ setIsProductAdded(false)}, 2000)
+        setIsProductAdded(true);
+        setTimeout(() => {
+          setIsProductAdded(false);
+        }, 2000);
         for (let i = 0; i < itemQuantity; i++) {
           dispatch({
             type: ACTIONS.ADD_TO_BASKET,
@@ -61,8 +62,10 @@ function ProductDetails() {
       } else if (!size) {
         setErrorMessage("Please Select Size");
       } else {
-        setIsProductAdded(true)
-        setTimeout(()=>{ setIsProductAdded(false)}, 2000)
+        setIsProductAdded(true);
+        setTimeout(() => {
+          setIsProductAdded(false);
+        }, 2000);
         for (let i = 0; i < itemQuantity; i++) {
           dispatch({
             type: ACTIONS.ADD_TO_BASKET,
@@ -77,7 +80,6 @@ function ProductDetails() {
             },
           });
         }
-
       }
     } else {
       // dispatch({
@@ -87,15 +89,22 @@ function ProductDetails() {
     }
   };
   return (
-    <>
-      <div className="alertbox" style ={isProductAdded? {transform : "translateY(50vh)",transition: "all 0.7s ease"}: {transform : "translateY(-1000px)"}}>
-        <AlertBox product = {product} message = {"Added to bag!"}/>
+    <div className="content__product__detail__page">
+      <div
+        className="alertbox"
+        style={
+          isProductAdded
+            ? { transform: "translateY(40vh)", transition: "all 0.7s ease" }
+            : { transform: "translateY(-1000px)" }
+        }
+      >
+        <AlertBox product={product} message={"Added to bag!"} />
       </div>
-      <div className="productDisplayContainer">
-        <div className="productImage">
+      <div className="product__display__container">
+        <div className="product__image">
           <Carousel arrayOfImagesUrl={product.image}></Carousel>
         </div>
-        <div className="productDetail">
+        <div className="product__detail">
           <div className="product__description">
             <h3>{product.title}</h3>
             <p>
@@ -117,19 +126,20 @@ function ProductDetails() {
             itemQuantity={itemQuantity}
             setItemQuantity={setItemQuantity}
           />
-          <div id="addItemToBag">
-            <AddToBagButton content="ADD TO BAG" handleClick={handleClick} />
-          </div>
-          {!!errorMessage && (
+          <div className="error__and__button">
             <div className="error__message">{errorMessage}</div>
-          )}
+            <div id="addItemToBag">
+              <AddToBagButton content="ADD TO BAG" handleClick={handleClick} />
+            </div>
+          </div>
         </div>
       </div>
-      {isLoginClicked && (
-        <Modal setIsModalOpen={setIsLoginClicked} />
-      )}
-      <SimilarProducts category = {product.category} id = {product.id}></SimilarProducts>
-    </>
+      {isLoginClicked && <Modal setIsModalOpen={setIsLoginClicked} />}
+      <SimilarProducts
+        category={product.category}
+        id={product.id}
+      ></SimilarProducts>
+    </div>
   );
 }
 

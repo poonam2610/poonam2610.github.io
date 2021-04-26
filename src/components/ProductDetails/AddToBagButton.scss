@@ -2,7 +2,7 @@
   font-size: 15px;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  background-color: white;
+  background-color:#F0EBE5;
   color:black;
   border-top-right-radius: 40px;
   border-bottom-right-radius: 40px;
@@ -10,7 +10,7 @@
   min-width: 45px;
   height: 42px;
   padding-left:12px;
-  border: 1px solid gray;
+  border: 2px solid gray;
   align-items: center;
   cursor: pointer;
   width: 100%;
@@ -21,9 +21,10 @@
   }
   &:hover{
     color:#c91a1a ;
-    border-color: #c91a1a;
+    border-color: #af332b;
+    background-color: white;
     .icon-container{
-      background-color:#c91a1a; 
+      background-color:#af332b; 
     }
   }
 
@@ -36,7 +37,7 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: gray;
+  background-color: #474554;
   color: white;
 
 }

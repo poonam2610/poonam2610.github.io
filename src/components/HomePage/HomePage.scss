@@ -12,3 +12,15 @@
   margin: 13px;
   opacity: 0.9;
 }
+
+@media screen and (max-width: 720px){
+  .carousel__container {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 1064px) and (min-width : 720px){
+  .carousel__container {
+    height: 350px;
+  }
+}
