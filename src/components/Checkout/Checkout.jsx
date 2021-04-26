@@ -2,6 +2,7 @@ import React from "react";
 import { useHistory } from "react-router";
 import * as ROUTES from "../../constants/Routes";
 import { ACTIONS } from "../../context-management/constants";
+import { totalPrice } from "../../context-management/reducer";
 import { useStateValue } from "../../context-management/StateProvider";
 import { db } from "../../firebase-config/firebase";
 import CheckoutProductCard from "../../helper-components/CheckoutProductCard/CheckoutProductCard";
@@ -23,7 +24,7 @@ function Checkout() {
 
     const clearFirebaseBasket = () => {
         if (!!user && basket.length > 0) {
-            db.collection("user").doc(user?.uid).set({
+            db.collection("user").doc(user?.uid).update({
                 basket: [],
             });
             dispatch({
@@ -33,18 +34,9 @@ function Checkout() {
     }
 
     const handleProceedToPay = () => {
-        console.log("navigate to payment page")
         history.push(`${ROUTES.CHECKOUT}${ROUTES.PAYMENT}`)
     }
 
-    const totalPrice = (basket) => {
-        return (
-            Math.round(
-                basket?.reduce((amount, item) => item.price + amount, 0) *
-                Math.pow(10, 2)
-            ) / Math.pow(10, 2)
-        );
-    };
 
     return (
         <div className="checkout">

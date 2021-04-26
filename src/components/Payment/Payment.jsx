@@ -1,61 +1,68 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import { ACTIONS } from '../../context-management/constants';
+import { useStateValue } from '../../context-management/StateProvider';
+import { db } from '../../firebase-config/firebase';
 import AddressCard from '../../helper-components/AddressCard/AddressCard';
 import AddressModal from '../../helper-components/AddressModal/AddressModal';
 import "./Payment.scss";
+import PaymentProceed from '../../helper-components/PaymentProceed/PaymentProceed';
 
 function Payment() {
-    const data = [
-        {
-            id: 1,
-            name: "piyush Ranjan",
-            phone: "+918906838026",
-            pincode: "813102",
-            address: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam expedita nesciunt animi quia voluptatem odio itaque magnam consequatur possimus, optio commodi ",
-            city: "banka",
-            state: "bihar",
-            isDefault: true
-        }, {
-            id: 2,
-            name: "Anusha Jain",
-            phone: "+919534767453",
-            pincode: "201009",
-            address: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam expedita nesciunt animi quia voluptatem odio itaque magnam consequatur possimus, optio commodi ",
-            city: "gujrat",
-            state: "rajasthan",
-            isDefault: false
-        }
-    ];
+    const [{ address, user }, dispatch] = useStateValue();
+    const [defaultAddress, setDefaultAddress] = useState({});
+    const [otherAddress, setOtherAddress] = useState([]);
+    const [currentSelection, setCurrentSelection] = useState();
+    const [isRazorPayOpen, setIsRazorPayOpen] = useState(false);
+    // const data = ;
 
     const [modalValue, setModalValue] = useState({});
     const [isModalOpen, setIsModalOpen] = useState(false);
-    const defaultAddress = { ...data.filter(x => x.isDefault)[0] };
-    const otherAddress = data.filter(x => !x.isDefault);
-    // console.log(defaultAddress);
+    // const history = useHistory();
 
-    const handleAddressChange = (e) => {
-        
+    useEffect(() => {
+        setDefaultAddress({ ...address?.filter(x => x.isDefault)[0] });
+        setOtherAddress(address.filter(x => !x.isDefault));
+        if (!!user) {
+            if (address?.length > 0) {
+                db.collection("user").doc(user?.uid).update({
+                    address: address,
+                });
+            }
+        };
+        // setCurrentSelection(defaultAddress?.id);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [address, user])
+
+    useEffect(() => {
+        setCurrentSelection(defaultAddress?.id);
+    }, [defaultAddress])
+
+    const handleAddressChange = (id) => {
+        setCurrentSelection(id)
+
     }
 
     const removeAddress = (e) => {
-
+        const id = e.target?.value;
+        dispatch({
+            type: ACTIONS.REMOVE_ADDRESS,
+            id: id
+        })
     }
 
     const editAddress = (e) => {
-        // console.log("event", e.target.value)
         const id = e.target.value;
-        const modalData = { ...data.filter(x => x.id === parseInt(id))[0] };
-        console.log({ modalData })
+        const modalData = { ...address.filter(x => x.id === id)[0] };
         setModalValue(modalData);
         setIsModalOpen(true)
 
     }
     const addOrSaveAddress = (value) => {
-        console.log("value received from modal = ", value)
-        const { id } = value;
-        const idPresent = data.filter(value => value.id === id);
-        if (idPresent < 1) {
-            console.log("includes id")
-        }
+        dispatch({
+            type: ACTIONS.ADD_OR_MODIFY_ADDRESS,
+            item: value
+        })
+        // const { id } = value;
 
     }
     const handleAddressModal = () => {
@@ -63,6 +70,12 @@ function Payment() {
         setIsModalOpen(true)
 
     }
+
+    const handlePayment = () => {
+        // history.push(ROUTES.PROCEED_TO_PAY);
+        setIsRazorPayOpen(true)
+    }
+
 
     return (
         <div className="address__main__container">
@@ -74,19 +87,20 @@ function Payment() {
                 <hr />
                 <div className="default__address__container">
                     <div className="default__title">Default Address</div>
-                    <AddressCard data={defaultAddress} handleAddressChange={handleAddressChange} removeAddress={removeAddress} editAddress={editAddress} />
+                    <AddressCard data={defaultAddress} currentSelection={currentSelection} handleAddressChange={handleAddressChange} removeAddress={removeAddress} editAddress={editAddress} />
                 </div>
                 <div className="other__address__container">
                     <div className="default__title">Other Address</div>
                     {otherAddress.map((value, index) => {
-                        return <AddressCard key={index} data={value} handleAddressChange={handleAddressChange} removeAddress={removeAddress} editAddress={editAddress} />
+                        return <AddressCard key={index} data={value} currentSelection={currentSelection} handleAddressChange={handleAddressChange} removeAddress={removeAddress} editAddress={editAddress} />
                     })}
                 </div>
             </div>
-            <div className="payment__container">
-                payment integration comes here
+            <div className="pay__button">
+                <button onClick={handlePayment}>Proceed to Pay</button>
             </div>
             {!!isModalOpen && <AddressModal modalValue={modalValue} setIsModalOpen={setIsModalOpen} addOrSaveAddress={addOrSaveAddress} />}
+            {!!isRazorPayOpen && <PaymentProceed currentSelection={currentSelection} setIsRazorPayOpen={setIsRazorPayOpen}/>}
 
         </div>
     )

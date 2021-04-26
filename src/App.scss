@@ -8,18 +8,18 @@
   --textColor: rgba(59, 29, 83, 0.96);
 }
 
+
+
 .text-color {
   color: var(--textColor);
 }
 // $PrimaryColor:#3B1D53;
-body{
-  font-family: "Montserrat", sans-serif;
-}
 
-.blurred{
+.blurred {
   filter: blur(5px);
 }
 
-.noblur{
-  filter:blur(0) !important;
+.noblur {
+  filter: blur(0) !important;
 }
+

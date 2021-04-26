@@ -50,3 +50,9 @@
     }
   }
 }
+
+@media (max-width: 420) {
+  .card__container {
+    height: 25rem;
+  }
+}

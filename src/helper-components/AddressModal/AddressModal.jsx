@@ -22,17 +22,18 @@ function AddressModal({ modalValue, setIsModalOpen, addOrSaveAddress }) {
         }
     }, [modalValue]);
 
-    console.log("inside modal value", modalValue)
     const handleSave = () => {
-        console.log("save clicked from modal and data passed");
         addOrSaveAddress(state)
+        setIsModalOpen(false)
 
     }
-    const handleChange = (e) => {
-        const value = e.target.value;
+    const handleChange = (event) => {
+        const target = event.target;
+        const value = target.type === 'checkbox' ? target.checked : target.value;
+        const name = target.name;
         setState({
             ...state,
-            [e.target.name]: value
+            [name]: value
         });
     }
     return (
@@ -55,8 +56,8 @@ function AddressModal({ modalValue, setIsModalOpen, addOrSaveAddress }) {
                             <input type="text" value={state.city} name="city" placeholder="city" onChange={handleChange} />
                             <input type="text" value={state.state} name="state" placeholder="state" onChange={handleChange} />
                             <div className="default__check">
-                            <input type="checkbox" value={state.isDefault} name="isDefault" placeholder="isDefault" onChange={handleChange} />
-                            <div className="check__text">Make this my Default address</div>
+                                <input type="checkbox" checked={state.isDefault} name="isDefault" placeholder="isDefault" onChange={handleChange} />
+                                <div className="check__text">Make this my Default address</div>
                             </div>
 
 
