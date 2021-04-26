@@ -7,24 +7,24 @@ import { BiSupport } from "react-icons/bi";
 
 export default function PromisePage() {
   return (
-    <div className="our-promise">
+    <div className="our__promise">
       <h2><span>100%&nbsp;</span> Authentic Product</h2>
-      <div className="promise-cards-container">
-        <div className="promise-card">
-        <FaRegThumbsUp className="card-icons" />
-          <p className="card-text">100% Genuine Products Guarantee </p>
+      <div className="promise__cards__container">
+        <div className="promise__card">
+        <FaRegThumbsUp className="card__icons" />
+          <p className="card__text">100% Genuine Products Guarantee </p>
         </div>
-        <div className="promise-card">
-          <RiTruckLine className="card-icons" />
-          <p className="card-text">Guaranteed On-time Delivery </p>
+        <div className="promise__card">
+          <RiTruckLine className="card__icons" />
+          <p className="card__text">Guaranteed On-time Delivery </p>
         </div>
-        <div className="promise-card">
-          <RiExchangeDollarFill className="card-icons" />
-          <p className="card-text">100% Return Guarantee & Exchchange </p>
+        <div className="promise__card">
+          <RiExchangeDollarFill className="card__icons" />
+          <p className="card__text">100% Return Guarantee & Exchchange </p>
         </div>
-        <div className="promise-card">
-          <BiSupport className="card-icons" />
-          <p className="card-text">24x7 Customer Support </p>
+        <div className="promise__card">
+          <BiSupport className="card__icons" />
+          <p className="card__text">24x7 Customer Support </p>
         </div>
       </div>
     </div>

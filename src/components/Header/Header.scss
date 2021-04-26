@@ -1,40 +1,47 @@
-@import "../../utility/color/colors.scss";
-
 .header {
-display: flex;
-justify-content: space-around;
-align-items: center;
-padding: 2rem;
-box-shadow: 0 11px 20px -6px rgb(255, 252 ,251);
-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+  box-shadow: 0 11px 20px -6px rgb(255, 252, 251);
+  color: black;
 }
-.Logo-part {
+.logo__part {
   display: flex;
   flex-grow: 1;
   align-items: center;
   // color: #474554;
+  .header__heading {
+    font-size: 55px;
+    color: black;
+    cursor: pointer;
+    // font-family: 'Allerta Stencil', sans-serif;
+    // font-family: 'Poiret One', cursive;
+    // font-family: 'Snowburst One', cursive;
+    // font-family: 'Lexend Giga', sans-serif;
+    // font-family: 'Zilla Slab Highlight', cursive;
+    font-family: "Original Surfer", cursive;
+    letter-spacing: 0.1px;
+  }
 }
-.header-hamburger {
+.header__hamburger {
   cursor: pointer;
-  margin-right: 2rem;
+  margin-right: 1rem;
   margin-top: 20px;
-  .hamburger-icon {
+  .hamburger__icon {
     font-size: 30px;
   }
 }
-.icons-and-modal{
+.icons__and__modal {
   flex-grow: 2;
 }
-.header-icons {
-//  color: #474554;
-  
+.header__icons {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   .header__searchBar {
     margin: 0 2rem;
     width: 40%;
-   
   }
   .login {
     display: flex;
@@ -48,42 +55,24 @@ color: black;
   }
   .basket {
     cursor: pointer;
-
+    position: relative;
     .cart {
       margin-left: 15px;
       font-size: 26px;
-      // color: #474554;
     }
-    .single__digit__cart__notification {
+    .cart__notification {
       background: #c91a1a;
       border: 1px solid transparent;
       border-radius: 50%;
-      width: 1.3em;
-      height: 1.3rem;
-      position: absolute;
-      right: 40px;
-      top: 51px;
-      display: inline-flex;
-      justify-content: center;
-      align-items: center;
-      .single__digit__cart__number {
-        color: white;
-      }
-    }
-    .double__digit__cart__notification {
-      background: #c91a1a;
-      border: 1px solid transparent;
-      border-radius: 50%;
-      width: 1.5em;
+      width: 1.5rem;
       height: 1.5rem;
       position: absolute;
-      right: 36px;
-      top: 49px;
+      right: -12px;
+      top: -6px;
       display: inline-flex;
       justify-content: center;
       align-items: center;
-      .double__digit__cart__number {
-        position: absolute;
+      .cart__number {
         color: white;
       }
     }
@@ -94,8 +83,7 @@ color: black;
   color: black;
 }
 
-
-.header-heading {
+.header__heading {
   font-size: 55px;
   color: black;
   cursor: pointer;

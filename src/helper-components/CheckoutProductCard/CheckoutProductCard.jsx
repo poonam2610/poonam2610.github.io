@@ -78,7 +78,7 @@ function CheckoutProductCard({ value, ordered }) {
         className="product__image__container"
         onClick={() => history.push(`${ROUTES.CATEGORY}/${category}/${id}`)}
       >
-        <img className="product__image" src={image} alt="productImage" />
+        <img className="checkout__product__image" src={image[0]} alt="productImage" />
       </div>
       <div className="product__details__container">
         <div

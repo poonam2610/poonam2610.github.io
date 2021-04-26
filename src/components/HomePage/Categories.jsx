@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 export default function Categories(){
   return(
     <div className="categories__container">
-        <h2 className="categories__text">Categories</h2>
+        <h1 className="categories__text">Categories</h1>
         <div className="card__container">
           <div className="left__container">
             <div className="cards" id="accessories">

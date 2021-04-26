@@ -8,9 +8,9 @@ export default function MustHaveSection() {
     (value) => value.mustHave && value.mustHave === true
   );
   return (
-    <div className="mustHave-container">
+    <div className="mustHave__container">
       <h1>Must Haves</h1>
-      <div className="mustHaveCards-container">
+      <div className="mustHaveCards__container">
         {dataForCards.map((item, index) => {
           return <MustHaveCard key={index} value={item} />;
         })}

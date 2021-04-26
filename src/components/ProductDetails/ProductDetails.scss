@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-.alertbox{
+.alertbox {
   width: 10%;
   height: 60px;
   max-height: 60px;
@@ -12,7 +12,7 @@
   z-index: 5;
 }
 
-.productDisplayContainer {
+.product__display__container {
   display: flex;
   height: 500px;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
@@ -21,7 +21,7 @@
   margin: 50px 220px;
 }
 
-.productImage {
+.product__image {
   max-width: 40%;
   min-width: 40%;
   img {
@@ -31,7 +31,7 @@
   }
 }
 
-.productDetail {
+.product__detail {
   border-top-right-radius: 50px;
   width: 100%;
   font-family: "Montserrat", sans-serif;
@@ -39,12 +39,13 @@
   text-align: left;
   background-color: #fff;
   padding: 0px 2rem;
- .product__description{
-  margin-bottom: 75px;
- }
- .rating__container{
-   margin-top: 10px;
- }
+  position: relative;
+  .product__description {
+    margin-bottom: 75px;
+  }
+  .rating__container {
+    margin-top: 10px;
+  }
   h3 {
     font-size: 1.5rem;
     margin-top: 2.5rem;
@@ -55,18 +56,115 @@
     font-weight: 400;
     font-size: 16px;
   }
-}
 
-#addItemToBag {
-  width: 40%;
-}
-.error__message {
-  color: red;
-  animation: blinker 1s linear infinite;
+  .error__and__button {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    #addItemToBag {
+      width: 40%;
+    }
+    .error__message {
+      color: red;
+      animation: blinker 1s linear infinite;
+    }
+  }
 }
 
 @keyframes blinker {
   50% {
     opacity: 0;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .product__display__container {
+    height: 450px;
+    margin: 50px 27px;
+  }
+  .product__detail {
+    padding: 0px 1rem;
+    .product__description {
+      margin-bottom: 0px;
+    }
+    .rating__container {
+      margin-top: 5px;
+    }
+    h3 {
+      font-size: 1.5rem;
+      margin-top: 1.5rem;
+      font-weight: 500;
+    }
+    p {
+      margin: 1rem auto;
+      font-weight: 400;
+      font-size: 16px;
+    }
+    .error__and__button {
+      bottom: 5px;
+      #addItemToBag {
+        width: 50%;
+      }
+      .error__message {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .alertbox {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1100px) and (min-width: 731px) {
+  .product__display__container {
+    height: 460px;
+    margin: 50px 90px;
+  }
+  .product__detail {
+    padding: 0px 1rem;
+    .product__description {
+      margin-bottom: 25px;
+    }
+    .rating__container {
+      margin-top: 8px;
+    }
+    h3 {
+      font-size: 1.5rem;
+      margin-top: 1.5rem;
+      font-weight: 500;
+    }
+    p {
+      margin: 1rem auto;
+      font-weight: 400;
+      font-size: 16px;
+    }
+    .error__and__button {
+      bottom: 10px;
+      #addItemToBag {
+        width: 48%;
+      }
+      .error__message {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .alertbox {
+    width: 15%;
+    right: 5px;
+  }
+}
+
+@media screen and (max-width: 1150px) and (min-width: 1100px){
+  .product__display__container {
+    height: 460px;
+    margin: 50px 110px;
+  }
+  .product__detail {
+    padding: 0px 1rem;
+    .product__description {
+      margin-bottom: 50px;
+    }
   }
 }

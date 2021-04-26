@@ -6,23 +6,23 @@ import { Link } from "react-router-dom";
 export default function MustHaveCard({ value }) {
   const { id, price, title, category, image } = value;
   return (
-    <div className="singleCard-container">
+    <div className="singleCard__container">
       <Link
-        className="mustHave__link__style"
+        className="link__style"
         to={`${ROUTES.CATEGORY}/${category}/${id}`}
       >
-        <div className="image-container">
+        <div className="image__container">
           <img src={image[0]} alt="product" />
         </div>
-        <div className="buyNowButton-container">
+        <div className="buyNowButton__container">
           <div className="buyNowButton">
             Buy
             <br />
             Now
           </div>
         </div>
-        <div className="mustBuy-title">{title}</div>
-        <div className="mustBuy-price">{`Price  ${price}`}</div>
+        <div className="mustBuy__title">{title}</div>
+        <div className="mustBuy__price">{`Price  ${price}`}</div>
       </Link>
     </div>
   );

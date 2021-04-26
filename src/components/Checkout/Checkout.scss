@@ -13,11 +13,15 @@
   display: flex;
   flex-direction: column;
   margin-left: 4%;
+  h2{
+    font-weight: 500;
+  }
   .subtotal {
     font-size: 16px;
     margin-top: 1rem;
     padding: 10px;
-    background-color: #f8eae1;
+    background-color:  #f8eae1;
+    // box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
     table {
       width: 100%;
@@ -26,19 +30,42 @@
       padding: 10px 0;
     }
   }
+  .order__button{
+    width: 85%;
+  }
 }
 
 .heading__left {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  .heading{
+    font-weight: 500;
+  }
 }
 .emptybag__button {
-  padding: 10px;
+  padding: 5px;
   font-family: "Montserrat";
   font-size: 16px;
   background-color: #f0ebe5;
   border: none;
   border-radius: 10px;
   outline: none;
+}
+
+
+@media screen and (max-width: 850px){
+  .checkout{
+    padding: 2rem;
+    display: block;
+  }
+  .checkout__right{
+    margin: 20px 0;
+    .subtotal{
+      .order__button{
+        width: 90%;
+      }
+    }
+  }
+
 }
