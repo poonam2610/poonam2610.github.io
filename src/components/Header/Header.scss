@@ -96,3 +96,13 @@
   letter-spacing: 0.1px;
 }
 
+@media only screen and (max-width: 600px) {
+  .header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+    box-shadow: 0 11px 20px -6px rgb(255, 252 ,251);
+    color: black;
+    }
+}

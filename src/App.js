@@ -18,7 +18,7 @@ import YourOrders from "./components/YourOrders/YourOrders";
 import Modal from "./components/Modal/Modal";
 
 function App() {
-  const [{ basket, user }, dispatch] = useStateValue();
+  const [{ basket, user, yourOrders }, dispatch] = useStateValue();
   const [isOpenModal, setIsOpenModal] = useState(false);
 
   //executes when user changes
@@ -45,17 +45,29 @@ function App() {
 
   // fetch bag items for particular user if available
   useEffect(() => {
-    if (!!user && !!basket) {
+    if (!!user) {
       db.collection("user")
         .doc(user?.uid)
         .get()
         .then((value) => {
-          const data = value.data()?.basket || [];
-          data.forEach((item) => {
+          const basketData = value.data()?.basket || [];
+          const addressData = value.data()?.address || [];
+          const yourOrdersData = value.data()?.yourOrders || [];
+          basketData.forEach((item) => {
             dispatch({
               type: ACTIONS.ADD_TO_BASKET,
               item: item,
             });
+          });
+          addressData.forEach((item) => {
+            dispatch({
+              type: ACTIONS.ADD_OR_MODIFY_ADDRESS,
+              item: item,
+            });
+          });
+          dispatch({
+            type: ACTIONS.ADD_TO_ORDER_HISTORY,
+            items: yourOrdersData,
           });
         })
         .catch();
@@ -67,17 +79,26 @@ function App() {
   useEffect(() => {
     if (!!user) {
       if (basket?.length > 0) {
-        db.collection("user").doc(user?.uid).set({
+        db.collection("user").doc(user?.uid).update({
           basket: basket,
         });
       }
     }
   }, [basket, user]);
 
+  useEffect(() => {
+    if (!!user) {
+      if (yourOrders?.length > 0) {
+        db.collection("user").doc(user?.uid).update({
+          yourOrders: yourOrders,
+        });
+      }
+    }
+  }, [user, yourOrders]);
+
   //if user comes first time
   useEffect(() => {
     const firstTimeUser = localStorage.getItem("firstTimeUser");
-    // console.log({notFirstTimeUser})
     if (!user && !firstTimeUser) {
       // dispatch({
       //   type: ACTIONS.CHANGE_MODAL_STATE,
@@ -92,7 +113,7 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <div className="app">
       <BrowserRouter>
         <ScrollToTop />
         <Switch>
@@ -122,6 +143,9 @@ function App() {
             <Footer />
             {isOpenModal && <Modal setIsModalOpen={setIsOpenModal} />}
           </Route>
+          {/* <Route exact path={ROUTES.PROCEED_TO_PAY}>
+            <PaymentProceed />
+          </Route> */}
           <PrivateRoute exact path={ROUTES.YOUR_ORDERS}>
             <Header />
             <YourOrders />

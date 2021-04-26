@@ -11,10 +11,12 @@ import { FaMinus, FaPlus } from "react-icons/fa";
 function CheckoutProductCard({ value, ordered }) {
   const [{ basket, user }, dispatch] = useStateValue();
   const history = useHistory();
-  const { id, image, title, description, rating, price, quantity, size, category } = value;
+  const { id, image, title, description, rating, price, quantity, size, category, date } = value;
+
+  const newDate = ordered ? JSON.stringify(new Date(JSON.parse(date))).slice(1, 11) : "";
 
   const clearFirebaseBasket = () => {
-    db.collection("user").doc(user?.uid).set({
+    db.collection("user").doc(user?.uid).update({
       basket: [],
     });
   }
@@ -93,7 +95,7 @@ function CheckoutProductCard({ value, ordered }) {
           <h4>Size: {size}</h4>
         </div>
         <div className="product__quantity">
-        Quantity:
+          Quantity:
           {!ordered && <button
             className="decrease__quantity "
             onClick={handleDecreaseQuantity}
@@ -110,9 +112,9 @@ function CheckoutProductCard({ value, ordered }) {
           </button>}
         </div>
         <hr />
-        <div className="remove__or__return">
-          {ordered ? "RETURN" : "REMOVE"}
-        </div>
+        {!!ordered && <div className="remove__or__return">
+          Ordered On : {newDate}
+        </div>}
       </div>
       <div>
         <div className="product__price">

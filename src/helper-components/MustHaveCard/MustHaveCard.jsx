@@ -8,7 +8,7 @@ export default function MustHaveCard({ value }) {
   return (
     <div className="singleCard__container">
       <Link
-        className="mustHave__link__style"
+        className="link__style"
         to={`${ROUTES.CATEGORY}/${category}/${id}`}
       >
         <div className="image__container">
