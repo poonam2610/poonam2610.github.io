@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./ProductDetails.scss";
 import * as data from "../../data/data.json";
+import * as ROUTES from "../../constants/Routes";
 import { useParams } from "react-router";
 import SizeOptions from "./SizeOptions";
 import AddToBagButton from "./AddToBagButton";
@@ -12,12 +13,13 @@ import Modal from "../Modal/Modal";
 import Carousel from "../../helper-components/Carousel/Carousel";
 import SimilarProducts from "../SimilarProducts/SimilarProducts";
 import AlertBox from "../../helper-components/AlertBox/AlertBox";
+import BreadCrumbs from "../../helper-components/BreadCrumbs/BreadCrumbs";
 
 function ProductDetails() {
   const [product, setProduct] = useState({ image: ["", ""] });
   const [size, setSize] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
-  const { id } = useParams();
+  const { category, id } = useParams();
   const [isLoginClicked, setIsLoginClicked] = useState(false);
   const [itemQuantity, setItemQuantity] = useState(1);
   const [{ user }, dispatch] = useStateValue();
@@ -29,6 +31,7 @@ function ProductDetails() {
     );
     const prod = Object.assign({}, filteredProduct[0]);
     setProduct(prod);
+
   }, [id]);
 
   useEffect(() => {
@@ -88,7 +91,25 @@ function ProductDetails() {
       setIsLoginClicked(true);
     }
   };
-  return (
+  const breadCrumbLinks = [
+    {
+      "linkText": "Home",
+      "linkHref": "/",
+      "isActive": false
+    }, {
+      "linkText": `${category[0]?.toUpperCase() + category.slice(1)}`,
+      "linkHref": `${ROUTES.CATEGORY}/${category}`,
+      "isActive": false
+    }
+    , {
+      "linkText": `${product?.title ? product.title[0].toUpperCase() + product.title.slice(1).toLowerCase() : ""}`,
+      "linkHref": `${ROUTES.CATEGORY}/${category}/${id}`,
+      "isActive": true
+    }
+  ];
+
+  return (<>
+    <BreadCrumbs breadCrumbLinks={breadCrumbLinks} />
     <div className="content__product__detail__page">
       <div
         className="alertbox"
@@ -140,6 +161,7 @@ function ProductDetails() {
         id={product.id}
       ></SimilarProducts>
     </div>
+  </>
   );
 }
 
