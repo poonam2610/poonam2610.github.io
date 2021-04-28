@@ -11,6 +11,7 @@ function PaymentProceed({ currentSelection, setIsRazorPayOpen }) {
     const [selectedAddress, setSelectedAddress] = useState("");
     const history = useHistory();
     const newBasket = []
+ 
 
     const removeDuplicate = (id, size) => {
         const index = newBasket.findIndex(obj => obj.id === id && obj.size === size);

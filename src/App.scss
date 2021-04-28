@@ -1,8 +1,8 @@
-// @import url(../src/utility/color/colors.scss);
-* {
+*{
   margin: 0;
   box-sizing: border-box;
   padding: 0;
+  -webkit-tap-highlight-color: transparent ;
 }
 :root {
   --textColor: rgba(59, 29, 83, 0.96);
