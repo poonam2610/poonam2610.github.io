@@ -5,17 +5,7 @@ import CheckoutProductCard from "../../helper-components/CheckoutProductCard/Che
 
 export default function YourOrders() {
   const { yourOrders } = useStateValue()[0];
-  // const newBasket = [];
-
-
-  // const removeDuplicate = (id, size) => {
-  //   const index = newBasket.findIndex(obj => obj.id === id && obj.size === size);
-  //   newBasket[index].quantity++;
-  // };
-
-  // yourOrders.map(x => (newBasket.filter(a => a.id === x.id && a.size === x.size).length > 0) ? removeDuplicate(x.id, x.size) : newBasket.push({ ...x, quantity: 1 }));
-
-
+  
   return (
     <div className="your__orders__container">
       <div>
