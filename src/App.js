@@ -16,6 +16,7 @@ import Payment from "./components/Payment/Payment";
 import ScrollToTop from "./utility/ScrollToTop";
 import YourOrders from "./components/YourOrders/YourOrders";
 import Modal from "./components/Modal/Modal";
+import SearchProducts from "./components/SearchProducts/SearchProducts";
 
 function App() {
   const [{ basket, user, yourOrders }, dispatch] = useStateValue();
@@ -70,7 +71,7 @@ function App() {
             items: yourOrdersData,
           });
         })
-        .catch();
+        .catch((e) => console.log(e.message));
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [user]);
@@ -103,10 +104,10 @@ function App() {
       // dispatch({
       //   type: ACTIONS.CHANGE_MODAL_STATE,
       // });
-      setTimeout(()=>{
+      setTimeout(() => {
         setIsOpenModal(true);
-      }, 2000)
-    
+      }, 2000);
+
       localStorage.setItem("firstTimeUser", true);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -130,6 +131,11 @@ function App() {
           <Route exact path={`${ROUTES.CATEGORY}/:category`}>
             <Header />
             <Products />
+            <Footer />
+          </Route>
+          <Route exact path={`${ROUTES.SEARCH}/:search`}>
+            <Header />
+            <SearchProducts />
             <Footer />
           </Route>
           <Route exact path={`${ROUTES.CATEGORY}/:category/:id`}>

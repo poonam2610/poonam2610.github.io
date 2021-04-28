@@ -12,24 +12,24 @@ export default function Categories(){
         <div className="card__container">
           <div className="left__container">
             <div className="cards" id="accessories">
-              <Link to={`${ROUTES.CATEGORY}/accessories`}>
+              <Link className="link__style" to={`${ROUTES.CATEGORY}/accessories`}>
                 <CategoriesCard image="/bag-p.jpg" title="Accessories" />
               </Link>
             </div>
             <div className="cards" id="kids">
-              <Link to={`${ROUTES.CATEGORY}/kids`}>
+              <Link className="link__style" to={`${ROUTES.CATEGORY}/kids`}>
                 <CategoriesCard image="/kid-cat2.jpg" title="Kid's Clothing" />
               </Link>
             </div>
           </div>
           <div className="right__container">
             <div className="cards" id="men">
-              <Link to={`${ROUTES.CATEGORY}/men`}>
+              <Link className="link__style" to={`${ROUTES.CATEGORY}/men`}>
                 <CategoriesCard image="/men.jpg" title="Men's Clothing" />
               </Link>
             </div>
             <div className="cards" id="women">
-              <Link to={`${ROUTES.CATEGORY}/lady`}>
+              <Link className="link__style" to={`${ROUTES.CATEGORY}/lady`}>
                 <CategoriesCard image="/woman-category.jpg" title="Women's Clothing" />
               </Link>
             </div>
