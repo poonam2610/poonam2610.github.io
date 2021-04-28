@@ -115,7 +115,7 @@ function ProductDetails() {
         className="alertbox"
         style={
           isProductAdded
-            ? { transform: "translateY(40vh)", transition: "all 0.7s ease" }
+            ? { transform: "translateY(45vh)", transition: "all 0.7s ease" }
             : { transform: "translateY(-1000px)" }
         }
       >

@@ -47,6 +47,7 @@ function App() {
   // fetch bag items for particular user if available
   useEffect(() => {
     if (!!user) {
+      console.log(user)
       db.collection("user")
         .doc(user?.uid)
         .get()
