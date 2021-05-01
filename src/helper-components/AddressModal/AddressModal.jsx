@@ -38,11 +38,10 @@ function AddressModal({ modalValue, setIsModalOpen, addOrSaveAddress }) {
   return (
     <div className="address__modal__container">
       <div className="address__modal">
-       
-          <button className="close" onClick={() => setIsModalOpen(false)}>
-            <FaTimes />
-          </button>
-        
+        <button className="close" onClick={() => setIsModalOpen(false)}>
+          <FaTimes />
+        </button>
+
         <div className="base__container">
           <div className="base__header">ADD NEW ADDRESS</div>
           <div className="base__content">
@@ -126,10 +125,11 @@ function AddressModal({ modalValue, setIsModalOpen, addOrSaveAddress }) {
               </div>
             </div>
           </div>
-         
-            <div className="base__button" onClick={handleSave}>
-              {isModalValue ? "Save Address" : "ADD address"}
-        
+
+          <div className = "base__footer">
+          <div className="base__button" onClick={handleSave}>
+            {isModalValue ? "Save Address" : "ADD address"}
+          </div>
           </div>
         </div>
       </div>

@@ -7,7 +7,16 @@
   max-height: 100%;
   max-width: 100%;
   position: relative;
- 
+  overflow: hidden;
+  img{
+    width: 100%;
+    height: 100%;
+    transition: transform .5s ease;
+  }
+  
+  &:hover img {
+    transform: scale(1.2);
+  }
   .card__title {
     top: 0px;
     position: absolute;

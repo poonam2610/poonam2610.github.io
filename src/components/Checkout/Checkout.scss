@@ -9,14 +9,12 @@
 }
 .checkout__right {
   width: 100%;
-  flex-basis: 23%;
+  flex-basis: 25%;
   display: flex;
   flex-direction: column;
   margin-left: 4%;
  
-  .order__button{
-    width: 85%;
-  }
+
 }
 
 .heading__left {
@@ -35,6 +33,7 @@
   border: none;
   border-radius: 10px;
   outline: none;
+  cursor: pointer;
 }
 
 
@@ -45,11 +44,6 @@
   }
   .checkout__right{
     margin: 20px 0;
-    .subtotal{
-      .order__button{
-        width: 90%;
-      }
-    }
   }
 
 }

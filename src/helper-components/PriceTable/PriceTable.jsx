@@ -8,7 +8,7 @@ export default function PriceTable({ buttonTitle, handleClick }) {
   const { basket } = useStateValue()[0];
 
   return (
-    <>
+    <div className ="price__table">
       <h2>Price Details ({basket.length} items)</h2>
       <hr />
       <div className="subtotal">
@@ -48,10 +48,10 @@ export default function PriceTable({ buttonTitle, handleClick }) {
         </table>
         <div className="order__button">
           {basket.length > 0 && (
-            <button onClick={handleClick}>{buttonTitle}</button>
+            <button className="checkout__button" onClick={handleClick}>{buttonTitle}</button>
           )}
         </div>
       </div>
-    </>
+    </div>
   );
 }

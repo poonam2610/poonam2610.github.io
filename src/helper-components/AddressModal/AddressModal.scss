@@ -20,8 +20,7 @@
   padding: 2rem;
   z-index: 5;
   border-top-left-radius: 10px;
-  border-top-right-radius: 10px;  
-  
+  border-top-right-radius: 10px;
 }
 
 .base__container {
@@ -43,28 +42,29 @@
   text-align: left;
   .modal__form__header {
     font-size: 14px;
-    padding: 16px 16px 0 16px;
+    padding: 16px 16px 16px 0;
     font-weight: 500;
   }
   .contact__details {
-    font-family: "Roboto", sans-serif;
-    .address__modal__input{
+   
+    .address__modal__input {
       width: 90%;
-      padding: 10px 20px ;
+      padding: 10px 20px;
       border-radius: 5px;
       border: 1px solid black;
       margin: 0.3rem auto 0.9rem;
-      &::placeholder{
+      &::placeholder {
         font-family: "Montserrat", sans-serif;
       }
     }
   }
-
-
 }
 
+.base__footer{
+  padding-top: 20px;
+  border-top: 1px solid #d5d6d9 ;
   .base__button {
-    width: 90%;
+    width: 100%;
     color: #474554;
     font-weight: 600;
     cursor: pointer;
@@ -72,25 +72,25 @@
     border: none;
     text-transform: uppercase;
     letter-spacing: 1px;
-
-    background-color: #f8eae1;
+  
+    background-color: #F2D7C7;
     font-size: 14px;
     border-radius: 4px;
     padding: 14px;
   }
+}
 
-
-.default__check{
-    display: flex;
-    margin: 20px 0;
-    align-items: center;
-    input[type="checkbox"]{
-      margin-right: 10px;
-    }
+.default__check {
+  display: flex;
+  margin: 20px 0;
+  align-items: center;
+  input[type="checkbox"] {
+    margin-right: 10px;
+  }
 }
 
 @media screen and (max-width: 850px) {
-  .address__modal{
+  .address__modal {
     width: 50%;
   }
 }

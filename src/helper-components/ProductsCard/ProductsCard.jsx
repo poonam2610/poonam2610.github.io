@@ -15,7 +15,7 @@ function ProductsCard({ value }) {
         <div className="product__title">{title}</div>
         <div className="product__rating"><StarRating rating={rating} /></div>
         <div className="product__price">Rs {price}</div>
-        <AddToBagButton content="BUY NOW" handleClick={() => { }} />
+        <AddToBagButton content="SEE NOW" handleClick={() => { }} />
       </Link>
     </div>
   </>

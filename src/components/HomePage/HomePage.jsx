@@ -8,11 +8,12 @@ import MustHaveSection from './MustHaveSection'
 
 function HomePage() {
   const arrayOfImagesUrl = ["/bg-hp0.png", "/bg-hp1.png", "/bg-hp2.png"]
+ 
 
   return (
     <div className={`content__container`}>
       <div className="carousel__container">
-        <Carousel arrayOfImagesUrl={arrayOfImagesUrl} />
+        <Carousel arrayOfImagesUrl={arrayOfImagesUrl} width ={window.innerWidth}/>
       </div>
       <div>
         <Categories />
