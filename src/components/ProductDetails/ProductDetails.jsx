@@ -25,8 +25,6 @@ function ProductDetails() {
   const [{ user }, dispatch] = useStateValue();
   const [isProductAdded, setIsProductAdded] = useState(false);
 
-  // const width = document.getElementById("carousel__product__detail__page").offsetWidth
-  // console.log("width is", width)
   useEffect(() => {
     const filteredProduct = data.default.filter(
       (value) => value.id === parseInt(id)

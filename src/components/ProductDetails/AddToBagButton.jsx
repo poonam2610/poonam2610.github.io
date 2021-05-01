@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import "./AddToBagButton.scss";
-import { FaShoppingBag, FaShoppingCart } from "react-icons/fa";
+import { FaShoppingCart } from "react-icons/fa";
 
 
 export default function AddToBagButton({content , isProductAdded, handleClick}) {

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Header.scss";
-import { FaShoppingBag, FaShoppingCart } from "react-icons/fa";
+import { FaShoppingCart } from "react-icons/fa";
 import { BsPersonFill } from "react-icons/bs";
 import Hamburger from "../../helper-components/Hamburger/Hamburger";
 import { Link } from "react-router-dom";

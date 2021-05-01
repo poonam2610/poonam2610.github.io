@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, {  useState } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import "./Carousel.scss";
 
