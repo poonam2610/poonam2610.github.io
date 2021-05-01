@@ -1,21 +1,20 @@
-.outer-button{
+.outer__button{
   font-size: 15px;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   background-color:#F0EBE5;
   color:black;
-  border-top-right-radius: 40px;
-  border-bottom-right-radius: 40px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
   margin: 10px auto 8px;
   min-width: 45px;
   height: 42px;
-  padding-left:12px;
   border: 2px solid gray;
   align-items: center;
   cursor: pointer;
   width: 100%;
   display: inline-flex;
-  justify-content: space-between;
+  // justify-content: space-between;
   &:focus{
     outline: none;
   }
@@ -23,21 +22,44 @@
     color:#c91a1a ;
     border-color: #af332b;
     background-color: white;
-    .icon-container{
+    .icon__container{
       background-color:#af332b; 
     }
   }
 
 }
-.icon-container{
+.icon__container{
  
+
   display: inline-flex;
   justify-content: center;
   align-items: center;
   width: 40px;
-  height: 40px;
-  border-radius: 50%;
+  height: 38px;
+  border-top-right-radius: 9px;
+  border-bottom-right-radius: 9px;
   background-color: #474554;
   color: white;
+  
+  
 
 }
+.button__content{
+  display: inline-flex;
+  justify-content: center;
+  flex-grow: 1;
+  margin: 0 2%;
+}
+
+// .animate{
+//   animation: moveRight 1s ease-out ;
+// }
+// @keyframes moveRight{
+//   from {
+//     transform: translateX(0px);
+//   }
+
+//   to {
+//     transform:translateX( calc(100% - 40px)) ;
+//   }
+// }

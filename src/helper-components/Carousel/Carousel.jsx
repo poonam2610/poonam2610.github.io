@@ -1,31 +1,51 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import "./Carousel.scss";
 
-
-
-export default function Carousel({arrayOfImagesUrl}) {
-  const [current, setCurrent] = useState(0);
+export default function Carousel({ arrayOfImagesUrl, width = 1 }) {
+  const [current, setCurrent] = useState(1);
+  const [translateValue, setTranslateValue] = useState(0);
   const length = arrayOfImagesUrl.length;
 
+  const imagesArr = arrayOfImagesUrl.map((itemURL, index) => {
+    return <img key={index} src={itemURL} className="image" alt="" />;
+  });
+
   const nextSlide = () => {
-    setCurrent(current === length - 1 ? 0 : current + 1);
+    console.log("Next slide called");
+    console.log("Before if", current)
+    if (current !== length) {
+      console.log("i entered if")
+      setCurrent(current + 1);
+      setTranslateValue(-current * 100);
+    }
   };
 
   const prevSlide = () => {
-    setCurrent(current === 0 ? length - 1 : current - 1);
+    if (current !== 1) {
+      setCurrent(current - 1);
+      setTranslateValue((length - current - 1) * 100);
+    }
   };
+
+  // useEffect(() => {
+  //   console.log("why why why")
+  //   let interval = setInterval(() => {
+  //     nextSlide();
+  //   }, 2000);
+  //   return ()=>(clearInterval(interval));
+  // }, []);
 
   return (
     <div className="slider">
-      <FaChevronLeft className="left-arrow" onClick={prevSlide}/>
-     <div className="carouselImage-container">
-       <img src={arrayOfImagesUrl[current]} className="image" alt=""/>
-     </div>
-
+      <div
+        className="carouselImage-container"
+        style={{ transform: `translateX(${translateValue}%)` }}
+      >
+        {imagesArr}
+      </div>
+      <FaChevronLeft className="left-arrow" onClick={prevSlide} />
       <FaChevronRight className="right-arrow" onClick={nextSlide} />
     </div>
   );
 }
-
-

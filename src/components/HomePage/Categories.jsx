@@ -29,7 +29,7 @@ export default function Categories(){
               </Link>
             </div>
             <div className="cards" id="women">
-              <Link className="link__style" to={`${ROUTES.CATEGORY}/lady`}>
+              <Link className="link__style" to={`${ROUTES.CATEGORY}/women`}>
                 <CategoriesCard image="/woman-category.jpg" title="Women's Clothing" />
               </Link>
             </div>

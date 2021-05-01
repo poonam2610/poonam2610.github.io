@@ -1,16 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import "./AddToBagButton.scss";
-import { FaShoppingBag } from "react-icons/fa";
+import { FaShoppingBag, FaShoppingCart } from "react-icons/fa";
 
 
-export default function AddToBagButton({content , handleClick}) {
-  
+export default function AddToBagButton({content , isProductAdded, handleClick}) {
+
   return (
     <div >
-      <button className="outer-button" onClick={()=>{handleClick()}} >
-        {content}
-        <div className="icon-container">
-          <FaShoppingBag />
+      <button className="outer__button" onClick={()=>{handleClick()}} >
+        <div className={`icon__container ${isProductAdded? "animate" : ""}`}>
+          <FaShoppingCart />
+        </div>
+        <div className = "button__content">
+        {`${isProductAdded ?"ADDED" :content}`}
         </div>
       </button>
     </div>

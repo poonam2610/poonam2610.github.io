@@ -12,7 +12,9 @@ function SearchBar() {
             if (searchItem !== "") {
                 history.push(`${ROUTES.SEARCH}/${searchItem}`);
             }
+            setTimeout(()=>{setSearchItem("")}, 1000)
         }
+
     }
     return (
         <div className="searchBar__container">

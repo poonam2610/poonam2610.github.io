@@ -5,7 +5,7 @@ import "./BreadCrumbs.scss";
 function BreadCrumbs({ breadCrumbLinks }) {
     const list = breadCrumbLinks.map((value, index) => {
         return <div key={index}>{!value.isActive && <Link key={index} className="link__style" to={value.linkHref}>
-            {value.linkText} {"/"}&nbsp;
+            {value.linkText} {">"}&nbsp;
         </Link>}
             {value?.isActive && <>  {value?.linkText}</>}
         </div>

@@ -25,6 +25,8 @@ function ProductDetails() {
   const [{ user }, dispatch] = useStateValue();
   const [isProductAdded, setIsProductAdded] = useState(false);
 
+  // const width = document.getElementById("carousel__product__detail__page").offsetWidth
+  // console.log("width is", width)
   useEffect(() => {
     const filteredProduct = data.default.filter(
       (value) => value.id === parseInt(id)
@@ -121,7 +123,7 @@ function ProductDetails() {
       >
         <AlertBox product={product} message={"Added to bag!"} />
       </div>
-      <div className="product__display__container">
+      <div className="product__display__container" id = "carousel__product__detail__page">
         <div className="product__image">
           <Carousel arrayOfImagesUrl={product.image}></Carousel>
         </div>
@@ -150,7 +152,7 @@ function ProductDetails() {
           <div className="error__and__button">
             <div className="error__message">{errorMessage}</div>
             <div id="addItemToBag">
-              <AddToBagButton content="ADD TO BAG" handleClick={handleClick} />
+              <AddToBagButton content="ADD TO CART" isProductAdded ={isProductAdded} handleClick={handleClick} />
             </div>
           </div>
         </div>
