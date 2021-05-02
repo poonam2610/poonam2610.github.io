@@ -20,6 +20,6 @@ export default function AddToBagButton({ content, isProductAdded, handleClick })
 }
 AddToBagButton.propTypes = {
   content: PropTypes.string.isRequired,
-  isProductAdded: PropTypes.bool.isRequired,
+  isProductAdded: PropTypes.bool,
   handleClick: PropTypes.func.isRequired
 }
