@@ -9,6 +9,7 @@ import {
   googleAuthProvider,
   firebase,
 } from "../../firebase-config/firebase";
+import PropTypes from 'prop-types';
 
 export default function Modal({ type, setIsModalOpen }) {
   const [phoneNumber, setPhoneNumber] = useState("+91");
@@ -117,4 +118,9 @@ export default function Modal({ type, setIsModalOpen }) {
       </div>
     </div>
   );
+}
+
+Modal.propTypes = {
+  setIsModalOpen: PropTypes.func.isRequired,
+  type: PropTypes.string
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import "./BreadCrumbs.scss";
+import PropTypes from "prop-types";
 
 function BreadCrumbs({ breadCrumbLinks }) {
     const list = breadCrumbLinks.map((value, index) => {
@@ -19,5 +20,8 @@ function BreadCrumbs({ breadCrumbLinks }) {
     )
 }
 
-export default BreadCrumbs
+export default BreadCrumbs;
+BreadCrumbs.propTypes = {
+    breadCrumbLinks: PropTypes.array.isRequired
+}
 

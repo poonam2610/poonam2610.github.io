@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { FaTimes } from "react-icons/fa";
 import { v4 as uuidv4 } from "uuid";
 import "./AddressModal.scss";
+import PropTypes from "prop-types";
 
 function AddressModal({ modalValue, setIsModalOpen, addOrSaveAddress }) {
   const [state, setState] = useState({
@@ -126,10 +127,10 @@ function AddressModal({ modalValue, setIsModalOpen, addOrSaveAddress }) {
             </div>
           </div>
 
-          <div className = "base__footer">
-          <div className="base__button" onClick={handleSave}>
-            {isModalValue ? "Save Address" : "ADD address"}
-          </div>
+          <div className="base__footer">
+            <div className="base__button" onClick={handleSave}>
+              {isModalValue ? "Save Address" : "ADD address"}
+            </div>
           </div>
         </div>
       </div>
@@ -138,3 +139,9 @@ function AddressModal({ modalValue, setIsModalOpen, addOrSaveAddress }) {
 }
 
 export default AddressModal;
+
+AddressModal.propTypes = {
+  modalValue: PropTypes.object.isRequired,
+  setIsModalOpen: PropTypes.func.isRequired,
+  addOrSaveAddress: PropTypes.func.isRequired
+}

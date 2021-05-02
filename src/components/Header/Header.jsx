@@ -20,10 +20,14 @@ function Header() {
 
   useEffect(() => {
     const handler = (e) => {
-      setIsSearchBarVisible(e.matches);
-    };
-    window.matchMedia("(max-width:740px)").addEventListener("change", handler);
-  }, []);
+      setIsSearchBarVisible(e.matches)
+    }
+    const match = window.matchMedia("(max-width: 720px)");
+    match.addEventListener("change", handler);
+    if (match.matches) {
+      setIsSearchBarVisible(true)
+    }
+  }, [])
 
   const handleHamburger = () => {
     setIsHamburgerOpen(!isHamburgerOpen);

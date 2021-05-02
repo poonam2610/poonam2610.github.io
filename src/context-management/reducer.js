@@ -109,11 +109,13 @@ const reducer = (state, action) => {
       };
 
     case ACTIONS.ADD_TO_ORDER_HISTORY:
-      const newYourOrders = [...state.yourOrders];
+      let newYourOrders = [...state.yourOrders];
       if (action.items.length > 0) {
         action.items?.forEach((element) => {
           newYourOrders.push(element);
         });
+      } else {
+        newYourOrders = [];
       }
       return {
         ...state,

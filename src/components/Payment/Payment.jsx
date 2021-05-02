@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { ACTIONS } from "../../context-management/constants";
 import { useStateValue } from "../../context-management/StateProvider";
-import { db } from "../../firebase-config/firebase";
+import { userRef } from "../../firebase-config/firebase";
 import AddressCard from "../../helper-components/AddressCard/AddressCard";
 import AddressModal from "../../helper-components/AddressModal/AddressModal";
 import "./Payment.scss";
 import PaymentProceed from "../../helper-components/PaymentProceed/PaymentProceed";
 import PriceTable from "../../helper-components/PriceTable/PriceTable";
+
 
 function Payment() {
   const [{ address, user }, dispatch] = useStateValue();
@@ -21,18 +22,18 @@ function Payment() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   // const history = useHistory();
 
-  useEffect(()=>{
-    if (currentSelection){
-        setErrorMessage("")
+  useEffect(() => {
+    if (currentSelection) {
+      setErrorMessage("")
     }
-  },[currentSelection])
-  
+  }, [currentSelection])
+
   useEffect(() => {
     setDefaultAddress({ ...address?.filter((x) => x.isDefault)[0] });
     setOtherAddress(address.filter((x) => !x.isDefault));
     if (!!user) {
       if (address?.length > 0) {
-        db.collection("user").doc(user?.uid).update({
+        userRef(user?.uid).update({
           address: address,
         });
       }
@@ -77,13 +78,13 @@ function Payment() {
 
   const handlePayment = () => {
     // history.push(ROUTES.PROCEED_TO_PAY);
-    if(currentSelection){
-        setIsRazorPayOpen(true);
-        setErrorMessage("")
-    }else{
-        setErrorMessage("Please select address")
+    if (currentSelection) {
+      setIsRazorPayOpen(true);
+      setErrorMessage("")
+    } else {
+      setErrorMessage("Please select address")
     }
- 
+
   };
 
   return (

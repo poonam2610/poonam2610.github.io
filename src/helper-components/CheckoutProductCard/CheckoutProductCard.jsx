@@ -5,8 +5,9 @@ import StarRating from "../Star-rating/StarRating";
 import * as ROUTES from "../../constants/Routes";
 import "./CheckoutProductCard.scss";
 import { useHistory } from 'react-router-dom';
-import { db } from '../../firebase-config/firebase';
+import { userRef } from '../../firebase-config/firebase';
 import { FaMinus, FaPlus } from "react-icons/fa";
+import PropTypes from 'prop-types';
 
 function CheckoutProductCard({ value, ordered }) {
   const [{ basket, user }, dispatch] = useStateValue();
@@ -16,7 +17,7 @@ function CheckoutProductCard({ value, ordered }) {
   const newDate = ordered ? JSON.stringify(new Date(JSON.parse(date))).slice(1, 11) : "";
 
   const clearFirebaseBasket = () => {
-    db.collection("user").doc(user?.uid).update({
+    userRef(user?.uid).update({
       basket: [],
     });
   }
@@ -126,3 +127,8 @@ function CheckoutProductCard({ value, ordered }) {
 }
 
 export default CheckoutProductCard;
+
+CheckoutProductCard.propTypes = {
+  value: PropTypes.object.isRequired,
+  ordered: PropTypes.bool.isRequired
+}

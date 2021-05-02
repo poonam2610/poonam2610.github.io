@@ -119,11 +119,11 @@ function ProductDetails() {
             : { transform: "translateY(-1000px)" }
         }
       >
-        <AlertBox product={product} message={"Added to bag!"} />
+        <AlertBox product={product} message="Added to bag!" />
       </div>
-      <div className="product__display__container" id = "carousel__product__detail__page">
+      <div className="product__display__container" id="carousel__product__detail__page">
         <div className="product__image">
-          <Carousel arrayOfImagesUrl={product.image}></Carousel>
+          <Carousel arrayOfImagesUrl={product.image} />
         </div>
         <div className="product__detail">
           <div className="product__description">
@@ -150,16 +150,16 @@ function ProductDetails() {
           <div className="error__and__button">
             <div className="error__message">{errorMessage}</div>
             <div id="addItemToBag">
-              <AddToBagButton content="ADD TO CART" isProductAdded ={isProductAdded} handleClick={handleClick} />
+              <AddToBagButton content="ADD TO CART" isProductAdded={isProductAdded} handleClick={handleClick} />
             </div>
           </div>
         </div>
       </div>
       {isLoginClicked && <Modal setIsModalOpen={setIsLoginClicked} />}
       <SimilarProducts
-        category={product.category}
-        id={product.id}
-      ></SimilarProducts>
+        category={product?.category}
+        id={product?.id}
+      />
     </div>
   </>
   );

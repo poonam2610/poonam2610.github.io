@@ -1,8 +1,9 @@
 import React from 'react';
 import { FaStar } from "react-icons/fa";
 import "./StarRating.scss";
+import PropTypes from "prop-types";
 
-function StarRating({rating}) {
+function StarRating({ rating }) {
 
     const starRating = [...Array(5)].map((_, i) => {
         return <FaStar key={i} color={rating > i ? "rgba(255,164,28,1)" : "#a7a0a094"} className="star__icon" />
@@ -11,4 +12,8 @@ function StarRating({rating}) {
 }
 
 export default StarRating;
+
+StarRating.propTypes = {
+    rating: PropTypes.number,
+}
 

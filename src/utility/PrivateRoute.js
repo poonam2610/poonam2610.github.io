@@ -2,6 +2,7 @@ import { Route } from "react-router-dom";
 import { useStateValue } from "../context-management/StateProvider";
 import Modal from "../components/Modal/Modal";
 import React, { useState } from "react";
+import PropTypes from "prop-types";
 
 const PrivateRoute = ({ children }) => {
   const { user } = useStateValue()[0];
@@ -36,3 +37,7 @@ const PrivateRoute = ({ children }) => {
 };
 
 export default PrivateRoute;
+
+PrivateRoute.propTypes = {
+  children: PropTypes.node.isRequired,
+};
