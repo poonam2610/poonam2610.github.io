@@ -118,47 +118,37 @@ function App() {
     <div className="app">
       <BrowserRouter>
         <ScrollToTop />
+        <Header />
+        <div className = "inbetween__content">
         <Switch>
           <PrivateRoute exact path={ROUTES.CHECKOUT}>
-            <Header />
             <Checkout />
-            <Footer />
           </PrivateRoute>
-          <PrivateRoute exact path={`${ROUTES.CHECKOUT}${ROUTES.PAYMENT}`}>
-            <Header />
-            <Payment />
-            <Footer />
+          <PrivateRoute exact path={`${ROUTES.CHECKOUT}${ROUTES.PAYMENT}`}>          
+            <Payment />            
           </PrivateRoute>
-          <Route exact path={`${ROUTES.CATEGORY}/:category`}>
-            <Header />
-            <Products />
-            <Footer />
+          <Route exact path={`${ROUTES.CATEGORY}/:category`}>            
+            <Products />         
           </Route>
-          <Route exact path={`${ROUTES.SEARCH}/:search`}>
-            <Header />
-            <SearchProducts />
-            <Footer />
+          <Route exact path={`${ROUTES.SEARCH}/:search`}>            
+            <SearchProducts />           
           </Route>
-          <Route exact path={`${ROUTES.CATEGORY}/:category/:id`}>
-            <Header />
-            <ProductDetails />
-            <Footer />
+          <Route exact path={`${ROUTES.CATEGORY}/:category/:id`}>            
+            <ProductDetails />            
           </Route>
-          <Route exact path={ROUTES.HOME}>
-            <Header />
-            <HomePage />
-            <Footer />
+          <Route exact path={ROUTES.HOME}>           
+            <HomePage />         
             {isOpenModal && <Modal setIsModalOpen={setIsOpenModal} />}
           </Route>
           {/* <Route exact path={ROUTES.PROCEED_TO_PAY}>
             <PaymentProceed />
           </Route> */}
-          <PrivateRoute exact path={ROUTES.YOUR_ORDERS}>
-            <Header />
-            <YourOrders />
-            <Footer />
+          <PrivateRoute exact path={ROUTES.YOUR_ORDERS}>         
+            <YourOrders />          
           </PrivateRoute>
         </Switch>
+        </div>
+        <Footer />
       </BrowserRouter>
     </div>
   );
