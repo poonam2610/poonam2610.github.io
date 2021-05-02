@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./SizeOptions.scss";
+import PropTypes from "prop-types";
 
 const sizeOptionsArr = ["XS", "S", "M", "L", "XL"];
 export default function SizeOptions({ sizes, setSize }) {
@@ -24,4 +25,9 @@ export default function SizeOptions({ sizes, setSize }) {
       {sizeOptions}
     </div>
   );
+}
+
+SizeOptions.propTypes = {
+  sizes: PropTypes.array,
+  setSize: PropTypes.func.isRequired
 }

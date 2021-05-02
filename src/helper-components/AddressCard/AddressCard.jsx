@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./AddressCard.scss";
+import PropTypes from "prop-types";
 
 function AddressCard({
   data,
@@ -33,12 +34,12 @@ function AddressCard({
   };
   return (
     <>
-      
-        { !!isDataAvailable && <div className="address__card">
+
+      { !!isDataAvailable && <div className="address__card">
         <fieldset>
-          <legend>{isDefaultAddress? "Default Address" : ""}</legend>
+          <legend>{isDefaultAddress ? "Default Address" : ""}</legend>
           <div className="address__fieldset">
-            <input className ="address__radiobutton"
+            <input className="address__radiobutton"
               type="radio"
               checked={selectAddress}
               value={id}
@@ -77,3 +78,12 @@ function AddressCard({
 }
 
 export default AddressCard;
+
+AddressCard.propTypes = {
+  data: PropTypes.object.isRequired,
+  handleAddressChange: PropTypes.func.isRequired,
+  removeAddress: PropTypes.func.isRequired,
+  editAddress: PropTypes.func.isRequired,
+  currentSelection: PropTypes.string,
+  isDefaultAddress: PropTypes.bool.isRequired
+}

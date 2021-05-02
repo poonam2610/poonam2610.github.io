@@ -10,6 +10,7 @@ import {
   GiConverseShoe,
 } from "react-icons/gi";
 import { useStateValue } from "../../context-management/StateProvider";
+import PropTypes from "prop-types";
 
 function Hamburger({ setIsHamburgerOpen }) {
   const { user } = useStateValue()[0];
@@ -63,3 +64,7 @@ function Hamburger({ setIsHamburgerOpen }) {
 }
 
 export default Hamburger;
+
+Hamburger.propTypes = {
+  setIsHamburgerOpen: PropTypes.func.isRequired,
+}
