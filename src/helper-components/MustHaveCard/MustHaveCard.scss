@@ -143,3 +143,32 @@
     }
   }
 }
+
+
+@media screen and  (min-width: 1400px){
+
+  .singleCard__container {
+    width: 25%;
+    
+  }
+
+  .image__container{
+    height: 400px;
+    max-height: 400px;
+    border-radius: 150px;
+  }
+
+  .buyNowButton__container{
+    top: 240px;
+    right: -5px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    .buyNowButton{
+      font-size: 16px;
+      border-radius: 90px;
+      min-width: 90px;
+      height: 90px;
+    }
+  }
+}
