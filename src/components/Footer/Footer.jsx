@@ -6,6 +6,8 @@ import {
   FaCcPaypal,
   FaCcAmazonPay,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import * as ROUTES from "../../constants/Routes";
 
 function Footer() {
   return (
@@ -29,20 +31,20 @@ function Footer() {
               <span>We accept:</span>
             </p>
             <div className="cards__image">
-              <FaCcVisa />
-              <FaCcMastercard />
-              <FaCcPaypal />
-              <FaCcAmazonPay />
+              <FaCcVisa className="logo" />
+              <FaCcMastercard className="logo" />
+              <FaCcPaypal className="logo" />
+              <FaCcAmazonPay className="logo" />
             </div>
           </div>
         </div>
         <div className="categories">
           <h2>Categories</h2>
           <div className="all__categories">
-            <p>Accessories</p>
-            <p>Women</p>
-            <p>Men</p>
-            <p>Child</p>
+            <Link className="link__style" to={`${ROUTES.CATEGORY}${ROUTES.ACCESSORIES}`}><p>Accessories</p></Link>
+            <Link className="link__style" to={`${ROUTES.CATEGORY}${ROUTES.WOMEN}`}><p>Women</p></Link>
+            <Link className="link__style" to={`${ROUTES.CATEGORY}${ROUTES.MEN}`}><p>Men</p></Link>
+            <Link className="link__style" to={`${ROUTES.CATEGORY}${ROUTES.KIDS}`}><p>Kid</p></Link>
           </div>
         </div>
       </div>

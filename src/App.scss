@@ -1,16 +1,17 @@
-*{
+* {
   margin: 0;
   box-sizing: border-box;
   padding: 0;
-  -webkit-tap-highlight-color: transparent ;
+  -webkit-tap-highlight-color: transparent;
 }
 :root {
   --textColor: rgba(59, 29, 83, 0.96);
-  --orange:#b16b63;
+  --orange: #b16b63;
+  --button: #9e817d;
+  --cart-icon-button: #5f4744;
 }
 
-
-.inbetween__content{
+.inbetween__content {
   min-height: 80vh;
 }
 
@@ -26,4 +27,3 @@
 .noblur {
   filter: blur(0) !important;
 }
-

@@ -22,28 +22,28 @@ function Hamburger({ setIsHamburgerOpen }) {
       <div className="profile__div__hamburger__menu"></div>
       <hr />
       <div className="hamburger__items">
-        <Link className="hamburger__link" to={`${ROUTES.CATEGORY}/men`}>
+        <Link className="hamburger__link" to={`${ROUTES.CATEGORY}${ROUTES.MEN}`}>
           <div onClick={handleClick}>
             <GiTie className="icons__for__hamburger__menu" />{" "}
             <h4>Men's Clothing</h4>
           </div>
         </Link>
         <hr />
-        <Link className="hamburger__link" to={`${ROUTES.CATEGORY}/women`}>
+        <Link className="hamburger__link" to={`${ROUTES.CATEGORY}${ROUTES.WOMEN}`}>
           <div onClick={handleClick}>
             <GiLargeDress className="icons__for__hamburger__menu" />{" "}
             <h4>Women's Clothing</h4>
           </div>
         </Link>
         <hr />
-        <Link className="hamburger__link" to={`${ROUTES.CATEGORY}/kids`}>
+        <Link className="hamburger__link" to={`${ROUTES.CATEGORY}${ROUTES.KIDS}`}>
           <div onClick={handleClick}>
             <GiBabyFace className="icons__for__hamburger__menu" />{" "}
             <h4>Kid's Clothing </h4>
           </div>
         </Link>
         <hr />
-        <Link className="hamburger__link" to={`${ROUTES.CATEGORY}/accessories`}>
+        <Link className="hamburger__link" to={`${ROUTES.CATEGORY}${ROUTES.ACCESSORIES}`}>
           <div onClick={handleClick}>
             <GiConverseShoe className="icons__for__hamburger__menu" />{" "}
             <h4>Accessories</h4>

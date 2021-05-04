@@ -7,3 +7,8 @@ export const CATEGORY = "/category";
 export const SEARCH = "/search";
 export const PRODUCT__DETAILS = "/productdetails";
 export const YOUR_ORDERS = "/yourorders";
+
+export const ACCESSORIES = "/accessories";
+export const KIDS = "/kids";
+export const WOMEN = "/women";
+export const MEN = "/men";
