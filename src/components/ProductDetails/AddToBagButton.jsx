@@ -6,6 +6,7 @@ import PropTypes from "prop-types";
 export default function AddToBagButton({ content, isProductAdded, handleClick }) {
 
   return (
+    
     <div >
       <button className="outer__button" onClick={() => { handleClick() }} >
         <div className={`icon__container ${isProductAdded ? "animate" : ""}`}>

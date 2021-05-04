@@ -1,20 +1,21 @@
+
 .outer__button{
   font-size: 15px;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  background-color:#F0EBE5;
-  color:black;
+  background-color:var(--orange);
+  color:white;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   margin: 10px auto 8px;
-  min-width: 45px;
   height: 42px;
-  border: 2px solid gray;
+  border: 2px solid var(--orange);
   align-items: center;
   cursor: pointer;
   width: 100%;
+  position: relative;
   display: inline-flex;
-  // justify-content: space-between;
+  justify-content: center;
   &:focus{
     outline: none;
   }
@@ -29,8 +30,7 @@
 
 }
 .icon__container{
- 
-
+  box-shadow: 2px 1px 2px rgba(255, 255, 255 , 0.4);
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -38,9 +38,11 @@
   height: 38px;
   border-top-right-radius: 9px;
   border-bottom-right-radius: 9px;
-  background-color: #474554;
+  background-color: var(--orange);
   color: white;
-  
+  left: 0;
+  transform-box: content-box;
+  position: absolute;
   
 
 }
@@ -48,18 +50,15 @@
   display: inline-flex;
   justify-content: center;
   flex-grow: 1;
-  margin: 0 2%;
+  
+  padding: 0 40px;
 }
 
-// .animate{
-//   animation: moveRight 1s ease-out ;
-// }
-// @keyframes moveRight{
-//   from {
-//     transform: translateX(0px);
-//   }
+.animate{
+  animation: moveRight 0.7s ease-in-out;
+}
 
-//   to {
-//     transform:translateX( calc(100% - 40px)) ;
-//   }
-// }
+@keyframes moveRight{
+  from {left: 0px;}
+  to {left:calc(100% - 40px)}
+}

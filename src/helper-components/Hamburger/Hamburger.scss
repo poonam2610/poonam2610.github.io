@@ -2,28 +2,7 @@
   position: fixed;
   top:0;
   width: 23%;
-  // background-image: linear-gradient(#46265f,#46275feb ,#664283ed);
-  // background: linear-gradient(41deg, rgb(15, 53, 53), rgb(82, 21, 23));
-  background: hsla(22, 67%, 93%, 1);
-
-  background: linear-gradient(
-    225deg,
-    hsla(22, 67%, 93%, 1) 0%,
-    hsla(0, 1%, 74%, 1) 100%
-  );
-
-  background: -moz-linear-gradient(
-    225deg,
-    hsla(22, 67%, 93%, 1) 0%,
-    #bdbcbc 100%
-  );
-
-  background: -webkit-linear-gradient(
-    225deg,
-    hsla(22, 67%, 93%, 1) 0%,
-    hsla(0, 1%, 74%, 1) 100%
-  );
-
+  background-color: #f8eae1;
   height: 100%;
   z-index: 5;
   color: black;

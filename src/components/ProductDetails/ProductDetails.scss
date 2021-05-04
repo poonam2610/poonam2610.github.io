@@ -18,7 +18,7 @@
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
   border-top-right-radius: 50px;
   border-top-left-radius: 50px;
-  margin: 50px 170px;
+  margin: 50px 180px;
 }
 
 .product__image {
@@ -119,3 +119,10 @@
   }
 }
 
+@media screen and (max-width: 1630px) and (min-width:1400px) {
+  .product__display__container {
+    height: 625px;
+    margin: 50px 240px;
+ 
+  }
+}

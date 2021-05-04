@@ -10,23 +10,6 @@ h5 {
 }
 .dot {
   font-size: 15px;
-  background-color: gray;
-  border: none;
-  border-radius: 40px;
-  padding: 0;
-  min-width: 40px;
-  height: 40px;
-  text-align: center;
-  cursor: pointer;
-  color: white;
-  margin: 5px;
-  outline: none;
-  &:hover {
-    background-color: #c91a1a;
-  }
-}
-.hidden {
-  font-size: 15px;
   background-color: white;
   border: 2px solid gray;
   border-radius: 40px;
@@ -34,11 +17,32 @@ h5 {
   min-width: 40px;
   height: 40px;
   text-align: center;
+  cursor: pointer;
   color: black;
+  margin: 5px;
+  outline: none;
+  &:hover {
+    background-color: #c91a1a;
+    border-color: #c91a1a;
+    color: white;
+  }
+}
+.hidden {
+  font-size: 15px;
+  background-color:  gray;
+  border: 2px solid gray;
+  border-radius: 40px;
+  padding: 0;
+  min-width: 40px;  
+  height: 40px;
+  text-align: center;
+  color: white;
   margin: 5px;
   outline: none;
   cursor: not-allowed;
 }
 .selected {
   background-color: #c91a1a;
+  border-color: #c91a1a;
+  color: white;
 }
