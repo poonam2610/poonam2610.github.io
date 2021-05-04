@@ -2,6 +2,7 @@ import React from "react";
 import "./MustHaveCard.scss";
 import * as ROUTES from "../../constants/Routes";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
 export default function MustHaveCard({ value }) {
   const { id, price, title, category, image } = value;
@@ -26,4 +27,8 @@ export default function MustHaveCard({ value }) {
       </Link>
     </div>
   );
+}
+
+MustHaveCard.propTypes = {
+  value: PropTypes.object.isRequired
 }

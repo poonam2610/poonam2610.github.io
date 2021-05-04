@@ -4,6 +4,7 @@ import * as ROUTES from "../../constants/Routes";
 import { Link } from "react-router-dom";
 import StarRating from "../Star-rating/StarRating";
 import AddToBagButton from "../../components/ProductDetails/AddToBagButton";
+import PropTypes from "prop-types";
 
 function ProductsCard({ value }) {
   const { id, image, title, price, category, rating } = value;
@@ -23,3 +24,7 @@ function ProductsCard({ value }) {
 }
 
 export default ProductsCard;
+
+ProductsCard.propTypes = {
+  value: PropTypes.object.isRequired
+}

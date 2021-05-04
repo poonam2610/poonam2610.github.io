@@ -2,13 +2,14 @@ import React from "react";
 import "./PriceTable.scss";
 import { useStateValue } from "../../context-management/StateProvider";
 import { totalPrice } from "../../context-management/reducer";
+import PropTypes from 'prop-types';
 
 
 export default function PriceTable({ buttonTitle, handleClick }) {
   const { basket } = useStateValue()[0];
 
   return (
-    <div className ="price__table">
+    <div className="price__table">
       <h2>Price Details ({basket.length} items)</h2>
       <hr />
       <div className="subtotal">
@@ -54,4 +55,9 @@ export default function PriceTable({ buttonTitle, handleClick }) {
       </div>
     </div>
   );
+}
+
+PriceTable.propTypes = {
+  buttonTitle: PropTypes.string.isRequired,
+  handleClick: PropTypes.func.isRequired
 }

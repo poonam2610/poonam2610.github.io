@@ -1,6 +1,7 @@
 import React from "react";
 import { FaPlus, FaMinus } from "react-icons/fa";
 import "./Quantity.scss";
+import PropTypes from "prop-types";
 
 export default function Quantity({ itemQuantity, setItemQuantity }) {
   return (
@@ -19,4 +20,9 @@ export default function Quantity({ itemQuantity, setItemQuantity }) {
       </div>
     </div>
   );
+}
+
+Quantity.propTypes = {
+  itemQuantity: PropTypes.number.isRequired,
+  setItemQuantity: PropTypes.func.isRequired
 }

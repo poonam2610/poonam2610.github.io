@@ -3,7 +3,7 @@ import { useHistory } from "react-router";
 import * as ROUTES from "../../constants/Routes";
 import { ACTIONS } from "../../context-management/constants";
 import { useStateValue } from "../../context-management/StateProvider";
-import { db } from "../../firebase-config/firebase";
+import { userRef } from "../../firebase-config/firebase";
 import CheckoutProductCard from "../../helper-components/CheckoutProductCard/CheckoutProductCard";
 import PriceTable from "../../helper-components/PriceTable/PriceTable";
 import "./Checkout.scss";
@@ -28,7 +28,7 @@ function Checkout() {
 
   const clearFirebaseBasket = () => {
     if (!!user && basket.length > 0) {
-      db.collection("user").doc(user?.uid).update({
+      userRef(user?.uid).update({
         basket: [],
       });
       dispatch({

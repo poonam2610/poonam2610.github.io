@@ -4,14 +4,16 @@ import { ACTIONS } from '../../context-management/constants';
 import { totalPrice } from '../../context-management/reducer';
 import { useStateValue } from '../../context-management/StateProvider';
 import * as ROUTES from "../../constants/Routes";
-import { db } from '../../firebase-config/firebase';
+import { userRef } from '../../firebase-config/firebase';
+import PropTypes from "prop-types";
 
 function PaymentProceed({ currentSelection, setIsRazorPayOpen }) {
     const [{ basket, user, address }, dispatch] = useStateValue();
     const [selectedAddress, setSelectedAddress] = useState("");
     const history = useHistory();
     const newBasket = []
- 
+
+
 
     const removeDuplicate = (id, size) => {
         const index = newBasket.findIndex(obj => obj.id === id && obj.size === size);
@@ -27,7 +29,7 @@ function PaymentProceed({ currentSelection, setIsRazorPayOpen }) {
                 type: ACTIONS.ADD_TO_ORDER_HISTORY,
                 items: basketWithTimeStamp
             });
-            db.collection("user").doc(user?.uid).update({
+            userRef(user?.uid).update({
                 basket: [],
             });
             dispatch({
@@ -45,6 +47,9 @@ function PaymentProceed({ currentSelection, setIsRazorPayOpen }) {
         handler: ((response) => {
             handlePaymentResponse(response)
         }),
+        modal: {
+            ondismiss: (() => setIsRazorPayOpen(false))
+        },
         prefill: {
             name: user.phoneNumber || "",
             email: user.email || ""
@@ -68,4 +73,9 @@ function PaymentProceed({ currentSelection, setIsRazorPayOpen }) {
     return (null)
 }
 
-export default PaymentProceed
+export default PaymentProceed;
+
+PaymentProceed.propTypes = {
+    currentSelection: PropTypes.string.isRequired,
+    setIsRazorPayOpen: PropTypes.func,
+}

@@ -1,25 +1,26 @@
 import React from "react";
 import "./AddToBagButton.scss";
-import { FaShoppingCart} from "react-icons/fa";
-// import { FcRight } from "react-icons/fc";
+import { FaShoppingCart } from "react-icons/fa";
+import PropTypes from "prop-types";
 
+export default function AddToBagButton({ content, isProductAdded, handleClick }) {
 
-export default function AddToBagButton({content , isProductAdded, handleClick}) {
- 
   return (
     
     <div >
-      <button className="outer__button" onClick={()=>{handleClick()}} >
-        <div className={`icon__container ${isProductAdded? "animate" : ""}`}>
-        {/* <div className = "icon__container" style= { isProductAdded
-            ? { transform: "translateX(0)", transition: "all 0.7s ease" }
-            : { transform: `translateX(${w}%)`}}> */}
-          <FaShoppingCart/>
+      <button className="outer__button" onClick={() => { handleClick() }} >
+        <div className={`icon__container ${isProductAdded ? "animate" : ""}`}>
+          <FaShoppingCart />
         </div>
-        <div className = "button__content">
-        {`${isProductAdded ?"ADDED" :content}`}
+        <div className="button__content">
+          {`${isProductAdded ? "ADDED" : content}`}
         </div>
       </button>
     </div>
   );
+}
+AddToBagButton.propTypes = {
+  content: PropTypes.string.isRequired,
+  isProductAdded: PropTypes.bool,
+  handleClick: PropTypes.func.isRequired
 }

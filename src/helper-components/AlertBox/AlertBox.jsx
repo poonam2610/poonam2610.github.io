@@ -18,6 +18,6 @@ export default function AlertBox({product , message}){
 }
 
 AlertBox.propTypes = {
-  product : PropTypes.object,
+  product : PropTypes.object.isRequired,
   message : PropTypes.string.isRequired
 }
