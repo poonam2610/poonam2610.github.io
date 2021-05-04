@@ -77,19 +77,19 @@ export default function Modal({ type, setIsModalOpen }) {
 
   return (
     // <div className = "modal-container" style = {{filter: "blur(0)"}}>
-    <div className="modal-container blur">
+    <div className="modal__container">
       <div className="modal">
         <button className="close" onClick={handleCloseModal}>
           <FaTimes />
         </button>
-        <div className="sign-up">
+        <div className="sign__up">
           <h3>Sign up to continue shopping !!</h3>
-          <button className="sign-up-button" onClick={loginWithGoogle}>
-            <FcGoogle className="modal-icons" />
+          <button className="sign__up__button" onClick={loginWithGoogle}>
+            <FcGoogle className="modal__icons" />
             <h5>Sign up with Google</h5>
           </button>
-          <button className="sign-up-button" onClick={loginWithFacebook}>
-            <FaFacebookF className="modal-icons" />
+          <button className="sign__up__button" onClick={loginWithFacebook}>
+            <FaFacebookF className="modal__icons" />
             <h5>Sign up with Facebook</h5>
           </button>
           <br />
@@ -106,10 +106,10 @@ export default function Modal({ type, setIsModalOpen }) {
             onChange={(e) => setPhoneNumber(e.target.value)}
           />
 
-          <div id="recaptcha-container"></div>
+          <div id="recaptcha__container"></div>
           <button
-            className="sign-up-button"
-            id="phone-button"
+            className="sign__up__button"
+            id="phone__button"
             onClick={loginWithPhone}
           >
             <h5>Sign up with phone</h5>
