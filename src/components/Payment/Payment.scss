@@ -28,30 +28,39 @@
     display: flex;
     flex-direction: column;
   }
-  .other__address__title{
-    h3{
+  .other__address__title {
+    h3 {
       margin-top: 10px;
       font-weight: 500;
-      text-decoration: underline ;
+      text-decoration: underline;
     }
   }
-
 }
 
-.pay__button{
+.pay__button {
   width: 100%;
   flex-basis: 25%;
   display: flex;
   flex-direction: column;
   margin-left: 4%;
- 
+}
+.error__message {
+  min-height: 20px;
+  color: red;
+  animation: blinker 1s linear infinite;
+  font-size: 14px;
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }
 
-@media screen and (max-width: 850px){
-  .address__main__container{
+@media screen and (max-width: 850px) {
+  .address__main__container {
     display: block;
   }
-  .pay__button{
+  .pay__button {
     margin-left: 0;
   }
 }

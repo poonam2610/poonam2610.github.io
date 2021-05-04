@@ -3,7 +3,7 @@ import { useHistory } from "react-router";
 import * as ROUTES from "../../constants/Routes";
 import { ACTIONS } from "../../context-management/constants";
 import { useStateValue } from "../../context-management/StateProvider";
-import { clearFirebaseBasket, userRef } from "../../firebase-config/firebase";
+import { clearFirebaseBasket } from "../../firebase-config/firebase";
 import CheckoutProductCard from "../../helper-components/CheckoutProductCard/CheckoutProductCard";
 import DialogueBox from "../../helper-components/DialogueBox/DialogueBox";
 import PriceTable from "../../helper-components/PriceTable/PriceTable";

@@ -8,7 +8,6 @@ import AddToBagButton from "./AddToBagButton";
 import Quantity from "./Quantity";
 import { useStateValue } from "../../context-management/StateProvider";
 import { ACTIONS } from "../../context-management/constants";
-import StarRating from "../../helper-components/Star-rating/StarRating";
 import Modal from "../Modal/Modal";
 import Carousel from "../../helper-components/Carousel/Carousel";
 import SimilarProducts from "../SimilarProducts/SimilarProducts";
@@ -85,9 +84,6 @@ function ProductDetails() {
         }
       }
     } else {
-      // dispatch({
-      //   type: ACTIONS.CHANGE_MODAL_STATE
-      // })
       setIsLoginClicked(true);
     }
   };

@@ -135,7 +135,7 @@ function Payment() {
           buttonTitle="PAY NOW"
           handleClick={handlePayment}
         />
-        <div><p>{errorMessage}</p></div>
+        <div className="error__message">{errorMessage}</div>
       </div>
       {!!isModalOpen && (
         <AddressModal
