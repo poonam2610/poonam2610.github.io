@@ -21,6 +21,12 @@
 .hov:after {
   transform: translateY(-12px) rotate(-135deg);
 }
+.hov{
+  position: fixed;
+  top: 36px;
+  left: 32px;
+  width: 36px;
+}
 
 .hov div {
   transform: scale(0);
