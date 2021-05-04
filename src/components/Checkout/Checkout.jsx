@@ -3,7 +3,7 @@ import { useHistory } from "react-router";
 import * as ROUTES from "../../constants/Routes";
 import { ACTIONS } from "../../context-management/constants";
 import { useStateValue } from "../../context-management/StateProvider";
-import { userRef } from "../../firebase-config/firebase";
+import { clearFirebaseBasket, userRef } from "../../firebase-config/firebase";
 import CheckoutProductCard from "../../helper-components/CheckoutProductCard/CheckoutProductCard";
 import DialogueBox from "../../helper-components/DialogueBox/DialogueBox";
 import PriceTable from "../../helper-components/PriceTable/PriceTable";
@@ -28,11 +28,9 @@ function Checkout() {
       : newBasket.push({ ...x, quantity: 1 })
   );
 
-  const clearFirebaseBasket = () => {
+  const clearBasket = () => {
     if (!!user && basket.length > 0) {
-      userRef(user?.uid).update({
-        basket: [],
-      });
+      clearFirebaseBasket(user)
       dispatch({
         type: ACTIONS.CLEAR_BASKET,
       });
@@ -59,7 +57,7 @@ function Checkout() {
             <DialogueBox
               title="Empty Cart"
               message="Are you sure you want to remove all items from cart?"
-              yes={clearFirebaseBasket}
+              yes={clearBasket}
               no = {()=> setOpenDialogueBox(false)}
               buttonMessage = "EMPTY CART"
             />

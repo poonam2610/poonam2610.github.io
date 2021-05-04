@@ -23,8 +23,8 @@ function PaymentProceed({ currentSelection, setIsRazorPayOpen }) {
     basket.map(x => (newBasket.filter(a => a.id === x.id && a.size === x.size).length > 0) ? removeDuplicate(x.id, x.size) : newBasket.push({ ...x, quantity: 1 }));
 
     const handlePaymentResponse = (response) => {
-        const basketWithTimeStamp = newBasket.map(element => ({ ...element, date: JSON.stringify(new Date()) }))
         if (response?.razorpay_payment_id) {
+            const basketWithTimeStamp = newBasket.map(element => ({ ...element, date: JSON.stringify(new Date()), paymentId: response?.razorpay_payment_id }))
             dispatch({
                 type: ACTIONS.ADD_TO_ORDER_HISTORY,
                 items: basketWithTimeStamp

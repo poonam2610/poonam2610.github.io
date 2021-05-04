@@ -1,3 +1,4 @@
+import { clearFirebaseBasket } from "../firebase-config/firebase";
 import { ACTIONS } from "./constants";
 
 export const initialState = {
@@ -50,6 +51,23 @@ const reducer = (state, action) => {
         console.warn("can't remove product");
       }
       return { ...state, basket: newBasket };
+
+    case ACTIONS.REMOVE_ALL_ITEMS_WITH_SAME_ID_FROM_BASKET:
+      const duplicateBasket = [...state.basket];
+      const modifiedBasket = duplicateBasket.filter(
+        (items) => items.id !== action?.id
+      );
+      if (modifiedBasket.length === 0) {
+        clearFirebaseBasket(state.user);
+        return {
+          ...state,
+          basket: [],
+        };
+      }
+      return {
+        ...state,
+        basket: modifiedBasket,
+      };
 
     case ACTIONS.SET_USER:
       return {
