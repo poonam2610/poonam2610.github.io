@@ -3,7 +3,7 @@ import { useHistory } from "react-router";
 import * as ROUTES from "../../constants/Routes";
 import { ACTIONS } from "../../context-management/constants";
 import { useStateValue } from "../../context-management/StateProvider";
-import { userRef } from "../../firebase-config/firebase";
+import { clearFirebaseBasket, userRef } from "../../firebase-config/firebase";
 import CheckoutProductCard from "../../helper-components/CheckoutProductCard/CheckoutProductCard";
 import PriceTable from "../../helper-components/PriceTable/PriceTable";
 import "./Checkout.scss";
@@ -26,11 +26,9 @@ function Checkout() {
       : newBasket.push({ ...x, quantity: 1 })
   );
 
-  const clearFirebaseBasket = () => {
+  const clearBasket = () => {
     if (!!user && basket.length > 0) {
-      userRef(user?.uid).update({
-        basket: [],
-      });
+      clearFirebaseBasket(user)
       dispatch({
         type: ACTIONS.CLEAR_BASKET,
       });
@@ -46,7 +44,7 @@ function Checkout() {
       <div className="checkout__left">
         <div className="heading__left">
           <h2 className="heading">Your items in bag</h2>
-          <button className="emptybag__button" onClick={clearFirebaseBasket}>
+          <button className="emptybag__button" onClick={clearBasket}>
             EMPTY BAG
           </button>
         </div>

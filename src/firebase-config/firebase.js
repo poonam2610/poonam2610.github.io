@@ -19,6 +19,12 @@ const facebookAuthProvider = new firebase.auth.FacebookAuthProvider();
 
 const userRef = (uid) => db.collection("user").doc(uid);
 
+const clearFirebaseBasket = (user) => {
+  userRef(user?.uid).update({
+    basket: [],
+  });
+};
+
 export {
   app,
   db,
@@ -27,6 +33,7 @@ export {
   facebookAuthProvider,
   userRef,
   firebase,
+  clearFirebaseBasket,
 };
 
 // import app from "firebase/app";

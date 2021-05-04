@@ -14,9 +14,12 @@ export default function SizeOptions({ sizes, setSize }) {
   }
   const sizeOptions = sizeOptionsArr.map((value, index) => {
     const sizeAvailable = sizes?.includes(value);
-    return <button key={index} className={`${sizeAvailable ? "dot" : "hidden"} ${selectedSize === value ? "selected" : ""}`} value={value} onClick={handleClick}>
-      {value}
-    </button>
+    return <div className="size__container" key={index}>
+      <button className={`${sizeAvailable ? "dot" : "hidden"} ${selectedSize === value ? "selected" : ""}`} value={value} onClick={handleClick}>
+        {!sizeAvailable && <span className="size__buttons__strike__show"></span>}
+        {value}
+      </button>
+    </div>
   });
 
   return (

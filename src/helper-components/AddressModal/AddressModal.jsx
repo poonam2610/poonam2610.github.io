@@ -15,6 +15,7 @@ function AddressModal({ modalValue, setIsModalOpen, addOrSaveAddress }) {
     state: modalValue?.state || "",
     isDefault: modalValue?.isDefault || false,
   });
+  const [errorMessage, SetErrorMessage] = useState();
   const [isModalValue, setIsModalValue] = useState(false);
 
   useEffect(() => {
@@ -48,82 +49,85 @@ function AddressModal({ modalValue, setIsModalOpen, addOrSaveAddress }) {
           <div className="base__content">
             <div className="modal__form__header">CONTACT DETAILS</div>
             <div className="contact__details">
-              <label htmlFor="">Name</label>
-              <br />
-              <input
-                className="address__modal__input"
-                type="text"
-                value={state.name}
-                name="name"
-                placeholder="Enter your Name"
-                onChange={handleChange}
-              />
-              <br />
-              <label htmlFor="">Address</label>
-              <br />
-              <input
-                className="address__modal__input"
-                type="text"
-                value={state.address}
-                name="address"
-                placeholder="Address"
-                onChange={handleChange}
-              />
-              <br />
-              <label htmlFor="">City</label>
-              <br />
-              <input
-                className="address__modal__input"
-                type="text"
-                value={state.city}
-                name="city"
-                placeholder="City"
-                onChange={handleChange}
-              />
-              <br />
-              <label htmlFor="">State</label>
-              <br />
-              <input
-                className="address__modal__input"
-                type="text"
-                value={state.state}
-                name="state"
-                placeholder="State"
-                onChange={handleChange}
-              />
-              <br />
-              <label htmlFor="">Pincode</label>
-              <br />
-              <input
-                className="address__modal__input"
-                type="text"
-                value={state.pincode}
-                name="pincode"
-                placeholder="Pincode"
-                onChange={handleChange}
-              />
-              <br />
-              <label htmlFor="">Phone</label>
-              <br />
-              <input
-                className="address__modal__input"
-                type="text"
-                value={state.phone}
-                name="phone"
-                placeholder="Enter your phone"
-                onChange={handleChange}
-              />
-              <br />
-              <div className="default__check">
+              <form>
+                <label htmlFor="">Name</label>
+                <br />
                 <input
-                  type="checkbox"
-                  checked={state.isDefault}
-                  name="isDefault"
-                  placeholder="isDefault"
+                  className="address__modal__input"
+                  type="text"
+                  value={state.name}
+                  name="name"
+                  placeholder="Enter your Name"
+                  onChange={handleChange}
+                  required="true"
+                />
+                <br />
+                <label htmlFor="">Address</label>
+                <br />
+                <input
+                  className="address__modal__input"
+                  type="text"
+                  value={state.address}
+                  name="address"
+                  placeholder="Address"
                   onChange={handleChange}
                 />
-                <div className="check__text">Make this my Default address</div>
-              </div>
+                <br />
+                <label htmlFor="">City</label>
+                <br />
+                <input
+                  className="address__modal__input"
+                  type="text"
+                  value={state.city}
+                  name="city"
+                  placeholder="City"
+                  onChange={handleChange}
+                />
+                <br />
+                <label htmlFor="">State</label>
+                <br />
+                <input
+                  className="address__modal__input"
+                  type="text"
+                  value={state.state}
+                  name="state"
+                  placeholder="State"
+                  onChange={handleChange}
+                />
+                <br />
+                <label htmlFor="">Pincode</label>
+                <br />
+                <input
+                  className="address__modal__input"
+                  type="text"
+                  value={state.pincode}
+                  name="pincode"
+                  placeholder="Pincode"
+                  onChange={handleChange}
+                />
+                <br />
+                <label htmlFor="">Phone</label>
+                <br />
+                <input
+                  className="address__modal__input"
+                  type="text"
+                  value={state.phone}
+                  name="phone"
+                  placeholder="Enter your phone"
+                  onChange={handleChange}
+                />
+                <br />
+                <div className="default__check">
+                  <input
+                    type="checkbox"
+                    checked={state.isDefault}
+                    name="isDefault"
+                    placeholder="isDefault"
+                    onChange={handleChange}
+                  />
+                  <div className="check__text">Make this my Default address</div>
+                </div>
+              </form>
             </div>
           </div>
 

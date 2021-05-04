@@ -1,7 +1,7 @@
 import React from "react";
 import { ACTIONS } from "../../context-management/constants";
 import { useStateValue } from "../../context-management/StateProvider";
-import StarRating from "../Star-rating/StarRating";
+// import StarRating from "../Star-rating/StarRating";
 import * as ROUTES from "../../constants/Routes";
 import "./CheckoutProductCard.scss";
 import { useHistory } from 'react-router-dom';
@@ -12,7 +12,7 @@ import PropTypes from 'prop-types';
 function CheckoutProductCard({ value, ordered }) {
   const [{ basket, user }, dispatch] = useStateValue();
   const history = useHistory();
-  const { id, image, title, description, rating, price, quantity, size, category, date } = value;
+  const { id, image, title, description, rating, price, quantity, size, category, date, paymentId } = value;
 
   const newDate = ordered ? JSON.stringify(new Date(JSON.parse(date))).slice(1, 11) : "";
 
@@ -71,6 +71,12 @@ function CheckoutProductCard({ value, ordered }) {
       });
     }
   }
+  const handleRemove = () => {
+    dispatch({
+      type: ACTIONS.REMOVE_ALL_ITEMS_WITH_SAME_ID_FROM_BASKET,
+      id: id
+    })
+  }
 
   return (
 
@@ -89,9 +95,10 @@ function CheckoutProductCard({ value, ordered }) {
           <h4> {title} </h4>
         </div>
         <div className="product__description">{description}</div>
-        <div className="product__rating">
+        {/* <div className="product__rating">
           <StarRating rating={rating} />
-        </div>
+        </div> */}
+        {!!ordered && <div className="ordered__on">Ordered On : {newDate}</div>}
         <div className="product__size">
           <h4>Size: {size}</h4>
         </div>
@@ -113,16 +120,18 @@ function CheckoutProductCard({ value, ordered }) {
           </button>}
         </div>
         <hr />
-        {!!ordered && <div className="remove__or__return">
-          Ordered On : {newDate}
-        </div>}
+        <div className="bottom__container">
+          {!ordered && <div onClick={handleRemove} className="remove__button">Remove
+          </div>}
+          {!!ordered && <div>Payment ID : {paymentId}</div>}
+        </div>
       </div>
       <div>
         <div className="product__price">
           <h4>Rs. &nbsp;{(price * quantity).toFixed(2)}</h4>{" "}
         </div>
       </div>
-    </div>
+    </div >
   );
 }
 
@@ -130,5 +139,5 @@ export default CheckoutProductCard;
 
 CheckoutProductCard.propTypes = {
   value: PropTypes.object.isRequired,
-  ordered: PropTypes.bool.isRequired
+  ordered: PropTypes.bool.isRequired,
 }

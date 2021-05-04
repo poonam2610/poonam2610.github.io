@@ -133,10 +133,10 @@ function ProductDetails() {
               and want to fill the area with some text.
             </p>
             <hr />
-
+{/* 
             <div className="rating__container">
               <StarRating rating={product.rating} />
-            </div>
+            </div> */}
             <p className="price">{`Rs ${product.price}`}</p>
           </div>
 
