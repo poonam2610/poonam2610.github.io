@@ -11,43 +11,47 @@ import { ACTIONS } from "../../context-management/constants";
 import { auth } from "../../firebase-config/firebase";
 import SearchBar from "../../helper-components/SearchBar/SearchBar";
 import HamburgerIcon from "../../helper-components/Hamburger/HamburgerIcon";
+import DialogueBox from "../../helper-components/DialogueBox/DialogueBox";
 
 function Header() {
   const [isHamburgerOpen, setIsHamburgerOpen] = useState(false);
   const [isSearchBarVisible, setIsSearchBarVisible] = useState(false);
   const [isLoginClicked, setIsLoginClicked] = useState(false);
   const [{ basket, user }, dispatch] = useStateValue();
+  const [openSignOutDialogueBox, setOpenSignOutDialogueBox] = useState(false);
 
   useEffect(() => {
     const handler = (e) => {
-      setIsSearchBarVisible(e.matches)
-    }
+      setIsSearchBarVisible(e.matches);
+    };
     const match = window.matchMedia("(max-width: 720px)");
     match.addEventListener("change", handler);
     if (match.matches) {
-      setIsSearchBarVisible(true)
+      setIsSearchBarVisible(true);
     }
-  }, [])
+  }, []);
 
   const handleHamburger = () => {
     setIsHamburgerOpen(!isHamburgerOpen);
   };
 
+  const handleLogOut = () => {
+    auth.signOut();
+    dispatch({
+      type: ACTIONS.SET_USER,
+      user: null,
+    });
+    setOpenSignOutDialogueBox(false)
+  };
+
   const handleLogin = () => {
     if (!user) {
-      // dispatch({
-      //   type: ACTIONS.CHANGE_MODAL_STATE,
-      // });
       setIsLoginClicked(true);
     } else {
-      alert("Sure Want to Log Out ? ");
-      auth.signOut();
-      dispatch({
-        type: ACTIONS.SET_USER,
-        user: null,
-      });
+      setOpenSignOutDialogueBox(true);
     }
   };
+
   return (
     <div className="header__container">
       <div className="header">
@@ -78,6 +82,15 @@ function Header() {
 
               <div className="login__text">{user ? "SignOut" : "SignIn"}</div>
             </div>
+            {openSignOutDialogueBox && (
+              <DialogueBox
+                title="Sign Out"
+                message="Are you sure you want to sign out?"
+                yes={handleLogOut}
+                no={() => setOpenSignOutDialogueBox(false)}
+                buttonMessage="SIGN OUT"
+              />
+            )}
 
             <Link className="link__style" to={ROUTES.CHECKOUT}>
               <div className="basket">

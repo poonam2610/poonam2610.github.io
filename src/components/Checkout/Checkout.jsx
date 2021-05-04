@@ -1,15 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { useHistory } from "react-router";
 import * as ROUTES from "../../constants/Routes";
 import { ACTIONS } from "../../context-management/constants";
 import { useStateValue } from "../../context-management/StateProvider";
 import { clearFirebaseBasket, userRef } from "../../firebase-config/firebase";
 import CheckoutProductCard from "../../helper-components/CheckoutProductCard/CheckoutProductCard";
+import DialogueBox from "../../helper-components/DialogueBox/DialogueBox";
 import PriceTable from "../../helper-components/PriceTable/PriceTable";
 import "./Checkout.scss";
 
 function Checkout() {
   const [{ basket, user }, dispatch] = useStateValue();
+  const [openDialogueBox, setOpenDialogueBox] = useState(false);
   const newBasket = [];
   const history = useHistory();
 
@@ -33,6 +35,7 @@ function Checkout() {
         type: ACTIONS.CLEAR_BASKET,
       });
     }
+    setOpenDialogueBox(false)
   };
 
   const handleProceedToPay = () => {
@@ -44,9 +47,21 @@ function Checkout() {
       <div className="checkout__left">
         <div className="heading__left">
           <h2 className="heading">Your items in bag</h2>
-          <button className="emptybag__button" onClick={clearBasket}>
-            EMPTY BAG
+          <button
+            className="emptybag__button"
+            onClick={() => setOpenDialogueBox(true)}
+          >
+            EMPTY CART
           </button>
+          {openDialogueBox && (
+            <DialogueBox
+              title="Empty Cart"
+              message="Are you sure you want to remove all items from cart?"
+              yes={clearBasket}
+              no = {()=> setOpenDialogueBox(false)}
+              buttonMessage = "EMPTY CART"
+            />
+          )}
         </div>
         <hr />
         {newBasket.map((value, i) => {
