@@ -1,9 +1,10 @@
-.footer-container {
+.footer__container {
   background-color: #474554;
   width: 100%;
   color: white;
   display: flex;
   flex-direction: column;
+  padding: 2rem;
   h2 {
     font-size: 20px;
     font-weight: 500;
@@ -11,24 +12,19 @@
     margin-bottom: 15px;
     opacity: 0.9;
   }
-
 }
 
-.footer-main {
+.footer__main {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  padding: 39px 20px;
   //   text-align: center;
-  .contact-info {
+  .contact__info {
     width: 33%;
-    padding: 0px 15px;
   }
   .categories {
     width: 33%;
-    padding: 0px 15px;
   }
-
 }
 p {
   opacity: 0.7;
@@ -38,10 +34,10 @@ p {
     font-weight: 500;
   }
 }
-.card-heading {
+.card__heading {
   margin-bottom: 1px;
 }
-.cards-image {
+.cards__image {
   margin-top: 1rem;
   font-size: 22px;
   opacity: 80%;
@@ -50,8 +46,16 @@ p {
   justify-content: space-between;
 }
 
-.all-categories {
+.all__categories {
   padding: 0px 9px;
   //   line-height: 1.3rem;
 }
-
+.footer__bottom {
+  margin-top: 2rem;
+  opacity: 0.8;
+  word-spacing: 5px;
+}
+.link__name {
+  cursor: pointer;
+  color: white;
+}

@@ -9,26 +9,26 @@ import {
 
 function Footer() {
   return (
-    <footer className="footer-container">
-      <div className="footer-main">
-        <div className="contact-info">
+    <footer className="footer__container">
+      <div className="footer__main">
+        <div className="contact__info">
           <h2>Contact Info</h2>
-          <div className="phone-details">
+          <div className="phone__details">
             <p>
               <span>Phone: </span>(+91)1234 567 890
             </p>
           </div>
-          <div className="address-details">
+          <div className="address__details">
             <p>
               <span>Address: </span>10/b 54, 1652 Dancing Dove Lane, New York,
               10036{" "}
             </p>
           </div>
-          <div className="card-details">
-            <p className="card-heading">
+          <div className="card__details">
+            <p className="card__heading">
               <span>We accept:</span>
             </p>
-            <div className="cards-image">
+            <div className="cards__image">
               <FaCcVisa />
               <FaCcMastercard />
               <FaCcPaypal />
@@ -38,7 +38,7 @@ function Footer() {
         </div>
         <div className="categories">
           <h2>Categories</h2>
-          <div className="all-categories">
+          <div className="all__categories">
             <p>Accessories</p>
             <p>Women</p>
             <p>Men</p>
@@ -46,8 +46,8 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="footer-bottom">
-        Made with <span style={{ color: "red" }}>&#10084;</span> by <a href="https://www.linkedin.com/in/piyush-ranjan-1997d" target="_blank" rel="noreferrer">Piyush</a> and <a href="www.linkedin.com/in/piyush-ranjan-1997d" target="_blank" rel="noreferrer">Anusha</a>
+      <div className="footer__bottom">
+        Made with <span style={{ color: "red" }}>&#10084;</span> by <a className="link__name" href="https://www.linkedin.com/in/piyush-ranjan-1997d" target="_blank" rel="noreferrer">Piyush</a> and <a className="link__name" href="www.linkedin.com/in/piyush-ranjan-1997d" target="_blank" rel="noreferrer">Anusha</a>
       </div>
     </footer>
   );
