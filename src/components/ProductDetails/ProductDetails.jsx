@@ -57,7 +57,7 @@ function ProductDetails() {
               price: product.price,
               rating: product.rating,
               category: product.category,
-              size: "M",
+              size: "One Size",
             },
           });
         }
@@ -125,8 +125,9 @@ function ProductDetails() {
           <div className="product__description">
             <h3>{product.title}</h3>
             <p>
-              Description lorem ipsum is good when you dont know what to write
-              and want to fill the area with some text.
+              {/* Description lorem ipsum is good when you dont know what to write
+              and want to fill the area with some text. */}
+              {product.description}
             </p>
             <hr />
 {/* 
@@ -135,7 +136,9 @@ function ProductDetails() {
             </div> */}
             <p className="price">{`Rs ${product.price}`}</p>
           </div>
-
+          {product.category === "accessories" && (
+           <div className="one__size__container"><h5>SELECTED SIZE :</h5> <div>One Size</div></div>
+          )}
           {product.category !== "accessories" && (
             <SizeOptions sizes={product?.availableSize} setSize={setSize} />
           )}

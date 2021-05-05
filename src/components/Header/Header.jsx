@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Header.scss";
-import { FaShoppingCart } from "react-icons/fa";
+import { FaShoppingCart,FaSignOutAlt } from "react-icons/fa";
 import { BsPersonFill } from "react-icons/bs";
 import Hamburger from "../../helper-components/Hamburger/Hamburger";
 import { Link } from "react-router-dom";
@@ -17,8 +17,18 @@ function Header() {
   const [isHamburgerOpen, setIsHamburgerOpen] = useState(false);
   const [isSearchBarVisible, setIsSearchBarVisible] = useState(false);
   const [isLoginClicked, setIsLoginClicked] = useState(false);
+  const [ name , setName] = useState("")
   const [{ basket, user }, dispatch] = useStateValue();
   const [openSignOutDialogueBox, setOpenSignOutDialogueBox] = useState(false);
+
+  useEffect(()=>{
+    if(!!user){
+      const firstName = user.displayName?user.displayName?.split(" ")[0] : "guest" 
+       const capitalizedFistName = firstName[0].toUpperCase() + firstName.slice(1)
+       setName(capitalizedFistName)
+     }
+   
+  },[user])
 
   useEffect(() => {
     const handler = (e) => {
@@ -78,9 +88,8 @@ function Header() {
             </div>
 
             <div className="login" onClick={() => handleLogin()}>
-              <BsPersonFill className="person" />
-
-              <div className="login__text">{user ? "SignOut" : "SignIn"}</div>
+              <div className="login__text">{user ? name : "SignIn"}</div>
+              {user? <FaSignOutAlt className="sign__out__icon"/> :<BsPersonFill className="person" />}
             </div>
             {openSignOutDialogueBox && (
               <DialogueBox

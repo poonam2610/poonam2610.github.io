@@ -45,16 +45,22 @@
   .login {
     display: flex;
     align-items: center;
-    font-weight: 400;
+    font-weight: 500;
     cursor: pointer;
     margin-right: 10px;
-    .person {
-      font-size: 30px;
+    font-size: 30px;
+    .login__text{
+      font-size: 20px;
+    }
+    .sign__out__icon, .person{
+      margin-left: 10px;
     }
   }
   .basket {
     cursor: pointer;
     position: relative;
+    display: flex;
+    align-items: center;
     .cart {
       margin-left: 15px;
       font-size: 26px;
