@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useHistory } from "react-router";
 import { ACTIONS } from "../../context-management/constants";
-import { totalPrice } from "../../context-management/reducer";
+// import { totalPrice } from "../../context-management/reducer";
 import { useStateValue } from "../../context-management/StateProvider";
 import * as ROUTES from "../../constants/Routes";
 import { userRef } from "../../firebase-config/firebase";

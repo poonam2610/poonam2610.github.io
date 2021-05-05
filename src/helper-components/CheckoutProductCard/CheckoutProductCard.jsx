@@ -12,7 +12,7 @@ import PropTypes from 'prop-types';
 function CheckoutProductCard({ value, ordered }) {
   const [{ basket, user }, dispatch] = useStateValue();
   const history = useHistory();
-  const { id, image, title, description, rating, price, quantity, size, category, date, paymentId } = value;
+  const { id, image, title, rating, price, quantity, size, category, date, paymentId } = value;
 
   const newDate = ordered ? JSON.stringify(new Date(JSON.parse(date))).slice(1, 11) : "";
 
