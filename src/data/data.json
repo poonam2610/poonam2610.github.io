@@ -32,6 +32,7 @@
   {
     "id": 2,
     "rating": 3,
+    "keywords": "tshirt polo",
     "title": "COLORBLOCKED POLO T-SHIRT",
     "price": 699,
     "description": "Look cool this summer with this trendy Polo T-shirt. Team up with jeans or shorts.",
@@ -46,6 +47,7 @@
   {
     "id": 3,
     "rating": 3,
+    "keywords":"jacket hoodie with cap",
     "title": "WATER REPELLANT HOODED JACKET",
     "price": 899,
     "description": "great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors.",
@@ -61,6 +63,7 @@
   {
     "id": 4,
     "rating": 3,
+    "keywords": "shirt shirt casual slim fit slim-fit ",
     "title": "SLIM FIT CASUAL SHIRT",
     "price": 499,
     "description": "Cotton printed shirt in green colour. Trendy, fresh and newly arrived perfect for casual and office wear.",
@@ -176,6 +179,7 @@
   {
     "id": 12,
     "rating": 3,
+    "keywords" : "heels pumps women shoes ",
     "title": "MUSTARD YELLOW WOMEN SOLID PUMPS",
     "price": 1100,
     "description": "This summer look go trendy with these heels. Perfect with any professional or casual attire. ",
@@ -189,6 +193,7 @@
   {
     "id": 13,
     "rating": 3,
+    "keywords" : "heels pumps women shoes",
     "title": "PINK EMBELLISHED PUMPS",
     "price": 899,
     "description": "Stylish and elegant pink footwear.",
@@ -202,6 +207,7 @@
   {
     "id": 14,
     "rating": 3,
+    "keywords" : "shoes sports sneakers",
     "title": "GREY AND BROWN MID-TOP SNEAKERS",
     "price": 999,
     "description": "Sneakers to go for casual look or roadtrip. ",
@@ -215,6 +221,7 @@
   {
     "id": 15,
     "rating": 3,
+    "keywords" : "party wear pink one piece dress",
     "title": "FUSCHIA PINK WRAP DRESS",
     "price": 1099,
     "description": "Stylish and elegant fuschia pink coloured wrap dress for party wears or date nights.",
@@ -230,6 +237,7 @@
   {
     "id": 16,
     "rating": 3,
+    "keywords" : "one piece dress western",
     "title": "FLORAL PRINTED DRESS",
     "price": 899,
     "description": "Printed cotton dress for casual wears. Its perfect for summers.",
@@ -242,22 +250,55 @@
     ]
   },
   {
-    "id": 17,
+    "id": 43,
     "rating": 3,
-    "title": "NAVY BLUE LAYERED TOP",
-    "price": 499,
-    "description": "Lightweight perfeCt for brunch, date-night  or casual wear .",
+    "keywords" : "accordian top western",
+    "title": "GREEN SOLID ACCORDION PLEATED TOP",
+    "price": 1099,
+    "description": "Green solid knitted accordion pleated top and has shoulder straps for casual wear and part wear.",
     "category": "women",
     "availableSize": ["S", "M", "L"],
     "image": [
-      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/1562846/2020/1/20/f14c2362-1dad-4df7-a69f-6869f71b56d91579509551611-20Dresses-Women-Blue-Solid-Layered-Top-4871579509550909-1.jpg",
-      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/1562846/2020/1/20/882fa61d-153e-44fd-9658-d177928cac9f1579509551478-20Dresses-Women-Blue-Solid-Layered-Top-4871579509550909-5.jpg",
-      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/1562846/2020/1/20/c71d87de-68b9-4c8e-a90d-c31475b08bea1579509551545-20Dresses-Women-Blue-Solid-Layered-Top-4871579509550909-3.jpg"
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11843192/2020/6/2/81de75c3-43e7-49f3-ade7-7cd6cdf43b511591115001616MANGOWomenWhiteampBlackStripedRoundNeckT-shirtTshirtsMANGOWo3.jpg",
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11843192/2020/6/2/d6089db7-e6c8-43bb-9a9d-c4bdf5ace53a1591115001499MANGOWomenWhiteampBlackStripedRoundNeckT-shirtTshirtsMANGOWo1.jpg",
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11843192/2020/6/2/6e2afc0b-5967-4339-ba84-94a044646a651591115001679MANGOWomenWhiteampBlackStripedRoundNeckT-shirtTshirtsMANGOWo4.jpg",
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11843192/2020/6/2/ec733584-22bd-45ba-b22c-530523df25761591115001755MANGOWomenWhiteampBlackStripedRoundNeckT-shirtTshirtsMANGOWo5.jpg"
+    ]
+  },
+  {
+    "id": 45,
+    "rating": 3,
+    "keywords" : "women lady top ruffled crop",
+    "title": "SEA GREEN SELF-STRIPED RUFFLED TOP",
+    "price": 1099,
+    "description": "Sea Green striped knitted regular top with ruffle detail, has a round ruffled neck, short sleeves, and button closure.",
+    "category": "women",
+    "availableSize": ["S", "M", "L"],
+    "image": [
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11873888/2020/6/19/8a37f595-c897-44b3-a559-02bf384542f31592542868240-MANGO-Women-Tshirts-5501592542866198-1.jpg",
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11873888/2020/6/19/4a471652-3402-40ad-bc6d-883530022b661592542867990-MANGO-Women-Tshirts-5501592542866198-4.jpg",
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11873888/2020/6/19/dfaf69ae-5026-49fb-b5f1-cb11047e83b91592542867905-MANGO-Women-Tshirts-5501592542866198-5.jpg"
+    ]
+  },
+  {
+    "id": 44,
+    "rating": 3,
+    "keywords" : "women lady top one shoulder crop",
+    "title": "BURGUNDY SHIMMER CROPPED FITTED TOP",
+    "price": 1099,
+    "description": "Burgundy shimmer knitted cropped fitted top with ruffled detail, has an one shoulder, and short sleeves",
+    "category": "women",
+    "availableSize": ["S", "M", "L"],
+    "image": [
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/13099998/2020/12/12/61bdf5f2-55c3-441c-b847-35e8d311b4ac1607756389497-MANGO-Women-Burgundy-Shimmer-Cropped-Fitted-Top-927160775638-1.jpg",
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/13099998/2020/12/12/fb9a3754-cd6a-4873-ba79-f6eacb65160c1607756389410-MANGO-Women-Burgundy-Shimmer-Cropped-Fitted-Top-927160775638-3.jpg",
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/13099998/2020/12/12/b60dcd9a-dc45-478e-9c4f-8a71dee29e101607756389366-MANGO-Women-Burgundy-Shimmer-Cropped-Fitted-Top-927160775638-4.jpg"
     ]
   },
   {
     "id": 18,
     "rating": 3,
+    "keywords" : "white top western",
     "title": "PLEATED COTTON WHITE TOP",
     "price": 1099,
     "description": "Elegant white top. Definitely a must have . Perfect for casual or party or office wear. Team up with pair of jeans or skirt.",
@@ -271,22 +312,9 @@
     ]
   },
   {
-    "id": 19,
-    "rating": 3,
-    "title": "TROPICAL PRINT TOP",
-    "price": 699,
-    "description": "Cool tropical print top, perfect for casual or beach wear",
-    "category": "women",
-    "availableSize": ["S", "M", "L"],
-    "image": [
-      "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/12941732/2020/12/7/f9d44549-33b6-4c51-9800-53f1be431d251607329616779TopsVeroModaWomenTopsVeroModaWomenTopsVeroModaWomenDressesVe1.jpg",
-      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/12941732/2020/12/7/5b182644-93ac-4cf4-934b-c914df9f50331607329616996TopsVeroModaWomenTopsVeroModaWomenTopsVeroModaWomenDressesVe4.jpg",
-      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/12941732/2020/12/7/3fa652b3-683c-4081-972e-5ace4bde79691607329617064TopsVeroModaWomenTopsVeroModaWomenTopsVeroModaWomenDressesVe5.jpg"
-    ]
-  },
-  {
     "id": 20,
     "rating": 3,
+    "keywords" : "party wear red one piece dress",
     "title": "RED BODYCON DRESS",
     "price": 1299,
     "description": "Elegant red coloured body fitting dress. Perfect for party wear or date nights.",
@@ -299,8 +327,39 @@
     ]
   },
   {
+    "id": 19,
+    "rating": 3,
+    "keywords" : "top tropical",
+    "title": "TROPICAL PRINT TOP",
+    "price": 699,
+    "description": "Cool tropical print top, perfect for casual wear or for a vacation trip.",
+    "category": "women",
+    "availableSize": ["S", "M", "L"],
+    "image": [
+      "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/12941732/2020/12/7/f9d44549-33b6-4c51-9800-53f1be431d251607329616779TopsVeroModaWomenTopsVeroModaWomenTopsVeroModaWomenDressesVe1.jpg",
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/12941732/2020/12/7/5b182644-93ac-4cf4-934b-c914df9f50331607329616996TopsVeroModaWomenTopsVeroModaWomenTopsVeroModaWomenDressesVe4.jpg",
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/12941732/2020/12/7/3fa652b3-683c-4081-972e-5ace4bde79691607329617064TopsVeroModaWomenTopsVeroModaWomenTopsVeroModaWomenDressesVe5.jpg"
+    ]
+  },
+  {
+    "id": 17,
+    "rating": 3,
+    "keywords" : "top ",
+    "title": "NAVY BLUE LAYERED TOP",
+    "price": 499,
+    "description": "Lightweight perfeCt for brunch, date-night  or casual wear .",
+    "category": "women",
+    "availableSize": ["S", "M", "L"],
+    "image": [
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/1562846/2020/1/20/f14c2362-1dad-4df7-a69f-6869f71b56d91579509551611-20Dresses-Women-Blue-Solid-Layered-Top-4871579509550909-1.jpg",
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/1562846/2020/1/20/882fa61d-153e-44fd-9658-d177928cac9f1579509551478-20Dresses-Women-Blue-Solid-Layered-Top-4871579509550909-5.jpg",
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/1562846/2020/1/20/c71d87de-68b9-4c8e-a90d-c31475b08bea1579509551545-20Dresses-Women-Blue-Solid-Layered-Top-4871579509550909-3.jpg"
+    ]
+  },
+  {
     "id": 21,
     "rating": 3,
+    "keywords" : "checked shirt ",
     "title": "BEIGE AND RED CHECKED CASUAL SHIRT",
     "price": 799,
     "description": "Cotton checked shirt perfect fot casual or office wear.",
@@ -316,6 +375,7 @@
   {
     "id": 22,
     "rating": 3,
+    "keywords" : "shirt casual slim-fit ",
     "title": "SLIM FIT CASUAL SHIRT",
     "price": 599,
     "description": "Slim-fitting style, perfect for a beach look.",
@@ -330,6 +390,7 @@
   {
     "id": 23,
     "rating": 4,
+    "keywords" : "party girls girl birthday princess frock dress",
     "title": "BLACK FULL SLEEVES GEOMETRIC STAR DRESS",
     "price": 899,
     "description": "Stylish and elegant pink footwear.",
@@ -344,6 +405,7 @@
   {
     "id": 24,
     "rating": 4,
+    "keywords" : "girls set skirt top skirts",
     "title": "POLKA DOT TOP WITH SKIRT",
     "price": 699,
     "description": "Cute, stylish and casual wear for girl of age 3-7 yrs.",
@@ -358,6 +420,7 @@
   {
     "id": 25,
     "rating": 4,
+    "keywords" : "skirts girls girl top ",
     "title": "EMBROIDERED WHITE TOP WITH SKIRT",
     "price": 799,
     "description": "Stylish and elegant set for girls.",
@@ -372,6 +435,7 @@
   {
     "id": 26,
     "rating": 4,
+    "keywords" : "baby boy romper",
     "title": "SUSPENDER STYLED ROMPER",
     "price": 559,
     "description": "Stylish and funky romper for baby boys.",
@@ -386,6 +450,7 @@
   {
     "id": 27,
     "rating": 4,
+    "keywords" : "girl girls top",
     "title": "FLORAL PRINT TOP AND SHORT",
     "price": 659,
     "description": "Cute floral print top with yellow shorts for trendy summer wear.",
@@ -400,6 +465,7 @@
   {
     "id": 28,
     "rating": 4,
+    "keywords" : "boys boy tshirts tshirt t-shirts t-shirt",
     "title": "ORANGE T-SHIRT",
     "price": 559,
     "description": "Stylish and elegant pink footwear.",
@@ -413,6 +479,7 @@
   {
     "id": 29,
     "rating": 3,
+    "keywords" : "skirt ruffled",
     "title": "MAROON RUFFLED SKIRT WITH TROUSERS",
     "price": 999,
     "description": "Flared ruffled skirt with attached trousers for casual wear and part wear.",
@@ -427,6 +494,7 @@
   {
     "id": 32,
     "rating": 3,
+    "keywords" : "shirt",
     "title": "WHITE AND NAVY BLUE STRIPED SHIRT",
     "price": 499,
     "description": "Light coloured slim fit shirt perfect for summer wear, for casual as well as office wear.",
@@ -456,6 +524,7 @@
   {
     "id": 35,
     "rating": 3,
+    "keywords" : "tshirt t-shirt",
     "title": "RED ROUND NECK T-SHIRT",
     "price": 599,
     "description": "Slim-fitting style neck made great fit for casual fashion wear.The Henley style round neckline includes a three-button placket.",
@@ -470,6 +539,7 @@
   {
     "id": 36,
     "rating": 3,
+    "keywords" : "tshirt t-shirt ",
     "title": "DARK GREEN STRIPED POLO COLLAR T-SHIRT",
     "price": 799,
     "description": "Polo collar striped t-shirt for casual wear. ",
@@ -529,7 +599,7 @@
   {
     "id": 42,
     "rating": 4,
-    "keywords": "boys set joggers top",
+    "keywords": "boys set joggers set ",
     "title": "ANIMAL PRINTED SWEATSHIRT AND JOGGER SET",
     "price": 899,
     "description": "Cute yellow full sleeves animal printed sweatshirt and jogger set",

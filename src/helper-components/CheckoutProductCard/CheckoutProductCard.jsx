@@ -94,7 +94,7 @@ function CheckoutProductCard({ value, ordered }) {
         >
           <h4> {title} </h4>
         </div>
-        <div className="product__description">{description}</div>
+        {/* <div className="product__description">{description}</div> */}
         {/* <div className="product__rating">
           <StarRating rating={rating} />
         </div> */}

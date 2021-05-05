@@ -111,7 +111,7 @@ function ProductDetails() {
         className="alertbox"
         style={
           isProductAdded
-            ? { transform: "translateY(60vh)", transition: "all 0.7s ease" }
+            ? { transform: "translateY(50vh)", transition: "all 0.7s ease-out" }
             : { transform: "translateY(-1000px)" }
         }
       >
@@ -134,7 +134,7 @@ function ProductDetails() {
             <div className="rating__container">
               <StarRating rating={product.rating} />
             </div> */}
-            <p className="price">{`Rs ${product.price}`}</p>
+            <p className="price">{`Rs. ${product.price}`}</p>
           </div>
           {product.category === "accessories" && (
            <div className="one__size__container"><h5>SELECTED SIZE :</h5> <div>One Size</div></div>
