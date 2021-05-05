@@ -131,7 +131,7 @@ function CheckoutProductCard({ value, ordered }) {
           <h4>Rs. &nbsp;{(price * quantity).toFixed(2)}</h4>{" "}
         </div>
       </div>
-    </div >
+    </div>
   );
 }
 

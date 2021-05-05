@@ -21,6 +21,19 @@
   margin: 50px 180px;
 }
 
+.one__size__container{
+  display: flex;
+  align-items: center;
+  div{
+    width: max-content;
+    border: 2px solid #c91a1a;
+    color: #c91a1a;
+    padding: 0.5rem;
+    border-radius: 40px;
+    font-weight: 500;
+
+  }
+}
 .product__image {
   flex-basis: 40%;
   overflow: hidden;

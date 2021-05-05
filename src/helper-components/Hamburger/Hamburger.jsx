@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Hamburger.scss";
 import { FaBoxOpen } from "react-icons/fa";
 import { Link } from "react-router-dom";
@@ -14,12 +14,23 @@ import PropTypes from "prop-types";
 
 function Hamburger({ setIsHamburgerOpen }) {
   const { user } = useStateValue()[0];
+  const [ name , setName] = useState("")
   const handleClick = () => {
     setIsHamburgerOpen(false);
   };
+
+  useEffect(()=>{
+    if(!!user){
+      const firstName = user.displayName?user.displayName?.split(" ")[0] : "guest" 
+       const capitalizedFistName = firstName[0].toUpperCase() + firstName.slice(1)
+       setName(capitalizedFistName)
+     }
+   
+  },[user])
+  
   return (
     <div className="hamburger__container">
-      <div className="profile__div__hamburger__menu"></div>
+      <div className="profile__div__hamburger__menu">{!!user && <h3> Hello {name},</h3>} </div>
       <hr />
       <div className="hamburger__items">
         <Link className="hamburger__link" to={`${ROUTES.CATEGORY}${ROUTES.MEN}`}>
