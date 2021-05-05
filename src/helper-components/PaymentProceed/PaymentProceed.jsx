@@ -13,8 +13,6 @@ function PaymentProceed({ currentSelection, setIsRazorPayOpen }) {
     const history = useHistory();
     const newBasket = []
 
-
-
     const removeDuplicate = (id, size) => {
         const index = newBasket.findIndex(obj => obj.id === id && obj.size === size);
         newBasket[index].quantity++;
@@ -42,7 +40,7 @@ function PaymentProceed({ currentSelection, setIsRazorPayOpen }) {
 
     const options = {
         key: "rzp_test_6HvBNtoO5YYgPp",
-        amount: ((totalPrice(basket) + (totalPrice(basket) * 10) / 100)).toFixed(2) * 100, //  = INR 1
+        amount: ((totalPrice(basket) + (totalPrice(basket) * 10) / 100)).toFixed(0) * 100, //  = INR 1
         currency: "INR",
         handler: ((response) => {
             handlePaymentResponse(response)
