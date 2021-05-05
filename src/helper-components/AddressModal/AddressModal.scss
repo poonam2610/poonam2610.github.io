@@ -65,15 +65,15 @@
   border-top: 1px solid #d5d6d9 ;
   .base__button {
     width: 100%;
-    color: #474554;
-    font-weight: 600;
+    color:white;
+    font-weight: 500;
     cursor: pointer;
     text-align: center;
     border: none;
     text-transform: uppercase;
     letter-spacing: 1px;
   
-    background-color: #F2D7C7;
+    background-color: var(--button);
     font-size: 14px;
     border-radius: 4px;
     padding: 14px;

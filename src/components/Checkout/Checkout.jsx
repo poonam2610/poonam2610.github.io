@@ -59,7 +59,8 @@ function Checkout() {
               message="Are you sure you want to remove all items from cart?"
               yes={clearBasket}
               no = {()=> setOpenDialogueBox(false)}
-              buttonMessage = "EMPTY CART"
+              yesButtonMessage = "EMPTY CART"
+              noButtonMessage = "CANCEL"
             />
           )}
         </div>

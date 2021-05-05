@@ -65,13 +65,15 @@
     font-weight: 500;
   }
   p {
+    opacity: 1;
     margin: 1rem auto;
     font-weight: 400;
     font-size: 16px;
   }
   .price{
-    font-size: 18px ;
+    font-size: 1.4rem ;
     font-weight: 500;
+    opacity: 1;
   }
 
   .error__and__button {
@@ -104,7 +106,7 @@
     padding: 20px 1rem;
     .error__and__button {
       #addItemToBag {
-        width: 52%;
+        width: 57%;
       }
     }
   }
@@ -113,7 +115,7 @@
   }
 }
 
-@media screen and (max-width: 1000px) and (min-width: 751px) {
+@media screen and (max-width: 1100px) and (min-width: 751px) {
   .product__display__container {
     height: 470px;
     margin: 50px 70px;
@@ -122,7 +124,7 @@
   .product__detail {
     .error__and__button {
       #addItemToBag {
-        width: 50%;
+        width: 54%;
       }
     }
   }

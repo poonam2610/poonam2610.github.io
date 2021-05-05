@@ -97,7 +97,8 @@ function Header() {
                 message="Are you sure you want to sign out?"
                 yes={handleLogOut}
                 no={() => setOpenSignOutDialogueBox(false)}
-                buttonMessage="SIGN OUT"
+                yesButtonMessage="SIGN OUT"
+                noButtonMessage ="CANCEL"
               />
             )}
 
