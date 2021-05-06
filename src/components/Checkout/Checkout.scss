@@ -13,15 +13,14 @@
   display: flex;
   flex-direction: column;
   margin-left: 4%;
- 
-
 }
 
 .heading__left {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  .heading{
+  color: var(--textColor);
+  .heading {
     font-weight: 500;
   }
 }
@@ -36,14 +35,12 @@
   cursor: pointer;
 }
 
-
-@media screen and (max-width: 850px){
-  .checkout{
+@media screen and (max-width: 850px) {
+  .checkout {
     padding: 2rem;
     display: block;
   }
-  .checkout__right{
+  .checkout__right {
     margin: 20px 0;
   }
-
 }

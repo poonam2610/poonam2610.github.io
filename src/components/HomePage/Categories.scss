@@ -1,6 +1,7 @@
 .categories__container {
-  background-color: #f8eae1;
+  background-color: var(--background-color);
   padding: 2rem 5rem;
+  color:var(--textColor);
 }
 .categories__text {
   font-size: 35px;

@@ -1,6 +1,7 @@
-.similarProducts-container{
+.similarProducts-container {
   padding: 2rem 5rem;
-  h1{
+  color: var(--textColor);
+  h1 {
     font-size: 35px;
     letter-spacing: 2px;
     margin: 13px;
@@ -8,27 +9,26 @@
   }
 }
 
-.mustHaveCards-container{
+.mustHaveCards-container {
   display: flex;
   padding: 2rem 0;
   justify-content: space-around;
 }
 
-
-@media screen and (max-width: 720px){
-  .similarProducts-container{
+@media screen and (max-width: 720px) {
+  .similarProducts-container {
     padding: 1rem 2rem;
-    h1{
+    h1 {
       font-size: 30px;
     }
   }
-  .mustHaveCards-container{
+  .mustHaveCards-container {
     padding: 1rem 0;
   }
 }
 
-@media screen and (max-width: 1024px) and (min-width : 720px){
-  .similarProducts-container{
+@media screen and (max-width: 1024px) and (min-width: 720px) {
+  .similarProducts-container {
     padding: 2rem;
   }
 }

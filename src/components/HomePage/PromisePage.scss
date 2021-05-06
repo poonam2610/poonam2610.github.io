@@ -1,6 +1,7 @@
 .our__promise {
   text-align: center;
-  background-color: #f8eae1;
+  background-color: var(--background-color);
+  color: var(--textColor);
   h2 {
     font-size: 45px;
     font-weight: 400;
@@ -24,8 +25,8 @@
     margin: 1.5rem;
     padding: 1.2rem;
     height: 15rem;
-    border: 1px solid #474554;
-    color: #474554;
+    border: 1px solid var(--promise-card-color);
+    color: var(--promise-card-color);
     border-radius: 100px;
     text-align: center;
     display: flex;

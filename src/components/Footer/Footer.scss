@@ -1,7 +1,7 @@
 .footer__container {
-  background-color: #474554;
+  background-color: var(--footer-background);
   width: 100%;
-  color: white;
+  color: var(--footer-color);
   display: flex;
   flex-direction: column;
   padding: 2rem;
@@ -52,7 +52,7 @@ p {
   //   line-height: 1.3rem;
   .link__style {
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: var(--footer-color);
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -68,5 +68,5 @@ p {
 }
 .link__name {
   cursor: pointer;
-  color: white;
+  color: var(--footer-color);
 }

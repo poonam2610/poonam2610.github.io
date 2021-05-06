@@ -1,24 +1,22 @@
-.modal__container{
-  background-color: rgba(0,0,0,0.6);
-  top:0;
-  left:0;
+.modal__container {
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 0;
+  left: 0;
   position: fixed;
   width: 100%;
   height: 100%;
   z-index: 2;
   text-align: center;
-  input{
+  input {
     width: 74%;
-    padding: 10px 20px ;
+    padding: 10px 20px;
     border-radius: 5px;
     border: 1px solid black;
-    font-family:"Roboto", sans-serif;
+    font-family: "Roboto", sans-serif;
     margin: 0.5rem auto;
-  
   }
-
 }
-.modal{
+.modal {
   width: 35%;
   background-color: white;
   position: absolute;
@@ -28,42 +26,42 @@
   padding: 2rem;
   z-index: 2;
   border-top-left-radius: 10px;
-  border-top-right-radius: 10px;  
+  border-top-right-radius: 10px;
 }
 
-.sign__up{
-  h3{
+.sign__up {
+  h3 {
     margin: 1rem;
     font-weight: 400;
   }
 }
-.divisionBar{
+.divisionBar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  hr{
+  hr {
     width: 40%;
-    height: 0; 
+    height: 0;
   }
-  p{
+  p {
     margin: 0;
   }
 }
-.sign__up__button{
+.sign__up__button {
   width: 74%;
   display: inline-flex;
   align-items: center;
-  padding: 10px 20px ;
+  padding: 10px 20px;
   border-radius: 5px;
   border: none;
-  background-color:lightgray;
+  background-color: lightgray;
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   margin: 0.5rem;
-  &:focus{
+  &:focus {
     outline: none;
   }
-  h5{
+  h5 {
     font-weight: 300;
     color: black;
     flex-grow: 2;
@@ -72,13 +70,13 @@
   }
 }
 
-#phone__button{
+#phone__button {
   background-color: #f8eae1;
-  h5{
-  color: #474554;
+  h5 {
+    color: #474554;
   }
 }
-.close{
+.close {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -93,30 +91,25 @@
   font-size: 15px;
   cursor: pointer;
   box-shadow: 0 11px 20px -6px rgba(70, 93, 169, 0.13);
- &:focus{
-   outline: none;
- }
+  &:focus {
+    outline: none;
+  }
 }
 
-#recaptcha__container{
-  width: 74%;
-  display: inline-flex;
-  align-items: center;
+#recaptcha-container {
+  display: flex;
   justify-content: center;
-  margin-top: 0.5rem;
 }
 
-
-@media screen and (max-width : 720px) {
-  .modal{
+@media screen and (max-width: 720px) {
+  .modal {
     width: 63%;
     transform: translate(-50%, -75%);
   }
 }
 
-
-@media screen and (max-width: 1100px) and (min-width : 720px) {
-  .modal{
+@media screen and (max-width: 1100px) and (min-width: 720px) {
+  .modal {
     width: 50%;
   }
 }

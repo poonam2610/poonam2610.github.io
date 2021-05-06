@@ -17,7 +17,6 @@ function PaymentProceed({ currentSelection, setIsRazorPayOpen }) {
         const index = newBasket.findIndex(obj => obj.id === id && obj.size === size);
         newBasket[index].quantity++;
     };
-
     basket.map(x => (newBasket.filter(a => a.id === x.id && a.size === x.size).length > 0) ? removeDuplicate(x.id, x.size) : newBasket.push({ ...x, quantity: 1 }));
 
     const handlePaymentResponse = (response) => {
@@ -40,8 +39,10 @@ function PaymentProceed({ currentSelection, setIsRazorPayOpen }) {
 
     const options = {
         key: "rzp_test_6HvBNtoO5YYgPp",
-        amount: ((totalPrice(basket) + (totalPrice(basket) * 10) / 100)).toFixed(0) * 100, //  = INR 1
+        amount: parseInt(((totalPrice(basket) + (totalPrice(basket) * 10) / 100).toFixed(2)) * 100), //  = INR 1
         currency: "INR",
+        name: "WARDROBE",
+        // description: "Test Transaction",
         handler: ((response) => {
             handlePaymentResponse(response)
         }),
