@@ -1,4 +1,4 @@
-import React from "react";
+import React , {useState}from "react";
 import { ACTIONS } from "../../context-management/constants";
 import { useStateValue } from "../../context-management/StateProvider";
 // import StarRating from "../Star-rating/StarRating";
@@ -8,10 +8,13 @@ import { useHistory } from 'react-router-dom';
 import { userRef } from '../../firebase-config/firebase';
 import { FaMinus, FaPlus } from "react-icons/fa";
 import PropTypes from 'prop-types';
+import DialogueBox from "../DialogueBox/DialogueBox";
+
 
 function CheckoutProductCard({ value, ordered }) {
   const [{ basket, user }, dispatch] = useStateValue();
   const history = useHistory();
+  const [openDialogueBox, setOpenDialogueBox] = useState(false);
   const { id, image, title, rating, price, quantity, size, category, date, paymentId } = value;
 
   const newDate = ordered ? JSON.stringify(new Date(JSON.parse(date))).slice(1, 11) : "";
@@ -121,8 +124,18 @@ function CheckoutProductCard({ value, ordered }) {
         </div>
         <hr />
         <div className="bottom__container">
-          {!ordered && <div onClick={handleRemove} className="remove__button">Remove
+          {!ordered && <div onClick={()=>setOpenDialogueBox(true)} className="remove__button">Remove
           </div>}
+          {openDialogueBox && (
+            <DialogueBox
+              title="Remove Item"
+              message="Are you sure you want to remove this item from cart?"
+              yes={handleRemove}
+              no={() => setOpenDialogueBox(false)}
+              yesButtonMessage="REMOVE ITEM"
+              noButtonMessage="CANCEL"
+            />
+          )}
           {!!ordered && <div>Payment ID : {paymentId}</div>}
         </div>
       </div>
