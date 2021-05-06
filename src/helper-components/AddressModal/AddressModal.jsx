@@ -98,7 +98,7 @@ function AddressModal({ modalValue, setIsModalOpen, addOrSaveAddress }) {
               <label htmlFor="">State<span style={{ color: "red" }}>*</span></label>
               <br />
               <select value={state.state} name="state" placeholder="State" className="address__modal__input" onChange={handleChange}>
-                <option value=""> </option>
+                <option value="">Please Select State </option>
                 {stateENUM.map((value, index) => {
                   return <option key={index} value={value}>{value}</option>
                 })}

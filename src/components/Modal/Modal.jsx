@@ -84,7 +84,7 @@ export default function Modal({ type, setIsModalOpen }) {
             <h5>Sign up with Google</h5>
           </button>
           <button className="sign__up__button" onClick={loginWithFacebook}>
-            <FaFacebookF className="modal__icons" />
+            <FaFacebookF className="facebook" />
             <h5>Sign up with Facebook</h5>
           </button>
           <br />

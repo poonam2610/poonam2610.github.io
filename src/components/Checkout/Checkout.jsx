@@ -46,7 +46,7 @@ function Checkout() {
     <div className="checkout">
       <div className="checkout__left">
         <div className="heading__left">
-          <h2 className="heading">Your items in bag</h2>
+          <h2 className="heading">Your items in cart</h2>
           <button
             className="emptybag__button"
             onClick={() => setOpenDialogueBox(true)}
@@ -58,23 +58,23 @@ function Checkout() {
               title="Empty Cart"
               message="Are you sure you want to remove all items from cart?"
               yes={clearBasket}
-              no = {()=> setOpenDialogueBox(false)}
-              yesButtonMessage = "EMPTY CART"
-              noButtonMessage = "CANCEL"
+              no={() => setOpenDialogueBox(false)}
+              yesButtonMessage="EMPTY CART"
+              noButtonMessage="CANCEL"
             />
           )}
         </div>
         <hr />
-        {newBasket.map((value, i) => {
+        {newBasket.length > 0 ? newBasket.map((value, i) => {
           return <CheckoutProductCard key={i} value={value} ordered={false} />;
-        })}
+        }) : <div className="empty__basket__card"><div>There is nothing in your cart.</div> <div>Let's add some Items.</div></div>}
       </div>
-      <div className="checkout__right">
+      {newBasket.length > 0 && <div className="checkout__right">
         <PriceTable
           buttonTitle="PLACE ORDER"
           handleClick={handleProceedToPay}
         />
-      </div>
+      </div>}
     </div>
   );
 }

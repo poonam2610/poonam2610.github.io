@@ -24,9 +24,9 @@ export default function YourOrders() {
       </div>
       <hr />
       <div className="your__orders__card_container">
-        {yourOrders?.map((value, index) => {
+        {yourOrders.length > 0 ? yourOrders?.map((value, index) => {
           return <CheckoutProductCard key={index} value={value} ordered={true} />;
-        })}
+        }) : <div className="empty__basket__card">Sorry! no previous orders</div>}
       </div>
     </div>
   );

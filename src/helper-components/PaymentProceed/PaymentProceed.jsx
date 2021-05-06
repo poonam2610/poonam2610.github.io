@@ -49,26 +49,26 @@ function PaymentProceed({ currentSelection, setIsRazorPayOpen }) {
     }
   };
 
-    const options = {
-        key: "rzp_test_6HvBNtoO5YYgPp",
-        amount: parseInt(((totalPrice(basket) + (totalPrice(basket) * 10) / 100).toFixed(2)) * 100), //  = INR 1
-        currency: "INR",
-        name: "WARDROBE",
-        // description: "Test Transaction",
-        handler: ((response) => {
-            handlePaymentResponse(response)
-        }),
-        modal: {
-            ondismiss: (() => setIsRazorPayOpen(false))
-        },
-        prefill: {
-            name: user.phoneNumber || "",
-            email: user.email || ""
-        },
-        notes: {
-            address: selectedAddress || "",
-        }
-    };
+  const options = {
+    key: "rzp_test_6HvBNtoO5YYgPp",
+    amount: parseInt(((totalPrice(basket) + (totalPrice(basket) * 10) / 100).toFixed(2)) * 100), //  = INR 1
+    currency: "INR",
+    name: "WARDROBE",
+    // description: "Test Transaction",
+    handler: ((response) => {
+      handlePaymentResponse(response)
+    }),
+    modal: {
+      ondismiss: (() => setIsRazorPayOpen(false))
+    },
+    prefill: {
+      name: user.phoneNumber || "",
+      email: user.email || ""
+    },
+    notes: {
+      address: selectedAddress || "",
+    }
+  };
 
   const openPayModal = () => {
     var rzp1 = new window.Razorpay(options);
@@ -89,10 +89,10 @@ function PaymentProceed({ currentSelection, setIsRazorPayOpen }) {
         <DialogueBox
           title="Order placed successfully."
           message="Thank you for shopping with us !!"
-          yesButtonMessage = "VIEW ORDERS"
-          noButtonMessage = "SHOP MORE"
-          yes = {()=>{history.push(ROUTES.YOUR_ORDERS); setShowThankYouDialogue(false)}}
-          no = {()=>{history.push(ROUTES.HOME); setShowThankYouDialogue(false)}}
+          yesButtonMessage="VIEW ORDERS"
+          noButtonMessage="SHOP MORE"
+          yes={() => { history.push(ROUTES.YOUR_ORDERS); setShowThankYouDialogue(false) }}
+          no={() => { history.push(ROUTES.HOME); setShowThankYouDialogue(false) }}
         />
       )}
     </>

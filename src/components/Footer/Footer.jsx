@@ -17,7 +17,7 @@ function Footer() {
           <h2>Contact Info</h2>
           <div className="phone__details">
             <p>
-              <span>Phone: </span>(+91)1234 567 890
+              <span>Phone: </span>(+91)8906838026
             </p>
           </div>
           <div className="address__details">
