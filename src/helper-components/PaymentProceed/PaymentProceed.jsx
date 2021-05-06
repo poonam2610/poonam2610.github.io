@@ -6,7 +6,7 @@ import * as ROUTES from "../../constants/Routes";
 import { userRef } from "../../firebase-config/firebase";
 import PropTypes from "prop-types";
 import DialogueBox from "../DialogueBox/DialogueBox";
-import { totalPrice } from "./context-management/reducer";
+import { totalPrice } from "../../context-management/reducer";
 
 function PaymentProceed({ currentSelection, setIsRazorPayOpen }) {
   const [{ basket, user, address }, dispatch] = useStateValue();
