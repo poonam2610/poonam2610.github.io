@@ -21,9 +21,6 @@ export default function Modal({ type, setIsModalOpen }) {
       history.push("/");
       // history.goBack();
     }
-    // dispatch({
-    //   type: ACTIONS.CHANGE_MODAL_STATE,
-    // });
     setIsModalOpen(false);
   };
 
@@ -63,12 +60,10 @@ export default function Modal({ type, setIsModalOpen }) {
         const code = prompt("enter Otp");
         e.confirm(code)
           .then((result) => {
-            // dispatch({
-            //   type: ACTIONS.CHANGE_MODAL_STATE,
-            // });
             setIsModalOpen(false);
           })
           .catch((err) => {
+            // alert("Wrong OTP, Retry With Correct OTP")
             console.log(err.message);
           });
       })
@@ -105,8 +100,7 @@ export default function Modal({ type, setIsModalOpen }) {
             placeholder="PHONE NUMBER"
             onChange={(e) => setPhoneNumber(e.target.value)}
           />
-
-          <div id="recaptcha__container"></div>
+          <div id="recaptcha-container"></div>
           <button
             className="sign__up__button"
             id="phone__button"

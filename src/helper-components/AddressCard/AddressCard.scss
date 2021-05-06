@@ -9,8 +9,10 @@
 
     legend{
       margin: 0 30px;
+      background-image: var(--background-image);
+      color: var(--textColor);
       font-size: 20px;
-      // padding: 5px;
+      border-radius: 4px;
     }
 
     .address__fieldset{

@@ -46,7 +46,6 @@
     font-weight: 500;
   }
   .contact__details {
-   
     .address__modal__input {
       width: 90%;
       padding: 10px 20px;
@@ -60,19 +59,18 @@
   }
 }
 
-.base__footer{
+.base__footer {
   padding-top: 20px;
-  border-top: 1px solid #d5d6d9 ;
+  border-top: 1px solid #d5d6d9;
   .base__button {
     width: 100%;
-    color:white;
+    color: white;
     font-weight: 500;
     cursor: pointer;
     text-align: center;
     border: none;
     text-transform: uppercase;
     letter-spacing: 1px;
-  
     background-color: var(--button);
     font-size: 14px;
     border-radius: 4px;
@@ -86,6 +84,18 @@
   align-items: center;
   input[type="checkbox"] {
     margin-right: 10px;
+  }
+}
+.address__error__message {
+  min-height: 20px;
+  color: red;
+  animation: blinker 1s linear infinite;
+  font-size: 14px;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
   }
 }
 

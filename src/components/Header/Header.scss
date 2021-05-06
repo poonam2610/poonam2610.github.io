@@ -13,13 +13,8 @@
   // color: #474554;
   .header__heading {
     font-size: 55px;
-    color: black;
+    color: var(--textColor);
     cursor: pointer;
-    // font-family: 'Allerta Stencil', sans-serif;
-    // font-family: 'Poiret One', cursive;
-    // font-family: 'Snowburst One', cursive;
-    // font-family: 'Lexend Giga', sans-serif;
-    // font-family: 'Zilla Slab Highlight', cursive;
     font-family: "Original Surfer", cursive;
     letter-spacing: 0.1px;
   }
@@ -28,7 +23,7 @@
   cursor: pointer;
   margin-right: 1rem;
   margin-top: 20px;
-  width: 30px ;
+  width: 30px;
   z-index: 8;
 }
 .icons__and__modal {
@@ -48,12 +43,16 @@
     font-weight: 500;
     cursor: pointer;
     margin-right: 10px;
-    font-size: 30px;
-    .login__text{
-      font-size: 20px;
-    }
-    .sign__out__icon, .person{
-      margin-left: 10px;
+    color: var(--textColor);
+    .person {
+      font-size: 30px;
+      .login__text {
+        font-size: 20px;
+      }
+      .sign__out__icon,
+      .person {
+        margin-left: 10px;
+      }
     }
   }
   .basket {
@@ -89,19 +88,19 @@
   user-select: none;
 }
 
-.header__heading {
-  font-size: 55px;
-  color: black;
-  cursor: pointer;
-  // font-family: 'Allerta Stencil', sans-serif;
-  // font-family: 'Poiret One', cursive;
-  // font-family: 'Snowburst One', cursive;
-  // font-family: 'Lexend Giga', sans-serif;
-  // font-family: 'Zilla Slab Highlight', cursive;
-  font-family: "Original Surfer", cursive;
-  letter-spacing: 0.1px;
-}
+// .header__heading {
+//   font-size: 55px;
+//   color: var(--textColor);
+//   cursor: pointer;
+//   // font-family: 'Allerta Stencil', sans-serif;
+//   // font-family: 'Poiret One', cursive;
+//   // font-family: 'Snowburst One', cursive;
+//   // font-family: 'Lexend Giga', sans-serif;
+//   // font-family: 'Zilla Slab Highlight', cursive;
+//   font-family: "Original Surfer", cursive;
+//   letter-spacing: 0.1px;
+// }
 
-.input__search__box{
+.input__search__box {
   padding: 1rem 2rem;
 }

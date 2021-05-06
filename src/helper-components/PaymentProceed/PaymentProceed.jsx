@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 import { useHistory } from "react-router";
 import { ACTIONS } from "../../context-management/constants";
-// import { totalPrice } from "../../context-management/reducer";
 import { useStateValue } from "../../context-management/StateProvider";
 import * as ROUTES from "../../constants/Routes";
 import { userRef } from "../../firebase-config/firebase";
 import PropTypes from "prop-types";
 import DialogueBox from "../DialogueBox/DialogueBox";
+import { totalPrice } from "./context-management/reducer";
 
 function PaymentProceed({ currentSelection, setIsRazorPayOpen }) {
   const [{ basket, user, address }, dispatch] = useStateValue();
@@ -49,25 +49,26 @@ function PaymentProceed({ currentSelection, setIsRazorPayOpen }) {
     }
   };
 
-  const options = {
-    key: "rzp_test_6HvBNtoO5YYgPp",
-    amount: 100,
-      // (totalPrice(basket) + (totalPrice(basket) * 10) / 100).toFixed(2) * 100, //  = INR 1
-    currency: "INR",
-    handler: (response) => {
-      handlePaymentResponse(response);
-    },
-    modal: {
-      ondismiss: () => setIsRazorPayOpen(false),
-    },
-    prefill: {
-      name: user.phoneNumber || "",
-      email: user.email || "",
-    },
-    notes: {
-      address: selectedAddress || "",
-    },
-  };
+    const options = {
+        key: "rzp_test_6HvBNtoO5YYgPp",
+        amount: parseInt(((totalPrice(basket) + (totalPrice(basket) * 10) / 100).toFixed(2)) * 100), //  = INR 1
+        currency: "INR",
+        name: "WARDROBE",
+        // description: "Test Transaction",
+        handler: ((response) => {
+            handlePaymentResponse(response)
+        }),
+        modal: {
+            ondismiss: (() => setIsRazorPayOpen(false))
+        },
+        prefill: {
+            name: user.phoneNumber || "",
+            email: user.email || ""
+        },
+        notes: {
+            address: selectedAddress || "",
+        }
+    };
 
   const openPayModal = () => {
     var rzp1 = new window.Razorpay(options);
