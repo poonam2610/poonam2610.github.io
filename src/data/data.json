@@ -2,288 +2,614 @@
   {
     "id": 1,
     "rating": 3,
-    "title": "RED ROUND NECK T-SHIRT",
+    "keywords": "tshirt t-shirt casual ",
+    "title": "PINK PRINTED ROUND NECK T-SHIRT",
     "price": 599,
-    "description": "Slim-fitting style neck made great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.",
+    "description": "Slim-fitting style neck made great fit for casual fashion wear and cool summer wear.",
     "category": "men",
-    "availableSize": ["S", "M", "L"],
-    "image": ["https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/12029782/2020/9/30/b39e4a03-47d8-4b81-9686-e256c8dba2511601454632583-Jack--Jones-Men-Tshirts-9061601454631088-1.jpg",
-     "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/12029782/2020/9/30/3af3457c-5ef2-49ab-b672-830e6d92a07d1601454632425-Jack--Jones-Men-Tshirts-9061601454631088-4.jpg",
-      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/12029782/2020/9/30/b21c2036-56d8-49f9-8754-ac26a22a242c1601454632368-Jack--Jones-Men-Tshirts-9061601454631088-5.jpg"]
+    "availableSize": ["XS", "S", "M", "L"],
+    "image": [
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/13345644/2021/4/6/e7b1e6c0-e2d7-45c3-bd5c-32c7a734d8781617701299048-Mast--Harbour-Men-Tshirts-9531617701298274-1.jpg",
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/13345644/2021/4/6/4bf93520-c394-4475-8e57-cc98162d85e01617701298971-Mast--Harbour-Men-Tshirts-9531617701298274-4.jpg",
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/13345644/2021/4/6/a60a2030-0b81-4bfa-a7e2-1bc5c5d3214d1617701298944-Mast--Harbour-Men-Tshirts-9531617701298274-5.jpg"
+    ]
+  },
+  {
+    "id": 33,
+    "rating": 3,
+    "keywords": "shirt casual slim fit slim-fit",
+    "title": "OLIVE GREEN PRINTED CASUAL SHIRT",
+    "price": 799,
+    "description": "Olive coloured slim-fit shirt for fresh new look for casual as well as office wear.",
+    "category": "men",
+    "availableSize": ["S", "M", "XL"],
+    "image": [
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/13904316/2021/4/20/88c63694-f3eb-4cb7-9674-61f52ac9502b1618893456057-Mast--Harbour-Men-Shirts-4211618893455115-4.jpg",
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/13904316/2021/4/20/19125211-41df-4dfa-8c2d-fda8280eb4c61618893456033-Mast--Harbour-Men-Shirts-4211618893455115-5.jpg",
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/13904316/2021/4/20/62678b99-48d7-43e4-85e7-fe89824a94b61618893456010-Mast--Harbour-Men-Shirts-4211618893455115-6.jpg"
+    ]
   },
   {
     "id": 2,
     "rating": 3,
+    "keywords": "tshirt polo",
     "title": "COLORBLOCKED POLO T-SHIRT",
     "price": 699,
-    "description": "Look cool this summer with this trendy Polo T-shirt",
+    "description": "Look cool this summer with this trendy Polo T-shirt. Team up with jeans or shorts.",
     "category": "men",
     "availableSize": ["S", "L"],
-    "image": ["https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/13483804/2021/2/4/5f204e75-5886-4c31-9fcd-9772beb959011612421834525-Allen-Solly-Sport-Men-Rust-Colourblocked-Polo-Collar-T-shirt-1.jpg",
+    "image": [
+      "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/13483804/2021/2/4/5f204e75-5886-4c31-9fcd-9772beb959011612421834525-Allen-Solly-Sport-Men-Rust-Colourblocked-Polo-Collar-T-shirt-1.jpg",
       "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/13483804/2021/2/4/dd4ed17f-49f7-4738-b07f-5638dc50327d1612421834446-Allen-Solly-Sport-Men-Rust-Colourblocked-Polo-Collar-T-shirt-4.jpg",
-      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/13483804/2021/2/4/77d6a1e6-6289-4f33-b309-34d9396075421612421834421-Allen-Solly-Sport-Men-Rust-Colourblocked-Polo-Collar-T-shirt-5.jpg"]
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/13483804/2021/2/4/77d6a1e6-6289-4f33-b309-34d9396075421612421834421-Allen-Solly-Sport-Men-Rust-Colourblocked-Polo-Collar-T-shirt-5.jpg"
+    ]
   },
   {
     "id": 3,
     "rating": 3,
+    "keywords":"jacket hoodie with cap",
     "title": "WATER REPELLANT HOODED JACKET",
     "price": 899,
-    "description": "great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors. Good gift choice for you or your family member. A warm hearted love to Father, husband or son in this thanksgiving or Christmas Day.",
+    "description": "great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors.",
     "category": "men",
     "availableSize": ["S", "M", "L"],
     "mustHave": true,
-    "image": ["https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/12557132/2020/12/7/b13f6432-d230-4372-b724-fa719b6173621607345576944-Jack--Jones-Men-Yellow--Green-Colourblocked-Water-Repellent--1.jpg",
+    "image": [
+      "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/12557132/2020/12/7/b13f6432-d230-4372-b724-fa719b6173621607345576944-Jack--Jones-Men-Yellow--Green-Colourblocked-Water-Repellent--1.jpg",
       "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/12557132/2020/12/7/841d7906-0e78-472b-bb6a-8746414ca20d1607345576814-Jack--Jones-Men-Yellow--Green-Colourblocked-Water-Repellent--4.jpg",
-      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/12557132/2020/12/7/784aea6b-efa0-4127-adb0-31449a4cb2f51607345576767-Jack--Jones-Men-Yellow--Green-Colourblocked-Water-Repellent--5.jpg"]
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/12557132/2020/12/7/784aea6b-efa0-4127-adb0-31449a4cb2f51607345576767-Jack--Jones-Men-Yellow--Green-Colourblocked-Water-Repellent--5.jpg"
+    ]
   },
   {
     "id": 4,
     "rating": 3,
+    "keywords": "shirt shirt casual slim fit slim-fit ",
     "title": "SLIM FIT CASUAL SHIRT",
     "price": 499,
-    "description": "The color could be slightly different between on the screen and in practice. / Please note that body builds vary by person, therefore, detailed size information should be reviewed below on the product description.",
+    "description": "Cotton printed shirt in green colour. Trendy, fresh and newly arrived perfect for casual and office wear.",
     "category": "men",
     "availableSize": ["S", "M", "L"],
-    "image": ["https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/11780968/2020/4/3/11591b03-97f1-4907-b735-906984c4bcd61585905051096HIGHLANDERMenGreenWhiteSlimFitPrintedCasualShirt1.jpg",
-     "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11780968/2020/4/3/3931e195-74a8-40ad-89a3-8e3bd8dad8b91585905051352HIGHLANDERMenGreenWhiteSlimFitPrintedCasualShirt5.jpg",
-      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11780968/2020/4/3/456b5475-dedf-459b-ae82-a839c20bd8101585905051410HIGHLANDERMenGreenWhiteSlimFitPrintedCasualShirt6.jpg"]
+    "image": [
+      "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/11780968/2020/4/3/11591b03-97f1-4907-b735-906984c4bcd61585905051096HIGHLANDERMenGreenWhiteSlimFitPrintedCasualShirt1.jpg",
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11780968/2020/4/3/3931e195-74a8-40ad-89a3-8e3bd8dad8b91585905051352HIGHLANDERMenGreenWhiteSlimFitPrintedCasualShirt5.jpg",
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11780968/2020/4/3/456b5475-dedf-459b-ae82-a839c20bd8101585905051410HIGHLANDERMenGreenWhiteSlimFitPrintedCasualShirt6.jpg"
+    ]
   },
   {
     "id": 9,
     "rating": 3,
+    "keywords": "purse bag sling bag",
     "title": "PINK SLING BAG ",
     "price": 649,
     "description": "Perfect bag to go with your professional as well as party wear with metal chain.",
     "category": "accessories",
-    "image": ["https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/productimage/2021/4/10/c9b3dbbf-9199-4d78-9933-b0c3fe8469e81618027871697-1.jpg",
-     "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2021/4/10/1769cb94-b977-4653-8009-b739404cb4291618027871762-4.jpg",
-      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2021/4/10/f706a01f-2274-49f1-9a94-d40a3e74953f1618027871783-5.jpg"]
+    "image": [
+      "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/productimage/2021/4/10/c9b3dbbf-9199-4d78-9933-b0c3fe8469e81618027871697-1.jpg",
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2021/4/10/1769cb94-b977-4653-8009-b739404cb4291618027871762-4.jpg",
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2021/4/10/f706a01f-2274-49f1-9a94-d40a3e74953f1618027871783-5.jpg"
+    ]
   },
   {
     "id": 10,
     "rating": 3,
+    "keywords": "purse bag sling bag",
     "title": "TAN BROWN LEATHER SHOULDER BAG",
     "price": 999,
     "description": "Trendy leather bag to go with all casual wears",
     "category": "accessories",
-    "image": ["https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2019/11/14/022e11c1-1ed5-4bbe-8fd3-20da066372ff1573711538257-1.jpg",
+    "image": [
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2019/11/14/022e11c1-1ed5-4bbe-8fd3-20da066372ff1573711538257-1.jpg",
       "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2019/11/14/e1088814-c1b6-4dd6-9dd3-5496a40844951573711538296-2.jpg",
-      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2019/11/14/79595050-85c5-4115-89b4-8113442ecc181573711538332-3.jpg"]
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2019/11/14/79595050-85c5-4115-89b4-8113442ecc181573711538332-3.jpg"
+    ]
+  },
+  
+  {
+    "id": 39,
+    "rating": 3,
+    "keywords": "purse bag sling bag clutch",
+    "title": "RED SNAKESKIN TEXTURED CLUTCH ",
+    "price": 1299,
+    "description": "Classy red solid snake skin textured box shaped clutch bag with metal chain to go with all party wears.",
+    "category": "accessories",
+    "image": [
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/12676928/2020/10/8/bf8dd004-5731-4bba-bb96-4fd2eadbe02f1602138474900-MANGO-Women-Handbags-2261602138473703-1.jpg",
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/12676928/2020/10/8/0e644c8c-fca4-430c-aa2c-2a45808114f01602138474859-MANGO-Women-Handbags-2261602138473703-2.jpg",
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/12676928/2020/10/8/fd76e2dc-8856-4ded-93ae-29d3827144a61602138474817-MANGO-Women-Handbags-2261602138473703-3.jpg"
+    ]
+
   },
   {
     "id": 11,
     "rating": 3,
+    "keywords": "bag backpack ",
     "title": "UNISEX LAPTOP BACKPACK",
     "price": 1099,
-    "description": "Tan brown laptop backpack perfect for carrying anysize laptop.",
+    "description": "Tan brown laptop backpack perfect for carrying anysize laptop. It can be also used to carry things during a hike or one day travel.",
     "category": "accessories",
-    "image": ["https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/7997279/2018/12/26/ef5e4362-8d53-48d9-aad5-b970945103631545817831221-Gear-Unisex-Tan-Solid-Laptop-Backpack-7821545817829175-1.jpg",
+    "image": [
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/7997279/2018/12/26/ef5e4362-8d53-48d9-aad5-b970945103631545817831221-Gear-Unisex-Tan-Solid-Laptop-Backpack-7821545817829175-1.jpg",
       "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/7997279/2018/12/26/4e1bbc69-c978-412d-b2e4-c11c7d1b89d31545817831183-Gear-Unisex-Tan-Solid-Laptop-Backpack-7821545817829175-3.jpg",
       "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/7997279/2018/12/26/4170b228-7314-4e52-8ea6-af564e48902b1545817831166-Gear-Unisex-Tan-Solid-Laptop-Backpack-7821545817829175-4.jpg",
-      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/7997279/2018/12/26/b96932bf-d6d3-49b3-b315-213aa5560c501545817831137-Gear-Unisex-Tan-Solid-Laptop-Backpack-7821545817829175-6.jpg"]
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/7997279/2018/12/26/b96932bf-d6d3-49b3-b315-213aa5560c501545817831137-Gear-Unisex-Tan-Solid-Laptop-Backpack-7821545817829175-6.jpg"
+    ]
+  },
+  {
+    "id": 30,
+    "rating": 3,
+    "keywords": "purse bag sling bag circle",
+    "title": "YELLOW SOLID SLING BAG",
+    "price": 1099,
+    "description": "Trendy circular shaped sling bag with metal chain to go with all casual wears",
+    "category": "accessories",
+    "image": [
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11154050/2020/2/19/2af0d987-b93c-47ff-a1b5-8c9b576c3bc71582092642500-DressBerry-Yellow-Solid-Sling-Bag-9831582092640060-1.jpg",
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11154050/2020/2/19/e189a9c4-1f70-44dd-a1d7-f8683ca0bda81582092642390-DressBerry-Yellow-Solid-Sling-Bag-9831582092640060-4.jpg",
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11154050/2020/2/19/72ed4b8a-3b10-48cf-a553-33b8fb0b1e011582092642236-DressBerry-Yellow-Solid-Sling-Bag-9831582092640060-11.jpg"
+    ]
+  },
+  {
+    "id": 37,
+    "rating": 3,
+    "keywords": "purse bag sling bag bucket",
+    "title": "TAN BROWN BUCKET SLING BAG",
+    "price": 1099,
+    "description": "Tan brown bucket shaped sling bag with non-detachable straps to keep water bottle or small essential things.",
+    "category": "accessories",
+    "image": [
+  "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/13290848/2021/1/13/8018635a-869b-4723-b0dd-df92fa298e3c1610530323689-MANGO-Women-Handbags-5771610530323038-1.jpg",
+  "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/13290848/2021/1/13/12bdcec6-8b9d-4d70-b1bd-dbeba679dca51610530323546-MANGO-Women-Handbags-5771610530323038-4.jpg",
+  "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/13290848/2021/1/13/c36aa4dc-5097-454f-81d6-d0c68a7cb0cc1610530323590-MANGO-Women-Handbags-5771610530323038-3.jpg"
+]
+  },
+  {
+    "id": 31,
+    "rating": 3,
+    "keywords": "purse bag sling bag circle tote handbag",
+    "title": "BLUE TOTE BAG",
+    "price": 1099,
+    "description": "Bohemian blue self design tote bag to carry more than your essentials",
+    "category": "accessories",
+    "image": [
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/9265227/2019/5/23/c163cfe8-c0cc-4a7b-82df-a8cc7a50d7591558597370324-ALII-AND-ALIIZEY-Blue-Self-Design-Tote-Bag-1041558597369946-1.jpg",
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/9265227/2019/5/22/464af71d-717f-47ce-aa76-7e8cb6fbd7521558525120216-ALII-AND-ALIIZEY-Blue-Self-Design-Tote-Bag-2311558525118072-4.jpg",
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/9265227/2019/5/22/aa9479ab-ba04-4c43-bd7a-8e13386369f91558525120155-ALII-AND-ALIIZEY-Blue-Self-Design-Tote-Bag-2311558525118072-7.jpg"
+    ]
   },
   {
     "id": 12,
     "rating": 3,
+    "keywords" : "heels pumps women shoes ",
     "title": "MUSTARD YELLOW WOMEN SOLID PUMPS",
     "price": 1100,
     "description": "This summer look go trendy with these heels. Perfect with any professional or casual attire. ",
     "category": "accessories",
-    "image": ["https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/13644914/2021/3/23/7ccb4386-d2ce-4039-9482-b1eed0eda16e1616498739822-Allen-Solly-Women-Heels-7501616498738997-1.jpg",
+    "image": [
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/13644914/2021/3/23/7ccb4386-d2ce-4039-9482-b1eed0eda16e1616498739822-Allen-Solly-Women-Heels-7501616498738997-1.jpg",
       "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/13644914/2021/3/23/9607dd9d-7af5-4db5-a1fa-f04281de13c01616498739801-Allen-Solly-Women-Heels-7501616498738997-2.jpg",
-      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/13644914/2021/3/23/0d82df60-4219-4f64-86d0-fd778c540b401616498739779-Allen-Solly-Women-Heels-7501616498738997-3.jpg"]
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/13644914/2021/3/23/0d82df60-4219-4f64-86d0-fd778c540b401616498739779-Allen-Solly-Women-Heels-7501616498738997-3.jpg"
+    ]
   },
   {
     "id": 13,
     "rating": 3,
+    "keywords" : "heels pumps women shoes",
     "title": "PINK EMBELLISHED PUMPS",
     "price": 899,
     "description": "Stylish and elegant pink footwear.",
     "category": "accessories",
-    "image": ["https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2019/12/10/0308bcc6-a13a-416c-b696-cdd27c8dcd171575930866074-1.jpg",
+    "image": [
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2019/12/10/0308bcc6-a13a-416c-b696-cdd27c8dcd171575930866074-1.jpg",
       "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2019/12/10/b058e347-0d12-40f6-91b5-09352618c74b1575930866122-2.jpg",
-      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2019/12/10/66269634-936e-42b3-bea4-dfdd87d4e0e11575930866255-5.jpg"]
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2019/12/10/66269634-936e-42b3-bea4-dfdd87d4e0e11575930866255-5.jpg"
+    ]
   },
   {
     "id": 14,
     "rating": 3,
+    "keywords" : "shoes sports sneakers",
     "title": "GREY AND BROWN MID-TOP SNEAKERS",
     "price": 999,
     "description": "Sneakers to go for casual look or roadtrip. ",
     "category": "accessories",
-    "image": ["https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/1463404/2016/9/7/11473243453563-Roadster-Men-Olive-Colourblock-Mid-Top-Sneakers-5791473243453247-1.jpg",
+    "image": [
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/1463404/2016/9/7/11473243453563-Roadster-Men-Olive-Colourblock-Mid-Top-Sneakers-5791473243453247-1.jpg",
       "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/1463404/2016/9/7/11473243453467-Roadster-Men-Olive-Colourblock-Mid-Top-Sneakers-5791473243453247-2.jpg",
-     "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/1463404/2016/9/7/11473243453444-Roadster-Men-Olive-Colourblock-Mid-Top-Sneakers-5791473243453247-3.jpg"
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/1463404/2016/9/7/11473243453444-Roadster-Men-Olive-Colourblock-Mid-Top-Sneakers-5791473243453247-3.jpg"
     ]
   },
   {
     "id": 15,
     "rating": 3,
+    "keywords" : "party wear pink one piece dress",
     "title": "FUSCHIA PINK WRAP DRESS",
     "price": 1099,
-    "description": "Note:The Jackets is US standard size, Please choose size as your usual wear Material: 100% Polyester; Detachable Liner Fabric: Warm Fleece. Detachable Functional Liner: Skin Friendly, Lightweigt and Warm.Stand Collar Liner jacket, keep you warm in cold weather. Zippered Pockets: 2 Zippered Hand Pockets, 2 Zippered Pockets on Chest (enough to keep cards or keys)and 1 Hidden Pocket Inside.Zippered Hand Pockets and Hidden Pocket keep your things secure. Humanized Design: Adjustable and Detachable Hood and Adjustable cuff to prevent the wind and water,for a comfortable fit. 3 in 1 Detachable Design provide more convenience, you can separate the coat and inner as needed, or wear it together. It is suitable for different season and help you adapt to different climates",
+    "description": "Stylish and elegant fuschia pink coloured wrap dress for party wears or date nights.",
     "category": "women",
     "availableSize": ["S", "M", "L"],
     "mustHave": true,
-    "image": ["https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/13719160/2021/3/5/b04a5dc0-9beb-4490-ae2c-f0f9654ded1c1614925067822-Athena-Fuchsia-Pink-dress-with-Power-shoulderS--Tulip-Bottom-1.jpg",
+    "image": [
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/13719160/2021/3/5/b04a5dc0-9beb-4490-ae2c-f0f9654ded1c1614925067822-Athena-Fuchsia-Pink-dress-with-Power-shoulderS--Tulip-Bottom-1.jpg",
       "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/13719160/2021/3/5/e1b8d659-f172-41c7-aae0-4f81186cda861614925067744-Athena-Fuchsia-Pink-dress-with-Power-shoulderS--Tulip-Bottom-4.jpg",
-      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/13719160/2021/3/5/f171380c-0522-4419-a3a2-e7aed2ebae5f1614925067720-Athena-Fuchsia-Pink-dress-with-Power-shoulderS--Tulip-Bottom-5.jpg"]
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/13719160/2021/3/5/f171380c-0522-4419-a3a2-e7aed2ebae5f1614925067720-Athena-Fuchsia-Pink-dress-with-Power-shoulderS--Tulip-Bottom-5.jpg"
+    ]
   },
   {
     "id": 16,
     "rating": 3,
+    "keywords" : "one piece dress western",
     "title": "FLORAL PRINTED DRESS",
     "price": 899,
-    "description": "100% POLYURETHANE(shell) 100% POLYESTER(lining) 75% POLYESTER 25% COTTON (SWEATER), Faux leather material for style and comfort / 2 pockets of front, 2-For-One Hooded denim style faux leather jacket, Button detail on waist / Detail stitching at sides, HAND WASH ONLY / DO NOT BLEACH / LINE DRY / DO NOT IRON",
+    "description": "Printed cotton dress for casual wears. Its perfect for summers.",
     "category": "women",
     "availableSize": ["S", "M", "L"],
-    "image":["https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/7050866/2018/8/9/a69aadcd-2f69-4424-ac8a-a8bffe15a2bc1533799867236-MsFQ-Women-Dresses-9271533799867204-1.jpg",
+    "image": [
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/7050866/2018/8/9/a69aadcd-2f69-4424-ac8a-a8bffe15a2bc1533799867236-MsFQ-Women-Dresses-9271533799867204-1.jpg",
       "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/7050866/2018/8/9/a7623d59-7b9f-43a1-b399-9200cb7457ad1533798568935-MsFQ-Women-Dresses-7361533798568798-4.jpg",
-      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/7050866/2018/8/9/000d4b33-479e-4d48-855b-5513951b4e731533799890568-MsFQ-Women-Dresses-4931533799890541-5.jpg"]
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/7050866/2018/8/9/000d4b33-479e-4d48-855b-5513951b4e731533799890568-MsFQ-Women-Dresses-4931533799890541-5.jpg"
+    ]
+  },
+  {
+    "id": 43,
+    "rating": 3,
+    "keywords" : "accordian top western",
+    "title": "GREEN SOLID ACCORDION PLEATED TOP",
+    "price": 1099,
+    "description": "Green solid knitted accordion pleated top and has shoulder straps for casual wear and part wear.",
+    "category": "women",
+    "availableSize": ["S", "M", "L"],
+    "image": [
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11843192/2020/6/2/81de75c3-43e7-49f3-ade7-7cd6cdf43b511591115001616MANGOWomenWhiteampBlackStripedRoundNeckT-shirtTshirtsMANGOWo3.jpg",
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11843192/2020/6/2/d6089db7-e6c8-43bb-9a9d-c4bdf5ace53a1591115001499MANGOWomenWhiteampBlackStripedRoundNeckT-shirtTshirtsMANGOWo1.jpg",
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11843192/2020/6/2/6e2afc0b-5967-4339-ba84-94a044646a651591115001679MANGOWomenWhiteampBlackStripedRoundNeckT-shirtTshirtsMANGOWo4.jpg",
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11843192/2020/6/2/ec733584-22bd-45ba-b22c-530523df25761591115001755MANGOWomenWhiteampBlackStripedRoundNeckT-shirtTshirtsMANGOWo5.jpg"
+    ]
+  },
+  {
+    "id": 45,
+    "rating": 3,
+    "keywords" : "women lady top ruffled crop",
+    "title": "SEA GREEN SELF-STRIPED RUFFLED TOP",
+    "price": 1099,
+    "description": "Sea Green striped knitted regular top with ruffle detail, has a round ruffled neck, short sleeves, and button closure.",
+    "category": "women",
+    "availableSize": ["S", "M", "L"],
+    "image": [
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11873888/2020/6/19/8a37f595-c897-44b3-a559-02bf384542f31592542868240-MANGO-Women-Tshirts-5501592542866198-1.jpg",
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11873888/2020/6/19/4a471652-3402-40ad-bc6d-883530022b661592542867990-MANGO-Women-Tshirts-5501592542866198-4.jpg",
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11873888/2020/6/19/dfaf69ae-5026-49fb-b5f1-cb11047e83b91592542867905-MANGO-Women-Tshirts-5501592542866198-5.jpg"
+    ]
+  },
+  {
+    "id": 44,
+    "rating": 3,
+    "keywords" : "women lady top one shoulder crop",
+    "title": "BURGUNDY SHIMMER CROPPED FITTED TOP",
+    "price": 1099,
+    "description": "Burgundy shimmer knitted cropped fitted top with ruffled detail, has an one shoulder, and short sleeves",
+    "category": "women",
+    "availableSize": ["S", "M", "L"],
+    "image": [
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/13099998/2020/12/12/61bdf5f2-55c3-441c-b847-35e8d311b4ac1607756389497-MANGO-Women-Burgundy-Shimmer-Cropped-Fitted-Top-927160775638-1.jpg",
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/13099998/2020/12/12/fb9a3754-cd6a-4873-ba79-f6eacb65160c1607756389410-MANGO-Women-Burgundy-Shimmer-Cropped-Fitted-Top-927160775638-3.jpg",
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/13099998/2020/12/12/b60dcd9a-dc45-478e-9c4f-8a71dee29e101607756389366-MANGO-Women-Burgundy-Shimmer-Cropped-Fitted-Top-927160775638-4.jpg"
+    ]
+  },
+  {
+    "id": 18,
+    "rating": 3,
+    "keywords" : "white top western",
+    "title": "PLEATED COTTON WHITE TOP",
+    "price": 1099,
+    "description": "Elegant white top. Definitely a must have . Perfect for casual or party or office wear. Team up with pair of jeans or skirt.",
+    "category": "women",
+    "availableSize": ["S", "M", "L"],
+    "mustHave": true,
+    "image": [
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/13627078/2021/2/24/6d633be8-e0fa-4993-ab1f-d37df5ce009d1614162520103ShirtsMANGOWomenDressesMANGOWomenTopsMANGOWomenSweatersMANGO1.jpg",
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/13627078/2021/2/24/cb3f56cc-a64d-4766-81e8-9171c6a340231614162520134ShirtsMANGOWomenDressesMANGOWomenTopsMANGOWomenSweatersMANGO2.jpg",
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/13627078/2021/2/24/822d8560-cbe7-4851-8c95-6870938a6a8c1614162520195ShirtsMANGOWomenDressesMANGOWomenTopsMANGOWomenSweatersMANGO4.jpg"
+    ]
+  },
+  {
+    "id": 20,
+    "rating": 3,
+    "keywords" : "party wear red one piece dress",
+    "title": "RED BODYCON DRESS",
+    "price": 1299,
+    "description": "Elegant red coloured body fitting dress. Perfect for party wear or date nights.",
+    "category": "women",
+    "availableSize": ["S", "M", "L"],
+    "image": [
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/10054835/2019/7/3/6b6b2f1b-4d01-41fc-9f5e-30f6e5c5eee61562138460232-Veni-Vidi-Vici-Women-Red-Bodycon-Dress-6401562138458589-1.jpg",
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/10054835/2019/7/3/aff51b05-1b9f-4881-b31c-d0efa0be4f801562138460106-Veni-Vidi-Vici-Women-Red-Bodycon-Dress-6401562138458589-4.jpg",
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/10054835/2019/7/3/0531bfd9-c78b-4d1e-85ec-eae98d4589151562138460064-Veni-Vidi-Vici-Women-Red-Bodycon-Dress-6401562138458589-5.jpg"
+    ]
+  },
+  {
+    "id": 19,
+    "rating": 3,
+    "keywords" : "top tropical",
+    "title": "TROPICAL PRINT TOP",
+    "price": 699,
+    "description": "Cool tropical print top, perfect for casual wear or for a vacation trip.",
+    "category": "women",
+    "availableSize": ["S", "M", "L"],
+    "image": [
+      "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/12941732/2020/12/7/f9d44549-33b6-4c51-9800-53f1be431d251607329616779TopsVeroModaWomenTopsVeroModaWomenTopsVeroModaWomenDressesVe1.jpg",
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/12941732/2020/12/7/5b182644-93ac-4cf4-934b-c914df9f50331607329616996TopsVeroModaWomenTopsVeroModaWomenTopsVeroModaWomenDressesVe4.jpg",
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/12941732/2020/12/7/3fa652b3-683c-4081-972e-5ace4bde79691607329617064TopsVeroModaWomenTopsVeroModaWomenTopsVeroModaWomenDressesVe5.jpg"
+    ]
   },
   {
     "id": 17,
     "rating": 3,
+    "keywords" : "top ",
     "title": "NAVY BLUE LAYERED TOP",
     "price": 499,
     "description": "Lightweight perfeCt for brunch, date-night  or casual wear .",
     "category": "women",
     "availableSize": ["S", "M", "L"],
-    "image": ["https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/1562846/2020/1/20/f14c2362-1dad-4df7-a69f-6869f71b56d91579509551611-20Dresses-Women-Blue-Solid-Layered-Top-4871579509550909-1.jpg",
+    "image": [
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/1562846/2020/1/20/f14c2362-1dad-4df7-a69f-6869f71b56d91579509551611-20Dresses-Women-Blue-Solid-Layered-Top-4871579509550909-1.jpg",
       "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/1562846/2020/1/20/882fa61d-153e-44fd-9658-d177928cac9f1579509551478-20Dresses-Women-Blue-Solid-Layered-Top-4871579509550909-5.jpg",
-      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/1562846/2020/1/20/c71d87de-68b9-4c8e-a90d-c31475b08bea1579509551545-20Dresses-Women-Blue-Solid-Layered-Top-4871579509550909-3.jpg"]
-  },
-  {
-    "id": 18,
-    "rating": 3,
-    "title": "PLEATED COTTON WHITE TOP",
-    "price": 1099,
-    "description": "95% RAYON 5% SPANDEX, Made in USA or Imported, Do Not Bleach, Lightweight fabric with great stretch for comfort, Ribbed on sleeves and neckline / Double stitching on bottom hem",
-    "category": "women",
-    "availableSize": ["S", "M", "L"],
-    "mustHave": true,
-    "image": ["https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/13627078/2021/2/24/6d633be8-e0fa-4993-ab1f-d37df5ce009d1614162520103ShirtsMANGOWomenDressesMANGOWomenTopsMANGOWomenSweatersMANGO1.jpg",
-      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/13627078/2021/2/24/cb3f56cc-a64d-4766-81e8-9171c6a340231614162520134ShirtsMANGOWomenDressesMANGOWomenTopsMANGOWomenSweatersMANGO2.jpg",
-      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/13627078/2021/2/24/822d8560-cbe7-4851-8c95-6870938a6a8c1614162520195ShirtsMANGOWomenDressesMANGOWomenTopsMANGOWomenSweatersMANGO4.jpg"]
-  },
-  {
-    "id": 19,
-    "rating": 3,
-    "title": "TROPICAL PRINT TOP",
-    "price": 699,
-    "description": "Cool tropical print top, perfect for casual or beach wear",
-    "category": "women",
-    "availableSize": ["S", "M", "L"],
-    "image": ["https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/12941732/2020/12/7/f9d44549-33b6-4c51-9800-53f1be431d251607329616779TopsVeroModaWomenTopsVeroModaWomenTopsVeroModaWomenDressesVe1.jpg",
-      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/12941732/2020/12/7/5b182644-93ac-4cf4-934b-c914df9f50331607329616996TopsVeroModaWomenTopsVeroModaWomenTopsVeroModaWomenDressesVe4.jpg",
-      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/12941732/2020/12/7/3fa652b3-683c-4081-972e-5ace4bde79691607329617064TopsVeroModaWomenTopsVeroModaWomenTopsVeroModaWomenDressesVe5.jpg"]
-  },
-  {
-    "id": 20,
-    "rating": 3,
-    "title": "RED BODYCON DRESS",
-    "price": 1299,
-    "description": "100% Polyester, Machine wash, 100% cationic polyester interlock, Machine Wash & Pre Shrunk for a Great Fit, Lightweight, roomy and highly breathable with moisture wicking fabric which helps to keep moisture away, Soft Lightweight Fabric with comfortable V-neck collar and a slimmer fit, delivers a sleek, more feminine silhouette and Added Comfort",
-    "category": "women",
-    "availableSize": ["S", "M", "L"],
-    "image": ["https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/10054835/2019/7/3/6b6b2f1b-4d01-41fc-9f5e-30f6e5c5eee61562138460232-Veni-Vidi-Vici-Women-Red-Bodycon-Dress-6401562138458589-1.jpg",
-      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/10054835/2019/7/3/aff51b05-1b9f-4881-b31c-d0efa0be4f801562138460106-Veni-Vidi-Vici-Women-Red-Bodycon-Dress-6401562138458589-4.jpg",
-      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/10054835/2019/7/3/0531bfd9-c78b-4d1e-85ec-eae98d4589151562138460064-Veni-Vidi-Vici-Women-Red-Bodycon-Dress-6401562138458589-5.jpg"]
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/1562846/2020/1/20/c71d87de-68b9-4c8e-a90d-c31475b08bea1579509551545-20Dresses-Women-Blue-Solid-Layered-Top-4871579509550909-3.jpg"
+    ]
   },
   {
     "id": 21,
     "rating": 3,
+    "keywords" : "checked shirt ",
     "title": "BEIGE AND RED CHECKED CASUAL SHIRT",
     "price": 799,
-    "description": "Features: Casual, Short Sleeve, Letter Print,V-Neck,Fashion Tees, The fabric is soft and has some stretch., Occasion: Casual/Office/Beach/School/Home/Street. Season: Spring,Summer,Autumn,Winter.",
+    "description": "Cotton checked shirt perfect fot casual or office wear.",
     "category": "men",
     "availableSize": ["S", "M", "L"],
     "mustHave": true,
-    "image": ["https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11369776/2020/3/5/14198f01-0a63-4466-aa40-ed4414b949161583402708612-Mast--Harbour-Men-Beige--Red-Regular-Fit-Checked-Linen-Casua-4.jpg",
+    "image": [
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11369776/2020/3/5/14198f01-0a63-4466-aa40-ed4414b949161583402708612-Mast--Harbour-Men-Beige--Red-Regular-Fit-Checked-Linen-Casua-4.jpg",
       "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11369776/2020/3/5/373742d2-bd71-4aa9-8def-7b172a16dabf1583402708568-Mast--Harbour-Men-Beige--Red-Regular-Fit-Checked-Linen-Casua-5.jpg",
-      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11369776/2020/3/5/b887112d-431c-455f-86bb-901c7b7ba58b1583402708738-Mast--Harbour-Men-Beige--Red-Regular-Fit-Checked-Linen-Casua-1.jpg"]
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11369776/2020/3/5/b887112d-431c-455f-86bb-901c7b7ba58b1583402708738-Mast--Harbour-Men-Beige--Red-Regular-Fit-Checked-Linen-Casua-1.jpg"
+    ]
   },
   {
     "id": 22,
     "rating": 3,
+    "keywords" : "shirt casual slim-fit ",
     "title": "SLIM FIT CASUAL SHIRT",
     "price": 599,
     "description": "Slim-fitting style, perfect for a beach look.",
     "category": "men",
     "availableSize": ["S", "M", "L"],
-    "image": ["https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11156238/2020/3/10/e65743d9-3b95-4f44-b1b6-6cfa01d35e8f1583836114183-Roadster-Men-Maroon--Navy-Blue-Regular-Fit-Checked-Casual-Sh-4.jpg",
+    "image": [
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11156238/2020/3/10/e65743d9-3b95-4f44-b1b6-6cfa01d35e8f1583836114183-Roadster-Men-Maroon--Navy-Blue-Regular-Fit-Checked-Casual-Sh-4.jpg",
       "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11156238/2020/3/10/c1194fe6-5978-4552-9bed-1a35f28184a11583836114144-Roadster-Men-Maroon--Navy-Blue-Regular-Fit-Checked-Casual-Sh-5.jpg",
-     "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11156238/2020/3/10/fbd0a9ae-c58a-44ae-b560-7d789f2be7901583836114102-Roadster-Men-Maroon--Navy-Blue-Regular-Fit-Checked-Casual-Sh-6.jpg"]
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11156238/2020/3/10/fbd0a9ae-c58a-44ae-b560-7d789f2be7901583836114102-Roadster-Men-Maroon--Navy-Blue-Regular-Fit-Checked-Casual-Sh-6.jpg"
+    ]
   },
   {
-    "id":23,
-    "rating":4,
-    "title":"BLACK FULL SLEEVES GEOMETRIC STAR DRESS",
+    "id": 23,
+    "rating": 4,
+    "keywords" : "party girls girl birthday princess frock dress",
+    "title": "BLACK FULL SLEEVES GEOMETRIC STAR DRESS",
     "price": 899,
-    "description":"Stylish and elegant pink footwear.",
-    "category":"kids",
-    "availableSize":["S","M","XL"],
-    "image":["https://static.hopscotch.in/fstatic/product/201910/d12663e2-e956-47d9-8684-c91967d98789_full.jpg?version=1571628233424&tr=w-720,c-at_max,n-normal",
-    "https://static.hopscotch.in/fstatic/product/201910/72e3911e-f51d-4b3e-9519-c3a4395519c2_full.jpg?version=1571628230067&tr=w-720,c-at_max,n-normal",
-    "https://static.hopscotch.in/fstatic/product/201910/ebdfcbdf-bc62-4a66-8a01-c8c4c2b58197_full.jpg?version=1571628236706&tr=w-720,c-at_max,n-normal"]
+    "description": "Stylish and elegant pink footwear.",
+    "category": "kids",
+    "availableSize": ["S", "M", "XL"],
+    "image": [
+      "https://static.hopscotch.in/fstatic/product/201910/d12663e2-e956-47d9-8684-c91967d98789_full.jpg?version=1571628233424&tr=w-720,c-at_max,n-normal",
+      "https://static.hopscotch.in/fstatic/product/201910/72e3911e-f51d-4b3e-9519-c3a4395519c2_full.jpg?version=1571628230067&tr=w-720,c-at_max,n-normal",
+      "https://static.hopscotch.in/fstatic/product/201910/ebdfcbdf-bc62-4a66-8a01-c8c4c2b58197_full.jpg?version=1571628236706&tr=w-720,c-at_max,n-normal"
+    ]
   },
   {
-    "id":24,
-    "rating":4,
-    "title":"POLKA DOT TOP WITH SKIRT",
+    "id": 24,
+    "rating": 4,
+    "keywords" : "girls set skirt top skirts",
+    "title": "POLKA DOT TOP WITH SKIRT",
     "price": 699,
-    "description":"Cute, stylish and casual wear for girl of age 3-7 yrs.",
-    "category":"kids",
-    "availableSize":["S","M","XL"],
-    "image":["https://static.hopscotch.in/fstatic/product/202003/e9d23ef8-4fb2-483c-9600-eb6fd58c00c0_full.jpg?version=1583499083272&tr=w-720,c-at_max,n-normal",
-    "https://static.hopscotch.in/fstatic/product/202003/c50f2bc5-f6c2-4cdd-bf16-d6782e445031_full.jpg?version=1583499083975&tr=w-720,c-at_max,n-normal",
-  "https://static.hopscotch.in/fstatic/product/202003/8d92b6a6-ac0a-46f8-8f4f-08d3608cb898_full.jpg?version=1583499084644&tr=w-720,c-at_max,n-normal"]
+    "description": "Cute, stylish and casual wear for girl of age 3-7 yrs.",
+    "category": "kids",
+    "availableSize": ["S", "M", "XL"],
+    "image": [
+      "https://static.hopscotch.in/fstatic/product/202003/e9d23ef8-4fb2-483c-9600-eb6fd58c00c0_full.jpg?version=1583499083272&tr=w-720,c-at_max,n-normal",
+      "https://static.hopscotch.in/fstatic/product/202003/c50f2bc5-f6c2-4cdd-bf16-d6782e445031_full.jpg?version=1583499083975&tr=w-720,c-at_max,n-normal",
+      "https://static.hopscotch.in/fstatic/product/202003/8d92b6a6-ac0a-46f8-8f4f-08d3608cb898_full.jpg?version=1583499084644&tr=w-720,c-at_max,n-normal"
+    ]
   },
   {
-    "id":25,
-    "rating":4,
-    "title":"EMBROIDERED WHITE TOP WITH SKIRT",
+    "id": 25,
+    "rating": 4,
+    "keywords" : "skirts girls girl top ",
+    "title": "EMBROIDERED WHITE TOP WITH SKIRT",
     "price": 799,
-    "description":"Stylish and elegant set for girls.",
-    "category":"kids",
-    "availableSize":["S","M","XL"],
-    "image":["https://static.hopscotch.in/fstatic/product/202007/eb850cdc-8dfe-4de7-a178-1bbbc8e380a5_full.jpg?version=1594461750276&tr=w-720,c-at_max,n-normal",
-  "https://static.hopscotch.in/fstatic/product/202007/38b27261-d2b5-4083-aca5-a33aa1b6a7fd_full.jpg?version=1594461748975&tr=w-720,c-at_max,n-normal",
-  "https://static.hopscotch.in/fstatic/product/202007/fa11bea3-1c6c-4d68-8172-063022f705a0_full.jpg?version=1594461745151&tr=w-720,c-at_max,n-normal"]
-},
-  {
-    "id":26,
-    "rating":4,
-    "title":"SUSPENDER STYLED ROMPER",
-    "price": 559,
-    "description":"Stylish and funky romper for baby boys.",
-    "category":"kids",
-    "availableSize":["S","M","XL"],
-    "image":["https://static.hopscotch.in/fstatic/product/201808/809f3ce8-50f2-4408-aafb-6511871121bf_full.jpg?version=1534429295532&tr=w-720,c-at_max,n-normal",
-    "https://static.hopscotch.in/fstatic/product/201808/51846698-5a1e-4a40-9209-1b6366d9c566_full.jpg?version=1534429302381&tr=w-720,c-at_max,n-normal",
-  "https://static.hopscotch.in/fstatic/product/201808/79e38cf9-d258-46d1-9b2d-6ff336fcadc1_full.jpg?version=1534429298020&tr=w-720,c-at_max,n-normal"]
+    "description": "Stylish and elegant set for girls.",
+    "category": "kids",
+    "availableSize": ["S", "M", "XL"],
+    "image": [
+      "https://static.hopscotch.in/fstatic/product/202007/eb850cdc-8dfe-4de7-a178-1bbbc8e380a5_full.jpg?version=1594461750276&tr=w-720,c-at_max,n-normal",
+      "https://static.hopscotch.in/fstatic/product/202007/38b27261-d2b5-4083-aca5-a33aa1b6a7fd_full.jpg?version=1594461748975&tr=w-720,c-at_max,n-normal",
+      "https://static.hopscotch.in/fstatic/product/202007/fa11bea3-1c6c-4d68-8172-063022f705a0_full.jpg?version=1594461745151&tr=w-720,c-at_max,n-normal"
+    ]
   },
   {
-    "id":27,
-    "rating":4,
-    "title":"FLORAL PRINT TOP AND SHORT",
+    "id": 26,
+    "rating": 4,
+    "keywords" : "baby boy romper",
+    "title": "SUSPENDER STYLED ROMPER",
+    "price": 559,
+    "description": "Stylish and funky romper for baby boys.",
+    "category": "kids",
+    "availableSize": ["S", "M", "XL"],
+    "image": [
+      "https://static.hopscotch.in/fstatic/product/201808/809f3ce8-50f2-4408-aafb-6511871121bf_full.jpg?version=1534429295532&tr=w-720,c-at_max,n-normal",
+      "https://static.hopscotch.in/fstatic/product/201808/51846698-5a1e-4a40-9209-1b6366d9c566_full.jpg?version=1534429302381&tr=w-720,c-at_max,n-normal",
+      "https://static.hopscotch.in/fstatic/product/201808/79e38cf9-d258-46d1-9b2d-6ff336fcadc1_full.jpg?version=1534429298020&tr=w-720,c-at_max,n-normal"
+    ]
+  },
+  {
+    "id": 27,
+    "rating": 4,
+    "keywords" : "girl girls top",
+    "title": "FLORAL PRINT TOP AND SHORT",
     "price": 659,
-    "description":"Cute floral print top with yellow shorts for trendy summer wear.",
-    "category":"kids",
-    "availableSize":["S","M","XL"],
-    "image":["https://static.hopscotch.in/fstatic/product/202103/847cef93-6696-4628-8824-ec4e4a314fad_full.jpg?version=1615803104586&tr=w-720,c-at_max,n-normal",
-    "https://static.hopscotch.in/fstatic/product/202103/51bb9dc5-9c1e-4014-8e58-89abb1a9e63e_full.jpg?version=1615803103253&tr=w-720,c-at_max,n-normal",
-  "https://static.hopscotch.in/fstatic/product/202103/b6f72196-5c47-470b-9dcb-99d0959122d5_full.jpg?version=1615803106011&tr=w-720,c-at_max,n-normal"]
+    "description": "Cute floral print top with yellow shorts for trendy summer wear.",
+    "category": "kids",
+    "availableSize": ["S", "M", "XL"],
+    "image": [
+      "https://static.hopscotch.in/fstatic/product/202103/847cef93-6696-4628-8824-ec4e4a314fad_full.jpg?version=1615803104586&tr=w-720,c-at_max,n-normal",
+      "https://static.hopscotch.in/fstatic/product/202103/51bb9dc5-9c1e-4014-8e58-89abb1a9e63e_full.jpg?version=1615803103253&tr=w-720,c-at_max,n-normal",
+      "https://static.hopscotch.in/fstatic/product/202103/b6f72196-5c47-470b-9dcb-99d0959122d5_full.jpg?version=1615803106011&tr=w-720,c-at_max,n-normal"
+    ]
   },
   {
-    "id":28,
-    "rating":4,
-    "title":"ORANGE T-SHIRT",
+    "id": 28,
+    "rating": 4,
+    "keywords" : "boys boy tshirts tshirt t-shirts t-shirt",
+    "title": "ORANGE T-SHIRT",
     "price": 559,
-    "description":"Stylish and elegant pink footwear.",
-    "category":"kids",
-    "availableSize":["S","M","XL"],
-    "image":["https://static.hopscotch.in/fstatic/product/202103/1dd2265c-51e3-4b64-a7f4-155b2db11fdd_full.jpg?version=1616393647374&tr=w-720,c-at_max,n-normal",
-    "https://static.hopscotch.in/fstatic/product/202103/662ada56-8e9f-4b3e-94e8-6048199df002_full.jpg?version=1616393648668&tr=w-720,c-at_max,n-normal"]
+    "description": "Stylish and elegant pink footwear.",
+    "category": "kids",
+    "availableSize": ["S", "M", "XL"],
+    "image": [
+      "https://static.hopscotch.in/fstatic/product/202103/1dd2265c-51e3-4b64-a7f4-155b2db11fdd_full.jpg?version=1616393647374&tr=w-720,c-at_max,n-normal",
+      "https://static.hopscotch.in/fstatic/product/202103/662ada56-8e9f-4b3e-94e8-6048199df002_full.jpg?version=1616393648668&tr=w-720,c-at_max,n-normal"
+    ]
+  },
+  {
+    "id": 29,
+    "rating": 3,
+    "keywords" : "skirt ruffled",
+    "title": "MAROON RUFFLED SKIRT WITH TROUSERS",
+    "price": 999,
+    "description": "Flared ruffled skirt with attached trousers for casual wear and part wear.",
+    "category": "women",
+    "availableSize": ["S", "M", "L"],
+    "image": [
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/5125423/2018/4/17/11523964837624-AMIYRA-Maroon-Solid-Ruffles-Skirt-8371523964837512-5.jpg",
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/5125423/2018/4/17/11523964837693-AMIYRA-Maroon-Solid-Ruffles-Skirt-8371523964837512-2.jpg",
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/5125423/2018/4/17/11523964837669-AMIYRA-Maroon-Solid-Ruffles-Skirt-8371523964837512-3.jpg"
+    ]
+  },
+  {
+    "id": 32,
+    "rating": 3,
+    "keywords" : "shirt",
+    "title": "WHITE AND NAVY BLUE STRIPED SHIRT",
+    "price": 499,
+    "description": "Light coloured slim fit shirt perfect for summer wear, for casual as well as office wear.",
+    "category": "men",
+    "availableSize": ["S", "M", "L"],
+    "image": [
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/13904312/2021/4/20/04c3e1fa-a519-45f4-a711-305ecb1abc701618892985755-Mast--Harbour-Men-Shirts-591618892984835-4.jpg",
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/13904312/2021/4/20/af83b76b-bcd1-4ddb-a8f6-81542258f14d1618892985724-Mast--Harbour-Men-Shirts-591618892984835-5.jpg",
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/13904312/2021/4/20/33aea331-e4ea-4075-9139-1c18c417ce6c1618892985696-Mast--Harbour-Men-Shirts-591618892984835-6.jpg"
+    ]
+  },
+  {
+    "id": 34,
+    "rating": 3,
+    "keywords": "shirt casual slim fit slim-fit",
+    "title": "YELLOW AND WHITE CHECKED SHIRT",
+    "price": 799,
+    "description": "Checked slim-fit shirt for fresh new look for casual as well as office wear.",
+    "category": "men",
+    "availableSize": ["S", "M", "L", "XL"],
+    "image": [
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/13257358/2021/4/7/7e80e576-9bf4-457d-8e59-c75353a28c881617798785160-Mast--Harbour-Men-Shirts-3921617798784273-4.jpg",
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/13257358/2021/4/7/56c1bef1-c3f2-41d8-9457-e699592fb2c61617798785138-Mast--Harbour-Men-Shirts-3921617798784273-5.jpg",
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/13257358/2021/4/7/34994bc4-44ef-4d87-9efc-fec5e8b5d36d1617798785117-Mast--Harbour-Men-Shirts-3921617798784273-6.jpg"
+    ]
+  },
+  {
+    "id": 35,
+    "rating": 3,
+    "keywords" : "tshirt t-shirt",
+    "title": "RED ROUND NECK T-SHIRT",
+    "price": 599,
+    "description": "Slim-fitting style neck made great fit for casual fashion wear.The Henley style round neckline includes a three-button placket.",
+    "category": "men",
+    "availableSize": ["S", "M", "L"],
+    "image": [
+      "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/12029782/2020/9/30/b39e4a03-47d8-4b81-9686-e256c8dba2511601454632583-Jack--Jones-Men-Tshirts-9061601454631088-1.jpg",
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/12029782/2020/9/30/3af3457c-5ef2-49ab-b672-830e6d92a07d1601454632425-Jack--Jones-Men-Tshirts-9061601454631088-4.jpg",
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/12029782/2020/9/30/b21c2036-56d8-49f9-8754-ac26a22a242c1601454632368-Jack--Jones-Men-Tshirts-9061601454631088-5.jpg"
+    ]
+  },
+  {
+    "id": 36,
+    "rating": 3,
+    "keywords" : "tshirt t-shirt ",
+    "title": "DARK GREEN STRIPED POLO COLLAR T-SHIRT",
+    "price": 799,
+    "description": "Polo collar striped t-shirt for casual wear. ",
+    "category": "men",
+    "availableSize": ["S", "M", "L"],
+    "image": [
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/13252110/2021/3/5/53f9d476-4065-4b78-855e-55e8d287ea601614918796970-Levis-Men-Olive-Green--Blue-Pure-Cotton-Striped-Polo-Collar--1.jpg",
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/13252110/2021/3/5/cd2304e2-68ff-40b3-86ae-934d1fcb48d21614918796912-Levis-Men-Olive-Green--Blue-Pure-Cotton-Striped-Polo-Collar--4.jpg",
+      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/13252110/2021/3/5/d88593f3-6631-44cc-b0bb-18d063f4b6501614918796895-Levis-Men-Olive-Green--Blue-Pure-Cotton-Striped-Polo-Collar--5.jpg"
+    ]
+  },
+  {
+    "id": 38,
+    "rating": 3,
+    "keywords": "mules shoes flats",
+    "title": "HANDCRAFTED MULES",
+    "price": 1100,
+    "description": "This summer go trendy with these handcrafted mules. Perfect to complement with any ethnic attire or casual wear. ",
+    "category": "accessories",
+    "image": [
+     "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/13565704/2021/3/19/5ef53c21-e2d9-4f2b-be54-be5d73fb5a3e1616156084945-House-of-Pataudi-Women-Blue--Gold-Toned-Embroidered-Handcraf-1.jpg",
+     "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/13565704/2021/3/19/5ac8d0ee-83ef-4726-99ab-882184cac03d1616156084889-House-of-Pataudi-Women-Blue--Gold-Toned-Embroidered-Handcraf-4.jpg",
+     "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/13565704/2021/3/19/a40a323f-7be8-4c03-9a44-abf50c7498a01616156084850-House-of-Pataudi-Women-Blue--Gold-Toned-Embroidered-Handcraf-6.jpg"
+
+    ]
+  },
+  {
+    "id": 40,
+    "rating": 4,
+    "keywords": "girls girl top",
+    "title": "RED COLOURED TOP WITH FLARED SLEEVES",
+    "price": 899,
+    "description": "Stylish and cute red top with flared sleeves for girls.",
+    "category": "kids",
+    "availableSize": ["S", "M", "XL"],
+    "image": [
+      "https://static.hopscotch.in/fstatic/product/202102/69b29740-540c-4774-aa7b-f3ff31f5cf26_full.jpg?version=1612848257107&tr=w-720,c-at_max,n-normal",
+      "https://static.hopscotch.in/fstatic/product/202102/8fe5bd2c-ae0c-49a5-9a96-c8ab491d628d_full.jpg?version=1612848257647&tr=w-720,c-at_max,n-normal",
+      "https://static.hopscotch.in/fstatic/product/202102/0d222106-b0fc-4e97-a5fe-bc86f6237e35_full.jpg?version=1612848260004&tr=w-720,c-at_max,n-normal"
+    ]
+  },
+  {
+    "id": 41,
+    "rating": 4,
+    "keywords": "girls top",
+    "title": "YELLOW COLOURED HALTER NECK ",
+    "price": 899,
+    "description": "Stylish and cute yellow halter neck top with beads at the neckline. ",
+    "category": "kids",
+    "availableSize": ["S", "M","L", "XL"],
+    "image": [
+      "https://static.hopscotch.in/fstatic/product/202104/f591295f-baa9-4ecc-abf1-00be7f2664eb_full.jpg?version=1618400870501&tr=w-720,c-at_max,n-normal",
+      "https://static.hopscotch.in/fstatic/product/202104/651355c3-c538-4eb3-b203-ccd43411e367_full.jpg?version=1618400735557&tr=w-720,c-at_max,n-normal",
+      "https://static.hopscotch.in/fstatic/product/202104/9a2a8ae7-a3b7-4ad3-a069-552e49a069e1_full.jpg?version=1617979979721&tr=w-720,c-at_max,n-normal"
+    ]
+  },
+  {
+    "id": 42,
+    "rating": 4,
+    "keywords": "boys set joggers set ",
+    "title": "ANIMAL PRINTED SWEATSHIRT AND JOGGER SET",
+    "price": 899,
+    "description": "Cute yellow full sleeves animal printed sweatshirt and jogger set",
+    "category": "kids",
+    "availableSize": ["S", "M", "XL"],
+    "image": [
+      "https://static.hopscotch.in/fstatic/product/202008/d19072c7-63d6-49ca-8516-cbcd84386d2c_full.jpg?version=1597076566419&tr=w-720,c-at_max,n-normal",
+      "https://static.hopscotch.in/fstatic/product/202008/44304c61-2a1b-4411-959e-dfb028c6ed79_full.jpg?version=1597076571880&tr=w-720,c-at_max,n-normal",
+      "https://static.hopscotch.in/fstatic/product/202008/86e99340-f816-496d-8475-3d2dc52fb700_full.jpg?version=1597076577761&tr=w-720,c-at_max,n-normal",
+      "https://static.hopscotch.in/fstatic/product/202008/a0f39962-757b-4f72-94e1-c948c246c9f8_full.jpg?version=1597076573807&tr=w-720,c-at_max,n-normal"
+    ]
   }
 ]

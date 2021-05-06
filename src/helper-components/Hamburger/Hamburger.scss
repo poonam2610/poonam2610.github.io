@@ -19,7 +19,16 @@
   cursor: pointer;
 }
 .profile__div__hamburger__menu {
-  height: 110px;
+  height: 150px;
+  position: relative;
+  h3 {
+    position: absolute;
+    font-family: "Elsie Swash Caps", cursive;
+    bottom: 20px;
+    left: 20px;
+    font-weight: 600;
+    font-size: 25px;
+  }
 }
 .hamburger__items {
   display: flex;

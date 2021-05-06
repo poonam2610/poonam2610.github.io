@@ -10,7 +10,7 @@ function SearchProducts() {
     const searchByCategory = false;
 
     useEffect(() => {
-        const newData = data.default.filter((value) => value?.title.toLowerCase().includes(search) || value?.description.toLowerCase().includes(search)
+        const newData = data.default.filter((value) => value?.keywords.toLowerCase().includes(search) || value?.title.toLowerCase().includes(search) || value?.description.toLowerCase().includes(search)
         );
         console.log(newData);
         setFilteredData(newData);

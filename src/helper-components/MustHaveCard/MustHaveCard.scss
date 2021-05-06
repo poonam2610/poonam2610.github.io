@@ -2,6 +2,10 @@
   width: 23%;
   padding: 1rem 2rem;
   position: relative;
+  cursor: pointer;
+  .link__style{
+    cursor: pointer;
+  }
 }
 
 
@@ -42,7 +46,6 @@
     min-width: 70px;
     height: 70px;
     text-align: center;
-    cursor: pointer;
     color: white;
   }
 }
