@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import ProductsCard from "../../helper-components/ProductsCard/ProductsCard";
 import "./Products.scss";
-import * as data from "../../data/data.json";
+import * as data from "../../data/sweetdata.json";
 import { useParams } from "react-router";
 import * as ROUTES from "../../constants/Routes";
 import BreadCrumbs from "../../helper-components/BreadCrumbs/BreadCrumbs";

@@ -66,6 +66,7 @@ function Header() {
     <div className="header__container">
       <div className="header">
         <div className="logo__part">
+          
           <div className="header__hamburger" onClick={handleHamburger}>
             <HamburgerIcon isClicked={isHamburgerOpen} />
           </div>
@@ -74,7 +75,7 @@ function Header() {
           )}
           <Link to={ROUTES.HOME} className="link__style">
             <div className="header__heading">
-              w<span style={{ color: "#af332b" }}>A</span>rdrobe
+              <img src="/dhorajiwalalogo" className="dhorajiwala-logo"/>
             </div>
           </Link>
         </div>
@@ -125,4 +126,5 @@ function Header() {
   );
 }
 
+ 
 export default Header;

@@ -13,7 +13,7 @@ export default function MustHaveCard({ value }) {
         to={`${ROUTES.CATEGORY}/${category}/${id}`}
       >
         <div className="image__container">
-          <img src={image[0]} alt="product" />
+          <img src={image} alt="product" />
         </div>
         <div className="buyNowButton__container">
           <div className="buyNowButton">

@@ -8,33 +8,73 @@ import { Link } from 'react-router-dom';
 export default function Categories() {
   return (
     <div className="categories__container">
-      <h1 className="categories__text">Categories</h1>
+      <h1 className="categories__text">Products</h1>
       <div className="card__container">
-        <div className="left__container">
-          <div className="cards" id="accessories">
-            <Link className="link__style" to={`${ROUTES.CATEGORY}${ROUTES.ACCESSORIES}`}>
-              <CategoriesCard image="/bag-p.jpg" title="Accessories" />
+          <div className="cards" id="Namkeen">
+            <Link className="link__style" to={`${ROUTES.CATEGORY}${ROUTES.NAMKEEN}`}>
+              <CategoriesCard image="/bariksev.jpg" title="Namkeen" />
             </Link>
           </div>
-          <div className="cards" id="kids">
-            <Link className="link__style" to={`${ROUTES.CATEGORY}${ROUTES.KIDS}`}>
-              <CategoriesCard image="/kid-cat2.jpg" title="Kid's Clothing" />
+          <div className="cards" id="=shrikhand">
+            <Link className="link__style" to={`${ROUTES.CATEGORY}${ROUTES.SHRIKHAND}`}>
+              <CategoriesCard image="/kesarshrikhand.jpeg" title="shrikhand" />
             </Link>
           </div>
-        </div>
-        <div className="right__container">
-          <div className="cards" id="men">
-            <Link className="link__style" to={`${ROUTES.CATEGORY}${ROUTES.MEN}`}>
-              <CategoriesCard image="/men.jpg" title="Men's Clothing" />
+          <div className="cards" id="farsan">
+            <Link className="link__style" to={`${ROUTES.CATEGORY}${ROUTES.FARSAN_SWEETS}`}>
+              <CategoriesCard image="/farsan.jpeg" title="Farsan" />
             </Link>
           </div>
-          <div className="cards" id="women">
-            <Link className="link__style" to={`${ROUTES.CATEGORY}${ROUTES.WOMEN}`}>
-              <CategoriesCard image="/woman-category.jpg" title="Women's Clothing" />
+          <div className="cards" id="drySnacks">
+            <Link className="link__style" to={`${ROUTES.CATEGORY}${ROUTES.DRY_SNACKS}`}>
+              <CategoriesCard image="/drykachori.jpg" title="Dry Snacks" />
             </Link>
           </div>
-        </div>
-
+          <div className="cards" id="chenaSweets">
+            <Link className="link__style" to={`${ROUTES.CATEGORY}${ROUTES.CHENA_SWEETS}`}>
+              <CategoriesCard image="/mangoras.jpeg" title="Chena Sweets" />
+            </Link>
+          </div>
+           <div className="cards" id="peda">
+            <Link className="link__style" to={`${ROUTES.CATEGORY}${ROUTES.PEDA}`}>
+              <CategoriesCard image="/peda.jpg" title="Peda" />
+            </Link>
+          </div>
+          <div className="cards" id="milkSweets">
+            <Link className="link__style" to={`${ROUTES.CATEGORY}${ROUTES.MILK_SWEETS}`}>
+              <CategoriesCard image="/peda.jpg" title="Milk sweets" />
+            </Link>
+          </div>
+          <div className="cards" id="desiGheeSweets">
+            <Link className="link__style" to={`${ROUTES.CATEGORY}${ROUTES.DESI_GHEE_SWEETS}`}>
+              <CategoriesCard image="/peda.jpg" title="Desi ghee sweets" />
+            </Link>
+          </div>
+          <div className="cards" id="dryFruitSweets">
+            <Link className="link__style" to={`${ROUTES.CATEGORY}${ROUTES.CASHEW_DRYFRUIT_SWEETS}`}>
+              <CategoriesCard image="/peda.jpg" title="Cashew/Dry fruit sweets" />
+            </Link>
+          </div>
+          <div className="cards" id="seasonalSweets">
+            <Link className="link__style" to={`${ROUTES.CATEGORY}${ROUTES.SEASONAL_SWEETS}`}>
+              <CategoriesCard image="/peda.jpg" title="Seasonal sweets" />
+            </Link>
+          </div>
+          <div className="cards" id="bengaliSweets">
+            <Link className="link__style" to={`${ROUTES.CATEGORY}${ROUTES.BENGALI_SWEETS}`}>
+              <CategoriesCard image="/peda.jpg" title="Bengali sweets" />
+            </Link>
+          </div>
+          <div className="cards" id="otherProducts">
+            <Link className="link__style" to={`${ROUTES.CATEGORY}${ROUTES.OTHER_PRODUCTS}`}>
+              <CategoriesCard image="/peda.jpg" title="other products" />
+            </Link>
+          </div>
+          <div className="cards" id="hotSnacks">
+            <Link className="link__style" to={`${ROUTES.CATEGORY}${ROUTES.HOT_SNACKS}`}>
+              <CategoriesCard image="/peda.jpg" title="hot snacks" />
+            </Link>
+          </div>
       </div>
     </div>
   )

@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import * as ROUTES from "./constants/Routes";
 import HomePage from "./components/HomePage/HomePage";
 import Header from "./components/Header/Header";
+import Navbar from "./components/Header/NavBar";
 import Footer from "./components/Footer/Footer";
 import Products from "./components/Products/Products";
 import ProductDetails from "./components/ProductDetails/ProductDetails";
@@ -17,6 +18,8 @@ import ScrollToTop from "./utility/ScrollToTop";
 import YourOrders from "./components/YourOrders/YourOrders";
 import Modal from "./components/Modal/Modal";
 import SearchProducts from "./components/SearchProducts/SearchProducts";
+import About from "./components/About/About";
+import Contact from "./components/Contact/Contact";
 
 function App() {
   const [{ basket, user }, dispatch] = useStateValue();
@@ -114,6 +117,7 @@ function App() {
       <BrowserRouter>
         <ScrollToTop />
         <Header />
+        <Navbar/>
         <div className="inbetween__content">
           <Switch>
             <PrivateRoute exact path={ROUTES.CHECKOUT}>
@@ -135,6 +139,12 @@ function App() {
               <HomePage />
               {isOpenModal && <Modal setIsModalOpen={setIsOpenModal} />}
             </Route>
+            <Route exact path={ROUTES.ABOUT}>
+              <About/>     
+               </Route>
+               <Route exact path={ROUTES.CONTACT}>
+              <Contact/>     
+               </Route>
             <PrivateRoute exact path={ROUTES.YOUR_ORDERS}>
               <YourOrders />
             </PrivateRoute>

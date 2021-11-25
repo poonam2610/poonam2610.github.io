@@ -1,83 +1,20 @@
 .categories__container {
   background-color: var(--background-color);
-  padding: 2rem 5rem;
   color:var(--textColor);
+  overflow-x: scroll;
 }
 .categories__text {
   font-size: 35px;
   letter-spacing: 2px;
   font-weight: 400;
   margin: 13px;
+  text-align: center;
+  color: #C42424;
   // font-family: 'Elsie Swash Caps', cursive;
 }
 .card__container {
   display: flex;
-  height: 35rem;
-  justify-content: space-evenly;
-  padding: 2rem 0;
-  .left__container {
-    width: 100%;
-    padding-right: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    .cards {
-      height: 100%;
-      margin: 10px;
-      border-top-right-radius: 25px;
-      border-bottom-right-radius: 25px;
-      overflow: hidden;
-      cursor: pointer;
-    }
-    #kids {
-      margin-bottom: 0;
-    }
-  }
-  .right__container {
-    width: 100%;
-    padding-left: 0.5rem;
-    display: flex;
-    justify-content: space-between;
-    .cards {
-      height: 98%;
-      width: 100%;
-      margin: 10px;
-      border-bottom-left-radius: 25px;
-      border-bottom-right-radius: 25px;
-      overflow: hidden;
-      cursor: pointer;
-    }
-  }
-}
 
-@media screen and (max-width: 720px) {
-  .categories__container {
-    padding: 1rem 2rem;
-  }
-  .card__container{
-    height: 22rem;
-    padding: 1rem 0 1.5rem;
-    .left__container {
-      padding-right: 0.25rem;
-    }
-    .right__container{
-      padding-left: 0.25rem;
-    }
-  }
-}
-
-@media screen and (max-width: 1064px) and (min-width : 720px){
-  .categories__container {
-    padding: 2rem;
-  }
-  .card__container{
-    height: 26rem;
-    padding: 1rem 0;
-    .left__container {
-      padding-right: 0.25rem;
-    }
-    .right__container{
-      padding-left: 0.25rem;
-    }
-  }
+  padding-top: 2rem ;
+  
 }

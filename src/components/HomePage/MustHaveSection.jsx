@@ -1,6 +1,6 @@
 import React from "react";
 import MustHaveCard from "../../helper-components/MustHaveCard/MustHaveCard";
-import * as data from "../../data/data.json";
+import * as data from "../../data/sweetdata.json";
 import "./MustHaveSection.scss";
 
 export default function MustHaveSection() {

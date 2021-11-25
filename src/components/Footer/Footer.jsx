@@ -40,12 +40,12 @@ function Footer() {
         </div>
         <div className="categories">
           <h2>Categories</h2>
-          <div className="all__categories">
+          {/* <div className="all__categories">
             <Link className="link__style" to={`${ROUTES.CATEGORY}${ROUTES.ACCESSORIES}`}><p>Accessories</p></Link>
             <Link className="link__style" to={`${ROUTES.CATEGORY}${ROUTES.WOMEN}`}><p>Women</p></Link>
             <Link className="link__style" to={`${ROUTES.CATEGORY}${ROUTES.MEN}`}><p>Men</p></Link>
             <Link className="link__style" to={`${ROUTES.CATEGORY}${ROUTES.KIDS}`}><p>Kid</p></Link>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="footer__bottom">

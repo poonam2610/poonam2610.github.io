@@ -9,8 +9,8 @@ function ProductsCard({ value }) {
 
   return (<>
     <div className="product__card">
-      <Link className="link__style" to={`${ROUTES.CATEGORY}/${category}/${id}`}>
-        <img className="product__cover" src={image[0]} alt={title} />
+      <Link className="link__style" to={`${ROUTES.CATEGORY}/$aas{category}/${id}`}>
+        <img className="product__cover" src={image} alt={title} />
         <div className="product__title">{title}</div>
         {/* <div className="product__rating"><StarRating rating={rating} /></div> */}
         <div className="product__price">Rs {price}</div>
