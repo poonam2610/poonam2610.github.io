@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import "./ProductDetails.scss";
-import * as data from "../../data/data.json";
+import * as data from "../../data/sweetdata2.json";
 import * as ROUTES from "../../constants/Routes";
 import { useParams } from "react-router";
-import SizeOptions from "./SizeOptions";
+import WeightOptions from "./SizeOptions";
 import AddToBagButton from "./AddToBagButton";
 import Quantity from "./Quantity";
 import { useStateValue } from "../../context-management/StateProvider";
@@ -16,7 +16,8 @@ import BreadCrumbs from "../../helper-components/BreadCrumbs/BreadCrumbs";
 
 function ProductDetails() {
   const [product, setProduct] = useState({ image: ["", ""] });
-  const [size, setSize] = useState("");
+  const [weight, setWeight] = useState("");
+  const [currentPrice, setCurrentPrice] = useState(0);
   const [errorMessage, setErrorMessage] = useState("");
   const { category, id } = useParams();
   const [isLoginClicked, setIsLoginClicked] = useState(false);
@@ -29,15 +30,16 @@ function ProductDetails() {
       (value) => value.id === parseInt(id)
     );
     const prod = Object.assign({}, filteredProduct[0]);
+    setCurrentPrice(prod.prices[0].price);
     setProduct(prod);
-
   }, [id]);
 
   useEffect(() => {
-    if (size) {
+    if (weight) {
       setErrorMessage("");
+      setCurrentPrice(weight.price)
     }
-  }, [size]);
+  }, [weight]);
 
   const handleClick = () => {
     if (!!user) {
@@ -61,8 +63,8 @@ function ProductDetails() {
             },
           });
         }
-      } else if (!size) {
-        setErrorMessage("Please Select Size");
+      } else if (!weight) {
+        setErrorMessage("Please Select Weight");
       } else {
         setIsProductAdded(true);
         setTimeout(() => {
@@ -78,7 +80,7 @@ function ProductDetails() {
               price: product.price,
               rating: product.rating,
               category: product.category,
-              size: size,
+              weight: weight,
             },
           });
         }
@@ -104,6 +106,7 @@ function ProductDetails() {
     }
   ];
 
+  console.log(product)
   return (<>
     <BreadCrumbs breadCrumbLinks={breadCrumbLinks} />
     <div className="content__product__detail__page">
@@ -130,17 +133,17 @@ function ProductDetails() {
               {product.description}
             </p>
             <hr />
-{/* 
+            {/* 
             <div className="rating__container">
               <StarRating rating={product.rating} />
             </div> */}
-            <p className="price">{`Rs. ${product.price}`}</p>
+            <p className="price">{`Rs. ${currentPrice}`}</p>
           </div>
           {product.category === "accessories" && (
-           <div className="one__size__container"><h5>SELECTED SIZE :</h5> <div>One Size</div></div>
+            <div className="one__size__container"><h5>SELECTED SIZE :</h5> <div>One Size</div></div>
           )}
           {product.category !== "accessories" && (
-            <SizeOptions sizes={product?.availableSize} setSize={setSize} />
+            <WeightOptions prices={product?.prices} setWeight={setWeight} />
           )}
           <Quantity
             itemQuantity={itemQuantity}

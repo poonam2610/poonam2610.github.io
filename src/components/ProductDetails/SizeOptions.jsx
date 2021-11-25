@@ -2,35 +2,35 @@ import React, { useState } from "react";
 import "./SizeOptions.scss";
 import PropTypes from "prop-types";
 
-const sizeOptionsArr = ["XS", "S", "M", "L", "XL"];
-export default function SizeOptions({ sizes, setSize }) {
-  const [selectedSize, setSelectedSize] = useState('');
-  const handleClick = (e) => {
-    const { value } = e.target;
-    if (sizes?.includes(value)) {
-      setSize(value);
-      setSelectedSize(value);
-    }
+// const sizeOptionsArr = ["XS", "S", "M", "L", "XL"];
+
+export default function WeightOptions({ prices = [], setWeight }) {
+  console.log(prices)
+  const [selectedWeight, setSelectedWeight] = useState(prices[0] || {});
+  const handleClick = (value) => {
+    // if (prices?.includes(value)) {
+    setWeight(value);
+    setSelectedWeight(value);
+    // }
   }
-  const sizeOptions = sizeOptionsArr.map((value, index) => {
-    const sizeAvailable = sizes?.includes(value);
+  const sizeOptions = prices.map((value, index) => {
+    // const sizeAvailable = sizes?.includes(value);
     return <div className="size__container" key={index}>
-      <button className={`${sizeAvailable ? "dot" : "hidden"} ${selectedSize === value ? "selected" : ""}`} value={value} onClick={handleClick}>
-        {!sizeAvailable && <span className="size__buttons__strike__show"></span>}
-        {value}
+      <button className={`${selectedWeight.weight === value.weight ? "selected" : ""}`} onClick={() => handleClick(value)}>
+        {value.weight}
       </button>
     </div>
   });
 
   return (
     <div className="sizeOptions-container">
-      <h5>SELECT SIZE :</h5>
+      <h5>SELECT Weight :</h5>
       {sizeOptions}
     </div>
   );
 }
 
-SizeOptions.propTypes = {
+WeightOptions.propTypes = {
   sizes: PropTypes.array,
   setSize: PropTypes.func.isRequired
 }

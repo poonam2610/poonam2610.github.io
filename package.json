@@ -1,5 +1,9 @@
 {
-  "name": "little-tags",
+  "name": "sweetshop",
+  "author": {
+    "name": "Poonam",
+    "email": ""
+  },
   "version": "0.1.0",
   "private": true,
   "dependencies": {
