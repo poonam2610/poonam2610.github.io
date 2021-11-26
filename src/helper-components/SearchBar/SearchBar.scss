@@ -1,19 +1,26 @@
+.searchBar__container{
+  position: relative;
+}
+
 .search__input {
     width: 100%;
     height: 100%;
-    border: 0px;
-    border-radius: 2em;
-    box-shadow: 0px 0px 11px 0px #656060;
-    text-align: center;
-    outline: none;
+    padding: 10px 20px 10px 43px;
+    border: none;
+    border-radius: 5px;
     font-size: 18px;
-    color: #656060;
+    background-color:rgb(240, 235, 229);
+    &::placeholder{
+      color:black;
+      font-family: "Montserrat", sans-serif;
+      font-size: 14px;
+    }
+
   }
-  .search__icon {
-    position: absolute;
-    left: 1.3rem;
-    top: 11px;
-    font-size: 26px;
-    color: #545050a3;
-    cursor: pointer;
-  }
+
+.search__icon{
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%) ;
+  left: 13px;
+}

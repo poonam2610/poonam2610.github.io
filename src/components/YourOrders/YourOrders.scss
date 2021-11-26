@@ -1,0 +1,19 @@
+.your__orders__container{
+  padding: 3rem;
+  h2{
+    font-weight: 400;
+  }
+
+  .your__orders__card_container{
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 1000px){
+  .your__orders__container{
+    padding: 2rem;
+    .your__orders__card_container{
+      width: 100%;
+    }
+  }
+}

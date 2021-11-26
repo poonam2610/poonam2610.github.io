@@ -1,9 +1,10 @@
 import "./App.scss";
-import React, { useContext, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import * as ROUTES from "./constants/Routes";
 import HomePage from "./components/HomePage/HomePage";
 import Header from "./components/Header/Header";
+import Navbar from "./components/Header/NavBar";
 import Footer from "./components/Footer/Footer";
 import Products from "./components/Products/Products";
 import ProductDetails from "./components/ProductDetails/ProductDetails";
@@ -11,14 +12,23 @@ import Checkout from "./components/Checkout/Checkout";
 import PrivateRoute from "./utility/PrivateRoute";
 import { useStateValue } from "./context-management/StateProvider";
 import { ACTIONS } from "./context-management/constants";
-import FirebaseContext from "./firebase-config/context";
+import { auth, userRef } from "./firebase-config/firebase";
+import Payment from "./components/Payment/Payment";
+import ScrollToTop from "./utility/ScrollToTop";
+import YourOrders from "./components/YourOrders/YourOrders";
+import Modal from "./components/Modal/Modal";
+import SearchProducts from "./components/SearchProducts/SearchProducts";
+import About from "./components/About/About";
+import Contact from "./components/Contact/Contact";
 
 function App() {
-  const firebase = useContext(FirebaseContext);
-  const dispatch = useStateValue()[1];
+  const [{ basket, user }, dispatch] = useStateValue();
+  const [isOpenModal, setIsOpenModal] = useState(false);
+
+  //executes when user changes
   useEffect(() => {
-    firebase.auth.onAuthStateChanged((authUser) => {
-      if (authUser) {
+    auth.onAuthStateChanged((authUser) => {
+      if (!!authUser) {
         dispatch({
           type: ACTIONS.SET_USER,
           user: authUser,
@@ -28,38 +38,119 @@ function App() {
           type: ACTIONS.SET_USER,
           user: null,
         });
+        dispatch({
+          type: ACTIONS.CLEAR_BASKET,
+        });
+        dispatch({
+          type: ACTIONS.ADD_TO_ORDER_HISTORY,
+          items: [],
+        });
+        dispatch({
+          type: ACTIONS.CLEAR_BASKET,
+        });
       }
     });
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  // fetch bag items for particular user if available
+  useEffect(() => {
+    if (!!user) {
+      userRef(user?.uid)
+        .get()
+        .then((value) => {
+          if (!value.exists) {
+              userRef(user?.uid).set({})
+          }
+          const basketData = value.data()?.basket || [];
+          const addressData = value.data()?.address || [];
+          const yourOrdersData = value.data()?.yourOrders || [];
+          dispatch({
+            type: ACTIONS.ADD_TO_ORDER_HISTORY,
+            items: yourOrdersData,
+          });
+          basketData.forEach((item) => {
+            dispatch({
+              type: ACTIONS.ADD_TO_BASKET,
+              item: item,
+            });
+          });
+          addressData.forEach((item) => {
+            dispatch({
+              type: ACTIONS.ADD_OR_MODIFY_ADDRESS,
+              item: item,
+            });
+          });
+        })
+        .catch((e) => console.log(e.message));
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [user]);
+
+  // push to firebase database when ever basket items changes
+  useEffect(() => {
+    if (!!user) {
+      if (basket?.length > 0) {
+        userRef(user?.uid).update({
+          basket: basket,
+        });
+      }
+    }
+  }, [basket, user]);
+
+  //if user comes first time
+  useEffect(() => {
+    const firstTimeUser = localStorage.getItem("firstTimeUser");
+    if (!user && !firstTimeUser) {
+      setTimeout(() => {
+        setIsOpenModal(true);
+      }, 2000);
+
+      localStorage.setItem("firstTimeUser", true);
+    }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
-    <div className="App">
+    <div className="app">
       <BrowserRouter>
-        <Switch>
-          <PrivateRoute path={ROUTES.CHECKOUT}>
-            <Header />
-            <Checkout />
-            <Footer />
-          </PrivateRoute>
-          <Route path={ROUTES.LOGIN}>
-            hi this is login page
-            {/*  <Modal /> */}
-          </Route>
-          <Route exact path={`${ROUTES.CATEGORY}/:category`}>
-            <Header />
-            <Products />
-            <Footer />
-          </Route>
-          <Route exact path={`${ROUTES.CATEGORY}/:category/:id`}>
-            <ProductDetails />
-          </Route>
-          <Route exact path={ROUTES.HOME}>
-            <Header />
-            <HomePage />
-            <Footer />
-          </Route>
-        </Switch>
+        <ScrollToTop />
+        <Header />
+        <Navbar/>
+        <div className="inbetween__content">
+          <Switch>
+            <PrivateRoute exact path={ROUTES.CHECKOUT}>
+              <Checkout />
+            </PrivateRoute>
+            <PrivateRoute exact path={`${ROUTES.CHECKOUT}${ROUTES.PAYMENT}`}>
+              <Payment />
+            </PrivateRoute>
+            <Route exact path={`${ROUTES.CATEGORY}/:category`}>
+              <Products />
+            </Route>
+            <Route exact path={`${ROUTES.SEARCH}/:search`}>
+              <SearchProducts />
+            </Route>
+            <Route exact path={`${ROUTES.CATEGORY}/:category/:id`}>
+              <ProductDetails />
+            </Route>
+            <Route exact path={ROUTES.HOME}>
+              <HomePage />
+              {isOpenModal && <Modal setIsModalOpen={setIsOpenModal} />}
+            </Route>
+            <Route exact path={ROUTES.ABOUT}>
+              <About/>     
+               </Route>
+               <Route exact path={ROUTES.CONTACT}>
+              <Contact/>     
+               </Route>
+            <PrivateRoute exact path={ROUTES.YOUR_ORDERS}>
+              <YourOrders />
+            </PrivateRoute>
+          </Switch>
+        </div>
+        <Footer />
       </BrowserRouter>
     </div>
   );

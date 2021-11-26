@@ -1,0 +1,21 @@
+[
+  {
+    "id": 1,
+    "rating": 3,
+    "keywords": "kesar, peda",
+    "title": "kesar peda",
+    "prices": [
+      {
+        "weight": "1kg",
+        "price": 600
+      },
+      {
+        "weight": "250gm",
+        "price": 150
+      }
+    ],
+    "description": "",
+    "category": "peda",
+    "image": ["./peda.jpg"]
+  }
+]

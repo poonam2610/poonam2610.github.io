@@ -5,15 +5,11 @@ import reportWebVitals from "./reportWebVitals";
 import { StateProvider } from "./context-management/StateProvider";
 import reducer, { initialState } from "./context-management/reducer";
 import App from "./App";
-import FirebaseContext from "./firebase-config/context";
-import Firebase from "./firebase-config/firebase";
 
 ReactDOM.render(
   <React.StrictMode>
     <StateProvider reducer={reducer} initialState={initialState}>
-      <FirebaseContext.Provider value={new Firebase()}>
-        <App />
-      </FirebaseContext.Provider>
+      <App />
     </StateProvider>
   </React.StrictMode>,
   document.getElementById("root")
@@ -23,3 +19,4 @@ ReactDOM.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+// navigator.serviceWorker.register("")

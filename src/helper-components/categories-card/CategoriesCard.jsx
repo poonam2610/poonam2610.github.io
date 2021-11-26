@@ -1,15 +1,22 @@
-import React from 'react'
-import "./CategoriesCard.scss"
-// import * as image from "../../data/mens_wear.png";
+import React from "react";
+import "./CategoriesCard.scss";
+import PropTypes from "prop-types"
 
-function CategoriesCard({image,title}) {
-    // const image="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg";
-    // const title="Accessories";
-    return (
-        <div className="card__image" style={{backgroundImage:`url(${image})`}}>
-        <div className="card__title"> <span className="title">{title}</span></div>
+function CategoriesCard({ image, title }) {
+  return (
+    <div className="card__image" >   
+      <img src={image} alt="category-card"/>
+      <div className="card__title">
+        <span className="title">{title}</span>
+      </div>
     </div>
-    )
+  );
 }
 
-export default CategoriesCard
+export default CategoriesCard;
+
+
+CategoriesCard.propTypes = {
+image : PropTypes.string.isRequired,
+title : PropTypes.string.isRequired
+}

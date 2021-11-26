@@ -1,73 +1,58 @@
-import React from 'react'
+import React from "react";
 import "./Footer.scss";
-import { FaCcVisa, FaCcMastercard, FaCcPaypal, FaCcAmazonPay, FaThumbsUp, FaTruckMoving } from "react-icons/fa";
-import { RiExchangeDollarFill } from "react-icons/ri";
-import { BiSupport } from "react-icons/bi";
+import {
+  FaCcVisa,
+  FaCcMastercard,
+  FaCcPaypal,
+  FaCcAmazonPay,
+} from "react-icons/fa";
+import { Link } from "react-router-dom";
+import * as ROUTES from "../../constants/Routes";
 
 function Footer() {
-    return (
-        <footer className="footer-container">
-            <div className="footer-main">
-                <div className="contact-info">
-                    <h2>Contact Info</h2>
-                    <div className="phone-details">
-                        <p><span>Phone: </span>(+91)1234 567 890</p>
-                    </div>
-                    <div className="address-details">
-                        <p><span>Address: </span>10/b 54, 1652  Dancing Dove Lane, New York, 10036 </p>
-                    </div>
-                    <div className="card-details">
-                        <p className="card-heading"><span>We accepts:</span></p>
-                        <div className="cards-image">
-                            <FaCcVisa />
-                            <FaCcMastercard />
-                            <FaCcPaypal />
-                            <FaCcAmazonPay />
-
-                        </div>
-                    </div>
-
-                </div>
-                <div className="categories">
-                    <h2>Categories</h2>
-                    <div className="all-categories">
-                        <p>Accessories</p>
-                        <p>Women</p>
-                        <p>Men</p>
-                        <p>Child</p>
-                    </div>
-
-                </div>
-                <div className="our-promise">
-                    <h2>Our Promise</h2>
-                    <div className="promise-cards-container">
-                        <div className="promise-card">
-                            {/* <img src="" alt=""/> */}
-                            <FaThumbsUp className="card-icons" />
-                            <div className="card-text">100% Genuine Products Guarantee </div>
-                        </div>
-                        <div className="promise-card">
-                            <FaTruckMoving className="card-icons" />
-                            <div className="card-text">Guaranteed On-time Delivery </div>
-                        </div>
-                        <div className="promise-card">
-                            <RiExchangeDollarFill className="card-icons" />
-                            <div className="card-text">100% Return Guarantee & Exchchange </div>
-                        </div>
-                        <div className="promise-card">
-                            <BiSupport className="card-icons"/>
-                            <div className="card-text">24x7 Customer Support </div>
-                        </div>
-
-                    </div>
-
-                </div>
+  return (
+    <footer className="footer__container">
+      <div className="footer__main">
+        <div className="contact__info">
+          <h2>Contact Info</h2>
+          <div className="phone__details">
+            <p>
+              <span>Phone: </span>(+91)8906838026
+            </p>
+          </div>
+          <div className="address__details">
+            <p>
+              <span>Address: </span>10/b 54, 1652 Dancing Dove Lane, New York,
+              10036{" "}
+            </p>
+          </div>
+          <div className="card__details">
+            <p className="card__heading">
+              <span>We accept:</span>
+            </p>
+            <div className="cards__image">
+              <FaCcVisa className="logo" />
+              <FaCcMastercard className="logo" />
+              <FaCcPaypal className="logo" />
+              <FaCcAmazonPay className="logo" />
             </div>
-            <div className="footer-bottom">
-
-            </div>
-        </footer>
-    )
+          </div>
+        </div>
+        <div className="categories">
+          <h2>Categories</h2>
+          {/* <div className="all__categories">
+            <Link className="link__style" to={`${ROUTES.CATEGORY}${ROUTES.ACCESSORIES}`}><p>Accessories</p></Link>
+            <Link className="link__style" to={`${ROUTES.CATEGORY}${ROUTES.WOMEN}`}><p>Women</p></Link>
+            <Link className="link__style" to={`${ROUTES.CATEGORY}${ROUTES.MEN}`}><p>Men</p></Link>
+            <Link className="link__style" to={`${ROUTES.CATEGORY}${ROUTES.KIDS}`}><p>Kid</p></Link>
+          </div> */}
+        </div>
+      </div>
+      <div className="footer__bottom">
+        Made with <span style={{ color: "red" }}>&#10084;</span> by <a className="link__name" href="https://www.linkedin.com/in/piyush-ranjan-1997d" target="_blank" rel="noreferrer">Piyush</a> and <a className="link__name" href="www.linkedin.com/in/piyush-ranjan-1997d" target="_blank" rel="noreferrer">Anusha</a>
+      </div>
+    </footer>
+  );
 }
 
 export default Footer;

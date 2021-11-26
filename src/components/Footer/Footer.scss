@@ -1,34 +1,29 @@
-.footer-container {
-  background-color: black;
+.footer__container {
+  background-color: var(--footer-background);
   width: 100%;
-  color: white;
+  color: var(--footer-color);
   display: flex;
-  margin-top: 2em;
+  flex-direction: column;
+  padding: 2rem;
+  h2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    opacity: 0.9;
+  }
 }
-h2 {
-  font-size: 20px;
-  font-weight: 800;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  opacity: 0.9;
-}
-.footer-main {
+
+.footer__main {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  padding: 39px 20px;
   //   text-align: center;
-  .contact-info {
+  .contact__info {
     width: 33%;
-    padding: 0px 15px;
   }
   .categories {
     width: 33%;
-    padding: 0px 15px;
-  }
-  .our-promise {
-    width: 33%;
-    padding: 0px 15px;
   }
 }
 p {
@@ -36,45 +31,42 @@ p {
   font-size: 13px;
   margin-bottom: 8px;
   span {
-    font-weight: 700;
+    font-weight: 500;
   }
 }
-.card-heading {
+.card__heading {
   margin-bottom: 1px;
 }
-.cards-image {
+.cards__image {
+  margin-top: 1rem;
   font-size: 22px;
-  opacity: 80%;
-  width: 34%;
+  opacity: 0.8;
   display: flex;
-  justify-content: space-between;
+  .logo {
+    margin-right: 10px;
+  }
 }
 
-.all-categories {
+.all__categories {
   padding: 0px 9px;
   //   line-height: 1.3rem;
-}
-.promise-cards-container {
-  display: flex;
-  justify-content: space-between;
-  .promise-card {
-    width: 20%;
-    height: 6rem;
-    border: 1px solid rgba(255, 255, 255, 0.7);
-    border-radius: 43px;
-    position: relative;
-    .card-icons {
-      position: absolute;
-      top: 22%;
-      left: 34%;
-      font-size: 25px;
-      opacity: 0.8;
-    }
-    .card-text {
-      font-size: 8px;
-      position: relative;
-      top: 57%;
-      text-align: center;
-    }
+  .link__style {
+    text-decoration: none;
+    color: var(--footer-color);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
   }
+}
+.footer__bottom {
+  margin-top: 2rem;
+  opacity: 0.8;
+  word-spacing: 5px;
+}
+.link__name {
+  cursor: pointer;
+  color: var(--footer-color);
 }

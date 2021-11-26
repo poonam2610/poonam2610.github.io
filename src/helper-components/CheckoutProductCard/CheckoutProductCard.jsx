@@ -1,49 +1,156 @@
-import React from 'react';
-import { ACTIONS } from '../../context-management/constants';
-import { useStateValue } from '../../context-management/StateProvider';
-import StarRating from '../Star-rating/StarRating';
+import React , {useState}from "react";
+import { ACTIONS } from "../../context-management/constants";
+import { useStateValue } from "../../context-management/StateProvider";
+// import StarRating from "../Star-rating/StarRating";
+import * as ROUTES from "../../constants/Routes";
 import "./CheckoutProductCard.scss";
+import { useHistory } from 'react-router-dom';
+import { userRef } from '../../firebase-config/firebase';
+import { FaMinus, FaPlus } from "react-icons/fa";
+import PropTypes from 'prop-types';
+import DialogueBox from "../DialogueBox/DialogueBox";
 
-function CheckoutProductCard({ value }) {
-    const dispatch = useStateValue()[1];
-    const { id, image, title, description, rating, price, quantity } = value;
-    const handleIncreaseQuantity = () => {
-        dispatch({
-            type: ACTIONS.ADD_TO_BASKET,
-            item: {
-                id: id,
-                image: image,
-                title: title,
-                price: price,
-                rating: rating
-            }
-        });
-    }
-    const handleDecreaseQuantity = () => {
-        dispatch({
-            type: ACTIONS.REMOVE_FROM_BASKET,
-            id: id
-        });
-    }
 
-    return (
-        <div className="basket__card">
-            <div className="product__image__container">
-                <img className="product__image" src={image} alt="productImage" />
-            </div>
-            <div className="product__details__container">
-                <div className="product__title">{title}</div>
-                <div className="product__description">{description}</div>
-                <div className="product__rating"><StarRating rating={rating} /></div>
-                <div className="product__quantity">
-                    <button className="increase__quantity" onClick={handleIncreaseQuantity}>+</button>
-                    <span className="product__quantity">{quantity}</span>
-                    <button className="decrease__quantity" onClick={handleDecreaseQuantity}>-</button>
-                </div>
-                <div className="product__price">Rs {price}</div>
-            </div>
+function CheckoutProductCard({ value, ordered }) {
+  const [{ basket, user }, dispatch] = useStateValue();
+  const history = useHistory();
+  const [openDialogueBox, setOpenDialogueBox] = useState(false);
+  const { id, image, title, rating, price, quantity, size, category, date, paymentId } = value;
+
+  const newDate = ordered ? JSON.stringify(new Date(JSON.parse(date))).slice(1, 11) : "";
+
+  const clearFirebaseBasket = () => {
+    userRef(user?.uid).update({
+      basket: [],
+    });
+  }
+
+  const handleIncreaseQuantity = () => {
+    if (category === "accessories") {
+      dispatch({
+        type: ACTIONS.ADD_TO_BASKET,
+        item: {
+          id: id,
+          image: image,
+          title: title,
+          price: price,
+          rating: rating,
+          category: category,
+          size: "M"
+        }
+      });
+    } else {
+      dispatch({
+        type: ACTIONS.ADD_TO_BASKET,
+        item: {
+          id: id,
+          image: image,
+          title: title,
+          price: price,
+          rating: rating,
+          category: category,
+          size: size
+        }
+      });
+    }
+  }
+  const handleDecreaseQuantity = () => {
+    if (basket.length === 1) {
+      dispatch({
+        type: ACTIONS.REMOVE_FROM_BASKET,
+        item: {
+          id: id,
+          size: size
+        }
+      });
+      clearFirebaseBasket();
+    } else {
+      dispatch({
+        type: ACTIONS.REMOVE_FROM_BASKET,
+        item: {
+          id: id,
+          size: size
+        }
+      });
+    }
+  }
+  const handleRemove = () => {
+    dispatch({
+      type: ACTIONS.REMOVE_ALL_ITEMS_WITH_SAME_ID_FROM_BASKET,
+      id: id
+    })
+  }
+
+  return (
+
+    <div className="basket__card">
+      <div
+        className="product__image__container"
+        onClick={() => history.push(`${ROUTES.CATEGORY}/${category}/${id}`)}
+      >
+        <img className="checkout__product__image" src={image[0]} alt="productImage" />
+      </div>
+      <div className="product__details__container">
+        <div
+          className="product__title"
+          onClick={() => history.push(`${ROUTES.CATEGORY}/${category}/${id}`)}
+        >
+          <h4> {title} </h4>
         </div>
-    )
+        {/* <div className="product__description">{description}</div> */}
+        {/* <div className="product__rating">
+          <StarRating rating={rating} />
+        </div> */}
+        {!!ordered && <div className="ordered__on">Ordered On : {newDate}</div>}
+        <div className="product__size">
+          <h4>Size: {size}</h4>
+        </div>
+        <div className="product__quantity">
+          Quantity:
+          {!ordered && <button
+            className="decrease__quantity "
+            onClick={handleDecreaseQuantity}
+          >
+            {" "}
+            <FaMinus />{" "}
+          </button>}
+          <span className="select__quantity">{quantity}</span>
+          {!ordered && <button
+            className="increase__quantity "
+            onClick={handleIncreaseQuantity}
+          >
+            <FaPlus />{" "}
+          </button>}
+        </div>
+        <hr />
+        <div className="bottom__container">
+          {!ordered && <div onClick={()=>setOpenDialogueBox(true)} className="remove__button">Remove
+          </div>}
+          {openDialogueBox && (
+            <DialogueBox
+              title="Remove Item"
+              message="Are you sure you want to remove this item from cart?"
+              yes={handleRemove}
+              no={() => setOpenDialogueBox(false)}
+              yesButtonMessage="REMOVE ITEM"
+              noButtonMessage="CANCEL"
+            />
+          )}
+          {!!ordered && <div>Payment ID : {paymentId}</div>}
+        </div>
+      </div>
+      <div>
+        <div className="product__price">
+          <h4>Rs. &nbsp;{(price * quantity).toFixed(2)}</h4>{" "}
+        </div>
+      </div>
+    </div>
+  );
 }
 
-export default CheckoutProductCard
+export default CheckoutProductCard;
+
+CheckoutProductCard.propTypes = {
+  value: PropTypes.object.isRequired,
+  ordered: PropTypes.bool.isRequired,
+}

@@ -1,5 +1,9 @@
 {
-  "name": "little-tags",
+  "name": "sweetshop",
+  "author": {
+    "name": "Poonam",
+    "email": ""
+  },
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -8,11 +12,13 @@
     "@testing-library/user-event": "^12.1.10",
     "firebase": "^8.4.1",
     "node-sass": "^4.14.1",
+    "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-icons": "^4.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
+    "uuid": "^8.3.2",
     "web-vitals": "^0.2.4"
   },
   "scripts": {

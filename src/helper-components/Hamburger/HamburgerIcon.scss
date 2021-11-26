@@ -1,0 +1,33 @@
+.nav-icon {
+  width: 100%;
+}
+
+.nav-icon:after,
+.nav-icon:before,
+.nav-icon div {
+  background-color: var(--textColor);
+  border-radius: 3px;
+  content: "";
+  display: block;
+  height: 5px;
+  margin: 7px 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.hov:before {
+  transform: translateY(12px) rotate(135deg);
+}
+
+.hov:after {
+  transform: translateY(-12px) rotate(-135deg);
+}
+.hov {
+  position: fixed;
+  top: 36px;
+  left: 32px;
+  width: 36px;
+}
+
+.hov div {
+  transform: scale(0);
+}
