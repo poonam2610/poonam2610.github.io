@@ -20,7 +20,7 @@
   },
 
     {
-      "id": 1,
+      "id": 2,
       "rating": 3,
       "keywords": "malai",
       "title": "malai peda",
@@ -60,118 +60,201 @@
       "image": ["/peda.jpg"]
     },
     {
-      "id": 1,
+      "id": 4,
       "rating": 3,
       "keywords": "dryfruit",
       "title": "kesar dryfruit shrikhand",
-      "price": [240, 60],
+      "prices": [
+        {
+          "weight": "500gm",
+          "price": 300
+        },
+        {
+          "weight": "250gm",
+          "price": 150
+        }
+      ],
       "description": "",
       "category": "shrikhand",
-      "availableSize": ["1kg", "250g"],
-      "image": "/shrikhand/kesarshrikhand.jpeg"
+     
+      "image": ["/shrikhand/kesarshrikhand.jpeg"]
     },
     {
-      "id": 1,
+      "id": 5,
       "rating": 3,
       "keywords": "dryfruit",
       "title": "mango dryfruit shrikhand",
-      "price": [240, 60],
+      "prices": [
+        {
+          "weight": "1kg",
+          "price": 600
+        },
+        {
+          "weight": "250gm",
+          "price": 150
+        }
+      ],
       "description": "",
       "category": "shrikhand",
-      "availableSize": ["1kg", "250g"],
-      "image": "/shrikhand/mangoshrikhand.jpg"
+      "image": ["/shrikhand/mangoshrikhand.jpg"]
     },
     {
-      "id": 1,
+      "id": 6,
       "rating": 3,
       "keywords": "nuts",
       "title": "american nuts shrikhand",
-      "price": [280, 70],
+      "prices": [
+        {
+          "weight": "1kg",
+          "price": 600
+        },
+        {
+          "weight": "250gm",
+          "price": 150
+        }
+      ],
       "description": "",
       "category": "shrikhand",
-      "availableSize": ["1kg", "250g"],
-      "image": "/shrikhand/american.jpeg"
+      "image": ["/shrikhand/american.jpeg"]
     },
     {
-      "id": 1,
+      "id": 7,
       "rating": 3,
       "keywords": "barfi",
   
       "title": "kalakand barfi",
-      "price": [560, 140],
+      "prices": [
+        {
+          "weight": "1kg",
+          "price": 600
+        },
+        {
+          "weight": "250gm",
+          "price": 150
+        }
+      ],
       "description": "",
       "category": "milk sweets",
-      "availableSize": ["1kg", "250g"],
-      "image": ""
+      "image": ["/milksweets/kalakand berfi.JPG"]
     },
     {
-      "id": 2,
+      "id": 8,
       "rating": 3,
       "keywords": "cake",
       "title": "milk cake",
-      "price": [640, 160],
+      "prices": [
+        {
+          "weight": "1kg",
+          "price": 600
+        },
+        {
+          "weight": "250gm",
+          "price": 150
+        }
+      ],
       "description": "",
       "category": "milk sweets",
-      "availableSize": ["1kg", "250g"],
-      "image": ""
+      "image": ["MilkCake.JPG"]
     },
     {
-      "id": 1,
+      "id": 9,
       "rating": 3,
       "keywords": "barfi",
       "title": "american nuts barfi",
-      "price": [640, 160],
+      "prices": [
+        {
+          "weight": "1kg",
+          "price": 600
+        },
+        {
+          "weight": "250gm",
+          "price": 150
+        }
+      ],
       "description": "",
       "category": "milk sweets",
-      "availableSize": ["1kg", "250g"],
-      "image": ""
+     
+      "image": ["MilkCake.JPG"]
     },
     {
-      "id": 1,
+      "id": 10,
       "rating": 3,
       "keywords": "barfi",
       "title": "anjeer barfi",
-      "price": [640, 160],
+      "prices": [
+        {
+          "weight": "1kg",
+          "price": 600
+        },
+        {
+          "weight": "250gm",
+          "price": 150
+        }
+      ],
       "description": "",
       "category": "milk sweets",
-      "availableSize": ["1kg", "250g"],
-      "image": ""
+      
+      "image": ["anjeer_barfi.jpg"]
     },
     {
-      "id": 1,
+      "id": 11,
       "rating": 3,
       "keywords": "barfi",
       "title": "kesar barfi",
-      "price": [640, 160],
+      "prices": [
+        {
+          "weight": "1kg",
+          "price": 600
+        },
+        {
+          "weight": "250gm",
+          "price": 150
+        }
+      ],
       "description": "",
       "category": "milk sweets",
-      "availableSize": ["1kg", "250g"],
-      "image": ""
+      "image": ["/milksweets/MilkCake.JPG"]
     },
     {
-      "id": 1,
+      "id": 12,
       "rating": 3,
       "keywords": "barfi",
       "title": "blueberry barfi",
-      "price": [640, 160],
+      "prices": [
+        {
+          "weight": "1kg",
+          "price": 600
+        },
+        {
+          "weight": "250gm",
+          "price": 150
+        }
+      ],
       "description": "",
       "category": "milk sweets",
-      "availableSize": ["1kg", "250g"],
-      "image": ""
+      "image": ["/milksweets/BLUE_BERRY_BARFI.jpg"]
     },
     {
-      "id": 1,
+      "id": 13,
       "rating": 3,
       "keywords": "barfi",
       "title": "pista barfi",
-      "price": [640, 160],
+      "prices": [
+        {
+          "weight": "1kg",
+          "price": 600
+        },
+        {
+          "weight": "250gm",
+          "price": 150
+        }
+      ],
       "description": "",
       "category": "milk sweets",
-      "availableSize": ["1kg", "250g"],
-      "image": ""
+      "image": ["/milksweets/Pista Barfi.jpg"]
     },
     {
-      "id": 1,
+      "id": 14,
       "rating": 3,
       "keywords": "puri",
       "title": "malai puri",

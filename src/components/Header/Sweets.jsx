@@ -16,11 +16,7 @@ export default function Sweets(){
                   </li>                <li>
                 <Link className="link__style" to={`${ROUTES.CATEGORY}${ROUTES.SHRIKHAND}`}>Shrikhand</Link>
                </li>
-               <li>
-               <Link className="link__style" to={`${ROUTES.CATEGORY}${ROUTES.FARSAN_SWEETS}`}>Farsan sweets
-             </Link>
-          
-               </li>
+               
                <li>
                <Link className="link__style" to={`${ROUTES.CATEGORY}${ROUTES.CHENA_SWEETS}`}>Chena sweets
             </Link>
@@ -30,10 +26,7 @@ export default function Sweets(){
                <Link className="link__style" to={`${ROUTES.CATEGORY}${ROUTES.PEDA}`}>Peda
                    </Link>
                </li>
-               <li>
-               <Link className="link__style" to={`${ROUTES.CATEGORY}${ROUTES.MILK_SWEETS}`}>Milk Sweets
-               </Link>
-               </li>
+              
                <li>
                <Link className="link__style" to={`${ROUTES.CATEGORY}${ROUTES.DESI_GHEE_SWEETS}`}>Desi ghee sweets
                </Link>
@@ -49,7 +42,7 @@ export default function Sweets(){
                    </li>
                    
                    <li>
-                   <Link className="link__style" to={`${ROUTES.CATEGORY}${ROUTES.OTHER_PRODUCTS}`}>Other sweets
+                   <Link className="link__style" to={`${ROUTES.CATEGORY}${ROUTES.OTHER_PRODUCTS}`}>Other Products
                    </Link>
                    </li>
               </ul>
