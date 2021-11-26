@@ -139,9 +139,9 @@ function ProductDetails() {
             </div> */}
             <p className="price">{`Rs. ${currentPrice}`}</p>
           </div>
-          {product.category === "accessories" && (
+          {/* {product.category === "accessories" && (
             <div className="one__size__container"><h5>SELECTED SIZE :</h5> <div>One Size</div></div>
-          )}
+          )} */}
           {product.category !== "accessories" && (
             <WeightOptions prices={product?.prices} setWeight={setWeight} />
           )}

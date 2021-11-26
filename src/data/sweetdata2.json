@@ -17,5 +17,1320 @@
     "description": "",
     "category": "peda",
     "image": ["./peda.jpg"]
-  }
-]
+  },
+
+    {
+      "id": 2,
+      "rating": 3,
+      "keywords": "malai",
+      "title": "malai peda",
+      "prices": [
+        {
+          "weight": "1kg",
+          "price": 600
+        },
+        {
+          "weight": "250gm",
+          "price": 150
+        }
+      ],
+      "description": "",
+      "category": "peda",
+      
+      "image":[ "/peda.jpg"]
+    },
+    {
+      "id": 3,
+      "rating": 3,
+      "keywords": "peda",
+      "title": "kathiwawadi peda",
+      "prices": [
+        {
+          "weight": "1kg",
+          "price": 600
+        },
+        {
+          "weight": "250gm",
+          "price": 150
+        }
+      ],
+      "description": "",
+      "category": "peda",
+      "availableSize": ["1kg", "250g"],
+      "image": ["/peda.jpg"]
+    },
+    {
+      "id": 4,
+      "rating": 3,
+      "keywords": "dryfruit",
+      "title": "kesar dryfruit shrikhand",
+      "prices": [
+        {
+          "weight": "500gm",
+          "price": 300
+        },
+        {
+          "weight": "250gm",
+          "price": 150
+        }
+      ],
+      "description": "",
+      "category": "shrikhand",
+     
+      "image": ["/shrikhand/kesarshrikhand.jpeg"]
+    },
+    {
+      "id": 5,
+      "rating": 3,
+      "keywords": "dryfruit",
+      "title": "mango dryfruit shrikhand",
+      "prices": [
+        {
+          "weight": "1kg",
+          "price": 600
+        },
+        {
+          "weight": "250gm",
+          "price": 150
+        }
+      ],
+      "description": "",
+      "category": "shrikhand",
+      "image": ["/shrikhand/mangoshrikhand.jpg"]
+    },
+    {
+      "id": 6,
+      "rating": 3,
+      "keywords": "nuts",
+      "title": "american nuts shrikhand",
+      "prices": [
+        {
+          "weight": "1kg",
+          "price": 600
+        },
+        {
+          "weight": "250gm",
+          "price": 150
+        }
+      ],
+      "description": "",
+      "category": "shrikhand",
+      "image": ["/shrikhand/american.jpeg"]
+    },
+    {
+      "id": 7,
+      "rating": 3,
+      "keywords": "barfi",
+  
+      "title": "kalakand barfi",
+      "prices": [
+        {
+          "weight": "1kg",
+          "price": 600
+        },
+        {
+          "weight": "250gm",
+          "price": 150
+        }
+      ],
+      "description": "",
+      "category": "milk sweets",
+      "image": ["/milksweets/kalakand berfi.JPG"]
+    },
+    {
+      "id": 8,
+      "rating": 3,
+      "keywords": "cake",
+      "title": "milk cake",
+      "prices": [
+        {
+          "weight": "1kg",
+          "price": 600
+        },
+        {
+          "weight": "250gm",
+          "price": 150
+        }
+      ],
+      "description": "",
+      "category": "milk sweets",
+      "image": ["MilkCake.JPG"]
+    },
+    {
+      "id": 9,
+      "rating": 3,
+      "keywords": "barfi",
+      "title": "american nuts barfi",
+      "prices": [
+        {
+          "weight": "1kg",
+          "price": 600
+        },
+        {
+          "weight": "250gm",
+          "price": 150
+        }
+      ],
+      "description": "",
+      "category": "milk sweets",
+     
+      "image": ["MilkCake.JPG"]
+    },
+    {
+      "id": 10,
+      "rating": 3,
+      "keywords": "barfi",
+      "title": "anjeer barfi",
+      "prices": [
+        {
+          "weight": "1kg",
+          "price": 600
+        },
+        {
+          "weight": "250gm",
+          "price": 150
+        }
+      ],
+      "description": "",
+      "category": "milk sweets",
+      
+      "image": ["anjeer_barfi.jpg"]
+    },
+    {
+      "id": 11,
+      "rating": 3,
+      "keywords": "barfi",
+      "title": "kesar barfi",
+      "prices": [
+        {
+          "weight": "1kg",
+          "price": 600
+        },
+        {
+          "weight": "250gm",
+          "price": 150
+        }
+      ],
+      "description": "",
+      "category": "milk sweets",
+      "image": ["/milksweets/MilkCake.JPG"]
+    },
+    {
+      "id": 12,
+      "rating": 3,
+      "keywords": "barfi",
+      "title": "blueberry barfi",
+      "prices": [
+        {
+          "weight": "1kg",
+          "price": 600
+        },
+        {
+          "weight": "250gm",
+          "price": 150
+        }
+      ],
+      "description": "",
+      "category": "milk sweets",
+      "image": ["/milksweets/BLUE_BERRY_BARFI.jpg"]
+    },
+    {
+      "id": 13,
+      "rating": 3,
+      "keywords": "barfi",
+      "title": "pista barfi",
+      "prices": [
+        {
+          "weight": "1kg",
+          "price": 600
+        },
+        {
+          "weight": "250gm",
+          "price": 150
+        }
+      ],
+      "description": "",
+      "category": "milk sweets",
+      "image": ["/milksweets/Pista Barfi.jpg"]
+    },
+    {
+      "id": 14,
+      "rating": 3,
+      "keywords": "puri",
+      "title": "malai puri",
+      "price": [640, 160],
+      "description": "",
+      "category": "milk sweets",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "puri",
+      "title": "butter scotch puri",
+      "price": [640, 160],
+      "description": "",
+      "category": "milk sweets",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "triveni",
+      "title": "sangam triveni",
+      "price": [720, 180],
+      "description": "",
+      "category": "milk sweets",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "cake",
+      "title": "rose fruit cake",
+      "price": [560, 140],
+      "description": "",
+      "category": "milk sweets",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "barfi",
+      "title": "chocolate barfi",
+      "price": [480, 120],
+      "description": "",
+      "category": "milk sweets",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "laddu",
+      "title": "desi ghee besan laddu",
+      "price": [480, 120],
+      "description": "",
+      "category": "desi ghee sweets",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "gujiya",
+      "title": "mawa gujiya",
+      "price": [480, 120],
+      "description": "",
+      "category": "desi ghee sweets",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "laddu",
+      "title": "rajwadi laddu",
+      "price": [560, 140],
+      "description": "",
+      "category": "desi ghee sweets",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "barfi",
+      "title": "mohan thal (besan barfi)",
+      "price": [480, 120],
+      "description": "",
+      "category": "desi ghee sweets",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "laddu",
+      "title": "aata laddu",
+      "price": [480, 120],
+      "description": "",
+      "category": "desi ghee sweets",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "halwa",
+      "title": "moong dal halwa",
+      "price": [480, 120],
+      "description": "",
+      "category": "desi ghee sweets",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "kaju",
+      "title": "kajukatli",
+      "price": [840, 210],
+      "description": "",
+      "category": "cashew / dryfruit sweets",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "kaju",
+      "title": "",
+      "price": [1000, 250],
+      "description": "kaju bites",
+      "category": "cashew / dryfruit sweets",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "laddu",
+      "title": "khajur dryfruit laddu",
+      "price": [1000, 250],
+      "description": "",
+      "category": "cashew / dryfruit sweets",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "kaju",
+      "title": "kaju roll",
+      "price": [960, 240],
+      "description": "",
+      "category": "cashew / dryfruit sweets",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "kaju",
+      "title": "kajubunny",
+      "price": [960, 240],
+      "description": "",
+      "category": "cashew / dryfruit sweets",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "cone",
+      "title": "kaju cone",
+      "price": [960, 240],
+      "description": "",
+      "category": "cashew / dryfruit sweets",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "gujiya",
+      "title": "kaju gujiya",
+      "price": [960, 240],
+      "description": "",
+      "category": "cashew / dryfruit sweets",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "kaju",
+      "title": "kaju kamal",
+      "price": [960, 240],
+      "description": "",
+      "category": "cashew / dryfruit sweets",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "sugarfree",
+      "title": "anjeer sugarfree",
+      "price": [1200, 300],
+      "description": "",
+      "category": "cashew / dryfruit sweets",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "laddu",
+      "title": "dryfruit khoya laddu",
+      "price": [720, 180],
+      "description": "",
+      "category": "cashew / dryfruit sweets",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "jamun",
+      "title": "gulab jamun",
+      "price": [240, 60],
+      "description": "",
+      "category": "chhena sweets",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "jamun",
+      "title": "kala jamun",
+      "price": ["20/pc", "NA"],
+      "description": "",
+      "category": "chhena sweets",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "jamun",
+      "title": "chamcham",
+      "price": [200, 50],
+      "description": "",
+      "category": "chhena sweets",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "jamun",
+      "title": "rasgulla",
+      "price": [200, 50],
+      "description": "",
+      "category": "chhena sweets",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "rasbhari",
+      "title": "strawberry rasbhari",
+      "price": [280, 70],
+      "description": "",
+      "category": "chhena sweets",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "rasbhari",
+      "title": "mango rasbhari",
+      "price": [280, 70],
+      "description": "",
+      "category": "chhena sweets",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "orange",
+      "title": "orange rasgulla(haribhog)",
+      "price": ["10/pc", "NA"],
+      "description": "",
+      "category": "chhena sweets",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "bengali",
+      "title": "pakija",
+      "price": ["15/pc", "NA"],
+      "description": "",
+      "category": "bengali sweets",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "malai",
+      "title": "malai chap",
+      "price": ["15/pc", "NA"],
+      "description": "",
+      "category": "bengali sweets",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "sandwich",
+      "title": "cream sandwich",
+      "price": ["25/pc", "NA"],
+      "description": "",
+      "category": "bengali sweets",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "ras",
+      "title": "rasmalai",
+      "price": [400, 100],
+      "description": "",
+      "category": "bengali sweets",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "ras",
+      "title": "rasanguri",
+      "price": [400, 100],
+      "description": "",
+      "category": "bengali sweets",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "laddu",
+      "title": "motichoor laddu",
+      "price": [280, 70],
+      "description": "",
+      "category": "other products",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "barfi",
+      "title": "khobra barfi",
+      "price": [360, 90],
+      "description": "",
+      "category": "other products",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "pak",
+      "title": "mysore pak",
+      "price": [280, 70],
+      "description": "",
+      "category": "other products",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "balushahi",
+      "title": "mithi balushahi",
+      "price": [280, 70],
+      "description": "",
+      "category": "other products",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "fiki",
+      "title": "fiki balushahi",
+      "price": [400, 100],
+      "description": "",
+      "category": "other products",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "feni",
+      "title": "fikki feni",
+      "price": [400, 100],
+      "description": "",
+      "category": "other products",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "ras",
+      "title": "anarase",
+      "price": [280, 70],
+      "description": "",
+      "category": "seasonal/on-order basis sweets",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "feni",
+      "title": "mithi feni",
+      "price": [320, 80],
+      "description": "",
+      "category": "seasonal/on-order basis sweets",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "laddu",
+      "title": "coconut laddu",
+      "price": [360, 90],
+      "description": "",
+      "category": "seasonal/on-order basis sweets",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "modak",
+      "title": "modak/only during ganapati season",
+      "price": ["varies"],
+      "description": "",
+      "category": "seasonal/on-order basis sweets",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "ghewar",
+      "title": "ghewar",
+      "price": [280],
+      "description": "",
+      "category": "seasonal/on-order basis sweets",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "ghewar",
+      "title": "desi ghee ghewar",
+      "price": [560],
+      "description": "",
+      "category": "seasonal/on-order basis sweets",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "halwa",
+      "title": "gajar halwa",
+      "price": [480, 120],
+      "description": "",
+      "category": "seasonal/on-order basis sweets",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "halwa",
+      "title": "dudhi halwa",
+      "price": [480, 120],
+      "description": "",
+      "category": "seasonal/on-order basis sweets",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "kalakand",
+      "title": "ameri kalakand",
+      "price": [400, 100],
+      "description": "",
+      "category": "seasonal/on-order basis sweets",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "peda",
+      "title": "shahi peda",
+      "price": [720, 180],
+      "description": "",
+      "category": "seasonal/on-order basis sweets",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "basundi",
+      "title": "basundi",
+      "price": [400, 100],
+      "description": "",
+      "category": "seasonal/on-order basis sweets",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "khoya",
+      "title": "rabdi",
+      "price": [400, 100],
+      "description": "",
+      "category": "seasonal/on-order basis sweets",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "kalakand",
+      "title": "anjeer dryfruit kalakand",
+      "price": [640, 160],
+      "description": "",
+      "category": "seasonal/on-order basis sweets",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "namkeen",
+      "title": "pakka chivda",
+      "price": [280, 70],
+      "description": "",
+      "category": "farsan/mix",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "namkeen",
+      "title": "kaccha chivda",
+      "price": [280, 70],
+      "description": "",
+      "category": "farsan/mix",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "namkeen",
+      "title": "falhari chivda",
+      "price": [280, 70],
+      "description": "",
+      "category": "farsan/mix",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "namkeen",
+      "title": "navratan falhari chivda",
+      "price": [360, 90],
+      "description": "",
+      "category": "farsan/mix",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "namkeen",
+      "title": "mix farsan",
+      "price": [280, 70],
+      "description": "",
+      "category": "farsan/mix",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "namkeen",
+      "title": "kolahapuri mix",
+      "price": [280, 70],
+      "description": "",
+      "category": "farsan/mix",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "namkeen",
+      "title": "corn mix",
+      "price": [240, 60],
+      "description": "",
+      "category": "farsan/mix",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "namkeen",
+      "title": "sev mumra",
+      "price": [240, 60],
+      "description": "",
+      "category": "farsan/mix",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "namkeen",
+      "title": "khatta mitha",
+      "price": [280, 70],
+      "description": "",
+      "category": "farsan/mix",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "namkeen",
+      "title": "dryfruit falhari",
+      "price": [360, 90],
+      "description": "",
+      "category": "farsan/mix",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "fafda",
+      "title": "fafda",
+      "price": [400, 100],
+      "description": "",
+      "category": "dry snacks",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "wadi",
+      "title": "bhakarwadi",
+      "price": [280, 700],
+      "description": "",
+      "category": "dry snacks",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "samosa",
+      "title": "dry samosa",
+      "price": [280, 700],
+      "description": "",
+      "category": "dry snacks",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "kachori",
+      "title": "dry kachori",
+      "price": [280, 700],
+      "description": "",
+      "category": "dry snacks",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "dal",
+      "title": "green moong dal",
+      "price": [280, 700],
+      "description": "",
+      "category": "dry snacks",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "dal",
+      "title": "red moong dal",
+      "price": [280, 700],
+      "description": "",
+      "category": "dry snacks",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "dal",
+      "title": "moong daal",
+      "price": [280, 700],
+      "description": "",
+      "category": "dry snacks",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "masala",
+      "title": "masala sing",
+      "price": [280, 700],
+      "description": "",
+      "category": "dry snacks",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": " matri",
+      "title": "jeera matri",
+      "price": [280, 700],
+      "description": "",
+      "category": "dry snacks",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "matri",
+      "title": "mithi matri",
+      "price": [280, 700],
+      "description": "",
+      "category": "dry snacks",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "chakkli",
+      "title": "chakkli",
+      "price": [280, 700],
+      "description": "",
+      "category": "dry snacks",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "chips",
+      "title": "banana chips",
+      "price": [280, 700],
+      "description": "",
+      "category": "dry snacks",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "chips",
+      "title": "salted potato chips",
+      "price": [280, 700],
+      "description": "",
+      "category": "dry snacks",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "puri",
+      "title": "khasta puri",
+      "price": [280, 700],
+      "description": "",
+      "category": "dry snacks",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "papdi",
+      "title": "papdi",
+      "price": [280, 700],
+      "description": "",
+      "category": "other namkeen variety",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "papdi",
+      "title": "masala papdi",
+      "price": [280, 700],
+      "description": "",
+      "category": "other namkeen variety",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "para",
+      "title": "shakkar para",
+      "price": [280, 700],
+      "description": "",
+      "category": "other namkeen variety",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "para",
+      "title": "namak para",
+      "price": [280, 700],
+      "description": "",
+      "category": "other namkeen variety",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "ghati",
+      "title": "makhaniya ghati",
+      "price": [280, 700],
+      "description": "",
+      "category": "other namkeen variety",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "ghati",
+      "title": "jadi ghati",
+      "price": [280, 700],
+      "description": "",
+      "category": "other namkeen variety",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "ghati",
+      "title": "bhavnagari ghati",
+      "price": [280, 700],
+      "description": "",
+      "category": "other namkeen variety",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "sev",
+      "title": "zero barik sev",
+      "price": [280, 700],
+      "description": "",
+      "category": "other namkeen variety",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "sev",
+      "title": "2.No. sev",
+      "price": [280, 700],
+      "description": "",
+      "category": "other namkeen variety",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "sev",
+      "title": "masala sev",
+      "price": [280, 700],
+      "description": "",
+      "category": "other namkeen variety",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "sev",
+      "title": "jadi masala sev",
+      "price": [280, 700],
+      "description": "",
+      "category": "other namkeen variety",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "sev",
+      "title": "ratlami sev",
+      "price": [280, 700],
+      "description": "",
+      "category": "other namkeen variety",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "dal",
+      "title": "dalmoth",
+      "price": [280, 700],
+      "description": "",
+      "category": "other namkeen variety",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "dal",
+      "title": "chana dal",
+      "price": [280, 700],
+      "description": "",
+      "category": "other namkeen variety",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "namkeen",
+      "title": "tasty",
+      "price": [280, 700],
+      "description": "",
+      "category": "other namkeen variety",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "masala",
+      "title": "masala sing",
+      "price": [280, 700],
+      "description": "",
+      "category": "other namkeen variety",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "dhokla",
+      "title": "dhokla",
+      "price": [200, 50],
+      "description": "",
+      "category": "hot snacks",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "samosa",
+      "title": "samosa",
+      "price": ["15/pc", "NA"],
+      "description": "",
+      "category": "hot snacks",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "kachori",
+      "title": "kachori",
+      "price": ["15/pc", "NA"],
+      "description": "",
+      "category": "hot snacks",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "sambharwadi",
+      "title": "sambharwadi",
+      "price": ["15/pc", "NA"],
+      "description": "",
+      "category": "hot snacks",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "jalebi",
+      "title": "jalebi",
+      "price": [160, 40],
+      "description": "",
+      "category": "hot snacks",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    },
+    {
+      "id": 1,
+      "rating": 3,
+      "keywords": "khandavi",
+      "title": "khandavi",
+      "price": [200, 50],
+      "description": "",
+      "category": "hot snacks",
+      "availableSize": ["1kg", "250g"],
+      "image": ""
+    }
+  ]
+  
+

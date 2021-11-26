@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
 export default function MustHaveCard({ value }) {
-  const { id, price, title, category, image } = value;
+  const { id, prices, title, category, image } = value;
   return (
     <div className="singleCard__container">
       <Link
@@ -23,7 +23,7 @@ export default function MustHaveCard({ value }) {
           </div>
         </div>
         <div className="mustBuy__title">{title}</div>
-        <div className="mustBuy__price">{`Price  ${price}`}</div>
+        <div className="mustBuy__price">{`Price  ${prices}`}</div>
       </Link>
     </div>
   );

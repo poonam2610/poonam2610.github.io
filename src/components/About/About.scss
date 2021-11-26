@@ -1,9 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
 .about-heading {
+  margin-top: 50px;
+  font-family: "Times New Roman", Times, serif;
   font-size: 3rem;
   line-height: 1.5rem;
   font-style: italic;
   text-align: center;
+  color: #e81c2a;
 }
 
 .about-content {
@@ -26,8 +29,12 @@
   max-width: 700px;
   min-width: 400px;
   font-size: 20px;
-  font-family: "Roboto";
-  text-align: center;
+  font-family: "Roboto", sans-serif;
+  display: block;
+  margin-top: 40px;
+  letter-spacing: 1px;
+  color: #c42424;
+  text-transform: uppercase;
 }
 
 @media screen and(max-width: 950px) {
@@ -37,7 +44,7 @@
     align-items: center;
 
     img {
-      width: 200px;
+      width: 600px;
       margin: 0 10px;
     }
   }

@@ -17,13 +17,13 @@ function Footer() {
           <h2>Contact Info</h2>
           <div className="phone__details">
             <p>
-              <span>Phone: </span>(+91)8906838026
+              <span>Phone: </span>(+91)9822221372
             </p>
           </div>
           <div className="address__details">
             <p>
-              <span>Address: </span>10/b 54, 1652 Dancing Dove Lane, New York,
-              10036{" "}
+              <span>Address: </span> Nehru Chowk,Yavatmal-445001,
+          Maharashtra, India
             </p>
           </div>
           <div className="card__details">
@@ -48,9 +48,9 @@ function Footer() {
           </div> */}
         </div>
       </div>
-      <div className="footer__bottom">
+      {/* <div className="footer__bottom">
         Made with <span style={{ color: "red" }}>&#10084;</span> by <a className="link__name" href="https://www.linkedin.com/in/piyush-ranjan-1997d" target="_blank" rel="noreferrer">Piyush</a> and <a className="link__name" href="www.linkedin.com/in/piyush-ranjan-1997d" target="_blank" rel="noreferrer">Anusha</a>
-      </div>
+      </div> */}
     </footer>
   );
 }
