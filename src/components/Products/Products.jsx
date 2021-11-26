@@ -24,7 +24,7 @@ function Products() {
       "isActive": false
     }, {
       "linkText": `${category[0].toUpperCase() + category.slice(1)}`,
-      "linkHref": `${ROUTES.CHECKOUT} / ${category}`,
+      "linkHref": `${ROUTES.CATEGORY} / ${category}`,
       "isActive": true
     }
   ];
