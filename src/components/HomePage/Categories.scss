@@ -1,7 +1,6 @@
 .categories__container {
   background-color: white;
   color: var(--textColor);
-  overflow-x: scroll;
 }
 .categories__text {
   font-size: 35px;
@@ -14,6 +13,6 @@
 }
 .card__container {
   display: flex;
-
+  flex-wrap: wrap;
   padding-top: 2rem;
 }

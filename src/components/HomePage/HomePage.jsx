@@ -1,7 +1,6 @@
 import React from 'react'
 import Carousel from "../../helper-components/Carousel/Carousel"
 import Categories from "./Categories"
-import PromisePage from "./PromisePage"
 import "./HomePage.scss"
 import MustHaveSection from './MustHaveSection'
 
@@ -23,10 +22,7 @@ function HomePage() {
       <div>
         <MustHaveSection />
       </div>
-      <div>
-        <PromisePage />
-      </div>
-    </div>
+       </div>
   )
 }
 export default HomePage;
