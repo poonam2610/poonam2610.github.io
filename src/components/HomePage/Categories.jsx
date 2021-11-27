@@ -32,47 +32,47 @@ export default function Categories() {
           </div>
           <div className="cards" id="chenaSweets">
             <Link className="link__style" to={`${ROUTES.CATEGORY}${ROUTES.CHENA_SWEETS}`}>
-              <CategoriesCard image="/mangoras.jpeg" title="Chena Sweets" />
+              <CategoriesCard image="/chenasweets/Rasgulla.jpg" title="Chena Sweets" />
             </Link>
           </div>
            <div className="cards" id="peda">
             <Link className="link__style" to={`${ROUTES.CATEGORY}${ROUTES.PEDA}`}>
-              <CategoriesCard image="/peda.jpg" title="Peda" />
+              <CategoriesCard image="/peda/Kesar Peda.JPG" title="Peda" />
             </Link>
           </div>
           <div className="cards" id="milkSweets">
             <Link className="link__style" to={`${ROUTES.CATEGORY}${ROUTES.MILK_SWEETS}`}>
-              <CategoriesCard image="/peda.jpg" title="Milk sweets" />
+              <CategoriesCard image="/milksweets/Sangam Triveni.jpg" title="Milk sweets" />
             </Link>
           </div>
           <div className="cards" id="desiGheeSweets">
             <Link className="link__style" to={`${ROUTES.CATEGORY}${ROUTES.DESI_GHEE_SWEETS}`}>
-              <CategoriesCard image="/peda.jpg" title="Desi ghee sweets" />
+              <CategoriesCard image="/desigheesweets/Mawa Gujiya.JPG" title="Desi ghee sweets" />
             </Link>
           </div>
           <div className="cards" id="dryFruitSweets">
             <Link className="link__style" to={`${ROUTES.CATEGORY}${ROUTES.CASHEW_DRYFRUIT_SWEETS}`}>
-              <CategoriesCard image="/peda.jpg" title="Cashew/Dry fruit sweets" />
+              <CategoriesCard image="/dryfruitsweets/kaju-roll.png" title="Cashew/Dry fruit sweets" />
             </Link>
           </div>
           <div className="cards" id="seasonalSweets">
             <Link className="link__style" to={`${ROUTES.CATEGORY}${ROUTES.SEASONAL_SWEETS}`}>
-              <CategoriesCard image="/peda.jpg" title="Seasonal sweets" />
+              <CategoriesCard image="/seasonalsweets/Rabdi.jpg" title="Seasonal sweets" />
             </Link>
           </div>
           <div className="cards" id="bengaliSweets">
             <Link className="link__style" to={`${ROUTES.CATEGORY}${ROUTES.BENGALI_SWEETS}`}>
-              <CategoriesCard image="/peda.jpg" title="Bengali sweets" />
+              <CategoriesCard image="/bengalisweets/CREAM-SANDWICH.png" title="Bengali sweets" />
             </Link>
           </div>
           <div className="cards" id="otherProducts">
             <Link className="link__style" to={`${ROUTES.CATEGORY}${ROUTES.OTHER_PRODUCTS}`}>
-              <CategoriesCard image="/peda.jpg" title="other products" />
+              <CategoriesCard image="/otherproducts/Motichoor Laddu.jpg" title="other products" />
             </Link>
           </div>
           <div className="cards" id="hotSnacks">
             <Link className="link__style" to={`${ROUTES.CATEGORY}${ROUTES.HOT_SNACKS}`}>
-              <CategoriesCard image="/peda.jpg" title="hot snacks" />
+              <CategoriesCard image="/hotsnacks/samosa-2.jpg" title="hot snacks" />
             </Link>
           </div>
       </div>

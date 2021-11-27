@@ -3,7 +3,7 @@
     "id": 1,
     "rating": 3,
     "keywords": "kesar, peda",
-    "title": "kesar peda",
+    "title": "Kesar peda",
     "prices": [
       {
         "weight": "1kg",
@@ -16,14 +16,14 @@
     ],
     "description": "",
     "category": "peda",
-    "image": ["./peda.jpg"]
+    "image": ["/peda/Kesar Peda.JPG"]
   },
 
     {
       "id": 2,
       "rating": 3,
       "keywords": "malai",
-      "title": "malai peda",
+      "title": "Malai peda",
       "prices": [
         {
           "weight": "1kg",
@@ -37,13 +37,13 @@
       "description": "",
       "category": "peda",
       
-      "image":[ "/peda.jpg"]
+      "image":[ "/peda/MALAI-PEDA.jpg"]
     },
     {
       "id": 3,
       "rating": 3,
       "keywords": "peda",
-      "title": "kathiwawadi peda",
+      "title": "Kathiyawadi peda",
       "prices": [
         {
           "weight": "1kg",
