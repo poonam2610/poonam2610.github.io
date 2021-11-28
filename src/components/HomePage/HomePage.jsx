@@ -1,9 +1,9 @@
 import React from 'react'
 import Carousel from "../../helper-components/Carousel/Carousel"
 import Categories from "./Categories"
-import PromisePage from "./PromisePage"
+// import PromisePage from "./PromisePage"
 import "./HomePage.scss"
-import MustHaveSection from './MustHaveSection'
+// import MustHaveSection from './MustHaveSection'
 
 
 
@@ -12,7 +12,7 @@ function HomePage() {
 
 
   return (
-    
+
     <div className={`content__container`}>
       <div className="carousel__container">
         <Carousel arrayOfImagesUrl={arrayOfImagesUrl} />
@@ -20,10 +20,10 @@ function HomePage() {
       <div>
         <Categories />
       </div>
-      <div>
+      {/* <div>
         <MustHaveSection />
-      </div>
-      </div>
+      </div> */}
+    </div>
   )
 }
 export default HomePage;
