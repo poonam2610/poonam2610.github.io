@@ -1,19 +1,20 @@
 .categories__container {
   background-color: white;
   color: var(--textColor);
-  overflow-x: scroll;
 }
 .categories__text {
-  font-size: 35px;
+  font-size: 45px;
   letter-spacing: 2px;
   font-weight: 400;
   margin: 13px;
   text-align: center;
   color: #c42424;
-  // font-family: 'Elsie Swash Caps', cursive;
+  margin-top: 80px;
+  font-family: "Elsie Swash Caps";
 }
 .card__container {
   display: flex;
-
+  flex-wrap: wrap;
+  justify-content: center;
   padding-top: 2rem;
 }

@@ -23,10 +23,7 @@ function HomePage() {
       <div>
         <MustHaveSection />
       </div>
-      <div>
-        <PromisePage />
       </div>
-    </div>
   )
 }
 export default HomePage;

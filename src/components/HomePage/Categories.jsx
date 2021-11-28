@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 export default function Categories() {
   return (
     <div className="categories__container">
-      <h1 className="categories__text">Products</h1>
+      <h1 className="categories__text">Categories</h1>
       <div className="card__container">
           <div className="cards" id="Namkeen">
             <Link className="link__style" to={`${ROUTES.CATEGORY}${ROUTES.NAMKEEN}`}>
@@ -65,11 +65,11 @@ export default function Categories() {
               <CategoriesCard image="/bengalisweets/CREAM-SANDWICH.png" title="Bengali sweets" />
             </Link>
           </div>
-          <div className="cards" id="otherProducts">
+          {/* <div className="cards" id="otherProducts">
             <Link className="link__style" to={`${ROUTES.CATEGORY}${ROUTES.OTHER_PRODUCTS}`}>
               <CategoriesCard image="/otherproducts/Motichoor Laddu.jpg" title="other products" />
             </Link>
-          </div>
+          </div> */}
           <div className="cards" id="hotSnacks">
             <Link className="link__style" to={`${ROUTES.CATEGORY}${ROUTES.HOT_SNACKS}`}>
               <CategoriesCard image="/hotsnacks/samosa-2.jpg" title="hot snacks" />
