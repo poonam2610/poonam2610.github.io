@@ -73,7 +73,7 @@
     "title": "kalakand barfi",
     "price": [560, 140],
     "description": "",
-    "category": "milk sweets",
+    "category": "milksweets",
     "availableSize": ["1kg", "250g"],
     "image": ""
   },
@@ -84,7 +84,7 @@
     "title": "milk cake",
     "price": [640, 160],
     "description": "",
-    "category": "milk sweets",
+    "category": "milksweets",
     "availableSize": ["1kg", "250g"],
     "image": ""
   },
@@ -95,7 +95,7 @@
     "title": "american nuts barfi",
     "price": [640, 160],
     "description": "",
-    "category": "milk sweets",
+    "category": "milksweets",
     "availableSize": ["1kg", "250g"],
     "image": ""
   },
@@ -106,7 +106,7 @@
     "title": "anjeer barfi",
     "price": [640, 160],
     "description": "",
-    "category": "milk sweets",
+    "category": "milksweets",
     "availableSize": ["1kg", "250g"],
     "image": ""
   },
@@ -117,7 +117,7 @@
     "title": "kesar barfi",
     "price": [640, 160],
     "description": "",
-    "category": "milk sweets",
+    "category": "milksweets",
     "availableSize": ["1kg", "250g"],
     "image": ""
   },
@@ -128,7 +128,7 @@
     "title": "blueberry barfi",
     "price": [640, 160],
     "description": "",
-    "category": "milk sweets",
+    "category": "milksweets",
     "availableSize": ["1kg", "250g"],
     "image": ""
   },
@@ -139,7 +139,7 @@
     "title": "pista barfi",
     "price": [640, 160],
     "description": "",
-    "category": "milk sweets",
+    "category": "milksweets",
     "availableSize": ["1kg", "250g"],
     "image": ""
   },
@@ -150,7 +150,7 @@
     "title": "malai puri",
     "price": [640, 160],
     "description": "",
-    "category": "milk sweets",
+    "category": "milksweets",
     "availableSize": ["1kg", "250g"],
     "image": ""
   },
@@ -161,7 +161,7 @@
     "title": "butter scotch puri",
     "price": [640, 160],
     "description": "",
-    "category": "milk sweets",
+    "category": "milksweets",
     "availableSize": ["1kg", "250g"],
     "image": ""
   },
@@ -183,7 +183,7 @@
     "title": "rose fruit cake",
     "price": [560, 140],
     "description": "",
-    "category": "milk sweets",
+    "category": "milksweets",
     "availableSize": ["1kg", "250g"],
     "image": ""
   },
@@ -194,7 +194,7 @@
     "title": "chocolate barfi",
     "price": [480, 120],
     "description": "",
-    "category": "milk sweets",
+    "category": "milksweets",
     "availableSize": ["1kg", "250g"],
     "image": ""
   },
@@ -205,7 +205,7 @@
     "title": "desi ghee besan laddu",
     "price": [480, 120],
     "description": "",
-    "category": "desi ghee sweets",
+    "category": "desigheesweets",
     "availableSize": ["1kg", "250g"],
     "image": ""
   },
@@ -216,7 +216,7 @@
     "title": "mawa gujiya",
     "price": [480, 120],
     "description": "",
-    "category": "desi ghee sweets",
+    "category": "desigheesweets",
     "availableSize": ["1kg", "250g"],
     "image": ""
   },
@@ -227,7 +227,7 @@
     "title": "rajwadi laddu",
     "price": [560, 140],
     "description": "",
-    "category": "desi ghee sweets",
+    "category": "desigheesweets",
     "availableSize": ["1kg", "250g"],
     "image": ""
   },
@@ -238,7 +238,7 @@
     "title": "mohan thal (besan barfi)",
     "price": [480, 120],
     "description": "",
-    "category": "desi ghee sweets",
+    "category": "desigheesweets",
     "availableSize": ["1kg", "250g"],
     "image": ""
   },
@@ -249,7 +249,7 @@
     "title": "aata laddu",
     "price": [480, 120],
     "description": "",
-    "category": "desi ghee sweets",
+    "category": "desigheesweets",
     "availableSize": ["1kg", "250g"],
     "image": ""
   },
@@ -260,7 +260,7 @@
     "title": "moong dal halwa",
     "price": [480, 120],
     "description": "",
-    "category": "desi ghee sweets",
+    "category": "desigheesweets",
     "availableSize": ["1kg", "250g"],
     "image": ""
   },
@@ -271,7 +271,7 @@
     "title": "kajukatli",
     "price": [840, 210],
     "description": "",
-    "category": "cashew / dryfruit sweets",
+    "category": "dryfruitsweets",
     "availableSize": ["1kg", "250g"],
     "image": ""
   },
@@ -282,7 +282,7 @@
     "title": "",
     "price": [1000, 250],
     "description": "kaju bites",
-    "category": "cashew / dryfruit sweets",
+    "category": "dryfruitsweets",
     "availableSize": ["1kg", "250g"],
     "image": ""
   },
@@ -293,7 +293,7 @@
     "title": "khajur dryfruit laddu",
     "price": [1000, 250],
     "description": "",
-    "category": "cashew / dryfruit sweets",
+    "category": "dryfruitsweets",
     "availableSize": ["1kg", "250g"],
     "image": ""
   },
@@ -304,7 +304,7 @@
     "title": "kaju roll",
     "price": [960, 240],
     "description": "",
-    "category": "cashew / dryfruit sweets",
+    "category": "dryfruitsweets",
     "availableSize": ["1kg", "250g"],
     "image": ""
   },
@@ -315,7 +315,7 @@
     "title": "kajubunny",
     "price": [960, 240],
     "description": "",
-    "category": "cashew / dryfruit sweets",
+    "category": "dryfruitsweets",
     "availableSize": ["1kg", "250g"],
     "image": ""
   },
@@ -326,7 +326,7 @@
     "title": "kaju cone",
     "price": [960, 240],
     "description": "",
-    "category": "cashew / dryfruit sweets",
+    "category": "dryfruitsweets",
     "availableSize": ["1kg", "250g"],
     "image": ""
   },
@@ -337,7 +337,7 @@
     "title": "kaju gujiya",
     "price": [960, 240],
     "description": "",
-    "category": "cashew / dryfruit sweets",
+    "category": "dryfruitsweets",
     "availableSize": ["1kg", "250g"],
     "image": ""
   },
@@ -348,7 +348,7 @@
     "title": "kaju kamal",
     "price": [960, 240],
     "description": "",
-    "category": "cashew / dryfruit sweets",
+    "category": "dryfruitsweets",
     "availableSize": ["1kg", "250g"],
     "image": ""
   },
@@ -359,7 +359,7 @@
     "title": "anjeer sugarfree",
     "price": [1200, 300],
     "description": "",
-    "category": "cashew / dryfruit sweets",
+    "category": "dryfruitsweets",
     "availableSize": ["1kg", "250g"],
     "image": ""
   },
@@ -370,7 +370,7 @@
     "title": "dryfruit khoya laddu",
     "price": [720, 180],
     "description": "",
-    "category": "cashew / dryfruit sweets",
+    "category": "dryfruitsweets",
     "availableSize": ["1kg", "250g"],
     "image": ""
   },
@@ -722,7 +722,7 @@
     "title": "pakka chivda",
     "price": [280, 70],
     "description": "",
-    "category": "farsan/mix",
+    "category": "farsansweets",
     "availableSize": ["1kg", "250g"],
     "image": ""
   },
@@ -733,7 +733,7 @@
     "title": "kaccha chivda",
     "price": [280, 70],
     "description": "",
-    "category": "farsan/mix",
+    "category": "farsansweets",
     "availableSize": ["1kg", "250g"],
     "image": ""
   },

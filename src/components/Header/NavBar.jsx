@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import * as ROUTES from "../../constants/Routes";
 import Sweets from "./Sweets";
 import Snacks from "./Snacks"
+import Namkeen from "./namkeen";
 
 export default function Navbar() {
   const [isHovering, setIsHovering] = useState(false);
@@ -45,6 +46,10 @@ export default function Navbar() {
               <li className="dropdown">
                 <button className="category-btn">Sweets</button>
                 <Sweets />
+              </li>
+              <li className="dropdown">
+                <button className="category-btn">Namkeen</button>
+                <Namkeen />
               </li>
               <li className="dropdown">
                 <button className="category-btn">Snacks</button>
