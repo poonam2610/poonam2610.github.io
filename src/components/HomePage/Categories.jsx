@@ -12,7 +12,7 @@ export default function Categories() {
       <div className="card__container">
           <div className="cards" id="Namkeen">
             <Link className="link__style" to={`${ROUTES.CATEGORY}${ROUTES.NAMKEEN}`}>
-              <CategoriesCard image="/bariksev.jpg" title="Namkeen" />
+              <CategoriesCard image="/murmura.JPG" title="Namkeen" />
             </Link>
           </div>
           <div className="cards" id="=shrikhand">
@@ -21,7 +21,7 @@ export default function Categories() {
             </Link>
           </div>
           <div className="cards" id="farsan">
-            <Link className="link__style" to={`${ROUTES.CATEGORY}${ROUTES.FARSAN_SWEETS}`}>
+            <Link className="link__style" to={`${ROUTES.CATEGORY}${ROUTES.FARSAN}`}>
               <CategoriesCard image="/farsan.jpeg" title="Farsan" />
             </Link>
           </div>

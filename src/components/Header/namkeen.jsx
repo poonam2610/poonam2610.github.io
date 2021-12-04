@@ -8,7 +8,7 @@ export default function Namkeen(){
             <nav class="ll">
                 <ul class="dropdown-content">
                     <li>
-                    <Link className="link__style" to={`${ROUTES.CATEGORY}${ROUTES.FARSAN_SWEETS}`}>Farsan
+                    <Link className="link__style" to={`${ROUTES.CATEGORY}${ROUTES.FARSAN}`}>Farsan
                     </Link>
                     </li>
                     <li>

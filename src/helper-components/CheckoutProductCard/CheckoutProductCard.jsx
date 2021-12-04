@@ -33,7 +33,7 @@ function CheckoutProductCard({ value, ordered }) {
           id: id,
           image: image,
           title: title,
-          price: price,
+          price: +price,
           rating: rating,
           category: category,
           size: "M"
@@ -46,7 +46,7 @@ function CheckoutProductCard({ value, ordered }) {
           id: id,
           image: image,
           title: title,
-          price: price,
+          price: +price,
           rating: rating,
           category: category,
           size: size
