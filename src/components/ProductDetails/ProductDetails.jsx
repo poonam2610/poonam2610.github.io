@@ -3,7 +3,7 @@ import "./ProductDetails.scss";
 import * as data from "../../data/sweetdata2.json";
 import * as ROUTES from "../../constants/Routes";
 import { useParams } from "react-router";
-import WeightOptions from "./SizeOptions";
+import AvailableOptions from "./AvailableOptions";
 import AddToBagButton from "./AddToBagButton";
 import Quantity from "./Quantity";
 import { useStateValue } from "../../context-management/StateProvider";
@@ -13,11 +13,11 @@ import Carousel from "../../helper-components/Carousel/Carousel";
 import SimilarProducts from "../SimilarProducts/SimilarProducts";
 import AlertBox from "../../helper-components/AlertBox/AlertBox";
 import BreadCrumbs from "../../helper-components/BreadCrumbs/BreadCrumbs";
+import { _isEmpty } from '../../utils.js'
 
 function ProductDetails() {
   const [product, setProduct] = useState({ image: ["", ""] });
-  const [weight, setWeight] = useState("");
-  const [currentPrice, setCurrentPrice] = useState(0);
+  const [option, setOption] = useState({});
   const [errorMessage, setErrorMessage] = useState("");
   const { category, id } = useParams();
   const [isLoginClicked, setIsLoginClicked] = useState(false);
@@ -30,18 +30,18 @@ function ProductDetails() {
       (value) => value.id === parseInt(id)
     );
     const prod = Object.assign({}, filteredProduct[0]);
-    setCurrentPrice(prod.prices[0].price);
     setProduct(prod);
+    setOption(prod.options[0]);
   }, [id]);
 
   useEffect(() => {
-    if (weight) {
+    if (option.price) {
       setErrorMessage("");
-      setCurrentPrice(weight.price)
+      // setCurrentPrice(weight.price)
     }
-  }, [weight]);
+  }, [option]);
 
-  const handleClick = () => {
+  const handleAddToCart = () => {
     if (!!user) {
       if (product.category === "accessories") {
         setErrorMessage("");
@@ -63,8 +63,8 @@ function ProductDetails() {
             },
           });
         }
-      } else if (!weight) {
-        setErrorMessage("Please Select Weight");
+      } else if (_isEmpty(option)) {
+        setErrorMessage("Please Select Weight or quantity");
       } else {
         setIsProductAdded(true);
         setTimeout(() => {
@@ -80,7 +80,8 @@ function ProductDetails() {
               price: product.price,
               rating: product.rating,
               category: product.category,
-              weight: weight,
+              type: product.type,
+              option
             },
           });
         }
@@ -137,14 +138,9 @@ function ProductDetails() {
             <div className="rating__container">
               <StarRating rating={product.rating} />
             </div> */}
-            <p className="price">{`Rs. ${currentPrice}`}</p>
+            <p className="price">{`Rs. ${option.price}`}</p>
           </div>
-          {/* {product.category === "accessories" && (
-            <div className="one__size__container"><h5>SELECTED SIZE :</h5> <div>One Size</div></div>
-          )} */}
-          {product.category !== "accessories" && (
-            <WeightOptions prices={product?.prices} setWeight={setWeight} />
-          )}
+          <AvailableOptions options={product?.options} setOption={setOption} selectedOption={option} />
           <Quantity
             itemQuantity={itemQuantity}
             setItemQuantity={setItemQuantity}
@@ -152,7 +148,7 @@ function ProductDetails() {
           <div className="error__and__button">
             <div className="error__message">{errorMessage}</div>
             <div id="addItemToBag">
-              <AddToBagButton content="ADD TO CART" isProductAdded={isProductAdded} handleClick={handleClick} />
+              <AddToBagButton content="ADD TO CART" isProductAdded={isProductAdded} handleClick={handleAddToCart} />
             </div>
           </div>
         </div>
