@@ -1,14 +1,15 @@
-import React from "react"
+import React, {useEffect} from "react"
 import "./Categories.scss"
 import CategoriesCard from '../../helper-components/categories-card/CategoriesCard';
 import * as ROUTES from "../../constants/Routes";
 import { Link } from 'react-router-dom';
 
-
+let timer; 
 export default function Categories() {
   return (
     <div className="categories__container">
       <h1 className="categories__text">Categories</h1>
+      
       <div className="card__container">
           <div className="cards" id="Namkeen">
             <Link className="link__style" to={`${ROUTES.CATEGORY}${ROUTES.NAMKEEN}`}>
@@ -75,7 +76,10 @@ export default function Categories() {
               <CategoriesCard image="/hotsnacks/samosa-2.jpg" title="hot snacks" />
             </Link>
           </div>
-      </div>
+    
     </div>
+    </div>
+    
   )
 }
+

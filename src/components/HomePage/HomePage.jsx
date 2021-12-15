@@ -3,7 +3,7 @@ import Carousel from "../../helper-components/Carousel/Carousel"
 import Categories from "./Categories"
 // import PromisePage from "./PromisePage"
 import "./HomePage.scss"
-// import MustHaveSection from './MustHaveSection'
+import MustHaveSection from './MustHaveSection'
 
 
 
@@ -20,9 +20,9 @@ function HomePage() {
       <div>
         <Categories />
       </div>
-      {/* <div>
+       <div>
         <MustHaveSection />
-      </div> */}
+      </div> 
     </div>
   )
 }

@@ -53,7 +53,7 @@ function PaymentProceed({ currentSelection, setIsRazorPayOpen }) {
     key: "rzp_test_6HvBNtoO5YYgPp",
     amount: parseInt(((totalPrice(basket) + (totalPrice(basket) * 10) / 100).toFixed(2)) * 100), //  = INR 1
     currency: "INR",
-    name: "WARDROBE",
+    name: "Chetan Dhorajiwala",
     // description: "Test Transaction",
     handler: ((response) => {
       handlePaymentResponse(response)

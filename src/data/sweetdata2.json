@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "rating": 3,
+    
     "keywords": "kesar, peda",
     "title": "Kesar peda",
     "type": "weight",
@@ -22,7 +22,7 @@
 
   {
     "id": 2,
-    "rating": 3,
+    
     "keywords": "malai",
     "title": "Malai peda",
     "options": [
@@ -42,7 +42,7 @@
   },
   {
     "id": 3,
-    "rating": 3,
+    
     "keywords": "peda",
     "title": "Kathiyawadi peda",
     "options": [
@@ -62,7 +62,7 @@
   },
   {
     "id": 4,
-    "rating": 3,
+    
     "keywords": "dryfruit",
     "title": "kesar dryfruit shrikhand",
     "options": [
@@ -83,7 +83,7 @@
 
   {
     "id": 5,
-    "rating": 3,
+    
     "keywords": "dryfruit",
     "title": "mango dryfruit shrikhand",
     "options": [
@@ -102,7 +102,7 @@
   },
   {
     "id": 6,
-    "rating": 3,
+    
     "keywords": "nuts",
     "title": "american nuts shrikhand",
     "options": [
@@ -121,7 +121,7 @@
   },
   {
     "id": 7,
-    "rating": 3,
+    
     "keywords": "barfi",
 
     "title": "kalakand barfi",
@@ -141,7 +141,7 @@
   },
   {
     "id": 8,
-    "rating": 3,
+    
     "keywords": "cake",
     "title": "Milk cake",
     "options": [
@@ -160,7 +160,7 @@
   },
   {
     "id": 9,
-    "rating": 3,
+    
     "keywords": "barfi",
     "title": "American Nuts Barfi",
     "options": [
@@ -180,7 +180,7 @@
 
   {
     "id": 10,
-    "rating": 3,
+    
     "keywords": "barfi",
     "title": "anjeer barfi",
     "options": [
@@ -200,7 +200,7 @@
   },
   {
     "id": 11,
-    "rating": 3,
+    
     "keywords": "barfi",
     "title": "Kesar Mawa Barfi",
     "options": [
@@ -219,7 +219,7 @@
   },
   {
     "id": 12,
-    "rating": 3,
+    
     "keywords": "barfi",
     "title": "blueberry barfi",
     "options": [
@@ -238,7 +238,7 @@
   },
   {
     "id": 13,
-    "rating": 3,
+    
     "keywords": "barfi",
     "title": "Pista Barfi",
     "options": [
@@ -257,7 +257,7 @@
   },
   {
     "id": 14,
-    "rating": 3,
+    
     "keywords": "puri",
     "title": "Malai Puri",
     "options": [
@@ -277,7 +277,7 @@
   },
   {
     "id": 15,
-    "rating": 3,
+    
     "keywords": "puri",
     "title": "Butterscotch Puri",
     "options": [
@@ -297,7 +297,7 @@
 
   {
     "id": 16,
-    "rating": 3,
+    
     "keywords": "triveni",
     "title": "Sangam Triveni",
     "options": [
@@ -317,7 +317,7 @@
   },
   {
     "id": 17,
-    "rating": 3,
+    
     "keywords": "cake",
     "title": "Rose fruit Cake",
     "options": [
@@ -336,7 +336,7 @@
   },
   {
     "id": 18,
-    "rating": 3,
+    
     "keywords": "barfi",
     "title": "Chocolate Barfi",
     "options": [
@@ -355,7 +355,7 @@
   },
   {
     "id": 19,
-    "rating": 3,
+    
     "keywords": "laddu",
     "title": "Desi ghee Besan Laddu",
     "options": [
@@ -374,7 +374,7 @@
   },
   {
     "id": 20,
-    "rating": 3,
+    
     "keywords": "gujiya",
     "title": "Mawa Gujiya",
     "options": [
@@ -393,7 +393,7 @@
   },
   {
     "id": 21,
-    "rating": 3,
+    
     "keywords": "laddu",
     "title": "Rajwadi Laddu",
     "options": [
@@ -413,7 +413,7 @@
   },
   {
     "id": 22,
-    "rating": 3,
+    
     "keywords": "barfi",
     "title": "Mohan Thal (Besan Barfi)",
     "options": [
@@ -432,7 +432,7 @@
   },
   {
     "id": 23,
-    "rating": 3,
+    
     "keywords": "laddu",
     "title": "Aata laddu",
     "options": [
@@ -451,7 +451,7 @@
   },
   {
     "id": 24,
-    "rating": 3,
+    
     "keywords": "halwa",
     "title": "Moong Dal Halwa",
     "options": [
@@ -470,7 +470,7 @@
   },
   {
     "id": 25,
-    "rating": 3,
+    
     "keywords": "kaju",
     "title": "Kajukatli",
     "options": [
@@ -489,7 +489,7 @@
   },
   {
     "id": 26,
-    "rating": 3,
+    
     "keywords": "kaju",
     "title": "Kaju Bites",
     "options": [
@@ -508,7 +508,7 @@
   },
   {
     "id": 27,
-    "rating": 3,
+    
     "keywords": "laddu",
     "title": "Khajur Dryfruit Laddu",
     "options": [
@@ -527,7 +527,7 @@
   },
   {
     "id": 28,
-    "rating": 3,
+    
     "keywords": "kaju",
     "title": "Kaju Roll",
     "options": [
@@ -547,7 +547,7 @@
   },
   {
     "id": 29,
-    "rating": 3,
+    
     "keywords": "kaju",
     "title": "KajuBunny",
     "options": [
@@ -566,7 +566,7 @@
   },
   {
     "id": 30,
-    "rating": 3,
+    
     "keywords": "cone",
     "title": "Kaju Cone",
     "options": [
@@ -585,7 +585,7 @@
   },
   {
     "id": 31,
-    "rating": 3,
+    
     "keywords": "gujiya",
     "title": "Kaju Gujiya",
     "options": [
@@ -604,7 +604,7 @@
   },
   {
     "id": 32,
-    "rating": 3,
+    
     "keywords": "kaju",
     "title": "Kaju Kamal",
     "options": [
@@ -624,7 +624,7 @@
   },
   {
     "id": 33,
-    "rating": 3,
+    
     "keywords": "sugarfree",
     "title": "Anjeer Sugarfree",
     "options": [
@@ -643,7 +643,7 @@
   },
   {
     "id": 34,
-    "rating": 3,
+    
     "keywords": "laddu",
     "title": "Dryfruit Khoya Laddu",
     "options": [
@@ -662,7 +662,7 @@
   },
   {
     "id": 35,
-    "rating": 3,
+    
     "keywords": "jamun",
     "title": "Gulab Jamun",
     "options": [
@@ -681,7 +681,7 @@
   },
   {
     "id": 36,
-    "rating": 3,
+    
     "keywords": "jamun",
     "title": "Kala Jamun",
     "options": [
@@ -701,7 +701,7 @@
   },
   {
     "id": 37,
-    "rating": 3,
+    
     "keywords": "jamun",
     "title": "chamcham",
     "options": [
@@ -721,7 +721,7 @@
   },
   {
     "id": 38,
-    "rating": 3,
+    
     "keywords": "jamun",
     "title": "rasgulla",
     "options": [
@@ -740,7 +740,7 @@
   },
   {
     "id": 39,
-    "rating": 3,
+    
     "keywords": "rasbhari",
     "title": "Strawberry Rasbhari",
     "options": [
@@ -759,7 +759,7 @@
   },
   {
     "id": 40,
-    "rating": 3,
+    
     "keywords": "rasbhari",
     "title": "Mango Rasbhari",
     "options": [
@@ -778,7 +778,7 @@
   },
   {
     "id": 41,
-    "rating": 3,
+    
     "keywords": "orange",
     "title": "Orange Rasgulla(haribhog)",
     "options": [
@@ -797,7 +797,7 @@
   },
   {
     "id": 42,
-    "rating": 3,
+    
     "keywords": "bengali",
     "title": "Pakija",
     "options": [
@@ -816,7 +816,7 @@
   },
   {
     "id": 43,
-    "rating": 3,
+    
     "keywords": "malai",
     "title": "Malai chap",
     "options": [
@@ -835,7 +835,7 @@
   },
   {
     "id": 44,
-    "rating": 3,
+    
     "keywords": "sandwich",
     "title": "Cream Sandwich",
     "options": [
@@ -855,7 +855,7 @@
   },
   {
     "id": 45,
-    "rating": 3,
+    
     "keywords": "ras",
     "title": "Rasmalai",
     "options": [
@@ -875,7 +875,7 @@
   },
   {
     "id": 46,
-    "rating": 3,
+    
     "keywords": "ras",
     "title": "Rasanguri",
     "options": [
@@ -894,7 +894,7 @@
   },
   {
     "id": 47,
-    "rating": 3,
+    
     "keywords": "laddu",
     "title": "Motichoor Laddu",
     "options": [
@@ -913,7 +913,7 @@
   },
   {
     "id": 48,
-    "rating": 3,
+    
     "keywords": "barfi",
     "title": "Khobra barfi",
     "options": [
@@ -933,7 +933,7 @@
   },
   {
     "id": 49,
-    "rating": 3,
+    
     "keywords": "pak",
     "title": "Mysore pak",
     "options": [
@@ -953,7 +953,7 @@
   },
   {
     "id": 50,
-    "rating": 3,
+    
     "keywords": "balushahi",
     "title": "Mithi balushahi",
     "options": [
@@ -973,7 +973,7 @@
   },
   {
     "id": 51,
-    "rating": 3,
+    
     "keywords": "fiki",
     "title": "Fiki balushahi",
     "options": [
@@ -993,7 +993,7 @@
   },
   {
     "id": 52,
-    "rating": 3,
+    
     "keywords": "feni",
     "title": "Fikki feni",
     "options": [
@@ -1012,7 +1012,7 @@
   },
   {
     "id": 53,
-    "rating": 3,
+    
     "keywords": "ras",
     "title": "anarase",
     "options": [
@@ -1032,7 +1032,7 @@
   },
   {
     "id": 54,
-    "rating": 3,
+    
     "keywords": "feni",
     "title": "Mithi feni",
     "options": [
@@ -1052,7 +1052,7 @@
   },
   {
     "id": 55,
-    "rating": 3,
+    
     "keywords": "laddu",
     "title": "coconut laddu",
     "options": [
@@ -1072,7 +1072,7 @@
   },
   {
     "id": 56,
-    "rating": 3,
+    
     "keywords": "modak",
     "title": "modak/only during ganapati season",
     "options": [
@@ -1092,7 +1092,7 @@
   },
   {
     "id": 57,
-    "rating": 3,
+    
     "keywords": "ghewar",
     "title": "ghewar",
     "options": [
@@ -1113,7 +1113,7 @@
 
   {
     "id": 59,
-    "rating": 3,
+    
     "keywords": "halwa",
     "title": "gajar halwa",
     "options": [
@@ -1133,7 +1133,7 @@
   },
   {
     "id": 60,
-    "rating": 3,
+    
     "keywords": "halwa",
     "title": "dudhi halwa",
     "options": [
@@ -1153,7 +1153,7 @@
   },
   {
     "id": 61,
-    "rating": 3,
+    
     "keywords": "kalakand",
     "title": "ameri kalakand",
     "options": [
@@ -1173,7 +1173,7 @@
   },
   {
     "id": 62,
-    "rating": 3,
+    
     "keywords": "peda",
     "title": "shahi peda",
     "options": [
@@ -1193,7 +1193,7 @@
   },
   {
     "id": 63,
-    "rating": 3,
+    
     "keywords": "basundi",
     "title": "basundi",
     "options": [
@@ -1213,7 +1213,7 @@
   },
   {
     "id": 64,
-    "rating": 3,
+    
     "keywords": "khoya",
     "title": "rabdi",
     "options": [
@@ -1233,7 +1233,7 @@
   },
   {
     "id": 65,
-    "rating": 3,
+    
     "keywords": "kalakand",
     "title": "anjeer dryfruit kalakand",
     "options": [
@@ -1253,7 +1253,7 @@
   },
   {
     "id": 66,
-    "rating": 3,
+    
     "keywords": "namkeen",
     "title": "pakka chivda",
     "options": [
@@ -1273,7 +1273,7 @@
   },
   {
     "id": 67,
-    "rating": 3,
+    
     "keywords": "namkeen",
     "title": "kaccha chivda",
     "options": [
@@ -1293,7 +1293,7 @@
   },
   {
     "id": 68,
-    "rating": 3,
+    
     "keywords": "namkeen",
     "title": "falhari chivda",
     "options": [
@@ -1313,7 +1313,7 @@
   },
   {
     "id": 69,
-    "rating": 3,
+    
     "keywords": "namkeen",
     "title": "navratan falhari chivda",
     "options": [
@@ -1332,7 +1332,7 @@
   },
   {
     "id": 70,
-    "rating": 3,
+    
     "keywords": "namkeen",
     "title": "mix farsan",
     "options": [
@@ -1352,7 +1352,7 @@
   },
   {
     "id": 71,
-    "rating": 3,
+    
     "keywords": "namkeen",
     "title": "kolahapuri mix",
     "options": [
@@ -1372,7 +1372,7 @@
   },
   {
     "id": 72,
-    "rating": 3,
+    
     "keywords": "namkeen",
     "title": "corn mix",
     "options": [
@@ -1392,7 +1392,7 @@
   },
   {
     "id": 73,
-    "rating": 3,
+    
     "keywords": "namkeen",
     "title": "sev mumra",
     "options": [
@@ -1412,7 +1412,7 @@
   },
   {
     "id": 74,
-    "rating": 3,
+    
     "keywords": "namkeen",
     "title": "khatta mitha",
     "options": [
@@ -1432,7 +1432,7 @@
   },
   {
     "id": 75,
-    "rating": 3,
+    
     "keywords": "namkeen",
     "title": "dryfruit falhari",
     "options": [
@@ -1452,7 +1452,7 @@
   },
   {
     "id": 76,
-    "rating": 3,
+    
     "keywords": "fafda",
     "title": "fafda",
     "options": [
@@ -1472,7 +1472,7 @@
   },
   {
     "id": 77,
-    "rating": 3,
+    
     "keywords": "wadi",
     "title": "bhakarwadi",
     "options": [
@@ -1492,7 +1492,7 @@
   },
   {
     "id": 78,
-    "rating": 3,
+    
     "keywords": "samosa",
     "title": "dry samosa",
     "type": "qty",
@@ -1509,7 +1509,7 @@
   },
   {
     "id": 79,
-    "rating": 3,
+    
     "keywords": "kachori",
     "title": "dry kachori",
     "options": [
@@ -1529,7 +1529,7 @@
   },
   {
     "id": 80,
-    "rating": 3,
+    
     "keywords": "dal",
     "title": "green moong dal",
     "options": [
@@ -1549,7 +1549,7 @@
   },
   {
     "id": 81,
-    "rating": 3,
+    
     "keywords": "dal",
     "title": "red moong dal",
     "options": [
@@ -1569,7 +1569,7 @@
   },
   {
     "id": 82,
-    "rating": 3,
+    
     "keywords": "dal",
     "title": "moong daal",
     "options": [
@@ -1589,7 +1589,7 @@
   },
   {
     "id": 83,
-    "rating": 3,
+    
     "keywords": "masala",
     "title": "masala sing",
     "options": [
@@ -1609,7 +1609,7 @@
   },
   {
     "id": 84,
-    "rating": 3,
+    
     "keywords": " matri",
     "title": "jeera matri",
     "options": [
@@ -1629,7 +1629,7 @@
   },
   {
     "id": 85,
-    "rating": 3,
+    
     "keywords": "matri",
     "title": "mithi matri",
     "options": [
@@ -1649,7 +1649,7 @@
   },
   {
     "id": 86,
-    "rating": 3,
+    
     "keywords": "chakkli",
     "title": "chakkli",
     "options": [
@@ -1669,7 +1669,7 @@
   },
   {
     "id": 87,
-    "rating": 3,
+    
     "keywords": "chips",
     "title": "banana chips",
     "options": [
@@ -1689,7 +1689,7 @@
   },
   {
     "id": 88,
-    "rating": 3,
+    
     "keywords": "chips",
     "title": "salted potato chips",
     "options": [
@@ -1709,7 +1709,7 @@
   },
   {
     "id": 89,
-    "rating": 3,
+    
     "keywords": "puri",
     "title": "khasta puri",
     "options": [
@@ -1729,7 +1729,7 @@
   },
   {
     "id": 90,
-    "rating": 3,
+    
     "keywords": "papdi",
     "title": "papdi",
     "options": [
@@ -1749,7 +1749,7 @@
   },
   {
     "id": 91,
-    "rating": 3,
+    
     "keywords": "papdi",
     "title": "masala papdi",
     "options": [
@@ -1769,7 +1769,7 @@
   },
   {
     "id": 92,
-    "rating": 3,
+    
     "keywords": "para",
     "title": "shakkar para",
     "options": [
@@ -1789,7 +1789,7 @@
   },
   {
     "id": 93,
-    "rating": 3,
+    
     "keywords": "para",
     "title": "namak para",
     "options": [
@@ -1809,7 +1809,7 @@
   },
   {
     "id": 94,
-    "rating": 3,
+    
     "keywords": "ghati",
     "title": "makhaniya ghati",
     "options": [
@@ -1829,7 +1829,7 @@
   },
   {
     "id": 95,
-    "rating": 3,
+    
     "keywords": "ghati",
     "title": "jadi ghati",
     "options": [
@@ -1849,7 +1849,7 @@
   },
   {
     "id": 96,
-    "rating": 3,
+    
     "keywords": "ghati",
     "title": "bhavnagari ghati",
     "options": [
@@ -1869,7 +1869,7 @@
   },
   {
     "id": 97,
-    "rating": 3,
+    
     "keywords": "sev",
     "title": "zero barik sev",
     "options": [
@@ -1889,7 +1889,7 @@
   },
   {
     "id": 98,
-    "rating": 3,
+    
     "keywords": "sev",
     "title": "2.No. sev",
     "options": [
@@ -1909,7 +1909,7 @@
   },
   {
     "id": 99,
-    "rating": 3,
+    
     "keywords": "sev",
     "title": "masala sev",
     "options": [
@@ -1929,7 +1929,7 @@
   },
   {
     "id": 100,
-    "rating": 3,
+    
     "keywords": "sev",
     "title": "jadi masala sev",
     "options": [
@@ -1949,7 +1949,7 @@
   },
   {
     "id": 101,
-    "rating": 3,
+    
     "keywords": "sev",
     "title": "ratlami sev",
     "options": [
@@ -1969,7 +1969,7 @@
   },
   {
     "id": 102,
-    "rating": 3,
+    
     "keywords": "dal",
     "title": "dalmoth",
     "options": [
@@ -1989,7 +1989,7 @@
   },
   {
     "id": 103,
-    "rating": 3,
+    
     "keywords": "dal",
     "title": "Channa dal",
     "options": [
@@ -2009,7 +2009,7 @@
   },
   {
     "id": 104,
-    "rating": 3,
+    
     "keywords": "namkeen",
     "title": "tasty",
     "options": [
@@ -2027,9 +2027,10 @@
 
     "image": ["/namkeen/masalasing.jpg"]
   },
+  
   {
     "id": 105,
-    "rating": 3,
+    
     "keywords": "masala",
     "title": "masala sing",
     "options": [
@@ -2049,7 +2050,7 @@
   },
   {
     "id": 106,
-    "rating": 3,
+    
     "keywords": "dhokla",
     "title": "dhokla",
     "options": [
@@ -2069,7 +2070,7 @@
   },
   {
     "id": 107,
-    "rating": 3,
+    
     "keywords": "samosa",
     "title": "samosa",
     "options": [
@@ -2089,7 +2090,7 @@
   },
   {
     "id": 108,
-    "rating": 3,
+    
     "keywords": "kachori",
     "title": "kachori",
     "options": [
@@ -2109,7 +2110,7 @@
   },
   {
     "id": 109,
-    "rating": 3,
+    
     "keywords": "sambharwadi",
     "title": "sambharwadi",
     "options": [
@@ -2129,7 +2130,7 @@
   },
   {
     "id": 110,
-    "rating": 3,
+    
     "keywords": "jalebi",
     "title": "jalebi",
     "options": [
@@ -2149,7 +2150,7 @@
   },
   {
     "id": 111,
-    "rating": 3,
+    
     "keywords": "khandavi",
     "title": "Khandavi",
     "options": [

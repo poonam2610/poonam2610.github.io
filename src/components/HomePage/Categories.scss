@@ -14,7 +14,12 @@
 }
 .card__container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  // justify-content: center;
+  align-items: center;
   padding-top: 2rem;
+  overflow-x: scroll;
 }
+// .card__container::-webkit-scrollbar {
+//   // display: none;
+//   max-height: 50%;
+// }

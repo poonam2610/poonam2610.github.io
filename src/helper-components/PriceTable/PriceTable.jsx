@@ -22,7 +22,7 @@ export default function PriceTable({ buttonTitle, handleClick }) {
               <td>Rs. {totalPrice(basket)}</td>
             </tr>
             <tr>
-              <td>Convenience Fee</td>
+              <td>Delivery charges</td>
               <td>Rs. {((totalPrice(basket) * 10) / 100).toFixed(2)}</td>
             </tr>
             <tr>
