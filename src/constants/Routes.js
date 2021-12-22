@@ -4,7 +4,6 @@ export const CHECKOUT = "/checkout";
 export const PAYMENT = "/payment";
 export const PROCEED_TO_PAY = "/proceedtopay";
 export const CATEGORY = "/category";
-export const MAINCATEGORY = "/main_category";
 export const SEARCH = "/search";
 export const PRODUCT__DETAILS = "/productdetails";
 export const YOUR_ORDERS = "/yourorders";

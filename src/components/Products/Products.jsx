@@ -8,11 +8,12 @@ import BreadCrumbs from "../../helper-components/BreadCrumbs/BreadCrumbs";
 
 function Products() {
   const { category } = useParams();
-  const { main_category } = useParams();
   const [filteredData, setFilteredData] = useState([]);
+  console.log(data)
+  console.log(category)
   useEffect(() => {
-    const newData = data.default.filter((value) =>
-      value.category.toLowerCase() === (category)
+    const newData = data.default.filter(({ categories = [] }) =>
+      categories.includes(category)
     );
     setFilteredData(newData);
   }, [category]);
@@ -26,19 +27,19 @@ function Products() {
       "linkText": `${category[0].toUpperCase() + category.slice(1)}`,
       "linkHref": `${ROUTES.CATEGORY} / ${category}`,
       "isActive": true
-    },  
+    },
   ];
 
   return (
     <>
-      <BreadCrumbs zs={breadCrumbLinks} />
+      <BreadCrumbs breadCrumbLinks={breadCrumbLinks} />
       <div className="product__container">
         <div className="cards__container">
           {filteredData.map((value, i) => {
             return <ProductsCard key={i} value={value} />;
           })}
         </div>
-         </div>
+      </div>
     </>
   );
 }

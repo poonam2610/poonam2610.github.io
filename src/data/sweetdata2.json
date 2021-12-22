@@ -1,7 +1,6 @@
 [
   {
     "id": 1,
-    
     "keywords": "kesar, peda",
     "title": "Kesar peda",
     "type": "weight",
@@ -16,14 +15,13 @@
       }
     ],
     "description": "",
-    "category": "peda",
-    "main_category": "sweets",
+    "categories": ["peda", "sweets"],
     "image": ["/peda/Kesar Peda.JPG"]
   },
 
   {
     "id": 2,
-    
+
     "keywords": "malai",
     "title": "Malai peda",
     "type": "weight",
@@ -38,14 +36,12 @@
       }
     ],
     "description": "",
-    "category": "peda",
-    "main_category": "sweets",
-
+    "categories": ["peda", "sweets"],
     "image": ["/peda/MALAI-PEDA.jpg"]
   },
   {
     "id": 3,
-    
+
     "keywords": "peda",
     "title": "Kathiyawadi peda",
     "type": "weight",
@@ -60,14 +56,13 @@
       }
     ],
     "description": "",
-    "category": "peda",
-    "main_category": "sweets",
+    "categories": ["peda", "sweets"],
     "availableSize": ["500gm", "250g"],
     "image": ["/peda.jpg"]
   },
   {
     "id": 4,
-    
+
     "keywords": "dryfruit",
     "title": "kesar dryfruit shrikhand",
     "type": "weight",
@@ -82,15 +77,13 @@
       }
     ],
     "description": "",
-    "category": "shrikhand",
-    "main_category": "sweets",
-
+    "categories": ["shrikhand", "sweets"],
     "image": ["/shrikhand/kesarshrikhand.jpeg"]
   },
 
   {
     "id": 5,
-    
+
     "keywords": "dryfruit",
     "title": "mango dryfruit shrikhand",
     "type": "weight",
@@ -105,13 +98,12 @@
       }
     ],
     "description": "",
-    "category": "shrikhand",
-    "main_category": "sweets",
+    "categories": ["shrikhand", "sweets"],
     "image": ["/shrikhand/mangoshrikhand.jpg"]
   },
   {
     "id": 6,
-    
+
     "keywords": "nuts",
     "title": "american nuts shrikhand",
     "type": "weight",
@@ -126,13 +118,12 @@
       }
     ],
     "description": "",
-    "category": "shrikhand",
-    "main_category": "sweets",
+    "categories": ["shrikhand", "sweets"],
     "image": ["/shrikhand/american.jpeg"]
   },
   {
     "id": 7,
-    
+
     "keywords": "barfi",
 
     "title": "kalakand barfi",
@@ -148,12 +139,12 @@
       }
     ],
     "description": "",
-    "category": "milksweets",
+    "categories": ["shrikhand", "sweets"],
     "image": ["/milksweets/kalakand berfi.JPG"]
   },
   {
     "id": 8,
-    
+
     "keywords": "cake",
     "title": "Milk cake",
     "type": "weight",
@@ -168,12 +159,12 @@
       }
     ],
     "description": "",
-    "category": "milksweets",
+    "categories": ["shrikhand", "sweets"],
     "image": ["/milksweets/MilkCake.JPG"]
   },
   {
     "id": 9,
-    
+
     "keywords": "barfi",
     "title": "American Nuts Barfi",
     "type": "weight",
@@ -194,7 +185,7 @@
 
   {
     "id": 10,
-    
+
     "keywords": "barfi",
     "title": "anjeer barfi",
     "options": [
@@ -208,13 +199,13 @@
       }
     ],
     "description": "",
-    "category": "milksweets",
+    "categories": ["shrikhand", "sweets"],
 
     "image": ["/milksweets/anjeer_barfi.jpg"]
   },
   {
     "id": 11,
-    
+
     "keywords": "barfi",
     "title": "Kesar Mawa Barfi",
     "options": [
@@ -228,12 +219,12 @@
       }
     ],
     "description": "",
-    "category": "milksweets",
+    "categories": ["shrikhand", "sweets"],
     "image": ["/milksweets/MilkCake.JPG"]
   },
   {
     "id": 12,
-    
+
     "keywords": "barfi",
     "title": "blueberry barfi",
     "options": [
@@ -247,12 +238,12 @@
       }
     ],
     "description": "",
-    "category": "milksweets",
+    "categories": ["shrikhand", "sweets"],
     "image": ["/milksweets/BLUE_BERRY_BARFI.jpg"]
   },
   {
     "id": 13,
-    
+
     "keywords": "barfi",
     "title": "Pista Barfi",
     "options": [
@@ -266,12 +257,12 @@
       }
     ],
     "description": "",
-    "category": "milksweets",
+    "categories": ["shrikhand", "sweets"],
     "image": ["/milksweets/Pista Barfi.jpg"]
   },
   {
     "id": 14,
-    
+
     "keywords": "puri",
     "title": "Malai Puri",
     "options": [
@@ -285,13 +276,13 @@
       }
     ],
     "description": "",
-    "category": "milksweets",
+    "categories": ["shrikhand", "sweets"],
 
     "image": ["/milksweets/MALAI PURI.jpg"]
   },
   {
     "id": 15,
-    
+
     "keywords": "puri",
     "title": "Butterscotch Puri",
     "options": [
@@ -305,13 +296,13 @@
       }
     ],
     "description": "",
-    "category": "milksweets",
+    "categories": ["shrikhand", "sweets"],
     "image": ["/milksweets/Pista Barfi.jpg"]
   },
 
   {
     "id": 16,
-    
+
     "keywords": "triveni",
     "title": "Sangam Triveni",
     "options": [
@@ -325,13 +316,13 @@
       }
     ],
     "description": "",
-    "category": "milksweets",
+    "categories": ["shrikhand", "sweets"],
 
     "image": ["/milksweets/Sangam Triveni.jpg"]
   },
   {
     "id": 17,
-    
+
     "keywords": "cake",
     "title": "Rose fruit Cake",
     "options": [
@@ -345,12 +336,12 @@
       }
     ],
     "description": "",
-    "category": "milksweets",
+    "categories": ["shrikhand", "sweets"],
     "image": ["/milksweets/Rose fruit cake.jpg"]
   },
   {
     "id": 18,
-    
+
     "keywords": "barfi",
     "title": "Chocolate Barfi",
     "options": [
@@ -364,12 +355,12 @@
       }
     ],
     "description": "",
-    "category": "milksweets",
+    "categories": ["shrikhand", "sweets"],
     "image": ["/milksweets/Pista Barfi.jpg"]
   },
   {
     "id": 19,
-    
+
     "keywords": "laddu",
     "title": "Desi ghee Besan Laddu",
     "options": [
@@ -383,12 +374,12 @@
       }
     ],
     "description": "",
-    "category": "desigheesweets",
+    "categories": ["shrikhand", "sweets"],
     "image": ["/desigheesweets/Besan Laddu.JPG"]
   },
   {
     "id": 20,
-    
+
     "keywords": "gujiya",
     "title": "Mawa Gujiya",
     "options": [
@@ -402,12 +393,12 @@
       }
     ],
     "description": "",
-    "category": "desigheesweets",
+    "categories": ["shrikhand", "sweets"],
     "image": ["/desigheesweets/Mawa Gujiya.JPG"]
   },
   {
     "id": 21,
-    
+
     "keywords": "laddu",
     "title": "Rajwadi Laddu",
     "options": [
@@ -421,13 +412,13 @@
       }
     ],
     "description": "",
-    "category": "desigheesweets",
+    "categories": ["shrikhand", "sweets"],
 
     "image": ["/desigheesweets/RAJWADI_LADDU.jpg"]
   },
   {
     "id": 22,
-    
+
     "keywords": "barfi",
     "title": "Mohan Thal (Besan Barfi)",
     "options": [
@@ -441,12 +432,12 @@
       }
     ],
     "description": "",
-    "category": "desigheesweets",
+    "categories": ["shrikhand", "sweets"],
     "image": ["/desigheesweets/mohanthal.jpg"]
   },
   {
     "id": 23,
-    
+
     "keywords": "laddu",
     "title": "Aata laddu",
     "options": [
@@ -460,12 +451,12 @@
       }
     ],
     "description": "",
-    "category": "desigheesweets",
+    "categories": ["shrikhand", "sweets"],
     "image": ["/desigheesweets/aataladdu.jpg"]
   },
   {
     "id": 24,
-    
+
     "keywords": "halwa",
     "title": "Moong Dal Halwa",
     "options": [
@@ -479,12 +470,12 @@
       }
     ],
     "description": "",
-    "category": "desigheesweets",
+    "categories": ["shrikhand", "sweets"],
     "image": ["/desigheesweets/mungdalhalwa.jpg"]
   },
   {
     "id": 25,
-    
+
     "keywords": "kaju",
     "title": "Kajukatli",
     "options": [
@@ -498,12 +489,12 @@
       }
     ],
     "description": "",
-    "category": "dryfruitsweets",
+    "categories": ["shrikhand", "sweets"],
     "image": ["/dryfruitsweets/kajukatli.jpg"]
   },
   {
     "id": 26,
-    
+
     "keywords": "kaju",
     "title": "Kaju Bites",
     "options": [
@@ -517,12 +508,12 @@
       }
     ],
     "description": "kaju bites",
-    "category": "dryfruitsweets",
+    "categories": ["shrikhand", "sweets"],
     "image": ["/dryfruitsweets/kajukatli.jpg"]
   },
   {
     "id": 27,
-    
+
     "keywords": "laddu",
     "title": "Khajur Dryfruit Laddu",
     "options": [
@@ -536,12 +527,12 @@
       }
     ],
     "description": "",
-    "category": "dryfruitsweets",
+    "categories": ["shrikhand", "sweets"],
     "image": ["/dryfruitsweets/khajur-dryfruit-laddu.jpeg"]
   },
   {
     "id": 28,
-    
+
     "keywords": "kaju",
     "title": "Kaju Roll",
     "options": [
@@ -555,13 +546,13 @@
       }
     ],
     "description": "",
-    "category": "dryfruitsweets",
+    "categories": ["shrikhand", "sweets"],
 
     "image": ["/dryfruitsweets/kaju-roll.png"]
   },
   {
     "id": 29,
-    
+
     "keywords": "kaju",
     "title": "KajuBunny",
     "options": [
@@ -575,12 +566,12 @@
       }
     ],
     "description": "",
-    "category": "dryfruitsweets",
+    "categories": ["shrikhand", "sweets"],
     "image": ["/dryfruitsweets/kajubunny.jpg"]
   },
   {
     "id": 30,
-    
+
     "keywords": "cone",
     "title": "Kaju Cone",
     "options": [
@@ -594,12 +585,12 @@
       }
     ],
     "description": "",
-    "category": "dryfruitsweets",
+    "categories": ["shrikhand", "sweets"],
     "image": ["/dryfruitsweets/KajuCone.jpg"]
   },
   {
     "id": 31,
-    
+
     "keywords": "gujiya",
     "title": "Kaju Gujiya",
     "options": [
@@ -613,12 +604,12 @@
       }
     ],
     "description": "",
-    "category": "dryfruitsweets",
+    "categories": ["shrikhand", "sweets"],
     "image": ["/dryfruitsweets/kajugujiya.jpg"]
   },
   {
     "id": 32,
-    
+
     "keywords": "kaju",
     "title": "Kaju Kamal",
     "options": [
@@ -632,13 +623,13 @@
       }
     ],
     "description": "",
-    "category": "dryfruitsweets",
+    "categories": ["shrikhand", "sweets"],
 
     "image": ["/dryfruitsweets/kajukamal.jpg"]
   },
   {
     "id": 33,
-    
+
     "keywords": "sugarfree",
     "title": "Anjeer Sugarfree",
     "options": [
@@ -652,12 +643,12 @@
       }
     ],
     "description": "",
-    "category": "dryfruitsweets",
+    "categories": ["shrikhand", "sweets"],
     "image": ["/dryfruitsweets/anjeersugarfree.jpg"]
   },
   {
     "id": 34,
-    
+
     "keywords": "laddu",
     "title": "Dryfruit Khoya Laddu",
     "options": [
@@ -671,12 +662,12 @@
       }
     ],
     "description": "",
-    "category": "cashewdryfruitsweets",
+    "categories": ["shrikhand", "sweets"],
     "image": ["/dryfruitsweets/kajukatli.jpg"]
   },
   {
     "id": 35,
-    
+
     "keywords": "jamun",
     "title": "Gulab Jamun",
     "options": [
@@ -690,12 +681,12 @@
       }
     ],
     "description": "",
-    "category": "chenasweets",
+    "categories": ["shrikhand", "sweets"],
     "image": ["/chenasweets/gulabjamun.jpg"]
   },
   {
     "id": 36,
-    
+
     "keywords": "jamun",
     "title": "Kala Jamun",
     "options": [
@@ -709,13 +700,13 @@
       }
     ],
     "description": "",
-    "category": "chenasweets",
+    "categories": ["shrikhand", "sweets"],
 
     "image": ["/chenasweets/kalajamun.jpg"]
   },
   {
     "id": 37,
-    
+
     "keywords": "jamun",
     "title": "chamcham",
     "options": [
@@ -729,13 +720,13 @@
       }
     ],
     "description": "",
-    "category": "chenasweets",
+    "categories": ["shrikhand", "sweets"],
 
     "image": ["/chenasweets/cham-cham.jpg"]
   },
   {
     "id": 38,
-    
+
     "keywords": "jamun",
     "title": "rasgulla",
     "options": [
@@ -749,12 +740,12 @@
       }
     ],
     "description": "",
-    "category": "chenasweets",
+    "categories": ["shrikhand", "sweets"],
     "image": ["/chenasweets/Rasgulla.jpg"]
   },
   {
     "id": 39,
-    
+
     "keywords": "rasbhari",
     "title": "Strawberry Rasbhari",
     "options": [
@@ -768,12 +759,12 @@
       }
     ],
     "description": "",
-    "category": "chenasweets",
+    "categories": ["shrikhand", "sweets"],
     "image": ["/chenasweets/strawberry.jpg"]
   },
   {
     "id": 40,
-    
+
     "keywords": "rasbhari",
     "title": "Mango Rasbhari",
     "options": [
@@ -787,12 +778,12 @@
       }
     ],
     "description": "",
-    "category": "chenasweets",
+    "categories": ["shrikhand", "sweets"],
     "image": ["/chenasweets/mango-rasbulla.jpg"]
   },
   {
     "id": 41,
-    
+
     "keywords": "orange",
     "title": "Orange Rasgulla(haribhog)",
     "options": [
@@ -806,12 +797,12 @@
       }
     ],
     "description": "",
-    "category": "chenasweets",
+    "categories": ["shrikhand", "sweets"],
     "image": ["/chenasweets/orange.jpeg"]
   },
   {
     "id": 42,
-    
+
     "keywords": "bengali",
     "title": "Pakija",
     "options": [
@@ -825,12 +816,12 @@
       }
     ],
     "description": "",
-    "category": "bengalisweets",
+    "categories": ["shrikhand", "sweets"],
     "image": ["/chenasweets/gulabjamun.jpg"]
   },
   {
     "id": 43,
-    
+
     "keywords": "malai",
     "title": "Malai chap",
     "options": [
@@ -844,12 +835,12 @@
       }
     ],
     "description": "",
-    "category": "bengalisweets",
+    "categories": ["shrikhand", "sweets"],
     "image": ["/bengalisweets/maliechap.jpg"]
   },
   {
     "id": 44,
-    
+
     "keywords": "sandwich",
     "title": "Cream Sandwich",
     "options": [
@@ -863,13 +854,13 @@
       }
     ],
     "description": "",
-    "category": "bengalisweets",
+    "categories": ["shrikhand", "sweets"],
 
     "image": ["/bengalisweets/cream.png"]
   },
   {
     "id": 45,
-    
+
     "keywords": "ras",
     "title": "Rasmalai",
     "options": [
@@ -883,13 +874,13 @@
       }
     ],
     "description": "",
-    "category": "bengalisweets",
+    "categories": ["shrikhand", "sweets"],
 
     "image": ["/bengalisweets/rasmalai.jpg"]
   },
   {
     "id": 46,
-    
+
     "keywords": "ras",
     "title": "Rasanguri",
     "options": [
@@ -903,12 +894,12 @@
       }
     ],
     "description": "",
-    "category": "bengalisweets",
+    "categories": ["shrikhand", "sweets"],
     "image": ["/bengalisweets/rasanguri.jpg"]
   },
   {
     "id": 47,
-    
+
     "keywords": "laddu",
     "title": "Motichoor Laddu",
     "options": [
@@ -922,12 +913,12 @@
       }
     ],
     "description": "",
-    "category": "otherproducts",
+    "categories": ["otherproducts"],
     "image": ["/otherproducts/Motichoor Laddu.JPG"]
   },
   {
     "id": 48,
-    
+
     "keywords": "barfi",
     "title": "Khobra barfi",
     "options": [
@@ -941,13 +932,13 @@
       }
     ],
     "description": "",
-    "category": "otherproducts",
+    "categories": ["otherproducts"],
 
     "image": ["/otherproducts/khobraladdu.jpg"]
   },
   {
     "id": 49,
-    
+
     "keywords": "pak",
     "title": "Mysore pak",
     "options": [
@@ -961,13 +952,13 @@
       }
     ],
     "description": "",
-    "category": "otherproducts",
+    "categories": ["otherproducts"],
 
     "image": ["/otherproducts/MysorePak.JPG"]
   },
   {
     "id": 50,
-    
+
     "keywords": "balushahi",
     "title": "Mithi balushahi",
     "options": [
@@ -981,13 +972,13 @@
       }
     ],
     "description": "",
-    "category": "otherproducts",
+    "categories": ["otherproducts"],
 
     "image": ["/otherproducts/mithibalushahi.png"]
   },
   {
     "id": 51,
-    
+
     "keywords": "fiki",
     "title": "Fiki balushahi",
     "options": [
@@ -1001,13 +992,13 @@
       }
     ],
     "description": "",
-    "category": "otherproducts",
+    "categories": ["otherproducts"],
 
     "image": ["/otherproducts/FIKI-BALUSHAHI.jpg"]
   },
   {
     "id": 52,
-    
+
     "keywords": "feni",
     "title": "Fikki feni",
     "options": [
@@ -1021,12 +1012,12 @@
       }
     ],
     "description": "",
-    "category": "otherproducts",
+    "categories": ["otherproducts"],
     "image": ["/otherproducts/FIKI-BALUSHAHI.jpg"]
   },
   {
     "id": 53,
-    
+
     "keywords": "ras",
     "title": "anarase",
     "options": [
@@ -1040,13 +1031,13 @@
       }
     ],
     "description": "",
-    "category": "seasonal/on-order basis sweets",
+    "categories": ["otherproducts"],
 
     "image": ["/seasonalsweets/anarse.jpg"]
   },
   {
     "id": 54,
-    
+
     "keywords": "feni",
     "title": "Mithi feni",
     "options": [
@@ -1060,13 +1051,13 @@
       }
     ],
     "description": "",
-    "category": "seasonal/on-order basis sweets",
+    "categories": ["otherproducts"],
 
     "image": ["/seasonalsweets/anarse.jpg"]
   },
   {
     "id": 55,
-    
+
     "keywords": "laddu",
     "title": "coconut laddu",
     "options": [
@@ -1080,13 +1071,13 @@
       }
     ],
     "description": "",
-    "category": "seasonal/on-order basis sweets",
+    "categories": ["otherproducts"],
     "availableSize": ["500gm", "250g"],
     "image": ["/seasonalsweets/khobraladdu.jpg"]
   },
   {
     "id": 56,
-    
+
     "keywords": "modak",
     "title": "modak/only during ganapati season",
     "options": [
@@ -1100,13 +1091,13 @@
       }
     ],
     "description": "",
-    "category": "seasonal/on-order basis sweets",
+    "categories": ["otherproducts"],
 
     "image": ["/seasonalsweets/khobraladdu.jpg"]
   },
   {
     "id": 57,
-    
+
     "keywords": "ghewar",
     "title": "ghewar",
     "options": [
@@ -1120,14 +1111,14 @@
       }
     ],
     "description": "",
-    "category": "seasonal/on-order basis sweets",
+    "categories": ["otherproducts"],
 
     "image": ["/seasonalsweets/ghewar.jpg"]
   },
 
   {
     "id": 59,
-    
+
     "keywords": "halwa",
     "title": "gajar halwa",
     "options": [
@@ -1141,13 +1132,13 @@
       }
     ],
     "description": "",
-    "category": "seasonal/on-order basis sweets",
+    "categories": ["otherproducts"],
 
     "image": ["/seasonalsweets/khobraladdu.jpg"]
   },
   {
     "id": 60,
-    
+
     "keywords": "halwa",
     "title": "dudhi halwa",
     "options": [
@@ -1161,13 +1152,13 @@
       }
     ],
     "description": "",
-    "category": "seasonal/on-order basis sweets",
+    "categories": ["otherproducts"],
     "availableSize": ["500gm", "250g"],
     "image": ["/seasonalsweets/dudhi-halwa.jpg"]
   },
   {
     "id": 61,
-    
+
     "keywords": "kalakand",
     "title": "ameri kalakand",
     "options": [
@@ -1181,13 +1172,13 @@
       }
     ],
     "description": "",
-    "category": "seasonal/on-order basis sweets",
+    "categories": ["otherproducts"],
     "availableSize": ["500gm", "250g"],
     "image": ["/seasonalsweets/khobraladdu.jpg"]
   },
   {
     "id": 62,
-    
+
     "keywords": "peda",
     "title": "shahi peda",
     "options": [
@@ -1201,13 +1192,13 @@
       }
     ],
     "description": "",
-    "category": "seasonal/on-order basis sweets",
+    "categories": ["otherproducts"],
     "availableSize": ["500gm", "250g"],
     "image": ["/seasonalsweets/khobraladdu.jpg"]
   },
   {
     "id": 63,
-    
+
     "keywords": "basundi",
     "title": "basundi",
     "options": [
@@ -1221,13 +1212,13 @@
       }
     ],
     "description": "",
-    "category": "seasonal/on-order basis sweets",
+    "categories": ["otherproducts"],
 
     "image": ["/seasonalsweets/khobraladdu.jpg"]
   },
   {
     "id": 64,
-    
+
     "keywords": "khoya",
     "title": "rabdi",
     "options": [
@@ -1241,13 +1232,13 @@
       }
     ],
     "description": "",
-    "category": "seasonal/on-order basis sweets",
+    "categories": ["otherproducts"],
     "availableSize": ["500gm", "250g"],
     "image": ["/seasonalsweets/khobraladdu.jpg"]
   },
   {
     "id": 65,
-    
+
     "keywords": "kalakand",
     "title": "anjeer dryfruit kalakand",
     "options": [
@@ -1261,13 +1252,13 @@
       }
     ],
     "description": "",
-    "category": "seasonal/on-order basis sweets",
+    "categories": ["otherproducts"],
 
     "image": ["/seasonalsweets/khobraladdu.jpg"]
   },
   {
     "id": 66,
-    
+
     "keywords": "namkeen",
     "title": "pakka chivda",
     "options": [
@@ -1281,13 +1272,13 @@
       }
     ],
     "description": "",
-    "category": "farsan",
+    "categories": ["otherproducts", "drysnacks"],
 
     "image": ["/farsan/PakkaCHivda.JPG"]
   },
   {
     "id": 67,
-    
+
     "keywords": "namkeen",
     "title": "kaccha chivda",
     "options": [
@@ -1301,13 +1292,13 @@
       }
     ],
     "description": "",
-    "category": "farsan",
+    "categories": ["otherproducts"],
 
     "image": ["/farsan/PakkaCHivda.JPG"]
   },
   {
     "id": 68,
-    
+
     "keywords": "namkeen",
     "title": "falhari chivda",
     "options": [
@@ -1321,13 +1312,13 @@
       }
     ],
     "description": "",
-    "category": "farsan",
+    "categories": ["otherproducts"],
 
     "image": ["/farsan/farali.jpg"]
   },
   {
     "id": 69,
-    
+
     "keywords": "namkeen",
     "title": "navratan falhari chivda",
     "options": [
@@ -1341,12 +1332,12 @@
       }
     ],
     "description": "",
-    "category": "farsan",
+    "categories": ["otherproducts"],
     "image": ["/farsan/farali.jpg"]
   },
   {
     "id": 70,
-    
+
     "keywords": "namkeen",
     "title": "mix farsan",
     "options": [
@@ -1360,13 +1351,13 @@
       }
     ],
     "description": "",
-    "category": "farsan",
+    "categories": ["otherproducts"],
 
     "image": ["/farsan/mixfarsan.jpeg"]
   },
   {
     "id": 71,
-    
+
     "keywords": "namkeen",
     "title": "kolahapuri mix",
     "options": [
@@ -1380,13 +1371,13 @@
       }
     ],
     "description": "",
-    "category": "farsan",
+    "categories": ["otherproducts"],
 
     "image": ["/farsan/kholapuri.jpg"]
   },
   {
     "id": 72,
-    
+
     "keywords": "namkeen",
     "title": "corn mix",
     "options": [
@@ -1400,13 +1391,13 @@
       }
     ],
     "description": "",
-    "category": "farsan",
+    "categories": ["otherproducts"],
 
     "image": ["/farsan/CORN_MIX.JPG"]
   },
   {
     "id": 73,
-    
+
     "keywords": "namkeen",
     "title": "sev mumra",
     "options": [
@@ -1420,13 +1411,13 @@
       }
     ],
     "description": "",
-    "category": "farsan",
+    "categories": ["otherproducts"],
 
     "image": ["/farsan/farali.jpg"]
   },
   {
     "id": 74,
-    
+
     "keywords": "namkeen",
     "title": "khatta mitha",
     "options": [
@@ -1440,13 +1431,13 @@
       }
     ],
     "description": "",
-    "category": "farsan",
+    "categories": ["otherproducts"],
 
     "image": ["/farsan/khattamittha.jpg"]
   },
   {
     "id": 75,
-    
+
     "keywords": "namkeen",
     "title": "dryfruit falhari",
     "options": [
@@ -1460,13 +1451,13 @@
       }
     ],
     "description": "",
-    "category": "farsan",
+    "categories": ["otherproducts"],
 
     "image": ["/farsan/farali.jpg"]
   },
   {
     "id": 76,
-    
+
     "keywords": "fafda",
     "title": "fafda",
     "options": [
@@ -1480,13 +1471,13 @@
       }
     ],
     "description": "",
-    "category": "drysnacks",
+    "categories": ["otherproducts"],
 
     "image": ["/drysnacks/Fafda2.JPG"]
   },
   {
     "id": 77,
-    
+
     "keywords": "wadi",
     "title": "bhakarwadi",
     "options": [
@@ -1500,13 +1491,13 @@
       }
     ],
     "description": "",
-    "category": "drysnacks",
+    "categories": ["otherproducts"],
 
     "image": ["/drysnacks/bhakarwadi.jpg"]
   },
   {
     "id": 78,
-    
+
     "keywords": "samosa",
     "title": "dry samosa",
     "type": "qty",
@@ -1517,13 +1508,13 @@
       }
     ],
     "description": "",
-    "category": "drysnacks",
+    "categories": ["otherproducts"],
 
     "image": ["/drysnacks/dry-samosa.jpg"]
   },
   {
     "id": 79,
-    
+
     "keywords": "kachori",
     "title": "dry kachori",
     "options": [
@@ -1537,13 +1528,13 @@
       }
     ],
     "description": "",
-    "category": "drysnacks",
+    "categories": ["otherproducts"],
 
     "image": ["/drysnacks/drykachori.jpg"]
   },
   {
     "id": 80,
-    
+
     "keywords": "dal",
     "title": "green moong dal",
     "options": [
@@ -1557,13 +1548,13 @@
       }
     ],
     "description": "",
-    "category": "drysnacks",
+    "categories": ["otherproducts"],
 
     "image": ["/drysnacks/drykachori.jpg"]
   },
   {
     "id": 81,
-    
+
     "keywords": "dal",
     "title": "red moong dal",
     "options": [
@@ -1577,13 +1568,13 @@
       }
     ],
     "description": "",
-    "category": "drysnacks",
+    "categories": ["otherproducts"],
 
     "image": ["/drysnacks/drykachori.jpg"]
   },
   {
     "id": 82,
-    
+
     "keywords": "dal",
     "title": "moong daal",
     "options": [
@@ -1597,13 +1588,13 @@
       }
     ],
     "description": "",
-    "category": "drysnacks",
+    "categories": ["otherproducts"],
 
     "image": ["/drysnacks/drykachori.jpg"]
   },
   {
     "id": 83,
-    
+
     "keywords": "masala",
     "title": "masala sing",
     "options": [
@@ -1617,13 +1608,13 @@
       }
     ],
     "description": "",
-    "category": "drysnacks",
+    "categories": ["otherproducts"],
 
     "image": ["/drysnacks/drykachori.jpg"]
   },
   {
     "id": 84,
-    
+
     "keywords": " matri",
     "title": "jeera matri",
     "options": [
@@ -1637,13 +1628,13 @@
       }
     ],
     "description": "",
-    "category": "drysnacks",
+    "categories": ["otherproducts"],
 
     "image": ["/drysnacks/drykachori.jpg"]
   },
   {
     "id": 85,
-    
+
     "keywords": "matri",
     "title": "mithi matri",
     "options": [
@@ -1657,13 +1648,13 @@
       }
     ],
     "description": "",
-    "category": "drysnacks",
+    "categories": ["otherproducts"],
 
     "image": ["/drysnacks/drykachori.jpg"]
   },
   {
     "id": 86,
-    
+
     "keywords": "chakkli",
     "title": "chakkli",
     "options": [
@@ -1677,13 +1668,13 @@
       }
     ],
     "description": "",
-    "category": "drysnacks",
+    "categories": ["otherproducts"],
 
     "image": ["/drysnacks/drykachori.jpg"]
   },
   {
     "id": 87,
-    
+
     "keywords": "chips",
     "title": "banana chips",
     "options": [
@@ -1697,13 +1688,13 @@
       }
     ],
     "description": "",
-    "category": "drysnacks",
+    "categories": ["otherproducts"],
 
     "image": ["/drysnacks/drykachori.jpg"]
   },
   {
     "id": 88,
-    
+
     "keywords": "chips",
     "title": "salted potato chips",
     "options": [
@@ -1717,13 +1708,13 @@
       }
     ],
     "description": "",
-    "category": "drysnacks",
+    "categories": ["otherproducts"],
 
     "image": ["/drysnacks/drykachori.jpg"]
   },
   {
     "id": 89,
-    
+
     "keywords": "puri",
     "title": "khasta puri",
     "options": [
@@ -1737,13 +1728,13 @@
       }
     ],
     "description": "",
-    "category": "drysnacks",
+    "categories": ["otherproducts"],
 
     "image": ["/drysnacks/drykachori.jpg"]
   },
   {
     "id": 90,
-    
+
     "keywords": "papdi",
     "title": "papdi",
     "options": [
@@ -1757,13 +1748,13 @@
       }
     ],
     "description": "",
-    "category": "other namkeen variety",
+    "categories": ["otherproducts"],
 
     "image": ["/drysnacks/drykachori.jpg"]
   },
   {
     "id": 91,
-    
+
     "keywords": "papdi",
     "title": "masala papdi",
     "options": [
@@ -1777,13 +1768,13 @@
       }
     ],
     "description": "",
-    "category": "othernamkeenvariety",
+    "categories": ["otherproducts"],
 
     "image": ["/drysnacks/drykachori.jpg"]
   },
   {
     "id": 92,
-    
+
     "keywords": "para",
     "title": "shakkar para",
     "options": [
@@ -1797,13 +1788,13 @@
       }
     ],
     "description": "",
-    "category": "othernamkeenvariety",
+    "categories": ["otherproducts"],
 
     "image": ["/drysnacks/drykachori.jpg"]
   },
   {
     "id": 93,
-    
+
     "keywords": "para",
     "title": "namak para",
     "options": [
@@ -1817,13 +1808,13 @@
       }
     ],
     "description": "",
-    "category": "othernamkeenvariety",
+    "categories": ["otherproducts"],
 
     "image": ["/drysnacks/namakpara.jpg"]
   },
   {
     "id": 94,
-    
+
     "keywords": "ghati",
     "title": "makhaniya ghati",
     "options": [
@@ -1837,13 +1828,13 @@
       }
     ],
     "description": "",
-    "category": "othernamkeenvariety",
+    "categories": ["otherproducts"],
     "availableSize": ["500gm", "250g"],
     "image": ["/drysnacks/drykachori.jpg"]
   },
   {
     "id": 95,
-    
+
     "keywords": "ghati",
     "title": "jadi ghati",
     "options": [
@@ -1857,13 +1848,13 @@
       }
     ],
     "description": "",
-    "category": "othernamkeenvariety",
+    "categories": ["otherproducts"],
 
     "image": ["/drysnacks/drykachori.jpg"]
   },
   {
     "id": 96,
-    
+
     "keywords": "ghati",
     "title": "bhavnagari ghati",
     "options": [
@@ -1877,13 +1868,13 @@
       }
     ],
     "description": "",
-    "category": "othernamkeenvariety",
+    "categories": ["otherproducts"],
 
     "image": ["/drysnacks/drykachori.jpg"]
   },
   {
     "id": 97,
-    
+
     "keywords": "sev",
     "title": "zero barik sev",
     "options": [
@@ -1897,13 +1888,13 @@
       }
     ],
     "description": "",
-    "category": "othernamkeenvariety",
+    "categories": ["otherproducts"],
 
     "image": ["/namkeen/ 0nobariksev.JPG"]
   },
   {
     "id": 98,
-    
+
     "keywords": "sev",
     "title": "2.No. sev",
     "options": [
@@ -1917,13 +1908,13 @@
       }
     ],
     "description": "",
-    "category": "othernamkeenvariety",
+    "categories": ["otherproducts"],
 
     "image": ["/namkeen/ 2nobariksev.jpg"]
   },
   {
     "id": 99,
-    
+
     "keywords": "sev",
     "title": "masala sev",
     "options": [
@@ -1937,13 +1928,13 @@
       }
     ],
     "description": "",
-    "category": "othernamkeenvariety",
+    "categories": ["otherproducts"],
 
     "image": ["/namkeen/masalasev.jpg"]
   },
   {
     "id": 100,
-    
+
     "keywords": "sev",
     "title": "jadi masala sev",
     "options": [
@@ -1957,13 +1948,13 @@
       }
     ],
     "description": "",
-    "category": "othernamkeenvariety",
+    "categories": ["otherproducts"],
 
     "image": ["/namkeen/jadimasalasev.JPG"]
   },
   {
     "id": 101,
-    
+
     "keywords": "sev",
     "title": "ratlami sev",
     "options": [
@@ -1977,13 +1968,13 @@
       }
     ],
     "description": "",
-    "category": "othernamkeenvariety",
+    "categories": ["otherproducts"],
 
     "image": ["/namkeen/RatlamiSev.jpg"]
   },
   {
     "id": 102,
-    
+
     "keywords": "dal",
     "title": "dalmoth",
     "options": [
@@ -1997,13 +1988,13 @@
       }
     ],
     "description": "",
-    "category": "othernamkeenvariety",
+    "categories": ["otherproducts"],
 
     "image": ["/namkeen/DalMooth.JPG"]
   },
   {
     "id": 103,
-    
+
     "keywords": "dal",
     "title": "Channa dal",
     "options": [
@@ -2017,13 +2008,13 @@
       }
     ],
     "description": "",
-    "category": "othernamkeenvariety",
+    "categories": ["otherproducts"],
 
     "image": ["/namkeen/ChannaDal.jpg"]
   },
   {
     "id": 104,
-    
+
     "keywords": "namkeen",
     "title": "tasty",
     "options": [
@@ -2037,14 +2028,14 @@
       }
     ],
     "description": "",
-    "category": "othernamkeenvariety",
+    "categories": ["otherproducts"],
 
     "image": ["/namkeen/masalasing.jpg"]
   },
-  
+
   {
     "id": 105,
-    
+
     "keywords": "masala",
     "title": "masala sing",
     "options": [
@@ -2058,13 +2049,13 @@
       }
     ],
     "description": "",
-    "category": "othernamkeenvariety",
+    "categories": ["otherproducts"],
 
     "image": ["/namkeen/masalasing.jpg"]
   },
   {
     "id": 106,
-    
+
     "keywords": "dhokla",
     "title": "dhokla",
     "options": [
@@ -2078,13 +2069,13 @@
       }
     ],
     "description": "",
-    "category": "hotsnacks",
+    "categories": ["otherproducts"],
 
     "image": ["/hotsnacks/dhokla.jpg"]
   },
   {
     "id": 107,
-    
+
     "keywords": "samosa",
     "title": "samosa",
     "options": [
@@ -2098,13 +2089,13 @@
       }
     ],
     "description": "",
-    "category": "hotsnacks",
+    "categories": ["otherproducts"],
 
     "image": ["/hotsnacks/samosa-2.jpg"]
   },
   {
     "id": 108,
-    
+
     "keywords": "kachori",
     "title": "kachori",
     "options": [
@@ -2118,13 +2109,13 @@
       }
     ],
     "description": "",
-    "category": "hotsnacks",
+    "categories": ["otherproducts"],
 
     "image": ["/hotsnacks/kachori.jpg"]
   },
   {
     "id": 109,
-    
+
     "keywords": "sambharwadi",
     "title": "sambharwadi",
     "options": [
@@ -2138,13 +2129,13 @@
       }
     ],
     "description": "",
-    "category": "hotsnacks",
+    "categories": ["otherproducts"],
 
     "image": ["/peda/Kesar Peda.JPG"]
   },
   {
     "id": 110,
-    
+
     "keywords": "jalebi",
     "title": "jalebi",
     "options": [
@@ -2158,13 +2149,13 @@
       }
     ],
     "description": "",
-    "category": "hotsnacks",
+    "categories": ["otherproducts"],
 
     "image": ["/hotsnacks/jalebi.jpg"]
   },
   {
     "id": 111,
-    
+
     "keywords": "khandavi",
     "title": "Khandavi",
     "options": [
@@ -2178,7 +2169,7 @@
       }
     ],
     "description": "",
-    "category": "hotsnacks",
+    "categories": ["otherproducts"],
 
     "image": ["/peda/Kesar Peda.JPG"]
   }
