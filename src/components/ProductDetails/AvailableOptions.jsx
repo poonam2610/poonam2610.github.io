@@ -17,9 +17,14 @@ export default function AvailableOptions({ options = [], setOption, selectedOpti
   });
 
   return (
+    
     <div className="options-container">
+    
       <h5>SELECT Weight :</h5>
+      
+
       {optionsContent}
+
     </div>
   );
 }

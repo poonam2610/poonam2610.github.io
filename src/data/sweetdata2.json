@@ -17,6 +17,7 @@
     ],
     "description": "",
     "category": "peda",
+    "main_category": "sweets",
     "image": ["/peda/Kesar Peda.JPG"]
   },
 
@@ -25,6 +26,7 @@
     
     "keywords": "malai",
     "title": "Malai peda",
+    "type": "weight",
     "options": [
       {
         "weight": "500gm",
@@ -37,6 +39,7 @@
     ],
     "description": "",
     "category": "peda",
+    "main_category": "sweets",
 
     "image": ["/peda/MALAI-PEDA.jpg"]
   },
@@ -45,6 +48,7 @@
     
     "keywords": "peda",
     "title": "Kathiyawadi peda",
+    "type": "weight",
     "options": [
       {
         "weight": "500gm",
@@ -57,6 +61,7 @@
     ],
     "description": "",
     "category": "peda",
+    "main_category": "sweets",
     "availableSize": ["500gm", "250g"],
     "image": ["/peda.jpg"]
   },
@@ -65,6 +70,7 @@
     
     "keywords": "dryfruit",
     "title": "kesar dryfruit shrikhand",
+    "type": "weight",
     "options": [
       {
         "weight": "500gm",
@@ -77,6 +83,7 @@
     ],
     "description": "",
     "category": "shrikhand",
+    "main_category": "sweets",
 
     "image": ["/shrikhand/kesarshrikhand.jpeg"]
   },
@@ -86,6 +93,7 @@
     
     "keywords": "dryfruit",
     "title": "mango dryfruit shrikhand",
+    "type": "weight",
     "options": [
       {
         "weight": "500gm",
@@ -98,6 +106,7 @@
     ],
     "description": "",
     "category": "shrikhand",
+    "main_category": "sweets",
     "image": ["/shrikhand/mangoshrikhand.jpg"]
   },
   {
@@ -105,6 +114,7 @@
     
     "keywords": "nuts",
     "title": "american nuts shrikhand",
+    "type": "weight",
     "options": [
       {
         "weight": "500gm",
@@ -117,6 +127,7 @@
     ],
     "description": "",
     "category": "shrikhand",
+    "main_category": "sweets",
     "image": ["/shrikhand/american.jpeg"]
   },
   {
@@ -125,6 +136,7 @@
     "keywords": "barfi",
 
     "title": "kalakand barfi",
+    "type": "weight",
     "options": [
       {
         "weight": "500gm",
@@ -144,6 +156,7 @@
     
     "keywords": "cake",
     "title": "Milk cake",
+    "type": "weight",
     "options": [
       {
         "weight": "500gm",
@@ -163,6 +176,7 @@
     
     "keywords": "barfi",
     "title": "American Nuts Barfi",
+    "type": "weight",
     "options": [
       {
         "weight": "500gm",

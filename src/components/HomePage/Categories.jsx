@@ -11,7 +11,7 @@ export default function Categories() {
       <h1 className="categories__text">Categories</h1>
       
       <div className="card__container">
-          <div className="cards" id="Namkeen">
+          {/* <div className="cards" id="Namkeen">
             <Link className="link__style" to={`${ROUTES.CATEGORY}${ROUTES.NAMKEEN}`}>
               <CategoriesCard image="/murmura.JPG" title="Namkeen" />
             </Link>
@@ -20,10 +20,10 @@ export default function Categories() {
             <Link className="link__style" to={`${ROUTES.CATEGORY}${ROUTES.SHRIKHAND}`}>
               <CategoriesCard image="/kesarshrikhand.jpeg" title="shrikhand" />
             </Link>
-          </div>
-          <div className="cards" id="farsan">
-            <Link className="link__style" to={`${ROUTES.CATEGORY}${ROUTES.FARSAN}`}>
-              <CategoriesCard image="/farsan.jpeg" title="Farsan" />
+          </div> */}
+          <div className="cards" id="sweets">
+            <Link className="link__style" to={`${ROUTES.MAINCATEGORY}${ROUTES.SWEETS}`}>
+              <CategoriesCard image="/farsan.jpeg" title="Sweets" />
             </Link>
           </div>
           <div className="cards" id="drySnacks">

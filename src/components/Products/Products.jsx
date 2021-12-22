@@ -8,8 +8,8 @@ import BreadCrumbs from "../../helper-components/BreadCrumbs/BreadCrumbs";
 
 function Products() {
   const { category } = useParams();
+  const { main_category } = useParams();
   const [filteredData, setFilteredData] = useState([]);
-
   useEffect(() => {
     const newData = data.default.filter((value) =>
       value.category.toLowerCase() === (category)
@@ -26,19 +26,19 @@ function Products() {
       "linkText": `${category[0].toUpperCase() + category.slice(1)}`,
       "linkHref": `${ROUTES.CATEGORY} / ${category}`,
       "isActive": true
-    }
+    },  
   ];
 
   return (
     <>
-      <BreadCrumbs breadCrumbLinks={breadCrumbLinks} />
+      <BreadCrumbs zs={breadCrumbLinks} />
       <div className="product__container">
         <div className="cards__container">
           {filteredData.map((value, i) => {
             return <ProductsCard key={i} value={value} />;
           })}
         </div>
-      </div>
+         </div>
     </>
   );
 }

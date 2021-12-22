@@ -1,5 +1,5 @@
 .product__card {
-  width: 26%;
+  width: 19%;
   margin: 3%;
   padding: 10px;
   border-top-left-radius: 10px;
@@ -16,10 +16,10 @@
   }
 
   .product__cover {
-    width: 100%;
-    min-height: 240px;
-    max-height: 240px;
-    border-radius: 2px;
+    width: 160px;
+    min-height: 200px;
+    max-height: 200px;
+    border: none;
     margin-bottom: 20px;
 
     img {
@@ -33,6 +33,7 @@
     font-size: 16px;
     font-weight: 500;
     flex-basis: 20%;
+    text-align: center;
   }
   .product__rating {
     font-size: 12px;

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
 function ProductsCard({ value }) {
-  const { id, image, title, options: [option = { price: 0 }] = [], category } = value;
+  const { id, image, title, options: [option = { price: 0 }] = [], category, } = value;
 
   return (<>
     <div className="product__card">

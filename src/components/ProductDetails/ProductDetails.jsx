@@ -140,7 +140,9 @@ function ProductDetails() {
             </div> */}
             <p className="price">{`Rs. ${option.price}`}</p>
           </div>
+          <div>
           <AvailableOptions options={product?.options} setOption={setOption} selectedOption={option} />
+          </div>
           <Quantity
             itemQuantity={itemQuantity}
             setItemQuantity={setItemQuantity}
