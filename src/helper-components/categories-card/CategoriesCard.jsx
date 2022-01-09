@@ -6,9 +6,7 @@ function CategoriesCard({ image, title }) {
   return (
     <div className="card__image" >   
       <img src={image} alt="category-card"/>
-      <div className="card__title">
-        <span className="title">{title}</span>
-      </div>
+     
     </div>
   );
 }

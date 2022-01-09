@@ -16,7 +16,7 @@
     ],
     "description": "",
     "categories": ["peda", "sweets"],
-    "image": ["/peda/Kesar Peda.JPG"]
+    "image": ["/peda/KesarPeda.JPG"]
   },
 
   {
@@ -139,7 +139,7 @@
       }
     ],
     "description": "",
-    "categories": ["shrikhand", "sweets"],
+    "categories": ["barfi", "sweets"],
     "image": ["/milksweets/kalakand berfi.JPG"]
   },
   {
@@ -179,7 +179,7 @@
       }
     ],
     "description": "",
-    "category": "milksweets",
+    "category": ["milksweets", "sweets"],
     "image": ["MilkCake.JPG"]
   },
 
@@ -199,8 +199,7 @@
       }
     ],
     "description": "",
-    "categories": ["shrikhand", "sweets"],
-
+    "categories": ["milksweets", "sweets"],
     "image": ["/milksweets/anjeer_barfi.jpg"]
   },
   {
@@ -219,7 +218,7 @@
       }
     ],
     "description": "",
-    "categories": ["shrikhand", "sweets"],
+    "categories": ["milksweets", "sweets"],
     "image": ["/milksweets/MilkCake.JPG"]
   },
   {
@@ -238,7 +237,7 @@
       }
     ],
     "description": "",
-    "categories": ["shrikhand", "sweets"],
+    "categories": ["milksweets", "sweets"],
     "image": ["/milksweets/BLUE_BERRY_BARFI.jpg"]
   },
   {
@@ -257,7 +256,7 @@
       }
     ],
     "description": "",
-    "categories": ["shrikhand", "sweets"],
+    "categories": ["milksweets", "sweets"],
     "image": ["/milksweets/Pista Barfi.jpg"]
   },
   {
@@ -276,7 +275,7 @@
       }
     ],
     "description": "",
-    "categories": ["shrikhand", "sweets"],
+    "categories": ["milksweets", "sweets"],
 
     "image": ["/milksweets/MALAI PURI.jpg"]
   },
@@ -296,7 +295,7 @@
       }
     ],
     "description": "",
-    "categories": ["shrikhand", "sweets"],
+    "categories": ["milksweets", "sweets"],
     "image": ["/milksweets/Pista Barfi.jpg"]
   },
 
@@ -316,7 +315,7 @@
       }
     ],
     "description": "",
-    "categories": ["shrikhand", "sweets"],
+    "categories": ["milksweets", "sweets"],
 
     "image": ["/milksweets/Sangam Triveni.jpg"]
   },
@@ -336,7 +335,7 @@
       }
     ],
     "description": "",
-    "categories": ["shrikhand", "sweets"],
+    "categories": ["milksweets", "sweets"],
     "image": ["/milksweets/Rose fruit cake.jpg"]
   },
   {
@@ -355,7 +354,7 @@
       }
     ],
     "description": "",
-    "categories": ["shrikhand", "sweets"],
+    "categories": ["milksweets", "sweets"],
     "image": ["/milksweets/Pista Barfi.jpg"]
   },
   {
@@ -374,7 +373,7 @@
       }
     ],
     "description": "",
-    "categories": ["shrikhand", "sweets"],
+    "categories": ["desigheesweets", "sweets"],
     "image": ["/desigheesweets/Besan Laddu.JPG"]
   },
   {
@@ -393,7 +392,7 @@
       }
     ],
     "description": "",
-    "categories": ["shrikhand", "sweets"],
+    "categories": ["desigheesweets", "sweets"],
     "image": ["/desigheesweets/Mawa Gujiya.JPG"]
   },
   {
@@ -412,8 +411,7 @@
       }
     ],
     "description": "",
-    "categories": ["shrikhand", "sweets"],
-
+    "categories": ["desigheesweets", "sweets"],
     "image": ["/desigheesweets/RAJWADI_LADDU.jpg"]
   },
   {
@@ -432,7 +430,7 @@
       }
     ],
     "description": "",
-    "categories": ["shrikhand", "sweets"],
+    "categories": ["desigheesweets", "sweets"],
     "image": ["/desigheesweets/mohanthal.jpg"]
   },
   {
@@ -451,7 +449,7 @@
       }
     ],
     "description": "",
-    "categories": ["shrikhand", "sweets"],
+    "categories": ["desigheesweets", "sweets"],
     "image": ["/desigheesweets/aataladdu.jpg"]
   },
   {
@@ -470,7 +468,7 @@
       }
     ],
     "description": "",
-    "categories": ["shrikhand", "sweets"],
+    "categories": ["desigheesweets", "sweets"],
     "image": ["/desigheesweets/mungdalhalwa.jpg"]
   },
   {
@@ -489,7 +487,7 @@
       }
     ],
     "description": "",
-    "categories": ["shrikhand", "sweets"],
+    "categories": ["dryfruitsweets", "sweets"],
     "image": ["/dryfruitsweets/kajukatli.jpg"]
   },
   {
@@ -508,7 +506,7 @@
       }
     ],
     "description": "kaju bites",
-    "categories": ["shrikhand", "sweets"],
+    "categories": ["dryfruitsweets", "sweets"],
     "image": ["/dryfruitsweets/kajukatli.jpg"]
   },
   {
@@ -527,7 +525,7 @@
       }
     ],
     "description": "",
-    "categories": ["shrikhand", "sweets"],
+    "categories": ["dryfruitsweets", "sweets"],
     "image": ["/dryfruitsweets/khajur-dryfruit-laddu.jpeg"]
   },
   {
@@ -546,8 +544,7 @@
       }
     ],
     "description": "",
-    "categories": ["shrikhand", "sweets"],
-
+    "categories": ["dryfruitsweets", "sweets"],
     "image": ["/dryfruitsweets/kaju-roll.png"]
   },
   {
@@ -566,7 +563,7 @@
       }
     ],
     "description": "",
-    "categories": ["shrikhand", "sweets"],
+    "categories": ["dryfruitsweets", "sweets"],
     "image": ["/dryfruitsweets/kajubunny.jpg"]
   },
   {
@@ -585,7 +582,7 @@
       }
     ],
     "description": "",
-    "categories": ["shrikhand", "sweets"],
+    "categories": ["dryfruitsweets", "sweets"],
     "image": ["/dryfruitsweets/KajuCone.jpg"]
   },
   {
@@ -604,7 +601,7 @@
       }
     ],
     "description": "",
-    "categories": ["shrikhand", "sweets"],
+    "categories": ["dryfruitsweets", "sweets"],
     "image": ["/dryfruitsweets/kajugujiya.jpg"]
   },
   {
@@ -623,8 +620,7 @@
       }
     ],
     "description": "",
-    "categories": ["shrikhand", "sweets"],
-
+    "categories": ["dryfruitsweets", "sweets"],
     "image": ["/dryfruitsweets/kajukamal.jpg"]
   },
   {
@@ -643,7 +639,7 @@
       }
     ],
     "description": "",
-    "categories": ["shrikhand", "sweets"],
+    "categories": ["dryfruitsweets", "sweets"],
     "image": ["/dryfruitsweets/anjeersugarfree.jpg"]
   },
   {
@@ -662,7 +658,7 @@
       }
     ],
     "description": "",
-    "categories": ["shrikhand", "sweets"],
+    "categories": ["dryfruitsweets", "sweets"],
     "image": ["/dryfruitsweets/kajukatli.jpg"]
   },
   {
@@ -681,7 +677,7 @@
       }
     ],
     "description": "",
-    "categories": ["shrikhand", "sweets"],
+    "categories": ["chenasweets", "sweets"],
     "image": ["/chenasweets/gulabjamun.jpg"]
   },
   {
@@ -700,8 +696,7 @@
       }
     ],
     "description": "",
-    "categories": ["shrikhand", "sweets"],
-
+    "categories": ["chenasweets", "sweets"],
     "image": ["/chenasweets/kalajamun.jpg"]
   },
   {
@@ -720,8 +715,7 @@
       }
     ],
     "description": "",
-    "categories": ["shrikhand", "sweets"],
-
+    "categories": ["chenasweets", "sweets"],
     "image": ["/chenasweets/cham-cham.jpg"]
   },
   {
@@ -740,7 +734,7 @@
       }
     ],
     "description": "",
-    "categories": ["shrikhand", "sweets"],
+    "categories": ["chenasweets", "sweets"],
     "image": ["/chenasweets/Rasgulla.jpg"]
   },
   {
@@ -759,7 +753,7 @@
       }
     ],
     "description": "",
-    "categories": ["shrikhand", "sweets"],
+    "categories": ["chenasweets", "sweets"],
     "image": ["/chenasweets/strawberry.jpg"]
   },
   {
@@ -778,7 +772,7 @@
       }
     ],
     "description": "",
-    "categories": ["shrikhand", "sweets"],
+    "categories": ["chenasweets", "sweets"],
     "image": ["/chenasweets/mango-rasbulla.jpg"]
   },
   {
@@ -797,7 +791,7 @@
       }
     ],
     "description": "",
-    "categories": ["shrikhand", "sweets"],
+    "categories": ["chenasweets", "sweets"],
     "image": ["/chenasweets/orange.jpeg"]
   },
   {
@@ -816,7 +810,7 @@
       }
     ],
     "description": "",
-    "categories": ["shrikhand", "sweets"],
+    "categories": ["chenasweets", "sweets"],
     "image": ["/chenasweets/gulabjamun.jpg"]
   },
   {
@@ -835,7 +829,7 @@
       }
     ],
     "description": "",
-    "categories": ["shrikhand", "sweets"],
+    "categories": ["chenasweets", "sweets"],
     "image": ["/bengalisweets/maliechap.jpg"]
   },
   {
@@ -854,8 +848,7 @@
       }
     ],
     "description": "",
-    "categories": ["shrikhand", "sweets"],
-
+    "categories": ["chenasweets", "sweets"],
     "image": ["/bengalisweets/cream.png"]
   },
   {
@@ -874,9 +867,8 @@
       }
     ],
     "description": "",
-    "categories": ["shrikhand", "sweets"],
-
-    "image": ["/bengalisweets/rasmalai.jpg"]
+    "categories": ["chenasweets", "sweets"],
+   "image": ["/bengalisweets/rasmalai.jpg"]
   },
   {
     "id": 46,
@@ -894,7 +886,7 @@
       }
     ],
     "description": "",
-    "categories": ["shrikhand", "sweets"],
+    "categories": ["chenasweets", "sweets"],
     "image": ["/bengalisweets/rasanguri.jpg"]
   },
   {
@@ -913,7 +905,7 @@
       }
     ],
     "description": "",
-    "categories": ["otherproducts"],
+    "categories": ["otherproducts", "sweets"],
     "image": ["/otherproducts/Motichoor Laddu.JPG"]
   },
   {
@@ -932,8 +924,7 @@
       }
     ],
     "description": "",
-    "categories": ["otherproducts"],
-
+    "categories": ["otherproducts", "sweets"],
     "image": ["/otherproducts/khobraladdu.jpg"]
   },
   {
@@ -952,9 +943,8 @@
       }
     ],
     "description": "",
-    "categories": ["otherproducts"],
-
-    "image": ["/otherproducts/MysorePak.JPG"]
+    "categories": ["otherproducts", "sweets"],
+  "image": ["/otherproducts/MysorePak.JPG"]
   },
   {
     "id": 50,
@@ -972,9 +962,8 @@
       }
     ],
     "description": "",
-    "categories": ["otherproducts"],
-
-    "image": ["/otherproducts/mithibalushahi.png"]
+    "categories": ["otherproducts", "sweets"],
+   "image": ["/otherproducts/mithibalushahi.png"]
   },
   {
     "id": 51,
@@ -992,8 +981,7 @@
       }
     ],
     "description": "",
-    "categories": ["otherproducts"],
-
+    "categories": ["otherproducts", "sweets"],
     "image": ["/otherproducts/FIKI-BALUSHAHI.jpg"]
   },
   {
@@ -1012,7 +1000,7 @@
       }
     ],
     "description": "",
-    "categories": ["otherproducts"],
+    "categories": ["otherproducts", "sweets"],
     "image": ["/otherproducts/FIKI-BALUSHAHI.jpg"]
   },
   {
@@ -1031,8 +1019,7 @@
       }
     ],
     "description": "",
-    "categories": ["otherproducts"],
-
+    "categories": ["seasonalsweets"],
     "image": ["/seasonalsweets/anarse.jpg"]
   },
   {
@@ -1051,8 +1038,7 @@
       }
     ],
     "description": "",
-    "categories": ["otherproducts"],
-
+    "categories": ["seasonalsweets"],
     "image": ["/seasonalsweets/anarse.jpg"]
   },
   {
@@ -1071,7 +1057,7 @@
       }
     ],
     "description": "",
-    "categories": ["otherproducts"],
+    "categories": ["seasonalsweets"],
     "availableSize": ["500gm", "250g"],
     "image": ["/seasonalsweets/khobraladdu.jpg"]
   },
@@ -1091,8 +1077,7 @@
       }
     ],
     "description": "",
-    "categories": ["otherproducts"],
-
+    "categories": ["seasonalsweets"],
     "image": ["/seasonalsweets/khobraladdu.jpg"]
   },
   {
@@ -1111,8 +1096,7 @@
       }
     ],
     "description": "",
-    "categories": ["otherproducts"],
-
+    "categories": ["seasonalsweets"],
     "image": ["/seasonalsweets/ghewar.jpg"]
   },
 
@@ -1132,8 +1116,7 @@
       }
     ],
     "description": "",
-    "categories": ["otherproducts"],
-
+    "categories": ["seasonalsweets"],
     "image": ["/seasonalsweets/khobraladdu.jpg"]
   },
   {
@@ -1152,7 +1135,7 @@
       }
     ],
     "description": "",
-    "categories": ["otherproducts"],
+    "categories": ["seasonalsweets"],
     "availableSize": ["500gm", "250g"],
     "image": ["/seasonalsweets/dudhi-halwa.jpg"]
   },
@@ -1172,7 +1155,7 @@
       }
     ],
     "description": "",
-    "categories": ["otherproducts"],
+    "categories": ["seasonalsweets"],
     "availableSize": ["500gm", "250g"],
     "image": ["/seasonalsweets/khobraladdu.jpg"]
   },
@@ -1192,7 +1175,7 @@
       }
     ],
     "description": "",
-    "categories": ["otherproducts"],
+    "categories": ["peda", "sweets"],
     "availableSize": ["500gm", "250g"],
     "image": ["/seasonalsweets/khobraladdu.jpg"]
   },
@@ -1212,8 +1195,7 @@
       }
     ],
     "description": "",
-    "categories": ["otherproducts"],
-
+    "categories": ["seasonalsweets"],
     "image": ["/seasonalsweets/khobraladdu.jpg"]
   },
   {
@@ -1232,7 +1214,7 @@
       }
     ],
     "description": "",
-    "categories": ["otherproducts"],
+    "categories": ["seasonalsweets"],
     "availableSize": ["500gm", "250g"],
     "image": ["/seasonalsweets/khobraladdu.jpg"]
   },
@@ -1252,8 +1234,7 @@
       }
     ],
     "description": "",
-    "categories": ["otherproducts"],
-
+    "categories": ["seasonalsweets"],
     "image": ["/seasonalsweets/khobraladdu.jpg"]
   },
   {
@@ -1272,8 +1253,7 @@
       }
     ],
     "description": "",
-    "categories": ["otherproducts", "drysnacks"],
-
+    "categories": ["farsan", "drysnacks"],
     "image": ["/farsan/PakkaCHivda.JPG"]
   },
   {
@@ -1292,8 +1272,7 @@
       }
     ],
     "description": "",
-    "categories": ["otherproducts"],
-
+    "categories": ["farsan", "drysnacks"],
     "image": ["/farsan/PakkaCHivda.JPG"]
   },
   {
@@ -1312,8 +1291,7 @@
       }
     ],
     "description": "",
-    "categories": ["otherproducts"],
-
+    "categories": ["farsan", "drysnacks"],
     "image": ["/farsan/farali.jpg"]
   },
   {
@@ -1332,7 +1310,7 @@
       }
     ],
     "description": "",
-    "categories": ["otherproducts"],
+    "categories": ["farsan", "drysnacks"],
     "image": ["/farsan/farali.jpg"]
   },
   {
@@ -1351,8 +1329,7 @@
       }
     ],
     "description": "",
-    "categories": ["otherproducts"],
-
+    "categories": ["farsan", "drysnacks"],
     "image": ["/farsan/mixfarsan.jpeg"]
   },
   {
@@ -1371,8 +1348,7 @@
       }
     ],
     "description": "",
-    "categories": ["otherproducts"],
-
+    "categories": ["farsan", "drysnacks"],
     "image": ["/farsan/kholapuri.jpg"]
   },
   {
@@ -1391,8 +1367,7 @@
       }
     ],
     "description": "",
-    "categories": ["otherproducts"],
-
+    "categories": ["farsan", "drysnacks"],
     "image": ["/farsan/CORN_MIX.JPG"]
   },
   {
@@ -1411,8 +1386,7 @@
       }
     ],
     "description": "",
-    "categories": ["otherproducts"],
-
+    "categories": ["farsan", "drysnacks"],
     "image": ["/farsan/farali.jpg"]
   },
   {
@@ -1431,7 +1405,7 @@
       }
     ],
     "description": "",
-    "categories": ["otherproducts"],
+    "categories": ["farsan", "otherproducts"],
 
     "image": ["/farsan/khattamittha.jpg"]
   },
@@ -1451,8 +1425,7 @@
       }
     ],
     "description": "",
-    "categories": ["otherproducts"],
-
+    "categories": ["farsan", "drysnacks"],
     "image": ["/farsan/farali.jpg"]
   },
   {
@@ -1471,8 +1444,7 @@
       }
     ],
     "description": "",
-    "categories": ["otherproducts"],
-
+    "categories": ["drysnacks"],
     "image": ["/drysnacks/Fafda2.JPG"]
   },
   {
@@ -1491,9 +1463,8 @@
       }
     ],
     "description": "",
-    "categories": ["otherproducts"],
-
-    "image": ["/drysnacks/bhakarwadi.jpg"]
+    "categories": ["drysnacks"],
+   "image": ["/drysnacks/bhakarwadi.jpg"]
   },
   {
     "id": 78,
@@ -1508,8 +1479,7 @@
       }
     ],
     "description": "",
-    "categories": ["otherproducts"],
-
+    "categories": ["drysnacks"],
     "image": ["/drysnacks/dry-samosa.jpg"]
   },
   {
@@ -1528,8 +1498,7 @@
       }
     ],
     "description": "",
-    "categories": ["otherproducts"],
-
+    "categories": ["drysnacks"],
     "image": ["/drysnacks/drykachori.jpg"]
   },
   {
@@ -1548,8 +1517,7 @@
       }
     ],
     "description": "",
-    "categories": ["otherproducts"],
-
+    "categories": ["drysnacks"],
     "image": ["/drysnacks/drykachori.jpg"]
   },
   {
@@ -1568,8 +1536,7 @@
       }
     ],
     "description": "",
-    "categories": ["otherproducts"],
-
+    "categories": ["drysnacks"],
     "image": ["/drysnacks/drykachori.jpg"]
   },
   {
@@ -1588,8 +1555,7 @@
       }
     ],
     "description": "",
-    "categories": ["otherproducts"],
-
+    "categories": ["drysnacks"],
     "image": ["/drysnacks/drykachori.jpg"]
   },
   {
@@ -1608,8 +1574,7 @@
       }
     ],
     "description": "",
-    "categories": ["otherproducts"],
-
+    "categories": ["drysnacks"],
     "image": ["/drysnacks/drykachori.jpg"]
   },
   {
@@ -1628,8 +1593,7 @@
       }
     ],
     "description": "",
-    "categories": ["otherproducts"],
-
+    "categories": ["drysnacks"],
     "image": ["/drysnacks/drykachori.jpg"]
   },
   {
@@ -1648,8 +1612,7 @@
       }
     ],
     "description": "",
-    "categories": ["otherproducts"],
-
+    "categories": ["drysnacks"],
     "image": ["/drysnacks/drykachori.jpg"]
   },
   {
@@ -1668,8 +1631,7 @@
       }
     ],
     "description": "",
-    "categories": ["otherproducts"],
-
+    "categories": ["drysnacks"],
     "image": ["/drysnacks/drykachori.jpg"]
   },
   {
@@ -1688,8 +1650,7 @@
       }
     ],
     "description": "",
-    "categories": ["otherproducts"],
-
+    "categories": ["drysnacks"],
     "image": ["/drysnacks/drykachori.jpg"]
   },
   {
@@ -1708,8 +1669,7 @@
       }
     ],
     "description": "",
-    "categories": ["otherproducts"],
-
+    "categories": ["drysnacks"],
     "image": ["/drysnacks/drykachori.jpg"]
   },
   {
@@ -1728,8 +1688,7 @@
       }
     ],
     "description": "",
-    "categories": ["otherproducts"],
-
+    "categories": ["drysnacks"],
     "image": ["/drysnacks/drykachori.jpg"]
   },
   {
@@ -1748,9 +1707,8 @@
       }
     ],
     "description": "",
-    "categories": ["otherproducts"],
-
-    "image": ["/drysnacks/drykachori.jpg"]
+    "categories": [ "othernamkeen", "drysnacks"],
+   "image": ["/drysnacks/drykachori.jpg"]
   },
   {
     "id": 91,
@@ -1768,8 +1726,7 @@
       }
     ],
     "description": "",
-    "categories": ["otherproducts"],
-
+    "categories": ["othernamkeen","drysnacks"],
     "image": ["/drysnacks/drykachori.jpg"]
   },
   {
@@ -1788,8 +1745,7 @@
       }
     ],
     "description": "",
-    "categories": ["otherproducts"],
-
+    "categories": ["othernamkeen","drysnacks"],
     "image": ["/drysnacks/drykachori.jpg"]
   },
   {
@@ -1808,8 +1764,7 @@
       }
     ],
     "description": "",
-    "categories": ["otherproducts"],
-
+    "categories": ["othernamkeen","drysnacks"],
     "image": ["/drysnacks/namakpara.jpg"]
   },
   {
@@ -1828,7 +1783,7 @@
       }
     ],
     "description": "",
-    "categories": ["otherproducts"],
+    "categories": ["othernamkeen","drysnacks"],
     "availableSize": ["500gm", "250g"],
     "image": ["/drysnacks/drykachori.jpg"]
   },
@@ -1848,8 +1803,7 @@
       }
     ],
     "description": "",
-    "categories": ["otherproducts"],
-
+    "categories": ["othernamkeen","drysnacks"],
     "image": ["/drysnacks/drykachori.jpg"]
   },
   {
@@ -1868,8 +1822,7 @@
       }
     ],
     "description": "",
-    "categories": ["otherproducts"],
-
+    "categories": ["othernamkeen","drysnacks"],
     "image": ["/drysnacks/drykachori.jpg"]
   },
   {
@@ -1888,8 +1841,7 @@
       }
     ],
     "description": "",
-    "categories": ["otherproducts"],
-
+    "categories": ["othernamkeen","namkeen"],
     "image": ["/namkeen/ 0nobariksev.JPG"]
   },
   {
@@ -1908,7 +1860,7 @@
       }
     ],
     "description": "",
-    "categories": ["otherproducts"],
+    "categories": ["othernamkeen","namkeen"],
 
     "image": ["/namkeen/ 2nobariksev.jpg"]
   },
@@ -1928,8 +1880,7 @@
       }
     ],
     "description": "",
-    "categories": ["otherproducts"],
-
+    "categories": ["othernamkeen","namkeen"],
     "image": ["/namkeen/masalasev.jpg"]
   },
   {
@@ -1948,8 +1899,7 @@
       }
     ],
     "description": "",
-    "categories": ["otherproducts"],
-
+    "categories": ["othernamkeen","namkeen"],
     "image": ["/namkeen/jadimasalasev.JPG"]
   },
   {
@@ -1968,8 +1918,7 @@
       }
     ],
     "description": "",
-    "categories": ["otherproducts"],
-
+    "categories": ["othernamkeen","namkeen"],
     "image": ["/namkeen/RatlamiSev.jpg"]
   },
   {
@@ -1988,8 +1937,7 @@
       }
     ],
     "description": "",
-    "categories": ["otherproducts"],
-
+    "categories": ["othernamkeen","namkeen"],
     "image": ["/namkeen/DalMooth.JPG"]
   },
   {
@@ -2008,8 +1956,7 @@
       }
     ],
     "description": "",
-    "categories": ["otherproducts"],
-
+    "categories": ["othernamkeen","namkeen"],
     "image": ["/namkeen/ChannaDal.jpg"]
   },
   {
@@ -2028,8 +1975,7 @@
       }
     ],
     "description": "",
-    "categories": ["otherproducts"],
-
+    "categories": ["othernamkeen","namkeen"],
     "image": ["/namkeen/masalasing.jpg"]
   },
 
@@ -2049,8 +1995,7 @@
       }
     ],
     "description": "",
-    "categories": ["otherproducts"],
-
+    "categories": ["namkeen"],
     "image": ["/namkeen/masalasing.jpg"]
   },
   {
@@ -2069,8 +2014,7 @@
       }
     ],
     "description": "",
-    "categories": ["otherproducts"],
-
+    "categories": ["hotsnacks"],
     "image": ["/hotsnacks/dhokla.jpg"]
   },
   {
@@ -2089,8 +2033,7 @@
       }
     ],
     "description": "",
-    "categories": ["otherproducts"],
-
+    "categories": ["hotsnacks"],
     "image": ["/hotsnacks/samosa-2.jpg"]
   },
   {
@@ -2109,8 +2052,7 @@
       }
     ],
     "description": "",
-    "categories": ["otherproducts"],
-
+    "categories": ["hotsnacks"],
     "image": ["/hotsnacks/kachori.jpg"]
   },
   {
@@ -2129,9 +2071,8 @@
       }
     ],
     "description": "",
-    "categories": ["otherproducts"],
-
-    "image": ["/peda/Kesar Peda.JPG"]
+    "categories": ["Peda", "sweets"],
+    "image": ["/peda/KesarPeda.JPG"]
   },
   {
     "id": 110,
@@ -2150,7 +2091,6 @@
     ],
     "description": "",
     "categories": ["otherproducts"],
-
     "image": ["/hotsnacks/jalebi.jpg"]
   },
   {
@@ -2169,8 +2109,7 @@
       }
     ],
     "description": "",
-    "categories": ["otherproducts"],
-
-    "image": ["/peda/Kesar Peda.JPG"]
+   "categories": ["otherproducts"],
+  "image": ["/peda/Kesar Peda.JPG"]
   }
 ]

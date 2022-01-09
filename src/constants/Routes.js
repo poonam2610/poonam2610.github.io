@@ -25,6 +25,7 @@ export const DRY_SNACKS = "/drysnacks";
 export const NAMKEEN = "/othernamkeenvariety";
 export const HOT_SNACKS = "/hotsnacks";
 export const SWEETS = "/sweets";
+export const SNACKS ="/snacks"
 
 
 
