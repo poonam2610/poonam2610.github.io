@@ -1,16 +1,16 @@
 {
-  "name": "Little tags",
-  "short_name": "little tags",
+  "name": "chetan dhorajiwala",
+  "short_name": "chetan dhorajiwala",
   "theme_color": "",
   "background_color": "#ffffff",
-  "description": "An online clothing store",
+  "description": "An online sweet shop",
   "display": "fullscreen",
   "orientation": "portrait",
   "scope": "/",
   "start_url": "/",
   "icons": [
     {
-      "src": "./logo.svg",
+      "src": "./dhorajiwalalogo",
       "sizes": "512x512",
       "type": "image/svg"
     }

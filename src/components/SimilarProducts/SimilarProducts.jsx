@@ -1,6 +1,6 @@
 import React from "react";
 import MustHaveCard from "../../helper-components/MustHaveCard/MustHaveCard";
-import * as data from "../../data/sweetdata.json";
+import * as data from "../../data/sweetdata2.json";
 import "./SimilarProducts.scss";
 import PropTypes from "prop-types";
 

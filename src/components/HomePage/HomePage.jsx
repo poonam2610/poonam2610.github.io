@@ -7,11 +7,11 @@ import MustHaveSection from './MustHaveSection'
 
 
 function HomePage() {
-  const arrayOfImagesUrl = ["/ban2.png", "/bg-hp1.png", "/bg-hp2.png"]
+  const arrayOfImagesUrl = ["/generation.png", "/Special Namkeen.png", "/arrival.png"]
 
 
   return (
-    
+
     <div className={`content__container`}>
       <div className="carousel__container">
         <Carousel arrayOfImagesUrl={arrayOfImagesUrl} />
@@ -19,10 +19,10 @@ function HomePage() {
       <div>
         <Categories />
       </div>
-      <div>
+       <div>
         <MustHaveSection />
-      </div>
-       </div>
+      </div> 
+    </div>
   )
 }
 export default HomePage;

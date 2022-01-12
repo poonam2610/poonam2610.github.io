@@ -9,10 +9,11 @@ import BreadCrumbs from "../../helper-components/BreadCrumbs/BreadCrumbs";
 function Products() {
   const { category } = useParams();
   const [filteredData, setFilteredData] = useState([]);
-
+  console.log(data)
+  console.log(category)
   useEffect(() => {
-    const newData = data.default.filter((value) =>
-      value.category.toLowerCase() === (category)
+    const newData = data.default.filter(({ categories = [] }) =>
+      categories.includes(category)
     );
     setFilteredData(newData);
   }, [category]);
@@ -26,7 +27,7 @@ function Products() {
       "linkText": `${category[0].toUpperCase() + category.slice(1)}`,
       "linkHref": `${ROUTES.CATEGORY} / ${category}`,
       "isActive": true
-    }
+    },
   ];
 
   return (

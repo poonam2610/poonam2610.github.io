@@ -1,30 +1,40 @@
 .card__image {
   background-repeat: no-repeat;
   background-position: center;
-  height: 350px;
-  width: 300px;
-  margin-right: 5px;
+  background: #9e5406;
+  height: 370px;
+  width: 315px;
+  margin: 10px;
   max-height: 100%;
   max-width: 100%;
   position: relative;
   cursor: pointer;
   img {
     width: 100%;
-    height: 300px;
+    height: 100%;
     transition: transform 0.5s ease;
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+
+    &:hover {
+      opacity: 0.8;
+      transform: scale(1.01);
+      transition: all 0.3 ease;
+    }
   }
 
- 
   .card__title {
-    top: 0px;
+    bottom: 0px;
     position: absolute;
     width: 100%;
+
+    font-size: 20px;
     color: white;
-    padding: 11px;
+    padding: 5px;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.8);
-    .title {
-      margin-left: 5px;
-    }
+    background-color: #e81c2a;
+  }
+  .title {
+    margin-left: 5px;
   }
 }

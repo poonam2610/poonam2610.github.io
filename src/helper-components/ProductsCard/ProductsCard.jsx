@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
 function ProductsCard({ value }) {
-  const { id, image, title, prices, category } = value;
+  const { id, image, title, options: [option = { price: 0 }] = [], category, } = value;
 
   return (<>
     <div className="product__card">
@@ -13,9 +13,9 @@ function ProductsCard({ value }) {
         <img className="product__cover" src={image} alt={title} />
         <div className="product__title">{title}</div>
         {/* <div className="product__rating"><StarRating rating={rating} /></div> */}
-        <div className="product__price">Rs {prices && prices.length && prices[0].price}</div>
+        <div className="product__price">Rs {option.price}</div>
         {/* <AddToBagButton content="SEE NOW" handleClick={() => { }} /> */}
-        <div><button className="btn"> SEE NOW</button></div>
+        <div><button className="btn"> MORE DETAIL</button></div>
       </Link>
     </div>
   </>

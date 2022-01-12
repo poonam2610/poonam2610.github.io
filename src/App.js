@@ -89,15 +89,15 @@ function App() {
   }, [user]);
 
   // push to firebase database when ever basket items changes
-  useEffect(() => {
-    if (!!user) {
-      if (basket?.length > 0) {
-        userRef(user?.uid).update({
-          basket: basket,
-        });
-      }
-    }
-  }, [basket, user]);
+  // useEffect(() => {
+  //   if (!!user) {
+  //     if (basket?.length > 0) {
+  //       userRef(user?.uid).update({
+  //         basket: basket,
+  //       });
+  //     }
+  //   }
+  // }, [basket, user]);
 
   //if user comes first time
   useEffect(() => {

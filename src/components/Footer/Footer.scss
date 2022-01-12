@@ -1,10 +1,11 @@
 .footer__container {
-  background-color: var(--footer-background);
+  background-color: #e1bb65;
   width: 100%;
-  color: var(--footer-color);
+  color: white;
   display: flex;
   flex-direction: column;
   padding: 2rem;
+  margin-top: 20px;
   h2 {
     font-size: 20px;
     font-weight: 500;

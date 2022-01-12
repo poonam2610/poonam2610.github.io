@@ -8,6 +8,8 @@ import PropTypes from 'prop-types';
 export default function PriceTable({ buttonTitle, handleClick }) {
   const { basket } = useStateValue()[0];
 
+  console.log(basket)
+
   return (
     <div className="price__table">
       <h2>Price Details ({basket.length} items)</h2>
@@ -20,7 +22,7 @@ export default function PriceTable({ buttonTitle, handleClick }) {
               <td>Rs. {totalPrice(basket)}</td>
             </tr>
             <tr>
-              <td>Convenience Fee</td>
+              <td>Delivery charges</td>
               <td>Rs. {((totalPrice(basket) * 10) / 100).toFixed(2)}</td>
             </tr>
             <tr>

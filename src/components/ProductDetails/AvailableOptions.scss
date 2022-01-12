@@ -1,8 +1,8 @@
-.sizeOptions-container {
+.options-container {
   display: flex;
   align-items: center;
 }
-.size__container {
+.item-container {
   position: relative;
 }
 .size__buttons__strike__show {
@@ -55,6 +55,12 @@ h5 {
   outline: none;
   cursor: not-allowed;
 }
+
+.option-item {
+  padding: 8px;
+  margin-right: 8px;
+}
+
 .selected {
   background-color: #c91a1a;
   border-color: #c91a1a;

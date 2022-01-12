@@ -12,7 +12,7 @@ export const initialState = {
 export const totalPrice = (basket) => {
   return (
     Math.round(
-      basket?.reduce((amount, item) => item.price + amount, 0) * Math.pow(10, 2)
+      basket?.reduce((amount, item) => item.option.price + amount, 0) * Math.pow(10, 2)
     ) / Math.pow(10, 2)
   );
 };

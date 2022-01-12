@@ -1,5 +1,7 @@
 import React from "react";
 import "./Contact.scss";
+// import Map from './map'
+
 
 export default function Contact() {
   return (
@@ -77,9 +79,12 @@ export default function Contact() {
               onclick=""
              >Submit</button>
              </form>
+             {/* <Map/> */}
         </div>
       </div>
+    
     </div>
   );
 }
+
 

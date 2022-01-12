@@ -1,4 +1,4 @@
-import React , {useState}from "react";
+import React, { useState } from "react";
 import { ACTIONS } from "../../context-management/constants";
 import { useStateValue } from "../../context-management/StateProvider";
 // import StarRating from "../Star-rating/StarRating";
@@ -15,7 +15,7 @@ function CheckoutProductCard({ value, ordered }) {
   const [{ basket, user }, dispatch] = useStateValue();
   const history = useHistory();
   const [openDialogueBox, setOpenDialogueBox] = useState(false);
-  const { id, image, title, rating, price, quantity, size, category, date, paymentId } = value;
+  const { id, image, title, rating, option, quantity, size, category, date, paymentId } = value;
 
   const newDate = ordered ? JSON.stringify(new Date(JSON.parse(date))).slice(1, 11) : "";
 
@@ -26,34 +26,21 @@ function CheckoutProductCard({ value, ordered }) {
   }
 
   const handleIncreaseQuantity = () => {
-    if (category === "accessories") {
-      dispatch({
-        type: ACTIONS.ADD_TO_BASKET,
-        item: {
-          id: id,
-          image: image,
-          title: title,
-          price: price,
-          rating: rating,
-          category: category,
-          size: "M"
-        }
-      });
-    } else {
-      dispatch({
-        type: ACTIONS.ADD_TO_BASKET,
-        item: {
-          id: id,
-          image: image,
-          title: title,
-          price: price,
-          rating: rating,
-          category: category,
-          size: size
-        }
-      });
-    }
+
+    dispatch({
+      type: ACTIONS.ADD_TO_BASKET,
+      item: {
+        id: id,
+        image: image,
+        title: title,
+        option: option,
+        rating: rating,
+        category: category,
+        size: size
+      }
+    });
   }
+
   const handleDecreaseQuantity = () => {
     if (basket.length === 1) {
       dispatch({
@@ -124,7 +111,7 @@ function CheckoutProductCard({ value, ordered }) {
         </div>
         <hr />
         <div className="bottom__container">
-          {!ordered && <div onClick={()=>setOpenDialogueBox(true)} className="remove__button">Remove
+          {!ordered && <div onClick={() => setOpenDialogueBox(true)} className="remove__button">Remove
           </div>}
           {openDialogueBox && (
             <DialogueBox
@@ -141,7 +128,7 @@ function CheckoutProductCard({ value, ordered }) {
       </div>
       <div>
         <div className="product__price">
-          <h4>Rs. &nbsp;{(price * quantity).toFixed(2)}</h4>{" "}
+          <h4>Rs. &nbsp;{(+option.price * quantity).toFixed(2)}</h4>{" "}
         </div>
       </div>
     </div>

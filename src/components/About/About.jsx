@@ -7,7 +7,7 @@ import './About.scss'
             <h3 className="about-heading">About us</h3>
          <div className="about-content">
          <div className="about-sweets-img">
-             <img src="/shop.jpg"/>
+             <img src="/about.jpg"/>
              
          </div>
              <p className="about-para">Established in 1958, Pioneer of late Shri BachuBhai M.Sakriya and substantiate to highest standard
