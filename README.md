@@ -1,10 +1,5 @@
-<<<<<<< HEAD
-## Deployed Link (Netlify) - https://wardrobe-pa.netlify.app/ 
+## Deployed Link (Github Pages) - https://poonam2610.github.io/
 
-# Little Tags - An Online Clothing Store
-=======
-# Sweet shop - An Online Store for sweet things
->>>>>>> fc4f5e93c91d776ab3c7720152c6b23c64b40061
 
 
 # MVP Requirement
