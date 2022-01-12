@@ -16,7 +16,7 @@
     ],
     "description": "",
     "categories": ["peda", "sweets"],
-    "image": ["/peda/KesarPeda.JPG"]
+    "image": ["/peda/Kesar Peda.JPG"]
   },
 
   {
@@ -139,7 +139,7 @@
       }
     ],
     "description": "",
-    "categories": ["barfi", "sweets"],
+    "categories": ["milksweets", "sweets"],
     "image": ["/milksweets/kalakand berfi.JPG"]
   },
   {
@@ -159,7 +159,7 @@
       }
     ],
     "description": "",
-    "categories": ["shrikhand", "sweets"],
+    "categories": ["milkcake", "sweets"],
     "image": ["/milksweets/MilkCake.JPG"]
   },
   {
