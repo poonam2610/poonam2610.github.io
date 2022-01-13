@@ -19,10 +19,10 @@
 .about-sweets-img {
   img {
     display: block;
-    width: 250px;
+    width: 300px;
 
     border-radius: 15px;
-    margin-top: 20px;
+    margin-top: 5px;
     margin-left: 80px;
   }
 }
@@ -30,10 +30,11 @@
 .about-para {
   max-width: 700px;
   min-width: 400px;
-  font-size: 20px;
+  font-size: 22px;
   font-family: "philosopher", Helvetica, sans-serif;
   display: block;
-  margin-top: -30px;
+  margin-top: -50px;
+  line-height: 30px;
 
   color: #c42424;
 }
