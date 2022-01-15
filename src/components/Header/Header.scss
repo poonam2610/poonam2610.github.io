@@ -237,9 +237,11 @@
 .dropdown-content li {
   list-style-type: none;
 }
+.dropdown-content li:hover {
+  background-color: #c91a1a;
+}
 .dropdown:hover .category-content {
   display: block;
- 
 }
 
 .dropdown:hover .category-btn {
@@ -253,5 +255,4 @@
   color: white;
   cursor: pointer;
   font-family: "philosopher", Helvetica, sans-serif;
-  
 }

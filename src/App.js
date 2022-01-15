@@ -21,10 +21,13 @@ import SearchProducts from "./components/SearchProducts/SearchProducts";
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
 
+
 function App() {
   const [{ basket, user }, dispatch] = useStateValue();
   const [isOpenModal, setIsOpenModal] = useState(false);
-
+  useEffect(() => {
+    document.title = 'ChetanDhorajiwalasweets';
+  }, []);
   //executes when user changes
   useEffect(() => {
     auth.onAuthStateChanged((authUser) => {

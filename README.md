@@ -1,8 +1,6 @@
 ## Deployed Link (Github Pages) - https://poonam2610.github.io/
 
-
-
-# MVP Requirement
+<!-- # MVP Requirement
 
 1. Show Login/Signup popup to user when he/she lands on the site for first time.
 2. User should be able to Login / Signup from the header button.
@@ -20,4 +18,4 @@
 12. User should be able to see their order history.
 13. User should be able to set their default shipping address.
 
-
+ -->

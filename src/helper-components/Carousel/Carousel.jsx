@@ -15,7 +15,6 @@ export default function Carousel({ arrayOfImagesUrl }) {
   const nextSlide = () => {
  
     if (current !== length) {
-      console.log("i entered if")
       setCurrent(current + 1);
       setTranslateValue(-current * 100);
     }
@@ -29,7 +28,6 @@ export default function Carousel({ arrayOfImagesUrl }) {
   };
 
   useEffect(() => {
-    console.log("why why why")
     let interval = setInterval(() => {
       nextSlide();
     }, 2000);
@@ -44,8 +42,8 @@ export default function Carousel({ arrayOfImagesUrl }) {
       >
         {imagesArr}
       </div>
-      <FaChevronLeft className="left-arrow" onClick={prevSlide} />
-      <FaChevronRight className="right-arrow" onClick={nextSlide} />
+      {/* <FaChevronLeft className="left-arrow" onClick={prevSlide} />
+      <FaChevronRight className="right-arrow" onClick={nextSlide} /> */}
     </div>
   );
 }

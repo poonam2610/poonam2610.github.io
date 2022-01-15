@@ -7,7 +7,7 @@ import MustHaveSection from './MustHaveSection'
 
 
 function HomePage() {
-  const arrayOfImagesUrl = ["/generation.png", "/Special Namkeen.png", "/arrival.png"]
+  const arrayOfImagesUrl = ["/generation.png", "/arrival.png"]
 
 
   return (

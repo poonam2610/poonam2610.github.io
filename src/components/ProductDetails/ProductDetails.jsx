@@ -12,11 +12,11 @@ import Modal from "../Modal/Modal";
 import Carousel from "../../helper-components/Carousel/Carousel";
 import SimilarProducts from "../SimilarProducts/SimilarProducts";
 import AlertBox from "../../helper-components/AlertBox/AlertBox";
-import BreadCrumbs from "../../helper-components/BreadCrumbs/BreadCrumbs";
+// import BreadCrumbs from "../../helper-components/BreadCrumbs/BreadCrumbs";
 import { _isEmpty } from '../../utils.js'
 
 function ProductDetails() {
-  const [product, setProduct] = useState({ image: ["", ""] });
+  const [product, setProduct] = useState({ image: [""] });
   const [option, setOption] = useState({});
   const [errorMessage, setErrorMessage] = useState("");
   const { category, id } = useParams();
@@ -109,7 +109,7 @@ function ProductDetails() {
 
   console.log(product)
   return (<>
-    <BreadCrumbs breadCrumbLinks={breadCrumbLinks} />
+    {/* <BreadCrumbs breadCrumbLinks={breadCrumbLinks} /> */}
     <div className="content__product__detail__page">
       <div
         className="alertbox"
