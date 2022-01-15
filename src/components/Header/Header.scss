@@ -143,12 +143,14 @@
   margin: auto;
   margin-top: -50px;
   margin-bottom: 20px;
+  font-family: "philosopher", Helvetica, sans-serif;
 }
 
 .header-links li a {
   color: white;
-  font-size: 18px;
+  font-size: 20px;
   text-decoration: none;
+  cursor: pointer;
 }
 // .nav-list ul li a {
 //   display: block;
@@ -229,6 +231,7 @@
   padding: 6px 16px;
   text-decoration: none;
   display: block;
+  cursor: pointer;
 }
 
 .dropdown-content li {
@@ -236,6 +239,7 @@
 }
 .dropdown:hover .category-content {
   display: block;
+ 
 }
 
 .dropdown:hover .category-btn {
@@ -244,7 +248,10 @@
 
 .category-btn {
   background-color: transparent;
-  font-size: 18px;
+  font-size: 20px;
   border: 0;
   color: white;
+  cursor: pointer;
+  font-family: "philosopher", Helvetica, sans-serif;
+  
 }

@@ -75,7 +75,7 @@ function Header() {
           )}
           <Link to={ROUTES.HOME} className="link__style">
             <div className="header__heading">
-              <img src="/dhorajiwalalogo" className="dhorajiwala-logo"/>
+              <img src="/dhorajiwalalogo.png" className="dhorajiwala-logo"/>
             </div>
           </Link>
         </div>
