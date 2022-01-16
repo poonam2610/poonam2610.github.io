@@ -1,4 +1,4 @@
-import { clearFirebaseBasket } from "../firebase-config/firebase";
+import { clearFirebaseBasket, userRef } from "../firebase-config/firebase";
 import { ACTIONS } from "./constants";
 
 export const initialState = {
@@ -130,6 +130,7 @@ const reducer = (state, action) => {
       let newYourOrders = [...state.yourOrders];
       if (action.items.length > 0) {
         action.items?.forEach((element) => {
+
           newYourOrders.push(element);
         });
       } else {

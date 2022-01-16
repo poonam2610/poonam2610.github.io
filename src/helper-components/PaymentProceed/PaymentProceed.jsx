@@ -1,3 +1,4 @@
+import firebase from "firebase";
 import { useEffect, useState } from "react";
 import { useHistory } from "react-router";
 import { ACTIONS } from "../../context-management/constants";
@@ -39,6 +40,14 @@ function PaymentProceed({ currentSelection, setIsRazorPayOpen }) {
         type: ACTIONS.ADD_TO_ORDER_HISTORY,
         items: basketWithTimeStamp,
       });
+      const ordersData = {
+        items: basketWithTimeStamp,
+        address: address.filter((address) => address.id === currentSelection)[0]
+      }
+      console.log("== 467 ==", ordersData)
+      userRef(user?.uid).update({
+        orders: firebase.firestore.FieldValue.arrayUnion(JSON.stringify(ordersData))
+      });
       userRef(user?.uid).update({
         basket: [],
       });
@@ -50,7 +59,7 @@ function PaymentProceed({ currentSelection, setIsRazorPayOpen }) {
   };
 
   const options = {
-     key: "rzp_test_gGi7fCI7N1rPv5",
+    key: "rzp_test_gGi7fCI7N1rPv5",
     amount: parseInt(((totalPrice(basket) + (totalPrice(basket) * 10) / 100).toFixed(2)) * 100), //  = INR 1
     currency: "INR",
     name: "Chetan Dhorajiwala",
@@ -81,8 +90,9 @@ function PaymentProceed({ currentSelection, setIsRazorPayOpen }) {
     });
     openPayModal();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [currentSelection]);
 
+  console.log("selected Address: ", selectedAddress)
   return (
     <>
       {showThankYouDialogue && (
