@@ -1,5 +1,5 @@
 import React, { useState,useEffect } from "react";
-// import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import "./Carousel.scss";
 import PropTypes from "prop-types";
 
@@ -42,8 +42,8 @@ export default function Carousel({ arrayOfImagesUrl }) {
       >
         {imagesArr}
       </div>
-      {/* <FaChevronLeft className="left-arrow" onClick={prevSlide} />
-      <FaChevronRight className="right-arrow" onClick={nextSlide} /> */}
+      <FaChevronLeft className="left-arrow" onClick={prevSlide} />
+      <FaChevronRight className="right-arrow" onClick={nextSlide} />
     </div>
   );
 }

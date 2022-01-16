@@ -4,7 +4,7 @@ import CategoriesCard from '../../helper-components/categories-card/CategoriesCa
 import * as ROUTES from "../../constants/Routes";
 import { Link } from 'react-router-dom';
 
-let timer;
+
 export default function Categories() {
   return (
     <div className="categories__container">
