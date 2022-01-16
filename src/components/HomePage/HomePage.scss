@@ -3,8 +3,10 @@
 }
 
 .carousel__container {
-  height: 400px;
-  width: 100%;
+  .image {
+    height: 400px;
+    width: 100%;
+  }
   overflow: hidden;
 }
 .inDemand__text {

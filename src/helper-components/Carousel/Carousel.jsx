@@ -1,5 +1,5 @@
 import React, { useState,useEffect } from "react";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+// import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import "./Carousel.scss";
 import PropTypes from "prop-types";
 
@@ -30,7 +30,7 @@ export default function Carousel({ arrayOfImagesUrl }) {
   useEffect(() => {
     let interval = setInterval(() => {
       nextSlide();
-    }, 2000);
+    }, 6000);
     return ()=>(clearInterval(interval));
   }, []);
 

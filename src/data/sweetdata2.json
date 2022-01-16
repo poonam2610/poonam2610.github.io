@@ -2,7 +2,7 @@
   {
     "id": 1,
     "keywords": "kesar, peda",
-    "title": "Kesar peda",
+    "title": "Kesar Peda",
     "type": "weight",
     "options": [
       {
@@ -23,7 +23,7 @@
     "id": 2,
 
     "keywords": "malai",
-    "title": "Malai peda",
+    "title": "Malai Peda",
     "type": "weight",
     "options": [
       {
@@ -43,7 +43,7 @@
     "id": 3,
 
     "keywords": "peda",
-    "title": "Kathiyawadi peda",
+    "title": "Kathiyawadi Peda",
     "type": "weight",
     "options": [
       {
@@ -64,7 +64,7 @@
     "id": 4,
 
     "keywords": "dryfruit",
-    "title": "kesar dryfruit shrikhand",
+    "title": "Kesar Dryfruit Shrikhand",
     "type": "weight",
     "options": [
       {
@@ -85,7 +85,7 @@
     "id": 5,
 
     "keywords": "dryfruit",
-    "title": "mango dryfruit shrikhand",
+    "title": "Mango Dryfruit Shrikhand",
     "type": "weight",
     "options": [
       {
@@ -105,7 +105,7 @@
     "id": 6,
 
     "keywords": "nuts",
-    "title": "american nuts shrikhand",
+    "title": "American Nuts Shrikhand",
     "type": "weight",
     "options": [
       {
@@ -126,7 +126,7 @@
 
     "keywords": "barfi",
 
-    "title": "kalakand barfi",
+    "title": "Kalakand Barfi",
     "type": "weight",
     "options": [
       {
@@ -146,7 +146,7 @@
     "id": 8,
 
     "keywords": "cake",
-    "title": "Milk cake",
+    "title": "Milk Cake",
     "type": "weight",
     "options": [
       {
@@ -187,7 +187,7 @@
     "id": 10,
 
     "keywords": "barfi",
-    "title": "anjeer barfi",
+    "title": "Anjeer Barfi",
     "options": [
       {
         "weight": "500gm",
@@ -225,7 +225,7 @@
     "id": 12,
 
     "keywords": "barfi",
-    "title": "blueberry barfi",
+    "title": "Blueberry Barfi",
     "options": [
       {
         "weight": "500gm",
@@ -323,7 +323,7 @@
     "id": 17,
 
     "keywords": "cake",
-    "title": "Rose fruit Cake",
+    "title": "Rose Fruit Cake",
     "options": [
       {
         "weight": "500gm",
@@ -361,7 +361,7 @@
     "id": 19,
 
     "keywords": "laddu",
-    "title": "Desi ghee Besan Laddu",
+    "title": "Desi Ghee Besan Laddu",
     "options": [
       {
         "weight": "500gm",
@@ -703,7 +703,7 @@
     "id": 37,
 
     "keywords": "jamun",
-    "title": "chamcham",
+    "title": "Chamcham",
     "options": [
       {
         "weight": "500gm",
@@ -722,7 +722,7 @@
     "id": 38,
 
     "keywords": "jamun",
-    "title": "rasgulla",
+    "title": "Rasgulla",
     "options": [
       {
         "weight": "500gm",
@@ -1241,34 +1241,36 @@
     "id": 66,
 
     "keywords": "namkeen",
-    "title": "pakka chivda",
+    "title": "Pakka Chivda",
+    "type": "weight",
     "options": [
       {
         "weight": "500gm",
-        "price": 160
+        "price": 140
       },
       {
         "weight": "250gm",
-        "price": 80
+        "price": 70
       }
     ],
     "description": "",
-    "categories": ["farsan", "drysnacks"],
+    "categories": ["farsan"],
     "image": ["/farsan/PakkaCHivda.JPG"]
   },
   {
     "id": 67,
 
     "keywords": "namkeen",
-    "title": "kaccha chivda",
+    "title": "Kaccha Chivda",
+    "type": "weight",
     "options": [
       {
         "weight": "500gm",
-        "price": 160
+        "price": 140
       },
       {
         "weight": "250gm",
-        "price": 80
+        "price": 70
       }
     ],
     "description": "",
@@ -1279,133 +1281,139 @@
     "id": 68,
 
     "keywords": "namkeen",
-    "title": "falhari chivda",
+    "title": "Falhari Chivda",
+    "type": "weight",
     "options": [
       {
         "weight": "500gm",
-        "price": 160
+        "price": 140
       },
       {
         "weight": "250gm",
-        "price": 80
+        "price": 70
       }
     ],
     "description": "",
-    "categories": ["farsan", "drysnacks"],
+    "categories": ["farsan"],
     "image": ["/farsan/farali.jpg"]
   },
   {
     "id": 69,
 
     "keywords": "namkeen",
-    "title": "navratan falhari chivda",
+    "title": "Navratan Chivda",
+    "type": "weight",
     "options": [
       {
         "weight": "500gm",
-        "price": 160
+        "price": 180
       },
       {
         "weight": "250gm",
-        "price": 80
+        "price": 90
       }
     ],
     "description": "",
-    "categories": ["farsan", "drysnacks"],
+    "categories": ["farsan"],
     "image": ["/farsan/farali.jpg"]
   },
   {
     "id": 70,
 
     "keywords": "namkeen",
-    "title": "mix farsan",
+    "title": "Mix Farsan",
+    "type": "weight",
     "options": [
       {
         "weight": "500gm",
-        "price": 160
+        "price": 140
       },
       {
         "weight": "250gm",
-        "price": 80
+        "price": 70
       }
     ],
     "description": "",
-    "categories": ["farsan", "drysnacks"],
+    "categories": ["farsan"],
     "image": ["/farsan/mixfarsan.jpeg"]
   },
   {
     "id": 71,
 
     "keywords": "namkeen",
-    "title": "kolahapuri mix",
+    "title": "Kolahapuri Mix",
+    "type": "weight",
     "options": [
       {
         "weight": "500gm",
-        "price": 160
+        "price": 140
       },
       {
         "weight": "250gm",
-        "price": 80
+        "price": 70
       }
     ],
     "description": "",
-    "categories": ["farsan", "drysnacks"],
+    "categories": ["farsan"],
     "image": ["/farsan/kholapuri.jpg"]
   },
   {
     "id": 72,
 
     "keywords": "namkeen",
-    "title": "corn mix",
+    "title": "Corn Mix",
+    "type": "weight",
     "options": [
       {
         "weight": "500gm",
-        "price": 160
+        "price": 120
       },
       {
         "weight": "250gm",
-        "price": 80
+        "price": 60
       }
     ],
     "description": "",
-    "categories": ["farsan", "drysnacks"],
+    "categories": ["farsan"],
     "image": ["/farsan/CORN_MIX.JPG"]
   },
   {
     "id": 73,
 
     "keywords": "namkeen",
-    "title": "sev mumra",
+    "title": "Sev Mumra",
     "options": [
       {
         "weight": "500gm",
-        "price": 160
+        "price": 120
       },
       {
         "weight": "250gm",
-        "price": 80
+        "price": 60
       }
     ],
     "description": "",
-    "categories": ["farsan", "drysnacks"],
+    "categories": ["farsan"],
     "image": ["/farsan/farali.jpg"]
   },
   {
     "id": 74,
 
     "keywords": "namkeen",
-    "title": "khatta mitha",
+    "title": "Khatta Mitha",
+    "type": "weight",
     "options": [
       {
         "weight": "500gm",
-        "price": 160
+        "price": 140
       },
       {
         "weight": "250gm",
-        "price": 80
+        "price": 70
       }
     ],
     "description": "",
-    "categories": ["farsan", "otherproducts"],
+    "categories": ["farsan"],
 
     "image": ["/farsan/khattamittha.jpg"]
   },
@@ -1413,34 +1421,36 @@
     "id": 75,
 
     "keywords": "namkeen",
-    "title": "dryfruit falhari",
+    "title": "Dryfruit Falhari",
+    "type": "weight",
     "options": [
       {
         "weight": "500gm",
-        "price": 160
+        "price": 180
       },
       {
         "weight": "250gm",
-        "price": 80
+        "price": 90
       }
     ],
     "description": "",
-    "categories": ["farsan", "drysnacks"],
+    "categories": ["farsan"],
     "image": ["/farsan/farali.jpg"]
   },
   {
     "id": 76,
 
     "keywords": "fafda",
-    "title": "fafda",
+    "title": "Fafda",
+    "type": "weight",
     "options": [
       {
         "weight": "500gm",
-        "price": 160
+        "price": 200
       },
       {
         "weight": "250gm",
-        "price": 80
+        "price": 100
       }
     ],
     "description": "",
@@ -1451,15 +1461,16 @@
     "id": 77,
 
     "keywords": "wadi",
-    "title": "bhakarwadi",
+    "title": "Bhakarwadi",
+    "type": "weight",
     "options": [
       {
         "weight": "500gm",
-        "price": 160
+        "price": 140
       },
       {
         "weight": "250gm",
-        "price": 80
+        "price": 70
       }
     ],
     "description": "",
@@ -1470,12 +1481,16 @@
     "id": 78,
 
     "keywords": "samosa",
-    "title": "dry samosa",
-    "type": "qty",
+    "title": "Dry samosa ",
+    "type": "weight",
     "options": [
       {
-        "qty": 1,
-        "price": 16
+        "weight": "500gm",
+        "price": 140
+      },
+      {
+        "weight": "250gm",
+        "price": 70
       }
     ],
     "description": "",
@@ -1486,15 +1501,16 @@
     "id": 79,
 
     "keywords": "kachori",
-    "title": "dry kachori",
+    "title": "Dry kachori",
+    "type": "weight",
     "options": [
       {
         "weight": "500gm",
-        "price": 160
+        "price": 140
       },
       {
         "weight": "250gm",
-        "price": 80
+        "price": 70
       }
     ],
     "description": "",
@@ -1505,15 +1521,16 @@
     "id": 80,
 
     "keywords": "dal",
-    "title": "green moong dal",
+    "title": "Green Moong Dal",
+    "type": "weight",
     "options": [
       {
         "weight": "500gm",
-        "price": 160
+        "price": 140
       },
       {
         "weight": "250gm",
-        "price": 80
+        "price": 70
       }
     ],
     "description": "",
@@ -1524,15 +1541,16 @@
     "id": 81,
 
     "keywords": "dal",
-    "title": "red moong dal",
+    "title": "Red Moong Dal",
+    "type": "weight",
     "options": [
       {
         "weight": "500gm",
-        "price": 160
+        "price": 140
       },
       {
         "weight": "250gm",
-        "price": 80
+        "price": 70
       }
     ],
     "description": "",
@@ -1543,15 +1561,16 @@
     "id": 82,
 
     "keywords": "dal",
-    "title": "moong daal",
+    "title": "Moong Dal",
+    "type": "weight",
     "options": [
       {
         "weight": "500gm",
-        "price": 160
+        "price": 140
       },
       {
         "weight": "250gm",
-        "price": 80
+        "price": 70
       }
     ],
     "description": "",
@@ -1562,15 +1581,16 @@
     "id": 83,
 
     "keywords": "masala",
-    "title": "masala sing",
+    "title": "Masala Sing",
+    "type": "weight",
     "options": [
       {
         "weight": "500gm",
-        "price": 160
+        "price": 140
       },
       {
         "weight": "250gm",
-        "price": 80
+        "price": 70
       }
     ],
     "description": "",
@@ -1581,15 +1601,16 @@
     "id": 84,
 
     "keywords": " matri",
-    "title": "jeera matri",
+    "title": "Jeera Matri",
+    "type": "weight",
     "options": [
       {
         "weight": "500gm",
-        "price": 160
+        "price": 140
       },
       {
         "weight": "250gm",
-        "price": 80
+        "price": 70
       }
     ],
     "description": "",
@@ -1600,15 +1621,16 @@
     "id": 85,
 
     "keywords": "matri",
-    "title": "mithi matri",
+    "title": "Methi Matri",
+    "type": "weight",
     "options": [
       {
         "weight": "500gm",
-        "price": 160
+        "price": 140
       },
       {
         "weight": "250gm",
-        "price": 80
+        "price": 70
       }
     ],
     "description": "",
@@ -1619,15 +1641,16 @@
     "id": 86,
 
     "keywords": "chakkli",
-    "title": "chakkli",
+    "title": "Chakkli",
+    "type": "weight",
     "options": [
       {
         "weight": "500gm",
-        "price": 160
+        "price": 140
       },
       {
         "weight": "250gm",
-        "price": 80
+        "price": 70
       }
     ],
     "description": "",
@@ -1638,15 +1661,16 @@
     "id": 87,
 
     "keywords": "chips",
-    "title": "banana chips",
+    "title": "Banana Chips",
+    "type": "weight",
     "options": [
       {
         "weight": "500gm",
-        "price": 160
+        "price": 140
       },
       {
         "weight": "250gm",
-        "price": 80
+        "price": 70
       }
     ],
     "description": "",
@@ -1657,15 +1681,16 @@
     "id": 88,
 
     "keywords": "chips",
-    "title": "salted potato chips",
+    "title": "Salted Potato Chips",
+    "type": "weight",
     "options": [
       {
         "weight": "500gm",
-        "price": 160
+        "price": 140
       },
       {
         "weight": "250gm",
-        "price": 80
+        "price": 70
       }
     ],
     "description": "",
@@ -1677,14 +1702,15 @@
 
     "keywords": "puri",
     "title": "khasta puri",
+    "type": "weight",
     "options": [
       {
         "weight": "500gm",
-        "price": 160
+        "price": 140
       },
       {
         "weight": "250gm",
-        "price": 80
+        "price": 70
       }
     ],
     "description": "",
@@ -1695,172 +1721,180 @@
     "id": 90,
 
     "keywords": "papdi",
-    "title": "papdi",
+    "title": "Papdi",
+    "type": "weight",
     "options": [
       {
         "weight": "500gm",
-        "price": 160
+        "price": 140
       },
       {
         "weight": "250gm",
-        "price": 80
+        "price": 70
       }
     ],
     "description": "",
-    "categories": [ "othernamkeen", "drysnacks"],
+    "categories": [ "othernamkeenvariety"],
    "image": ["/drysnacks/drykachori.jpg"]
   },
   {
     "id": 91,
 
     "keywords": "papdi",
-    "title": "masala papdi",
+    "title": "Masala Papdi",
+    "type": "weight",
     "options": [
       {
         "weight": "500gm",
-        "price": 160
+        "price": 140
       },
       {
         "weight": "250gm",
-        "price": 80
+        "price": 70
       }
     ],
     "description": "",
-    "categories": ["othernamkeen","drysnacks"],
+    "categories": ["othernamkeenvariety"],
     "image": ["/drysnacks/drykachori.jpg"]
   },
   {
     "id": 92,
 
     "keywords": "para",
-    "title": "shakkar para",
+    "title": "Shakkar Para",
+    "type": "weight",
     "options": [
       {
         "weight": "500gm",
-        "price": 160
+        "price": 140
       },
       {
         "weight": "250gm",
-        "price": 80
+        "price": 70
       }
     ],
     "description": "",
-    "categories": ["othernamkeen","drysnacks"],
+    "categories": ["othernamkeenvariety"],
     "image": ["/drysnacks/drykachori.jpg"]
   },
   {
     "id": 93,
 
     "keywords": "para",
-    "title": "namak para",
+    "title": "Namak Para",
+    "type": "weight",
     "options": [
       {
         "weight": "500gm",
-        "price": 160
+        "price": 140
       },
       {
         "weight": "250gm",
-        "price": 80
+        "price": 70
       }
     ],
     "description": "",
-    "categories": ["othernamkeen","drysnacks"],
+    "categories": ["othernamkeenvariety"],
     "image": ["/drysnacks/namakpara.jpg"]
   },
   {
     "id": 94,
 
     "keywords": "ghati",
-    "title": "makhaniya ghati",
+    "title": "Makhaniya Ghati",
+    "type": "weight",
     "options": [
       {
         "weight": "500gm",
-        "price": 160
+        "price": 140
       },
       {
         "weight": "250gm",
-        "price": 80
+        "price": 70
       }
     ],
     "description": "",
-    "categories": ["othernamkeen","drysnacks"],
-    "availableSize": ["500gm", "250g"],
+    "categories": ["othernamkeenvariety"],
     "image": ["/drysnacks/drykachori.jpg"]
   },
   {
     "id": 95,
 
     "keywords": "ghati",
-    "title": "jadi ghati",
+    "title": "Jadi Ghati",
+    "type": "weight",
     "options": [
       {
         "weight": "500gm",
-        "price": 160
+        "price": 140
       },
       {
         "weight": "250gm",
-        "price": 80
+        "price": 70
       }
     ],
     "description": "",
-    "categories": ["othernamkeen","drysnacks"],
+    "categories": ["othernamkeenvariety"],
     "image": ["/drysnacks/drykachori.jpg"]
   },
   {
     "id": 96,
 
     "keywords": "ghati",
-    "title": "bhavnagari ghati",
+    "title": "Bhavnagari Ghati",
+    "type": "weight",
     "options": [
       {
         "weight": "500gm",
-        "price": 160
+        "price": 140
       },
       {
         "weight": "250gm",
-        "price": 80
+        "price": 70
       }
     ],
     "description": "",
-    "categories": ["othernamkeen","drysnacks"],
+    "categories": ["othernamkeenvariety"],
     "image": ["/drysnacks/drykachori.jpg"]
   },
   {
     "id": 97,
 
     "keywords": "sev",
-    "title": "zero barik sev",
+    "title": "zero Barik Sev",
+    "type": "weight",
     "options": [
       {
         "weight": "500gm",
-        "price": 160
+        "price": 140
       },
       {
         "weight": "250gm",
-        "price": 80
+        "price": 70
       }
     ],
     "description": "",
-    "categories": ["othernamkeen","namkeen"],
+    "categories": ["othernamkeenvariety"],
     "image": ["/namkeen/ 0nobariksev.JPG"]
   },
   {
     "id": 98,
 
     "keywords": "sev",
-    "title": "2.No. sev",
+    "title": "2.No. Sev",
+    "type": "weight",
     "options": [
       {
         "weight": "500gm",
-        "price": 160
+        "price": 140
       },
       {
         "weight": "250gm",
-        "price": 80
+        "price": 70
       }
     ],
     "description": "",
-    "categories": ["othernamkeen","namkeen"],
+    "categories": ["othernamkeenvariety"],
 
     "image": ["/namkeen/ 2nobariksev.jpg"]
   },
@@ -1868,114 +1902,120 @@
     "id": 99,
 
     "keywords": "sev",
-    "title": "masala sev",
+    "title": "Masala Sev",
+    "type": "weight",
     "options": [
       {
         "weight": "500gm",
-        "price": 160
+        "price": 140
       },
       {
         "weight": "250gm",
-        "price": 80
+        "price": 70
       }
     ],
     "description": "",
-    "categories": ["othernamkeen","namkeen"],
+    "categories": ["othernamkeenvariety"],
     "image": ["/namkeen/masalasev.jpg"]
   },
   {
     "id": 100,
 
     "keywords": "sev",
-    "title": "jadi masala sev",
+    "title": "Jadi Masala sev",
+    "type": "weight",
     "options": [
       {
         "weight": "500gm",
-        "price": 160
+        "price": 140
       },
       {
         "weight": "250gm",
-        "price": 80
+        "price": 70
       }
     ],
     "description": "",
-    "categories": ["othernamkeen","namkeen"],
+    "categories": ["othernamkeenvariety"],
     "image": ["/namkeen/jadimasalasev.JPG"]
   },
   {
     "id": 101,
 
     "keywords": "sev",
-    "title": "ratlami sev",
+    "title": "Ratlami Sev",
+    "type": "weight",
     "options": [
       {
         "weight": "500gm",
-        "price": 160
+        "price": 140
       },
       {
         "weight": "250gm",
-        "price": 80
+        "price": 70
       }
     ],
     "description": "",
-    "categories": ["othernamkeen","namkeen"],
+    "categories": ["othernamkeenvariety"],
     "image": ["/namkeen/RatlamiSev.jpg"]
   },
   {
     "id": 102,
 
     "keywords": "dal",
-    "title": "dalmoth",
+    "title": "Dalmoth",
+    "type": "weight",
     "options": [
       {
         "weight": "500gm",
-        "price": 160
+        "price": 140
       },
       {
         "weight": "250gm",
-        "price": 80
+        "price": 70
       }
     ],
     "description": "",
-    "categories": ["othernamkeen","namkeen"],
+    "categories": ["othernamkeenvariety"],
     "image": ["/namkeen/DalMooth.JPG"]
   },
   {
     "id": 103,
 
     "keywords": "dal",
-    "title": "Channa dal",
+    "title": "Chana Dal",
+    "type": "weight",
     "options": [
       {
         "weight": "500gm",
-        "price": 160
+        "price": 140
       },
       {
         "weight": "250gm",
-        "price": 80
+        "price": 70
       }
     ],
     "description": "",
-    "categories": ["othernamkeen","namkeen"],
+    "categories": ["othernamkeenvariety"],
     "image": ["/namkeen/ChannaDal.jpg"]
   },
   {
     "id": 104,
 
     "keywords": "namkeen",
-    "title": "tasty",
+    "title": "Tasty",
+    "type": "weight",
     "options": [
       {
         "weight": "500gm",
-        "price": 160
+        "price": 140
       },
       {
         "weight": "250gm",
-        "price": 80
+        "price": 70
       }
     ],
     "description": "",
-    "categories": ["othernamkeen","namkeen"],
+    "categories": ["othernamkeenvariety"],
     "image": ["/namkeen/masalasing.jpg"]
   },
 
@@ -1983,95 +2023,88 @@
     "id": 105,
 
     "keywords": "masala",
-    "title": "masala sing",
+    "title": "Masala Sing",
+    "type": "weight",
     "options": [
       {
         "weight": "500gm",
-        "price": 160
+        "price": 140
       },
       {
         "weight": "250gm",
-        "price": 80
+        "price": 70
       }
     ],
     "description": "",
-    "categories": ["namkeen"],
+    "categories": ["othernamkeenvariety"],
     "image": ["/namkeen/masalasing.jpg"]
   },
   {
     "id": 106,
 
     "keywords": "dhokla",
-    "title": "dhokla",
+    "title": "Dhokla",
+    "type": "weight",
     "options": [
       {
         "weight": "500gm",
-        "price": 160
+        "price": 100
       },
       {
         "weight": "250gm",
-        "price": 80
+        "price": 50
       }
     ],
     "description": "",
-    "categories": ["hotsnacks"],
+    "categories": ["hotsnacks","snacks"],
     "image": ["/hotsnacks/dhokla.jpg"]
   },
   {
     "id": 107,
 
     "keywords": "samosa",
-    "title": "samosa",
+    "title": "Samosa",
+    "type": "qty",
     "options": [
       {
-        "weight": "500gm",
-        "price": 160
-      },
-      {
-        "weight": "250gm",
-        "price": 80
+        "weight": "5Piece",
+        "price": 75
       }
     ],
     "description": "",
-    "categories": ["hotsnacks"],
+    "categories": ["hotsnacks","snacks"],
     "image": ["/hotsnacks/samosa-2.jpg"]
   },
   {
     "id": 108,
 
     "keywords": "kachori",
-    "title": "kachori",
+    "title": "Kachori",
+    "type": "qty",
     "options": [
       {
-        "weight": "500gm",
-        "price": 160
-      },
-      {
-        "weight": "250gm",
-        "price": 80
+        "weight": "5 Piece",
+        "price": 75
       }
     ],
     "description": "",
-    "categories": ["hotsnacks"],
+    "categories": ["hotsnacks","snacks"],
     "image": ["/hotsnacks/kachori.jpg"]
   },
   {
     "id": 109,
 
     "keywords": "sambharwadi",
-    "title": "sambharwadi",
+    "title": "Sambharwadi",
+    "type": "qty",
     "options": [
       {
-        "weight": "500gm",
-        "price": 160
-      },
-      {
-        "weight": "250gm",
-        "price": 80
+        "weight": "5 Piece",
+        "price": 75
       }
     ],
     "description": "",
-    "categories": ["Peda", "sweets"],
+    "categories": ["hotsnacks", "snacks"],
     "image": ["/peda/KesarPeda.JPG"]
   },
   {
@@ -2079,18 +2112,19 @@
 
     "keywords": "jalebi",
     "title": "jalebi",
+    "type": "weight",
     "options": [
       {
         "weight": "500gm",
-        "price": 160
+        "price": 80
       },
       {
         "weight": "250gm",
-        "price": 80
+        "price": 40
       }
     ],
     "description": "",
-    "categories": ["otherproducts"],
+    "categories": ["hotsnacks","snacks"],
     "image": ["/hotsnacks/jalebi.jpg"]
   },
   {
@@ -2098,18 +2132,19 @@
 
     "keywords": "khandavi",
     "title": "Khandavi",
+    "type": "weight",
     "options": [
       {
         "weight": "500gm",
-        "price": 160
+        "price": 100
       },
       {
         "weight": "250gm",
-        "price": 80
+        "price": 50
       }
     ],
     "description": "",
-   "categories": ["otherproducts"],
+   "categories": ["hotsnacks","snacks"],
   "image": ["/peda/Kesar Peda.JPG"]
   }
 ]
