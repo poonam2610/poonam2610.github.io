@@ -11,7 +11,7 @@
 .carouselImage-container {
   display: flex;
   transform: translateX(0);
-  transition: transform 0.8s ease-in-out;
+  transition: transform 2s ease-in-out;
   width: 100%;
   height: 100%;
   max-height: 100%;
@@ -26,7 +26,7 @@
 
 .slideActive {
   transform: translateX(0px);
-  transition: transform 1s ease-in-out;
+  transition: transform 5s ease-in-out;
 }
 .right-arrow,
 .left-arrow {
