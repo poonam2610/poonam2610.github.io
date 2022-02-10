@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import "./Carousel.scss";
 import PropTypes from "prop-types";
@@ -13,7 +13,6 @@ export default function Carousel({ arrayOfImagesUrl }) {
   });
 
   const nextSlide = () => {
- 
     if (current !== length) {
       setCurrent(current + 1);
       setTranslateValue(-current * 100);
@@ -29,10 +28,19 @@ export default function Carousel({ arrayOfImagesUrl }) {
 
   useEffect(() => {
     let interval = setInterval(() => {
-      nextSlide();
+      if (current !== length) {
+        nextSlide();
+      } else {
+        setCurrent(1);
+        setTranslateValue(0)
+      }
     }, 3000);
-    return ()=>(clearInterval(interval));
-  }, [prevSlide]);
+
+    return () => {
+      clearInterval(interval);
+    };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [current]);
 
   return (
     <div className="slider">
