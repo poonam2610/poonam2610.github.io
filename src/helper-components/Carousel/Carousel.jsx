@@ -30,9 +30,9 @@ export default function Carousel({ arrayOfImagesUrl }) {
   useEffect(() => {
     let interval = setInterval(() => {
       nextSlide();
-    }, 6000);
+    }, 3000);
     return ()=>(clearInterval(interval));
-  }, []);
+  }, [prevSlide]);
 
   return (
     <div className="slider">

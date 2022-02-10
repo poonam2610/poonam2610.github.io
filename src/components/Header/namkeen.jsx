@@ -16,7 +16,7 @@ export default function Namkeen(){
                     </Link>
                     </li>
                     <li>
-                    <Link className="link__style" to={`${ROUTES.CATEGORY}${ROUTES.NAMKEEN}`}>NAMKEEN
+                    <Link className="link__style" to={`${ROUTES.CATEGORY}${ROUTES.NAMKEEN}`}>Namkeen
                     </Link>
                     </li>
                    

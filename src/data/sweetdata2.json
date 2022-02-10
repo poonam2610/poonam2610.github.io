@@ -78,7 +78,7 @@
     ],
     "description": "",
     "categories": ["shrikhand", "sweets"],
-    "image": ["/shrikhand/kesarshrikhand.jpeg"]
+    "image": ["/shrikhand/kaseershrikhand.jpg"]
   },
 
   {
@@ -119,7 +119,7 @@
     ],
     "description": "",
     "categories": ["shrikhand", "sweets"],
-    "image": ["/shrikhand/american.jpeg"]
+    "image": ["/shrikhand/american-nuts-shrikhand.jpg"]
   },
   {
     "id": 7,
@@ -140,7 +140,7 @@
     ],
     "description": "",
     "categories": ["milksweets", "sweets"],
-    "image": ["/milksweets/kalakand berfi.JPG"]
+    "image": ["/milksweets/kalakand-barfi.jpg"]
   },
   {
     "id": 8,
@@ -160,7 +160,7 @@
     ],
     "description": "",
     "categories": ["milkcake", "sweets"],
-    "image": ["/milksweets/MilkCake.JPG"]
+    "image": ["/milksweets/milkcake.jpg"]
   },
   {
     "id": 9,
@@ -180,7 +180,7 @@
     ],
     "description": "",
     "category": ["milksweets", "sweets"],
-    "image": ["MilkCake.JPG"]
+    "image": ["/milksweets/americannutsbarfi.jpg"]
   },
 
   {
@@ -200,7 +200,7 @@
     ],
     "description": "",
     "categories": ["milksweets", "sweets"],
-    "image": ["/milksweets/anjeer_barfi.jpg"]
+    "image": ["/milksweets/anjeer-barfi.jpg"]
   },
   {
     "id": 11,
@@ -219,7 +219,7 @@
     ],
     "description": "",
     "categories": ["milksweets", "sweets"],
-    "image": ["/milksweets/MilkCake.JPG"]
+    "image": ["/milksweets/kaser-mava-barfi.jpg"]
   },
   {
     "id": 12,
@@ -238,7 +238,7 @@
     ],
     "description": "",
     "categories": ["milksweets", "sweets"],
-    "image": ["/milksweets/BLUE_BERRY_BARFI.jpg"]
+    "image": ["/milksweets/blue-barry.jpg"]
   },
   {
     "id": 13,
@@ -257,7 +257,7 @@
     ],
     "description": "",
     "categories": ["milksweets", "sweets"],
-    "image": ["/milksweets/Pista Barfi.jpg"]
+    "image": ["/milksweets/pista-barfi.jpg"]
   },
   {
     "id": 14,
@@ -277,7 +277,7 @@
     "description": "",
     "categories": ["milksweets", "sweets"],
 
-    "image": ["/milksweets/MALAI PURI.jpg"]
+    "image": ["/milksweets/MALAI.jpg"]
   },
   {
     "id": 15,
@@ -317,7 +317,7 @@
     "description": "",
     "categories": ["milksweets", "sweets"],
 
-    "image": ["/milksweets/Sangam Triveni.jpg"]
+    "image": ["/milksweets/sangam-trivani.jpg"]
   },
   {
     "id": 17,
@@ -336,7 +336,7 @@
     ],
     "description": "",
     "categories": ["milksweets", "sweets"],
-    "image": ["/milksweets/Rose fruit cake.jpg"]
+    "image": ["/milksweets/rose-kaju-barfi.jpg"]
   },
   {
     "id": 18,
@@ -685,6 +685,7 @@
 
     "keywords": "jamun",
     "title": "Kala Jamun",
+    "type":"weight",
     "options": [
       {
         "weight": "500gm",
@@ -735,13 +736,14 @@
     ],
     "description": "",
     "categories": ["chenasweets", "sweets"],
-    "image": ["/chenasweets/Rasgulla.jpg"]
+    "image": ["/chenasweets/rasgulla1.jpg"]
   },
   {
     "id": 39,
 
     "keywords": "rasbhari",
     "title": "Strawberry Rasbhari",
+    "type":"weight",
     "options": [
       {
         "weight": "500gm",
@@ -754,13 +756,14 @@
     ],
     "description": "",
     "categories": ["chenasweets", "sweets"],
-    "image": ["/chenasweets/strawberry.jpg"]
+    "image": ["/chenasweets/Strawberry-Rasbhari.jpg"]
   },
   {
     "id": 40,
 
     "keywords": "rasbhari",
     "title": "Mango Rasbhari",
+    "type":"weight",
     "options": [
       {
         "weight": "500gm",
@@ -780,6 +783,7 @@
 
     "keywords": "orange",
     "title": "Orange Rasgulla(haribhog)",
+    "type":"weight",
     "options": [
       {
         "weight": "Piece",
@@ -792,13 +796,14 @@
     ],
     "description": "",
     "categories": ["chenasweets", "sweets"],
-    "image": ["/chenasweets/orange.jpeg"]
+    "image": ["/chenasweets/orange-rasgulla1.jpg"]
   },
   {
     "id": 42,
 
     "keywords": "bengali",
     "title": "Pakija",
+    "type":"weight",
     "options": [
       {
         "weight": "Piece",
@@ -810,7 +815,7 @@
       }
     ],
     "description": "",
-    "categories": ["chenasweets", "sweets"],
+    "categories": ["bengalisweets", "sweets"],
     "image": ["/chenasweets/gulabjamun.jpg"]
   },
   {
@@ -829,7 +834,7 @@
       }
     ],
     "description": "",
-    "categories": ["chenasweets", "sweets"],
+    "categories": ["bengalisweets", "sweets"],
     "image": ["/bengalisweets/maliechap.jpg"]
   },
   {
@@ -837,6 +842,7 @@
 
     "keywords": "sandwich",
     "title": "Cream Sandwich",
+    "type":"weight",
     "options": [
       {
         "weight": "Piece",
@@ -848,14 +854,15 @@
       }
     ],
     "description": "",
-    "categories": ["chenasweets", "sweets"],
-    "image": ["/bengalisweets/cream.png"]
+    "categories": ["bengalisweets", "sweets"],
+    "image": ["/chenasweets/cream.jpg"]
   },
   {
     "id": 45,
 
     "keywords": "ras",
     "title": "Rasmalai",
+    "type":"weight",
     "options": [
       {
         "weight": "500gm",
@@ -867,8 +874,8 @@
       }
     ],
     "description": "",
-    "categories": ["chenasweets", "sweets"],
-   "image": ["/bengalisweets/rasmalai.jpg"]
+    "categories": ["bengalisweets", "sweets"],
+   "image": ["/chenasweets/rasmalie.jpg"]
   },
   {
     "id": 46,
@@ -886,7 +893,7 @@
       }
     ],
     "description": "",
-    "categories": ["chenasweets", "sweets"],
+    "categories": ["bengalisweets", "sweets"],
     "image": ["/bengalisweets/rasanguri.jpg"]
   },
   {
@@ -906,7 +913,7 @@
     ],
     "description": "",
     "categories": ["otherproducts", "sweets"],
-    "image": ["/otherproducts/Motichoor Laddu.JPG"]
+    "image": ["/otherproducts/motichur.jpg"]
   },
   {
     "id": 48,
@@ -1164,6 +1171,7 @@
 
     "keywords": "peda",
     "title": "shahi peda",
+    "type":"weight",
     "options": [
       {
         "weight": "500gm",
@@ -1255,7 +1263,7 @@
     ],
     "description": "",
     "categories": ["farsan"],
-    "image": ["/farsan/PakkaCHivda.JPG"]
+    "image": ["/farsan/pakka.jpg"]
   },
   {
     "id": 67,
