@@ -40,6 +40,10 @@ export default function Sweets() {
                         </Link>
 
                     </li>
+                    <li>
+                        <Link className="link__style" to={`${ROUTES.CATEGORY}${ROUTES.SEASONAL_SWEETS}`}>Seasonal Sweets
+                        </Link>
+                    </li>
 
                     <li>
                         <Link className="link__style" to={`${ROUTES.CATEGORY}${ROUTES.OTHER_PRODUCTS}`}>Other Products

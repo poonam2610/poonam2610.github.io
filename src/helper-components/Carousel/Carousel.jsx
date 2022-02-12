@@ -34,7 +34,7 @@ export default function Carousel({ arrayOfImagesUrl }) {
         setCurrent(1);
         setTranslateValue(0)
       }
-    }, 3000);
+    }, 4000);
 
     return () => {
       clearInterval(interval);

@@ -16,7 +16,7 @@
     ],
     "description": "",
     "categories": ["peda", "sweets"],
-    "image": ["/peda/Kesar Peda.JPG"]
+    "image": ["/peda/malaipeda.jpg"]
   },
 
   {
@@ -37,7 +37,7 @@
     ],
     "description": "",
     "categories": ["peda", "sweets"],
-    "image": ["/peda/MALAI-PEDA.jpg"]
+    "image": ["/peda/malai--peda.jpg"]
   },
   {
     "id": 3,
@@ -59,6 +59,27 @@
     "categories": ["peda", "sweets"],
     "availableSize": ["500gm", "250g"],
     "image": ["/peda.jpg"]
+  },
+  {
+    "id": 62,
+
+    "keywords": "peda",
+    "title": "shahi peda",
+    "type":"weight",
+    "options": [
+      {
+        "weight": "500gm",
+        "price": 160
+      },
+      {
+        "weight": "250gm",
+        "price": 80
+      }
+    ],
+    "description": "",
+    "categories": ["peda", "sweets"],
+    "availableSize": ["500gm", "250g"],
+    "image": ["/peda/malai--peda.jpg"]
   },
   {
     "id": 4,
@@ -374,7 +395,7 @@
     ],
     "description": "",
     "categories": ["desigheesweets", "sweets"],
-    "image": ["/desigheesweets/Besan Laddu.JPG"]
+    "image": ["/desigheesweets/basen-laddu.jpg"]
   },
   {
     "id": 20,
@@ -393,7 +414,7 @@
     ],
     "description": "",
     "categories": ["desigheesweets", "sweets"],
-    "image": ["/desigheesweets/Mawa Gujiya.JPG"]
+    "image": ["/desigheesweets/MAWA-GUJIYA.JPG"]
   },
   {
     "id": 21,
@@ -412,7 +433,7 @@
     ],
     "description": "",
     "categories": ["desigheesweets", "sweets"],
-    "image": ["/desigheesweets/RAJWADI_LADDU.jpg"]
+    "image": ["/desigheesweets/laddu.jpg"]
   },
   {
     "id": 22,
@@ -431,7 +452,7 @@
     ],
     "description": "",
     "categories": ["desigheesweets", "sweets"],
-    "image": ["/desigheesweets/mohanthal.jpg"]
+    "image": ["/desigheesweets/basen-barfi.jpg"]
   },
   {
     "id": 23,
@@ -487,7 +508,7 @@
       }
     ],
     "description": "",
-    "categories": ["dryfruitsweets", "sweets"],
+    "categories": ["cashewdryfruitsweets", "sweets"],
     "image": ["/dryfruitsweets/kajukatli.jpg"]
   },
   {
@@ -506,7 +527,7 @@
       }
     ],
     "description": "kaju bites",
-    "categories": ["dryfruitsweets", "sweets"],
+    "categories": ["cashewdryfruitsweets", "sweets"],
     "image": ["/dryfruitsweets/kajukatli.jpg"]
   },
   {
@@ -521,11 +542,11 @@
       },
       {
         "weight": "250gm",
-        "price": 250
+          "price": 250
       }
     ],
     "description": "",
-    "categories": ["dryfruitsweets", "sweets"],
+    "categories": ["cashewdryfruitsweets", "sweets"],
     "image": ["/dryfruitsweets/khajur-dryfruit-laddu.jpeg"]
   },
   {
@@ -544,8 +565,8 @@
       }
     ],
     "description": "",
-    "categories": ["dryfruitsweets", "sweets"],
-    "image": ["/dryfruitsweets/kaju-roll.png"]
+    "categories": ["cashewdryfruitsweets", "sweets"],
+    "image": ["/dryfruitsweets/kaju-roll-2.jpg"]
   },
   {
     "id": 29,
@@ -563,8 +584,8 @@
       }
     ],
     "description": "",
-    "categories": ["dryfruitsweets", "sweets"],
-    "image": ["/dryfruitsweets/kajubunny.jpg"]
+    "categories": ["cashewdryfruitsweets", "sweets"],
+    "image": ["/dryfruitsweets/kaju-bunny-2.jpg"]
   },
   {
     "id": 30,
@@ -582,8 +603,8 @@
       }
     ],
     "description": "",
-    "categories": ["dryfruitsweets", "sweets"],
-    "image": ["/dryfruitsweets/KajuCone.jpg"]
+    "categories": ["cashewdryfruitsweets", "sweets"],
+    "image": ["/dryfruitsweets/kajukamal.jpg"]
   },
   {
     "id": 31,
@@ -601,8 +622,8 @@
       }
     ],
     "description": "",
-    "categories": ["dryfruitsweets", "sweets"],
-    "image": ["/dryfruitsweets/kajugujiya.jpg"]
+    "categories": ["cashewdryfruitsweets", "sweets"],
+    "image": ["/dryfruitsweets/kaju-ghujai.jpg"]
   },
   {
     "id": 32,
@@ -620,7 +641,7 @@
       }
     ],
     "description": "",
-    "categories": ["dryfruitsweets", "sweets"],
+    "categories": ["cashewdryfruitsweets", "sweets"],
     "image": ["/dryfruitsweets/kajukamal.jpg"]
   },
   {
@@ -639,8 +660,8 @@
       }
     ],
     "description": "",
-    "categories": ["dryfruitsweets", "sweets"],
-    "image": ["/dryfruitsweets/anjeersugarfree.jpg"]
+    "categories": ["cashewdryfruitsweets", "sweets"],
+    "image": ["/dryfruitsweets/anjir-barfi.jpg"]
   },
   {
     "id": 34,
@@ -658,8 +679,8 @@
       }
     ],
     "description": "",
-    "categories": ["dryfruitsweets", "sweets"],
-    "image": ["/dryfruitsweets/kajukatli.jpg"]
+    "categories": ["cashewdryfruitsweets", "sweets"],
+    "image": ["/dryfruitsweets/dryfruit-laddu.jpg"]
   },
   {
     "id": 35,
@@ -951,7 +972,7 @@
     ],
     "description": "",
     "categories": ["otherproducts", "sweets"],
-  "image": ["/otherproducts/MysorePak.JPG"]
+  "image": ["/otherproducts/maisur-pakh.jpg"]
   },
   {
     "id": 50,
@@ -970,7 +991,7 @@
     ],
     "description": "",
     "categories": ["otherproducts", "sweets"],
-   "image": ["/otherproducts/mithibalushahi.png"]
+   "image": ["/otherproducts/balu.jpg"]
   },
   {
     "id": 51,
@@ -989,7 +1010,7 @@
     ],
     "description": "",
     "categories": ["otherproducts", "sweets"],
-    "image": ["/otherproducts/FIKI-BALUSHAHI.jpg"]
+    "image": ["/otherproducts/fiki-balushai.jpg"]
   },
   {
     "id": 52,
@@ -1124,7 +1145,7 @@
     ],
     "description": "",
     "categories": ["seasonalsweets"],
-    "image": ["/seasonalsweets/khobraladdu.jpg"]
+    "image": ["/seasonalsweets/gajar.jpg"]
   },
   {
     "id": 60,
@@ -1166,27 +1187,7 @@
     "availableSize": ["500gm", "250g"],
     "image": ["/seasonalsweets/khobraladdu.jpg"]
   },
-  {
-    "id": 62,
-
-    "keywords": "peda",
-    "title": "shahi peda",
-    "type":"weight",
-    "options": [
-      {
-        "weight": "500gm",
-        "price": 160
-      },
-      {
-        "weight": "250gm",
-        "price": 80
-      }
-    ],
-    "description": "",
-    "categories": ["peda", "sweets"],
-    "availableSize": ["500gm", "250g"],
-    "image": ["/seasonalsweets/khobraladdu.jpg"]
-  },
+  
   {
     "id": 63,
 
@@ -1204,7 +1205,7 @@
     ],
     "description": "",
     "categories": ["seasonalsweets"],
-    "image": ["/seasonalsweets/khobraladdu.jpg"]
+    "image": ["/seasonalsweets/basundi.jpg"]
   },
   {
     "id": 64,
@@ -1224,7 +1225,7 @@
     "description": "",
     "categories": ["seasonalsweets"],
     "availableSize": ["500gm", "250g"],
-    "image": ["/seasonalsweets/khobraladdu.jpg"]
+    "image": ["/seasonalsweets/Rabdi.jpg"]
   },
   {
     "id": 65,
@@ -1283,7 +1284,7 @@
     ],
     "description": "",
     "categories": ["farsan", "drysnacks"],
-    "image": ["/farsan/PakkaCHivda.JPG"]
+    "image": ["/farsan/pakka.jpg"]
   },
   {
     "id": 68,
@@ -1343,7 +1344,7 @@
     ],
     "description": "",
     "categories": ["farsan"],
-    "image": ["/farsan/mixfarsan.jpeg"]
+    "image": ["/farsan/Mixfarsan.jpg"]
   },
   {
     "id": 71,
@@ -1363,7 +1364,7 @@
     ],
     "description": "",
     "categories": ["farsan"],
-    "image": ["/farsan/kholapuri.jpg"]
+    "image": ["/farsan/kolapure.jpg"]
   },
   {
     "id": 72,
@@ -1383,7 +1384,7 @@
     ],
     "description": "",
     "categories": ["farsan"],
-    "image": ["/farsan/CORN_MIX.JPG"]
+    "image": ["/farsan/corn.jpg"]
   },
   {
     "id": 73,
@@ -1623,7 +1624,7 @@
     ],
     "description": "",
     "categories": ["drysnacks"],
-    "image": ["/drysnacks/drykachori.jpg"]
+    "image": ["/drysnacks/jeera.jpg"]
   },
   {
     "id": 85,
@@ -1663,7 +1664,7 @@
     ],
     "description": "",
     "categories": ["drysnacks"],
-    "image": ["/drysnacks/drykachori.jpg"]
+    "image": ["/drysnacks/chakli.jpg"]
   },
   {
     "id": 87,
@@ -1703,7 +1704,7 @@
     ],
     "description": "",
     "categories": ["drysnacks"],
-    "image": ["/drysnacks/drykachori.jpg"]
+    "image": ["/drysnacks/potato.jpg"]
   },
   {
     "id": 89,
