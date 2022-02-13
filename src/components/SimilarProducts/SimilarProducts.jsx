@@ -4,9 +4,9 @@ import * as data from "../../data/sweetdata2.json";
 import "./SimilarProducts.scss";
 import PropTypes from "prop-types";
 
-export default function SimilarProducts({ categories, id }) {
+export default function SimilarProducts({ category, id }) {
   const dataForCards = data.default.filter(
-    (value) => value.categories === categories && value.id !== id
+    (value) => value.category === category && value.id !== id
   );
   return (
     <div className="similarProducts-container">
@@ -21,6 +21,6 @@ export default function SimilarProducts({ categories, id }) {
 }
 
 SimilarProducts.propTypes = {
-  categories: PropTypes.string,
+  category: PropTypes.string,
   id: PropTypes.number
 }

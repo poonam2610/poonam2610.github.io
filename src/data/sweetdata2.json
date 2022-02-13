@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "keywords": "kesar, peda",
+    "keywords": "kesar, peda,sweets",
     "title": "Kesar Peda",
     "type": "weight",
     "options": [
@@ -22,7 +22,7 @@
   {
     "id": 2,
 
-    "keywords": "malai",
+    "keywords": "malai,peda,sweets",
     "title": "Malai Peda",
     "type": "weight",
     "options": [
@@ -42,7 +42,7 @@
   {
     "id": 3,
 
-    "keywords": "peda",
+    "keywords": "peda,sweets",
     "title": "Kathiyawadi Peda",
     "type": "weight",
     "options": [
@@ -63,7 +63,7 @@
   {
     "id": 62,
 
-    "keywords": "peda",
+    "keywords": "peda,sweets",
     "title": "shahi peda",
     "type":"weight",
     "options": [
@@ -84,7 +84,7 @@
   {
     "id": 4,
 
-    "keywords": "dryfruit",
+    "keywords": "dryfruit,sweets",
     "title": "Kesar Dryfruit Shrikhand",
     "type": "weight",
     "options": [
@@ -105,7 +105,7 @@
   {
     "id": 5,
 
-    "keywords": "dryfruit",
+    "keywords": "dryfruit,shrikhand,sweets",
     "title": "Mango Dryfruit Shrikhand",
     "type": "weight",
     "options": [
@@ -125,7 +125,7 @@
   {
     "id": 6,
 
-    "keywords": "nuts",
+    "keywords": "nuts,shrikhand,sweets,american",
     "title": "American Nuts Shrikhand",
     "type": "weight",
     "options": [
@@ -145,7 +145,7 @@
   {
     "id": 7,
 
-    "keywords": "barfi",
+    "keywords": "barfi,kalakand,sweets",
 
     "title": "Kalakand Barfi",
     "type": "weight",
@@ -166,7 +166,7 @@
   {
     "id": 8,
 
-    "keywords": "cake",
+    "keywords": "cake,milksweets,sweets,milk cake",
     "title": "Milk Cake",
     "type": "weight",
     "options": [
@@ -186,7 +186,7 @@
   {
     "id": 9,
 
-    "keywords": "barfi",
+    "keywords": "barfi,nuts,american",
     "title": "American Nuts Barfi",
     "type": "weight",
     "options": [
@@ -207,7 +207,7 @@
   {
     "id": 10,
 
-    "keywords": "barfi",
+    "keywords": "barfi,sweets,anjeer",
     "title": "Anjeer Barfi",
     "options": [
       {

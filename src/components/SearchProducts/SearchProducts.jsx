@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import ProductsCard from '../../helper-components/ProductsCard/ProductsCard';
 import "./SearchProducts.scss";
-import * as data from "../../data/data.json";
+import * as data from "../../data/sweetdata2.json";
 
 function SearchProducts() {
     const { search } = useParams();
