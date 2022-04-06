@@ -2,12 +2,14 @@ import React from "react";
 import "./CategoriesCard.scss";
 import PropTypes from "prop-types"
 
-function CategoriesCard({ image, title }) {
+
+function CategoriesCard({ image }) {
   return (
     <div className="card__image" >   
       <img src={image} alt="category-card"/>
      
     </div>
+    
   );
 }
 

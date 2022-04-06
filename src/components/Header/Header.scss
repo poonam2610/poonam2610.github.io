@@ -256,3 +256,73 @@
   cursor: pointer;
   font-family: "philosopher", Helvetica, sans-serif;
 }
+.hamburger{
+  display: none;
+}
+
+@media screen and(max-width: 764px) {
+  .header-links {
+    display: none;
+    background-color: #e81c2a;
+   flex-direction: column;
+justify-content: center;
+   width: 300px;
+   height: 100vh;
+   position: absolute;
+   top: 50px;
+   bottom: 0;
+padding-top: 20px;
+   left: -100%;
+   opacity: 1;
+   border-radius: 0;
+   transition: all 0.5s ease;
+  }
+  
+  .header-links.active{
+
+ display: block;
+left: 0;
+opacity: 1;
+transition: all 0.5s ease;
+z-index: 1;
+  }
+  .hamburger{
+    display: block;
+    
+  }
+
+  .link__style{
+    display: block;
+    width: 300px;
+  }
+
+  .category-btn{
+    display: block;
+    width: 300px;
+  }
+  
+}
+.navbar {
+  position: relative;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+  .navbar {
+    position: relative;
+  }
+
+  
+
+  .nav-menu.active {
+    background: #6668f4;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+
+}
+
+

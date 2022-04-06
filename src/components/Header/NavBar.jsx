@@ -28,7 +28,7 @@ export default function Navbar() {
         <div className='nav-bar'>
           <nav className='nav-list'>
             <div className='hamburger' onClick={handleClick}>
-              <div className='bar'></div>
+              <div className='bar'>Show</div>
             </div>
             <ul
               className={`header-links ${isVisible === true ? 'active' : ''}`}
@@ -58,7 +58,7 @@ export default function Navbar() {
               <li>
                 <Link
                   to={ROUTES.ABOUT}
-                  className='link'
+                  className='link__style'
                   onClick={handleClick}
                   data-after='about'
                 >
@@ -69,7 +69,7 @@ export default function Navbar() {
                 <Link
                   to={ROUTES.CONTACT}
                   smooth={true}
-                  className='link'
+                  className='link__style'
                   onClick={handleClick}
                 >
                   Contact

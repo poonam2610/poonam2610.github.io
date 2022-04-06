@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "keywords": "kesar, peda,sweets",
+    "keywords": "Kesar, Peda,Sweets",
     "title": "Kesar Peda",
     "type": "weight",
     "options": [
@@ -84,7 +84,7 @@
   {
     "id": 4,
 
-    "keywords": "dryfruit,sweets",
+    "keywords": "dryfruit,sweets, Shrikhand",
     "title": "Kesar Dryfruit Shrikhand",
     "type": "weight",
     "options": [
@@ -2087,7 +2087,7 @@
   {
     "id": 108,
 
-    "keywords": "kachori",
+    "keywords": "Kachori",
     "title": "Kachori",
     "type": "qty",
     "options": [
@@ -2103,7 +2103,7 @@
   {
     "id": 109,
 
-    "keywords": "sambharwadi",
+    "keywords": "Sambharwadi",
     "title": "Sambharwadi",
     "type": "qty",
     "options": [
