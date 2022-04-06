@@ -6,6 +6,7 @@ import * as ROUTES from "../../constants/Routes";
 import Sweets from "./Sweets";
 import Snacks from "./Snacks"
 import Namkeen from "./namkeen";
+import {FaBars} from "react-icons/fa"
 
 export default function Navbar() {
   const [isHovering, setIsHovering] = useState(false);
@@ -28,7 +29,9 @@ export default function Navbar() {
         <div className='nav-bar'>
           <nav className='nav-list'>
             <div className='hamburger' onClick={handleClick}>
-              <div className='bar'>Show</div>
+              
+               <FaBars className='bar'></FaBars>
+              
             </div>
             <ul
               className={`header-links ${isVisible === true ? 'active' : ''}`}
@@ -69,9 +72,11 @@ export default function Navbar() {
                 <Link
                   to={ROUTES.CONTACT}
                   smooth={true}
-                  className='link__style'
+                  className='link__style contact'
                   onClick={handleClick}
+                 
                 >
+
                   Contact
                 </Link>
               </li>

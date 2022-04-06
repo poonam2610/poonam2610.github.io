@@ -87,24 +87,6 @@
     }
   }
 }
-// .link__style {
-//   text-decoration: none;
-//   color: black;
-//   user-select: none;
-// }
-
-// .header__heading {
-//   font-size: 55px;
-//   color: var(--textColor);
-//   cursor: pointer;
-//   // font-family: 'Allerta Stencil', sans-serif;
-//   // font-family: 'Poiret One', cursive;
-//   // font-family: 'Snowburst One', cursive;
-//   // font-family: 'Lexend Giga', sans-serif;
-//   // font-family: 'Zilla Slab Highlight', cursive;
-//   font-family: "Original Surfer", cursive;
-//   letter-spacing: 0.1px;
-// }
 
 .input__search__box {
   padding: 1rem 2rem;
@@ -171,42 +153,7 @@
   font-size: 20px;
 }
 
-// .navss{
-//   background-color: #04AA6D;
-//   color: white;
-//   padding: 16px;
-//   font-size: 16px;
-//   border: none;
-// }
 
-// .snacks-category{
-//   position: relative;
-// }
-
-// .snacks-links{
-//   // position: absolute;
-//   background-color: blue;
-//   width: 200px;
-
-//   .link__style{
-//     display: block;
-//     color: white;
-//   }
-
-// }
-
-// .nav-bar{
-//   margin-top: -55px;
-//   text-align:center;
-// }
-
-// .ll{
-//   display: block;
-//   color: red;
-
-// }
-
-//
 .dropdown {
   position: relative;
   display: inline-block;
@@ -258,6 +205,9 @@
 }
 .hamburger{
   display: none;
+  position: absolute;
+  top: 20px;
+  right: 15px;
 }
 
 @media screen and(max-width: 764px) {
@@ -269,13 +219,14 @@ justify-content: center;
    width: 300px;
    height: 100vh;
    position: absolute;
-   top: 50px;
+   top: 0;
    bottom: 0;
-padding-top: 20px;
-   left: -100%;
+   padding-top: 20px;
+   right: -100%;
    opacity: 1;
    border-radius: 0;
    transition: all 0.5s ease;
+   margin: 10px 0;
   }
   
   .header-links.active{
@@ -289,19 +240,28 @@ z-index: 1;
   .hamburger{
     display: block;
     
+    
+  }
+  .bar{
+    
+    font-size: 30px;
   }
 
   .link__style{
     display: block;
     width: 300px;
     text-align: center;
+    margin: 15px 0;
   }
 
   .category-btn{
     display: block;
+    
     width: 300px;
   }
-  
+  .contact{
+    margin-top: 35px;
+  } 
 }
 .navbar {
   position: relative;
@@ -314,16 +274,9 @@ z-index: 1;
     position: relative;
   }
 
-  
-
-  .nav-menu.active {
-    background: #6668f4;
-    left: 0;
-    opacity: 1;
-    transition: all 0.5s ease;
-    z-index: 1;
+  .category-content {
+    margin-left: 40px;
   }
-
+ 
 }
-
 
