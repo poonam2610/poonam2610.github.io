@@ -4,8 +4,10 @@
 
 .carousel__container {
   .image {
-    height: 400px;
-    width: 100%;
+    min-height: 300px;
+    width: 100vw;
+    min-width: 100vw;
+  transform: translateX(10px);
   }
   overflow: hidden;
 }
@@ -16,10 +18,15 @@
   opacity: 0.9;
 }
 
+.carousel__container {
+  width: 100vw;
+  margin-left: -10px;
+  margin-right: -5px;
+}
 @media screen and (max-width: 720px) {
   .carousel__container {
-    width: 100%;
+    width: 100vw;
   }
   
-
+  
 }
