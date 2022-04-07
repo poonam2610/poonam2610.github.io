@@ -22,3 +22,9 @@
 .card__container::-webkit-scrollbar {
   display: none;
 }
+@media screen and (max-width: 720px) {
+  .categories__text{
+text-align: center;
+margin-left: -800px;
+  }
+}

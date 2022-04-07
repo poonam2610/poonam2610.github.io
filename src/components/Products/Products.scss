@@ -9,3 +9,9 @@
   padding: 0px 7px;
   width: 100%;
 }
+
+@media screen and (max-width: 720px) {
+  .cards__container{
+    display: block;
+  }
+  }

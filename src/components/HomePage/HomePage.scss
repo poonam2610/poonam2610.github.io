@@ -18,27 +18,8 @@
 
 @media screen and (max-width: 720px) {
   .carousel__container {
-    height: 100%;
     width: 100%;
   }
-}
+  
 
-@media screen and (max-width: 1064px) and (min-width: 720px) {
-  .carousel__container {
-    height: 350px;
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 1450px) {
-  .carousel__container {
-    height: 550px;
-    width: 100%;
-  }
-}
-@media screen and (min-width: 1366px) {
-  .carousel__container {
-    height: 400px;
-    width: 100%;
-  }
 }
