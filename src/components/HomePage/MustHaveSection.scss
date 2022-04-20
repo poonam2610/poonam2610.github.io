@@ -1,32 +1,28 @@
 .mustHave__container {
-  padding: 2rem 5rem;
-  color: #c42424;
-  h1 {
-    font-size: 35px;
-    letter-spacing: 1.5px;
-    font-weight: 400;
-    margin: 13px;
-    text-align: center;
-  }
+    padding: 2rem 5rem;
+    color: #c42424;
+    h1 {
+        font-size: 35px;
+        letter-spacing: 1.5px;
+        font-weight: 400;
+        margin: 13px;
+        text-align: center;
+    }
 }
 
 .mustHaveCards__container {
-  display: flex;
-  justify-content: space-around;
-  padding: 2rem 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2rem 0;
 }
 
 @media screen and (max-width: 720px) {
-  .mustHave__container {
-    padding: 1rem 2rem;
-  }
-  .mustHaveCards__container {
-    padding: 1rem 0;
-  }
-}
-
-@media screen and (max-width: 1064px) and (min-width: 720px) {
-  .mustHave__container {
-    padding: 2rem;
-  }
+    .mustHave__container {
+        padding: 1rem 2rem;
+    }
+    .mustHaveCards__container {
+        padding: 1rem 0;
+        flex-direction: column;
+    }
 }

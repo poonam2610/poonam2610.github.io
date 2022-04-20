@@ -1,73 +1,79 @@
 .footer__container {
-  background-color: #e1bb65;
-  width: 100%;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  padding: 2rem;
-  margin-top: 20px;
-  h2 {
-    font-size: 20px;
-    font-weight: 500;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    opacity: 0.9;
-  }
+    background-color: #e1bb65;
+    width: 100%;
+    max-width: 100vw;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    margin-top: 20px;
+    h2 {
+        font-size: 20px;
+        font-weight: 500;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        opacity: 0.9;
+    }
 }
 
 .footer__main {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  //   text-align: center;
-  .contact__info {
-    width: 33%;
-  }
-  .categories {
-    width: 33%;
-  }
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    //   text-align: center;
+    .contact__info {
+        width: 33%;
+    }
+    .categories {
+        width: 33%;
+    }
 }
+
 p {
-  opacity: 0.7;
-  font-size: 13px;
-  margin-bottom: 8px;
-  span {
-    font-weight: 500;
-  }
+    opacity: 0.7;
+    font-size: 13px;
+    margin-bottom: 8px;
+    span {
+        font-weight: 500;
+    }
 }
+
 .card__heading {
-  margin-bottom: 1px;
+    margin-bottom: 1px;
 }
+
 .cards__image {
-  margin-top: 1rem;
-  font-size: 22px;
-  opacity: 0.8;
-  display: flex;
-  .logo {
-    margin-right: 10px;
-  }
+    margin-top: 1rem;
+    font-size: 22px;
+    opacity: 0.8;
+    display: flex;
+    .logo {
+        margin-right: 10px;
+    }
 }
 
 .all__categories {
-  padding: 0px 9px;
-  //   line-height: 1.3rem;
-  .link__style {
-    text-decoration: none;
-    color: var(--footer-color);
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    -webkit-user-select: none;
-    user-select: none;
-    cursor: pointer;
-  }
+    padding: 0px 9px;
+    //   line-height: 1.3rem;
+    .link__style {
+        text-decoration: none;
+        color: var(--footer-color);
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        -webkit-user-select: none;
+        user-select: none;
+        cursor: pointer;
+    }
 }
+
 .footer__bottom {
-  margin-top: 2rem;
-  opacity: 0.8;
-  word-spacing: 5px;
+    margin-top: 2rem;
+    opacity: 0.8;
+    word-spacing: 5px;
 }
+
 .link__name {
-  cursor: pointer;
-  color: var(--footer-color);
+    cursor: pointer;
+    color: var(--footer-color);
 }
