@@ -23,140 +23,142 @@ import Contact from "./components/Contact/Contact";
 
 
 function App() {
-  const [{ basket, user }, dispatch] = useStateValue();
-  const [isOpenModal, setIsOpenModal] = useState(false);
-  useEffect(() => {
-    document.title = 'ChetanDhorajiwalasweets';
-  }, []);
-  //executes when user changes
-  useEffect(() => {
-    auth.onAuthStateChanged((authUser) => {
-      if (!!authUser) {
-        dispatch({
-          type: ACTIONS.SET_USER,
-          user: authUser,
+    const [{ basket, user }, dispatch] = useStateValue();
+    const [isOpenModal, setIsOpenModal] = useState(false);
+    useEffect(() => {
+        document.title = 'ChetanDhorajiwalasweets';
+    }, []);
+    //executes when user changes
+    useEffect(() => {
+        auth.onAuthStateChanged((authUser) => {
+            if (!!authUser) {
+                dispatch({
+                    type: ACTIONS.SET_USER,
+                    user: authUser,
+                });
+            } else {
+                dispatch({
+                    type: ACTIONS.SET_USER,
+                    user: null,
+                });
+                dispatch({
+                    type: ACTIONS.CLEAR_BASKET,
+                });
+                dispatch({
+                    type: ACTIONS.ADD_TO_ORDER_HISTORY,
+                    items: [],
+                });
+                dispatch({
+                    type: ACTIONS.CLEAR_BASKET,
+                });
+            }
         });
-      } else {
-        dispatch({
-          type: ACTIONS.SET_USER,
-          user: null,
-        });
-        dispatch({
-          type: ACTIONS.CLEAR_BASKET,
-        });
-        dispatch({
-          type: ACTIONS.ADD_TO_ORDER_HISTORY,
-          items: [],
-        });
-        dispatch({
-          type: ACTIONS.CLEAR_BASKET,
-        });
-      }
-    });
 
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
 
-  // fetch bag items for particular user if available
-  useEffect(() => {
-    if (!!user) {
-      userRef(user?.uid)
-        .get()
-        .then((value) => {
-          if (!value.exists) {
-              userRef(user?.uid).set({})
-          }
-          const basketData = value.data()?.basket || [];
-          const addressData = value.data()?.address || [];
-          const yourOrdersData = value.data()?.yourOrders || [];
-          dispatch({
-            type: ACTIONS.ADD_TO_ORDER_HISTORY,
-            items: yourOrdersData,
-          });
-          basketData.forEach((item) => {
-            dispatch({
-              type: ACTIONS.ADD_TO_BASKET,
-              item: item,
-            });
-          });
-          addressData.forEach((item) => {
-            dispatch({
-              type: ACTIONS.ADD_OR_MODIFY_ADDRESS,
-              item: item,
-            });
-          });
-        })
-        .catch((e) => console.log(e.message));
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [user]);
+    // fetch bag items for particular user if available
+    useEffect(() => {
+        if (!!user) {
+            userRef(user?.uid)
+                .get()
+                .then((value) => {
+                    if (!value.exists) {
+                        userRef(user?.uid).set({})
+                    }
+                    const basketData = value.data()?.basket || [];
+                    const addressData = value.data()?.address || [];
+                    const yourOrdersData = value.data()?.yourOrders || [];
+                    dispatch({
+                        type: ACTIONS.ADD_TO_ORDER_HISTORY,
+                        items: yourOrdersData,
+                    });
+                    basketData.forEach((item) => {
+                        dispatch({
+                            type: ACTIONS.ADD_TO_BASKET,
+                            item: item,
+                        });
+                    });
+                    addressData.forEach((item) => {
+                        dispatch({
+                            type: ACTIONS.ADD_OR_MODIFY_ADDRESS,
+                            item: item,
+                        });
+                    });
+                })
+                .catch((e) => console.log(e.message));
+        }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [user]);
 
-  // push to firebase database when ever basket items changes
-  // useEffect(() => {
-  //   if (!!user) {
-  //     if (basket?.length > 0) {
-  //       userRef(user?.uid).update({
-  //         basket: basket,
-  //       });
-  //     }
-  //   }
-  // }, [basket, user]);
+    // push to firebase database when ever basket items changes
+    // useEffect(() => {
+    //   if (!!user) {
+    //     if (basket?.length > 0) {
+    //       userRef(user?.uid).update({
+    //         basket: basket,
+    //       });
+    //     }
+    //   }
+    // }, [basket, user]);
 
-  //if user comes first time
-  useEffect(() => {
-    const firstTimeUser = localStorage.getItem("firstTimeUser");
-    if (!user && !firstTimeUser) {
-      setTimeout(() => {
-        setIsOpenModal(true);
-      }, 2000);
+    //if user comes first time
+    useEffect(() => {
+        const firstTimeUser = localStorage.getItem("firstTimeUser");
+        if (!user && !firstTimeUser) {
+            setTimeout(() => {
+                setIsOpenModal(true);
+            }, 2000);
 
-      localStorage.setItem("firstTimeUser", true);
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+            localStorage.setItem("firstTimeUser", true);
+        }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
 
-  return (
+    return (
     <div className="app">
-      <BrowserRouter>
-        <ScrollToTop />
+        <BrowserRouter />
+        < ScrollToTop />
         <Header />
-        <Navbar/>
-        <div className="inbetween__content">
-          <Switch>
-            <PrivateRoute exact path={ROUTES.CHECKOUT}>
-              <Checkout />
-            </PrivateRoute>
-            <PrivateRoute exact path={`${ROUTES.CHECKOUT}${ROUTES.PAYMENT}`}>
-              <Payment />
-            </PrivateRoute>
-            <Route exact path={`${ROUTES.CATEGORY}/:category`}>
-              <Products />
-            </Route>
-            <Route exact path={`${ROUTES.SEARCH}/:search`}>
-              <SearchProducts />
-            </Route>
-            <Route exact path={`${ROUTES.CATEGORY}/:category/:id`}>
-              <ProductDetails />
-            </Route>
-            <Route exact path={ROUTES.HOME}>
-              <HomePage />
-              {isOpenModal && <Modal setIsModalOpen={setIsOpenModal} />}
-            </Route>
-            <Route exact path={ROUTES.ABOUT}>
-              <About/>     
-               </Route>
-               <Route exact path={ROUTES.CONTACT}>
-              <Contact/>     
-               </Route>
-            <PrivateRoute exact path={ROUTES.YOUR_ORDERS}>
-              <YourOrders />
-            </PrivateRoute>
-          </Switch>
-        </div>
-        <Footer />
-      </BrowserRouter>
-    </div>
-  );
-}
+        <Navbar />
+        <div className="inbetween__content" >
+            <Switch>
+                <PrivateRoute exact path={ROUTES.CHECKOUT} >
+                    <Checkout />
+                    </PrivateRoute>  
+                     <PrivateRoute exact path={`${ROUTES.CHECKOUT}${ROUTES.PAYMENT}`} >
+                        <Payment />
+                        </PrivateRoute> 
+                        <Route exact path={`${ROUTES.CATEGORY}/:category`} >
+                            < Products />
+                            </Route> 
+                            <Route exact path={`${ROUTES.SEARCH}/:search`} >
+                                <SearchProducts />
+                                </Route>  
+                                <Route exact path={`${ROUTES.CATEGORY}/:category/:id`} >
+                                    <ProductDetails />
+                                    </Route> 
+                                    <Route exact path={ROUTES.HOME} >
+                                        <HomePage /> 
+                                        {
+                                            isOpenModal && < Modal setIsModalOpen={setIsOpenModal}
+                                            />} 
+                                            </Route > 
+                                            <Route exact path={ROUTES.ABOUT}>
+                                            <About />
+                                            </Route>
+                                             <Route exact path={ROUTES.CONTACT} >
+                                                <Contact />
+                                                </Route>
+                                                 <PrivateRoute exact path={ROUTES.YOUR_ORDERS} >
+                                                    <YourOrders />
+                                                    </PrivateRoute> 
+                                                    </Switch > 
+                                                    </div> 
+                                                    <Footer />
+                                                    <BrowserRouter/> 
+                                                    </div >
+                                                    );
+    }
 
-export default App;
+ export default App;

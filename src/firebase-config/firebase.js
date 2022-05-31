@@ -1,14 +1,17 @@
 import firebase from "firebase";
+
+
 import "firebase/firestore";
 
+
 const firebaseConfig = {
-  apiKey: process.env.REACT_APP_API_KEY,
-  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
-  projectId: process.env.REACT_APP_PROJECT_ID,
-  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
-  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
-  appId: process.env.REACT_APP_APP_ID,
-  measurementId: process.env.REACT_APP_MEASUREMENT_ID,
+    apiKey: "AIzaSyAMlYsCAB6X5zTNCaoFJyE7auDPOGZ1ppw",
+    authDomain: "ecommerce-c704f.firebaseapp.com",
+    projectId: "ecommerce-c704f",
+    storageBucket: "ecommerce-c704f.appspot.com",
+    messagingSenderId: "861102569963",
+    appId: "1:861102569963:web:b17ccbbc47cc93a85e81ae",
+    measurementId: "G-2T0JS1BBYG"
 };
 
 const app = firebase.initializeApp(firebaseConfig);
@@ -20,20 +23,20 @@ const facebookAuthProvider = new firebase.auth.FacebookAuthProvider();
 const userRef = (uid) => db.collection("user").doc(uid);
 
 const clearFirebaseBasket = (user) => {
-  userRef(user?.uid).update({
-    basket: [],
-  });
+    userRef(user?.uid).update({
+        basket: [],
+    });
 };
 
 export {
-  app,
-  db,
-  auth,
-  googleAuthProvider,
-  facebookAuthProvider,
-  userRef,
-  firebase,
-  clearFirebaseBasket,
+    app,
+    db,
+    auth,
+    googleAuthProvider,
+    facebookAuthProvider,
+    userRef,
+    firebase,
+    clearFirebaseBasket,
 };
 
 // import app from "firebase/app";
